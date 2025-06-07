@@ -1,0 +1,181 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classargos__lib_1_1_generic_debouncer" kind="class" language="C++" prot="public">
+    <compoundname>argos_lib::GenericDebouncer</compoundname>
+    <templateparamlist>
+      <param>
+        <type>class T</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classargos__lib_1_1_generic_debouncer_1a89c89aa036286874cd70c46f14c5159d" prot="private" static="no" mutable="no">
+        <type>units::millisecond_t</type>
+        <definition>units::millisecond_t argos_lib::GenericDebouncer&lt; T &gt;::m_debounceTime</definition>
+        <argsstring></argsstring>
+        <name>m_debounceTime</name>
+        <qualifiedname>argos_lib::GenericDebouncer::m_debounceTime</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/generic_debouncer.h" line="62" column="26" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/generic_debouncer.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classargos__lib_1_1_generic_debouncer_1a7cb7535ccd0b9f2e8ad8e7945d8dc125" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T argos_lib::GenericDebouncer&lt; T &gt;::m_rawStatus</definition>
+        <argsstring></argsstring>
+        <name>m_rawStatus</name>
+        <qualifiedname>argos_lib::GenericDebouncer::m_rawStatus</qualifiedname>
+        <briefdescription>
+<para>Last raw value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/generic_debouncer.h" line="63" column="7" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/generic_debouncer.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classargos__lib_1_1_generic_debouncer_1a2f86d39eb83faf78e349608c4718ef68" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T argos_lib::GenericDebouncer&lt; T &gt;::m_debouncedStatus</definition>
+        <argsstring></argsstring>
+        <name>m_debouncedStatus</name>
+        <qualifiedname>argos_lib::GenericDebouncer::m_debouncedStatus</qualifiedname>
+        <briefdescription>
+<para>Current value after applying debounce. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/generic_debouncer.h" line="64" column="7" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/generic_debouncer.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classargos__lib_1_1_generic_debouncer_1a24aea6233c7c9d3246f2fdc4776e52fd" prot="private" static="no" mutable="no">
+        <type>std::chrono::time_point&lt; std::chrono::steady_clock &gt;</type>
+        <definition>std::chrono::time_point&lt;std::chrono::steady_clock&gt; argos_lib::GenericDebouncer&lt; T &gt;::m_debounceTransitionTime</definition>
+        <argsstring></argsstring>
+        <name>m_debounceTransitionTime</name>
+        <qualifiedname>argos_lib::GenericDebouncer::m_debounceTransitionTime</qualifiedname>
+        <briefdescription>
+<para>Time when latest transition detected. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/generic_debouncer.h" line="66" column="9" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/generic_debouncer.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classargos__lib_1_1_generic_debouncer_1adc7272bcc7fc73602d37ba4f8d442c0e" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>argos_lib::GenericDebouncer&lt; T &gt;::GenericDebouncer</definition>
+        <argsstring>(const units::millisecond_t symmetricDebounceTime, T initialValue={})</argsstring>
+        <name>GenericDebouncer</name>
+        <qualifiedname>argos_lib::GenericDebouncer::GenericDebouncer</qualifiedname>
+        <param>
+          <type>const units::millisecond_t</type>
+          <declname>symmetricDebounceTime</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>initialValue</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+<para>Construct a new <ref refid="classargos__lib_1_1_debouncer" kindref="compound">Debouncer</ref> object with symmetric times. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>symmetricDebounceTime</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Symmetric activate and clear time </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/generic_debouncer.h" line="20" column="14" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/generic_debouncer.h" bodystart="20" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classargos__lib_1_1_generic_debouncer_1a542e7dc37638df8780c3c5db4d56d8cb" prot="public" static="no" nodiscard="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T argos_lib::GenericDebouncer&lt; T &gt;::operator()</definition>
+        <argsstring>(T newVal)</argsstring>
+        <name>operator()</name>
+        <qualifiedname>argos_lib::GenericDebouncer::operator()</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>newVal</declname>
+        </param>
+        <briefdescription>
+<para>Update debouncer with new input and retreive latest debounced status. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>newVal</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Latest raw value </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Value after applying debounce </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/generic_debouncer.h" line="32" column="8" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/generic_debouncer.h" bodystart="32" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classargos__lib_1_1_generic_debouncer_1a7162219c23586039f6acafc23946cd4f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void argos_lib::GenericDebouncer&lt; T &gt;::Reset</definition>
+        <argsstring>(T newVal)</argsstring>
+        <name>Reset</name>
+        <qualifiedname>argos_lib::GenericDebouncer::Reset</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>newVal</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>newVal</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value to set to </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/generic_debouncer.h" line="56" column="10" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/generic_debouncer.h" bodystart="56" bodyend="59"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/generic_debouncer.h" line="13" column="3" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/generic_debouncer.h" bodystart="13" bodyend="67"/>
+    <listofallmembers>
+      <member refid="classargos__lib_1_1_generic_debouncer_1adc7272bcc7fc73602d37ba4f8d442c0e" prot="public" virt="non-virtual"><scope>argos_lib::GenericDebouncer</scope><name>GenericDebouncer</name></member>
+      <member refid="classargos__lib_1_1_generic_debouncer_1a2f86d39eb83faf78e349608c4718ef68" prot="private" virt="non-virtual"><scope>argos_lib::GenericDebouncer</scope><name>m_debouncedStatus</name></member>
+      <member refid="classargos__lib_1_1_generic_debouncer_1a89c89aa036286874cd70c46f14c5159d" prot="private" virt="non-virtual"><scope>argos_lib::GenericDebouncer</scope><name>m_debounceTime</name></member>
+      <member refid="classargos__lib_1_1_generic_debouncer_1a24aea6233c7c9d3246f2fdc4776e52fd" prot="private" virt="non-virtual"><scope>argos_lib::GenericDebouncer</scope><name>m_debounceTransitionTime</name></member>
+      <member refid="classargos__lib_1_1_generic_debouncer_1a7cb7535ccd0b9f2e8ad8e7945d8dc125" prot="private" virt="non-virtual"><scope>argos_lib::GenericDebouncer</scope><name>m_rawStatus</name></member>
+      <member refid="classargos__lib_1_1_generic_debouncer_1a542e7dc37638df8780c3c5db4d56d8cb" prot="public" virt="non-virtual"><scope>argos_lib::GenericDebouncer</scope><name>operator()</name></member>
+      <member refid="classargos__lib_1_1_generic_debouncer_1a7162219c23586039f6acafc23946cd4f" prot="public" virt="non-virtual"><scope>argos_lib::GenericDebouncer</scope><name>Reset</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

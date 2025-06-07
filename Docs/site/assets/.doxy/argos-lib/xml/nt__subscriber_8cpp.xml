@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="nt__subscriber_8cpp" kind="file" language="C++">
+    <compoundname>nt_subscriber.cpp</compoundname>
+    <includes refid="nt__subscriber_8h" local="yes">argos_lib/general/nt_subscriber.h</includes>
+    <includes local="no">networktables/DoubleTopic.h</includes>
+    <includes local="no">networktables/NetworkTable.h</includes>
+    <includes local="no">networktables/NetworkTableInstance.h</includes>
+    <includes local="yes">fmt/format.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/general/nt_subscriber.cpp</label>
+        <link refid="nt__subscriber_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>argos_lib/general/nt_subscriber.h</label>
+        <link refid="nt__subscriber_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>fmt/format.h</label>
+      </node>
+      <node id="3">
+        <label>networktables/DoubleTopic.h</label>
+      </node>
+      <node id="7">
+        <label>networktables/NetworkTable.h</label>
+      </node>
+      <node id="4">
+        <label>networktables/NetworkTableInstance.h</label>
+      </node>
+      <node id="5">
+        <label>string</label>
+      </node>
+      <node id="6">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="class_n_t_subscriber" prot="public">NTSubscriber</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;argos_lib/general/nt_subscriber.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;networktables/DoubleTopic.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;networktables/NetworkTable.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;networktables/NetworkTableInstance.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;fmt/format.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="classargos__lib_1_1_n_t_subscriber" kindref="compound">argos_lib::NTSubscriber</ref>;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><ref refid="class_n_t_subscriber_1a2e6e648d849493768c514af502d7b916" kindref="member">NTSubscriber::NTSubscriber</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>tableName)<sp/>:<sp/>m_tableName{tableName}<sp/>{}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal">NTSubscriber::~NTSubscriber()<sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Need<sp/>to<sp/>release<sp/>all<sp/>handles</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>listenerIt<sp/>=<sp/>m_ntListeners.begin();<sp/>listenerIt<sp/>!=<sp/>m_ntListeners.end();<sp/>++listenerIt)<sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>nt::RemoveListener(*listenerIt);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>entryIt<sp/>=<sp/>m_ntEntries.begin();<sp/>entryIt<sp/>!=<sp/>m_ntEntries.end();<sp/>++entryIt)<sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>nt::ReleaseEntry(*entryIt);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classargos__lib_1_1_n_t_subscriber_1a05b27ec085d402693283a763c97ec95e" kindref="member">NTSubscriber::AddMonitor</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>keyName,</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::function&lt;</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">)&gt;<sp/>onUpdateCallback,</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>defaultValue,</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>forceUpdate)<sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/>NT_Topic<sp/>topic<sp/>=<sp/>nt::GetTopic(NT_GetDefaultInstance(),<sp/>fmt::format(</highlight><highlight class="stringliteral">&quot;{}/{}&quot;</highlight><highlight class="normal">,<sp/>m_tableName,<sp/>keyName));</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/>m_ntEntries.push_back(nt::GetEntry(topic,<sp/>NT_DOUBLE,<sp/></highlight><highlight class="stringliteral">&quot;double&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(forceUpdate)<sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>nt::SetDouble(m_ntEntries.back(),<sp/>defaultValue);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>nt::SetDefaultDouble(m_ntEntries.back(),<sp/>defaultValue);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/>nt::AddListener(m_ntEntries.back(),<sp/>nt::EventFlags::kValueAll,<sp/>[onUpdateCallback](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>nt::Event&amp;<sp/>e)<sp/>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>onUpdateCallback(e.GetValueEventData()-&gt;value.GetDouble());</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/>});</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/general/nt_subscriber.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="structargos__lib_1_1_c_a_n_address" kind="struct" language="C++" prot="public">
+    <compoundname>argos_lib::CANAddress</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structargos__lib_1_1_c_a_n_address_1a02d2ed3b7fff66e854f5b66dbe79d90a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int argos_lib::CANAddress::address</definition>
+        <argsstring></argsstring>
+        <name>address</name>
+        <qualifiedname>argos_lib::CANAddress::address</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/config/config_types.h" line="26" column="9" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/config/config_types.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structargos__lib_1_1_c_a_n_address_1a6787fc599d47aa792bd67951eb0fd1d4" prot="public" static="no" mutable="no">
+        <type>std::string_view</type>
+        <definition>std::string_view argos_lib::CANAddress::busName</definition>
+        <argsstring></argsstring>
+        <name>busName</name>
+        <qualifiedname>argos_lib::CANAddress::busName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/config/config_types.h" line="27" column="22" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/config/config_types.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structargos__lib_1_1_c_a_n_address_1a2601ce7996890236997b5dbdc8160e36" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>argos_lib::CANAddress::CANAddress</definition>
+        <argsstring>()=delete</argsstring>
+        <name>CANAddress</name>
+        <qualifiedname>argos_lib::CANAddress::CANAddress</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/config/config_types.h" line="29" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="structargos__lib_1_1_c_a_n_address_1a06541b2d1af01f34327caa6faf2ebfff" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr</type>
+        <definition>argos_lib::CANAddress::CANAddress</definition>
+        <argsstring>(int address, const std::string_view &amp;busName=&quot;rio&quot;)</argsstring>
+        <name>CANAddress</name>
+        <qualifiedname>argos_lib::CANAddress::CANAddress</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>address</declname>
+        </param>
+        <param>
+          <type>const std::string_view &amp;</type>
+          <declname>busName</declname>
+          <defval>&quot;rio&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/config/config_types.h" line="30" column="15" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/config/config_types.h" bodystart="30" bodyend="30"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/config/config_types.h" line="25" column="3" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/config/config_types.h" bodystart="25" bodyend="31"/>
+    <listofallmembers>
+      <member refid="structargos__lib_1_1_c_a_n_address_1a02d2ed3b7fff66e854f5b66dbe79d90a" prot="public" virt="non-virtual"><scope>argos_lib::CANAddress</scope><name>address</name></member>
+      <member refid="structargos__lib_1_1_c_a_n_address_1a6787fc599d47aa792bd67951eb0fd1d4" prot="public" virt="non-virtual"><scope>argos_lib::CANAddress</scope><name>busName</name></member>
+      <member refid="structargos__lib_1_1_c_a_n_address_1a2601ce7996890236997b5dbdc8160e36" prot="public" virt="non-virtual"><scope>argos_lib::CANAddress</scope><name>CANAddress</name></member>
+      <member refid="structargos__lib_1_1_c_a_n_address_1a06541b2d1af01f34327caa6faf2ebfff" prot="public" virt="non-virtual"><scope>argos_lib::CANAddress</scope><name>CANAddress</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

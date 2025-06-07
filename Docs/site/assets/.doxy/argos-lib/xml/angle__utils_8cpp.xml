@@ -1,0 +1,207 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="angle__utils_8cpp" kind="file" language="C++">
+    <compoundname>angle_utils.cpp</compoundname>
+    <includes refid="angle__utils_8h" local="yes">argos_lib/general/angle_utils.h</includes>
+    <includes local="no">cmath</includes>
+    <includes local="yes">units/math.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/general/angle_utils.cpp</label>
+        <link refid="angle__utils_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>argos_lib/general/angle_utils.h</label>
+        <link refid="angle__utils_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>cmath</label>
+      </node>
+      <node id="3">
+        <label>units/angle.h</label>
+      </node>
+      <node id="5">
+        <label>units/math.h</label>
+      </node>
+    </incdepgraph>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="angle__utils_8cpp_1a47b900c9e45eabfd06cbb75a44d53282" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>units::degree_t</type>
+        <definition>units::degree_t argos_lib::angle::ConstrainAngle</definition>
+        <argsstring>(units::degree_t inVal, units::degree_t minVal, units::degree_t maxVal)</argsstring>
+        <name>ConstrainAngle</name>
+        <param>
+          <type>units::degree_t</type>
+          <declname>inVal</declname>
+        </param>
+        <param>
+          <type>units::degree_t</type>
+          <declname>minVal</declname>
+        </param>
+        <param>
+          <type>units::degree_t</type>
+          <declname>maxVal</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="copyright"><para>Copyright (c) Argos FRC Team 1756. Open Source Software; you can modify and/or share it under the terms of the license file in the root directory of this project. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/general/angle_utils.cpp" line="11" column="1" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/general/angle_utils.cpp" bodystart="36" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="angle__utils_8cpp_1a0c8f2ff8506296c8314db9c42d8455b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>units::degree_t</type>
+        <definition>units::degree_t argos_lib::angle::InvertedAngle</definition>
+        <argsstring>(units::degree_t desiredAngle, units::degree_t referenceAngle)</argsstring>
+        <name>InvertedAngle</name>
+        <param>
+          <type>units::degree_t</type>
+          <declname>desiredAngle</declname>
+        </param>
+        <param>
+          <type>units::degree_t</type>
+          <declname>referenceAngle</declname>
+        </param>
+        <briefdescription>
+<para>Finds closest angle alias of a vector 180-degrees offset from desiredAngle relative to referencedAngle. All inputs are normalized so ranges are unbounded. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>desiredAngle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Angle to find 180-degree offset alias for </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>referenceAngle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Defines desired alias range </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Offset angle alias of desiredAngle in range (referencedAngle - 180_deg, referencedAngle + 180_deg] </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/general/angle_utils.cpp" line="12" column="1" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/general/angle_utils.cpp" bodystart="29" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="angle__utils_8cpp_1a79938a46e7bf95ab61ecb0cdcccbf23f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>units::degree_t</type>
+        <definition>units::degree_t argos_lib::angle::NearestAngle</definition>
+        <argsstring>(units::degree_t desiredAngle, units::degree_t referenceAngle)</argsstring>
+        <name>NearestAngle</name>
+        <param>
+          <type>units::degree_t</type>
+          <declname>desiredAngle</declname>
+        </param>
+        <param>
+          <type>units::degree_t</type>
+          <declname>referenceAngle</declname>
+        </param>
+        <briefdescription>
+<para>Finds closest angle alias of desiredAngle relative to referencedAngle. All inputs are normalized so ranges are unbounded. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>desiredAngle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Angle to find alias for </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>referenceAngle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Defines desired alias range </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Angle alias of desiredAngle in range (referencedAngle - 180_deg, referencedAngle + 180_deg] </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/general/angle_utils.cpp" line="13" column="1" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/general/angle_utils.cpp" bodystart="15" bodyend="27"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;argos_lib/general/angle_utils.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cmath&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;units/math.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">argos_lib::angle::ConstrainAngle;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">argos_lib::angle::InvertedAngle;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">argos_lib::angle::NearestAngle;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal">units::degree_t<sp/>argos_lib::angle::NearestAngle(units::degree_t<sp/>desiredAngle,<sp/>units::degree_t<sp/>referenceAngle)<sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>normalizedDesiredAngle<sp/>=<sp/>ConstrainAngle(desiredAngle,<sp/>0_deg,<sp/>360_deg);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>normalizedReferenceAngle<sp/>=<sp/>ConstrainAngle(referenceAngle,<sp/>0_deg,<sp/>360_deg);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>angleDiff<sp/>=<sp/>normalizedDesiredAngle<sp/>-<sp/>normalizedReferenceAngle;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Closest<sp/>equivalent<sp/>angle<sp/>is<sp/>across<sp/>discontinuity<sp/>point</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(units::math::fabs(angleDiff)<sp/>&gt;<sp/>180_deg)<sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>angleDiff<sp/>=<sp/>units::math::copysign(360_deg<sp/>-<sp/>units::math::fabs(angleDiff),<sp/>angleDiff<sp/>*<sp/>-1.0);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>referenceAngle<sp/>+<sp/>angleDiff;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal">units::degree_t<sp/>argos_lib::angle::InvertedAngle(units::degree_t<sp/>desiredAngle,<sp/>units::degree_t<sp/>referenceAngle)<sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Inverted<sp/>angle<sp/>is<sp/>180<sp/>degrees<sp/>offset<sp/>from<sp/>desired<sp/>angle<sp/>and<sp/>in<sp/>opposite<sp/>travel<sp/>direction<sp/>from<sp/>reference<sp/>angle</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>fwDist<sp/>=<sp/>ConstrainAngle(desiredAngle<sp/>-<sp/>referenceAngle,<sp/>-180_deg,<sp/>180_deg);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>revDistMag<sp/>=<sp/>180_deg<sp/>-<sp/>units::math::fabs(fwDist);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>referenceAngle<sp/>+<sp/>units::math::copysign(revDistMag,<sp/>-fwDist);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal">units::degree_t<sp/>argos_lib::angle::ConstrainAngle(units::degree_t<sp/>inVal,</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>units::degree_t<sp/>minVal,</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>units::degree_t<sp/>maxVal)<sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>range<sp/>=<sp/>maxVal<sp/>-<sp/>minVal;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/>inVal<sp/>=<sp/>units::math::fmod(inVal<sp/>-<sp/>minVal,<sp/>range);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(inVal<sp/>&lt;<sp/>0_deg)<sp/>{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>inVal<sp/>+=<sp/>range;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>inVal<sp/>+<sp/>minVal;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>argos_lib::angle::ConstrainAngle(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>inVal,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>minVal,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>maxVal)<sp/>{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ConstrainAngle(units::make_unit&lt;units::degree_t&gt;(inVal),</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>units::make_unit&lt;units::degree_t&gt;(minVal),</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>units::make_unit&lt;units::degree_t&gt;(maxVal))</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>.to&lt;</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&gt;();</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/general/angle_utils.cpp"/>
+  </compounddef>
+</doxygen>

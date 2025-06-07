@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="structargos__lib_1_1led_1_1_panel_scan_params" kind="struct" language="C++" prot="public">
+    <compoundname>argos_lib::led::PanelScanParams</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structargos__lib_1_1led_1_1_panel_scan_params_1ac8ab4201394ed4c1dcc3e87a0e51d33d" prot="public" static="no" mutable="no">
+        <type>FirstPixelPosition</type>
+        <definition>FirstPixelPosition argos_lib::led::PanelScanParams::firstPixel</definition>
+        <argsstring></argsstring>
+        <name>firstPixel</name>
+        <qualifiedname>argos_lib::led::PanelScanParams::firstPixel</qualifiedname>
+        <briefdescription>
+<para>Location of lowest address pixel. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/led/panel.h" line="107" column="26" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/led/panel.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structargos__lib_1_1led_1_1_panel_scan_params_1a0cd8b9718056ae025256d2becf260e1f" prot="public" static="no" mutable="no">
+        <type>PrimaryScanDirection</type>
+        <definition>PrimaryScanDirection argos_lib::led::PanelScanParams::scanDirection</definition>
+        <argsstring></argsstring>
+        <name>scanDirection</name>
+        <qualifiedname>argos_lib::led::PanelScanParams::scanDirection</qualifiedname>
+        <briefdescription>
+<para>Sequential address direction. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/led/panel.h" line="108" column="28" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/led/panel.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/led/panel.h" line="106" column="5" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/led/panel.h" bodystart="106" bodyend="109"/>
+    <listofallmembers>
+      <member refid="structargos__lib_1_1led_1_1_panel_scan_params_1ac8ab4201394ed4c1dcc3e87a0e51d33d" prot="public" virt="non-virtual"><scope>argos_lib::led::PanelScanParams</scope><name>firstPixel</name></member>
+      <member refid="structargos__lib_1_1led_1_1_panel_scan_params_1a0cd8b9718056ae025256d2becf260e1f" prot="public" virt="non-virtual"><scope>argos_lib::led::PanelScanParams</scope><name>scanDirection</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

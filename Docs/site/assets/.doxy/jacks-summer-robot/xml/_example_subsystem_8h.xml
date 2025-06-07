@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="_example_subsystem_8h" kind="file" language="C++">
+    <compoundname>ExampleSubsystem.h</compoundname>
+    <includes local="no">frc2/command/CommandPtr.h</includes>
+    <includes local="no">frc2/command/SubsystemBase.h</includes>
+    <includedby refid="_example_subsystem_8cpp" local="yes">C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/cpp/subsystems/ExampleSubsystem.cpp</includedby>
+    <includedby refid="_robot_container_8h" local="yes">C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/include/RobotContainer.h</includedby>
+    <includedby refid="_autos_8h" local="yes">C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/include/commands/Autos.h</includedby>
+    <includedby refid="_example_command_8h" local="yes">C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/include/commands/ExampleCommand.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/include/subsystems/ExampleSubsystem.h</label>
+        <link refid="_example_subsystem_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>frc2/command/CommandPtr.h</label>
+      </node>
+      <node id="3">
+        <label>frc2/command/SubsystemBase.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/include/Robot.h</label>
+        <link refid="_robot_8h_source"/>
+      </node>
+      <node id="2">
+        <label>C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/include/RobotContainer.h</label>
+        <link refid="_robot_container_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/include/commands/Autos.h</label>
+        <link refid="_autos_8h_source"/>
+      </node>
+      <node id="5">
+        <label>C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/include/commands/ExampleCommand.h</label>
+        <link refid="_example_command_8h_source"/>
+      </node>
+      <node id="1">
+        <label>C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/include/subsystems/ExampleSubsystem.h</label>
+        <link refid="_example_subsystem_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_example_subsystem" prot="public">ExampleSubsystem</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>FIRST<sp/>and<sp/>other<sp/>WPILib<sp/>contributors.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Open<sp/>Source<sp/>Software;<sp/>you<sp/>can<sp/>modify<sp/>and/or<sp/>share<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>the<sp/>WPILib<sp/>BSD<sp/>license<sp/>file<sp/>in<sp/>the<sp/>root<sp/>directory<sp/>of<sp/>this<sp/>project.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;frc2/command/CommandPtr.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;frc2/command/SubsystemBase.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="class_example_subsystem" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">ExampleSubsystem<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>frc2::SubsystemBase<sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/>ExampleSubsystem();</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/>frc2::CommandPtr<sp/><ref refid="class_example_subsystem_1a5c2ea6e0606b8417e9048b4acdd25c4f" kindref="member">ExampleMethodCommand</ref>();</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_example_subsystem_1a53ca16dd083c89be2a760436607031d9" kindref="member">ExampleCondition</ref>();</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_example_subsystem_1ae3a0c58819a31cca623fcb2fb8af0e1c" kindref="member">Periodic</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_example_subsystem_1a08d866697c4da747ff7aa906438ef99b" kindref="member">SimulationPeriodic</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Components<sp/>(e.g.<sp/>motor<sp/>controllers<sp/>and<sp/>sensors)<sp/>should<sp/>generally<sp/>be</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>declared<sp/>private<sp/>and<sp/>exposed<sp/>only<sp/>through<sp/>public<sp/>methods.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/include/subsystems/ExampleSubsystem.h"/>
+  </compounddef>
+</doxygen>

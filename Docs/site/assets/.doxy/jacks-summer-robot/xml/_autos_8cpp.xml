@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="_autos_8cpp" kind="file" language="C++">
+    <compoundname>Autos.cpp</compoundname>
+    <includes refid="_autos_8h" local="yes">commands/Autos.h</includes>
+    <includes local="no">frc2/command/Commands.h</includes>
+    <includes refid="_example_command_8h" local="yes">commands/ExampleCommand.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/cpp/commands/Autos.cpp</label>
+        <link refid="_autos_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>commands/Autos.h</label>
+        <link refid="_autos_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>commands/ExampleCommand.h</label>
+        <link refid="_example_command_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>subsystems/ExampleSubsystem.h</label>
+        <link refid="_example_subsystem_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>frc2/command/Command.h</label>
+      </node>
+      <node id="9">
+        <label>frc2/command/CommandHelper.h</label>
+      </node>
+      <node id="3">
+        <label>frc2/command/CommandPtr.h</label>
+      </node>
+      <node id="6">
+        <label>frc2/command/Commands.h</label>
+      </node>
+      <node id="5">
+        <label>frc2/command/SubsystemBase.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>FIRST<sp/>and<sp/>other<sp/>WPILib<sp/>contributors.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Open<sp/>Source<sp/>Software;<sp/>you<sp/>can<sp/>modify<sp/>and/or<sp/>share<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>the<sp/>WPILib<sp/>BSD<sp/>license<sp/>file<sp/>in<sp/>the<sp/>root<sp/>directory<sp/>of<sp/>this<sp/>project.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;commands/Autos.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;frc2/command/Commands.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;commands/ExampleCommand.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal">frc2::CommandPtr<sp/>autos::ExampleAuto(<ref refid="class_example_subsystem" kindref="compound">ExampleSubsystem</ref>*<sp/>subsystem)<sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>frc2::cmd::Sequence(subsystem-&gt;<ref refid="class_example_subsystem_1a5c2ea6e0606b8417e9048b4acdd25c4f" kindref="member">ExampleMethodCommand</ref>(),</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_example_command" kindref="compound">ExampleCommand</ref>(subsystem).ToPtr());</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/cpp/commands/Autos.cpp"/>
+  </compounddef>
+</doxygen>

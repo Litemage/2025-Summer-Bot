@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="structargos__lib_1_1swerve_1_1_swerve_module_positions" kind="struct" language="C++" prot="public">
+    <compoundname>argos_lib::swerve::SwerveModulePositions</compoundname>
+    <includes refid="swerve__utils_8h" local="no">swerve_utils.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structargos__lib_1_1swerve_1_1_swerve_module_positions_1a7e81cb46aec47df267355dedd2377153" prot="public" static="no" mutable="no">
+        <type>units::degree_t</type>
+        <definition>units::degree_t argos_lib::swerve::SwerveModulePositions::FrontLeft</definition>
+        <argsstring></argsstring>
+        <name>FrontLeft</name>
+        <qualifiedname>argos_lib::swerve::SwerveModulePositions::FrontLeft</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/swerve_utils.h" line="39" column="23" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/swerve_utils.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structargos__lib_1_1swerve_1_1_swerve_module_positions_1a1edbac66ab441e37c6c91da45f1ab01c" prot="public" static="no" mutable="no">
+        <type>units::degree_t</type>
+        <definition>units::degree_t argos_lib::swerve::SwerveModulePositions::FrontRight</definition>
+        <argsstring></argsstring>
+        <name>FrontRight</name>
+        <qualifiedname>argos_lib::swerve::SwerveModulePositions::FrontRight</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/swerve_utils.h" line="40" column="23" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/swerve_utils.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structargos__lib_1_1swerve_1_1_swerve_module_positions_1a4712a8b0b6eabababbf106a80cd579cc" prot="public" static="no" mutable="no">
+        <type>units::degree_t</type>
+        <definition>units::degree_t argos_lib::swerve::SwerveModulePositions::RearRight</definition>
+        <argsstring></argsstring>
+        <name>RearRight</name>
+        <qualifiedname>argos_lib::swerve::SwerveModulePositions::RearRight</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/swerve_utils.h" line="41" column="23" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/swerve_utils.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structargos__lib_1_1swerve_1_1_swerve_module_positions_1abc547e5a2397cd89b8600f0dbbff5e05" prot="public" static="no" mutable="no">
+        <type>units::degree_t</type>
+        <definition>units::degree_t argos_lib::swerve::SwerveModulePositions::RearLeft</definition>
+        <argsstring></argsstring>
+        <name>RearLeft</name>
+        <qualifiedname>argos_lib::swerve::SwerveModulePositions::RearLeft</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/swerve_utils.h" line="42" column="23" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/swerve_utils.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Representation of the absolute encoder position of each module at home position. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/swerve_utils.h" line="38" column="5" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/swerve_utils.h" bodystart="38" bodyend="43"/>
+    <listofallmembers>
+      <member refid="structargos__lib_1_1swerve_1_1_swerve_module_positions_1a7e81cb46aec47df267355dedd2377153" prot="public" virt="non-virtual"><scope>argos_lib::swerve::SwerveModulePositions</scope><name>FrontLeft</name></member>
+      <member refid="structargos__lib_1_1swerve_1_1_swerve_module_positions_1a1edbac66ab441e37c6c91da45f1ab01c" prot="public" virt="non-virtual"><scope>argos_lib::swerve::SwerveModulePositions</scope><name>FrontRight</name></member>
+      <member refid="structargos__lib_1_1swerve_1_1_swerve_module_positions_1abc547e5a2397cd89b8600f0dbbff5e05" prot="public" virt="non-virtual"><scope>argos_lib::swerve::SwerveModulePositions</scope><name>RearLeft</name></member>
+      <member refid="structargos__lib_1_1swerve_1_1_swerve_module_positions_1a4712a8b0b6eabababbf106a80cd579cc" prot="public" virt="non-virtual"><scope>argos_lib::swerve::SwerveModulePositions</scope><name>RearRight</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

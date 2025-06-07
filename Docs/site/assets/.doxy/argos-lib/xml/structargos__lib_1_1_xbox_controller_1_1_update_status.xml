@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="structargos__lib_1_1_xbox_controller_1_1_update_status" kind="struct" language="C++" prot="public">
+    <compoundname>argos_lib::XboxController::UpdateStatus</compoundname>
+    <includes refid="xbox__controller_8h" local="no">xbox_controller.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structargos__lib_1_1_xbox_controller_1_1_update_status_1a8b0dfa6c97d33cc308c1be26d6b3e180" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool argos_lib::XboxController::UpdateStatus::pressed</definition>
+        <argsstring></argsstring>
+        <name>pressed</name>
+        <qualifiedname>argos_lib::XboxController::UpdateStatus::pressed</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+<para>Transitioned from inactive to active. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/xbox_controller.h" line="49" column="12" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/xbox_controller.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structargos__lib_1_1_xbox_controller_1_1_update_status_1ad769829e7275b925a9ec9cafc70e198e" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool argos_lib::XboxController::UpdateStatus::released</definition>
+        <argsstring></argsstring>
+        <name>released</name>
+        <qualifiedname>argos_lib::XboxController::UpdateStatus::released</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+<para>Transitioned from active to inactive. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/xbox_controller.h" line="50" column="12" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/xbox_controller.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structargos__lib_1_1_xbox_controller_1_1_update_status_1ab2ccf7dddb335a48096822e9425e8d44" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool argos_lib::XboxController::UpdateStatus::debouncePress</definition>
+        <argsstring></argsstring>
+        <name>debouncePress</name>
+        <qualifiedname>argos_lib::XboxController::UpdateStatus::debouncePress</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+<para>Transitioned from inactive to active after debounce applied. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/xbox_controller.h" line="51" column="12" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/xbox_controller.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structargos__lib_1_1_xbox_controller_1_1_update_status_1ac501c6389960221bfa08cf7615155eb3" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool argos_lib::XboxController::UpdateStatus::debounceRelease</definition>
+        <argsstring></argsstring>
+        <name>debounceRelease</name>
+        <qualifiedname>argos_lib::XboxController::UpdateStatus::debounceRelease</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+<para>Transitioned from active to inactive after debounce applied. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/xbox_controller.h" line="52" column="12" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/xbox_controller.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structargos__lib_1_1_xbox_controller_1_1_update_status_1ac5ead71c2f9168bb43650a18606a104f" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool argos_lib::XboxController::UpdateStatus::rawActive</definition>
+        <argsstring></argsstring>
+        <name>rawActive</name>
+        <qualifiedname>argos_lib::XboxController::UpdateStatus::rawActive</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+<para>Raw button status. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/xbox_controller.h" line="53" column="12" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/xbox_controller.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structargos__lib_1_1_xbox_controller_1_1_update_status_1a6309274d7ea7260c5525dfc00ef3c4ec" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool argos_lib::XboxController::UpdateStatus::debounceActive</definition>
+        <argsstring></argsstring>
+        <name>debounceActive</name>
+        <qualifiedname>argos_lib::XboxController::UpdateStatus::debounceActive</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+<para><ref refid="classargos__lib_1_1_xbox_controller_1a067fb8b43b80533b5ec763b7105f40fc" kindref="member">Button</ref> status after debounce applied. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/xbox_controller.h" line="54" column="12" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/xbox_controller.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>State of an individual button. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/xbox_controller.h" line="48" column="5" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/xbox_controller.h" bodystart="48" bodyend="55"/>
+    <listofallmembers>
+      <member refid="structargos__lib_1_1_xbox_controller_1_1_update_status_1a6309274d7ea7260c5525dfc00ef3c4ec" prot="public" virt="non-virtual"><scope>argos_lib::XboxController::UpdateStatus</scope><name>debounceActive</name></member>
+      <member refid="structargos__lib_1_1_xbox_controller_1_1_update_status_1ab2ccf7dddb335a48096822e9425e8d44" prot="public" virt="non-virtual"><scope>argos_lib::XboxController::UpdateStatus</scope><name>debouncePress</name></member>
+      <member refid="structargos__lib_1_1_xbox_controller_1_1_update_status_1ac501c6389960221bfa08cf7615155eb3" prot="public" virt="non-virtual"><scope>argos_lib::XboxController::UpdateStatus</scope><name>debounceRelease</name></member>
+      <member refid="structargos__lib_1_1_xbox_controller_1_1_update_status_1a8b0dfa6c97d33cc308c1be26d6b3e180" prot="public" virt="non-virtual"><scope>argos_lib::XboxController::UpdateStatus</scope><name>pressed</name></member>
+      <member refid="structargos__lib_1_1_xbox_controller_1_1_update_status_1ac5ead71c2f9168bb43650a18606a104f" prot="public" virt="non-virtual"><scope>argos_lib::XboxController::UpdateStatus</scope><name>rawActive</name></member>
+      <member refid="structargos__lib_1_1_xbox_controller_1_1_update_status_1ad769829e7275b925a9ec9cafc70e198e" prot="public" virt="non-virtual"><scope>argos_lib::XboxController::UpdateStatus</scope><name>released</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

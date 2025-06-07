@@ -1,0 +1,360 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classargos__lib_1_1_l_e_d_subsystem" kind="class" language="C++" prot="public">
+    <compoundname>argos_lib::LEDSubsystem</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">frc2::SubsystemBase</basecompoundref>
+    <innerclass refid="structargos__lib_1_1_l_e_d_subsystem_1_1_l_e_d_update_group" prot="private">argos_lib::LEDSubsystem::LEDUpdateGroup</innerclass>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classargos__lib_1_1_l_e_d_subsystem_1a598520267ea78b6f488039054f20d322" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structargos__lib_1_1_l_e_d_state" kindref="compound">LEDState</ref> &gt;</type>
+        <definition>std::vector&lt;LEDState&gt; argos_lib::LEDSubsystem::m_currentLEDs</definition>
+        <argsstring></argsstring>
+        <name>m_currentLEDs</name>
+        <qualifiedname>argos_lib::LEDSubsystem::m_currentLEDs</qualifiedname>
+        <briefdescription>
+<para>LED status to send as update. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/subsystems/led_subsystem.h" line="98" column="17" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/subsystems/led_subsystem.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classargos__lib_1_1_l_e_d_subsystem_1a32d7bfca14ac94af5072c24b2a21cf0a" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structargos__lib_1_1_l_e_d_state" kindref="compound">LEDState</ref> &gt;</type>
+        <definition>std::vector&lt;LEDState&gt; argos_lib::LEDSubsystem::m_prevLEDs</definition>
+        <argsstring></argsstring>
+        <name>m_prevLEDs</name>
+        <qualifiedname>argos_lib::LEDSubsystem::m_prevLEDs</qualifiedname>
+        <briefdescription>
+<para>LED status prior to last update. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/subsystems/led_subsystem.h" line="99" column="17" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/subsystems/led_subsystem.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classargos__lib_1_1_l_e_d_subsystem_1a69d367470f4bbf36972913fd4a5950c5" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structargos__lib_1_1led_1_1_animation" kindref="compound">argos_lib::led::Animation</ref> &gt;</type>
+        <definition>std::vector&lt;argos_lib::led::Animation&gt; argos_lib::LEDSubsystem::m_customAnimations</definition>
+        <argsstring></argsstring>
+        <name>m_customAnimations</name>
+        <qualifiedname>argos_lib::LEDSubsystem::m_customAnimations</qualifiedname>
+        <briefdescription>
+<para>Active animations. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/subsystems/led_subsystem.h" line="100" column="17" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/subsystems/led_subsystem.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classargos__lib_1_1_l_e_d_subsystem_1abb0f0867d6b1eed6c6f998d35a5f3dc8" prot="private" static="no" mutable="no">
+        <type>ctre::phoenix::led::CANdle</type>
+        <definition>ctre::phoenix::led::CANdle argos_lib::LEDSubsystem::m_controller</definition>
+        <argsstring></argsstring>
+        <name>m_controller</name>
+        <qualifiedname>argos_lib::LEDSubsystem::m_controller</qualifiedname>
+        <briefdescription>
+<para>LED controller instance with attached LEDs. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/subsystems/led_subsystem.h" line="101" column="32" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/subsystems/led_subsystem.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classargos__lib_1_1_l_e_d_subsystem_1a17fad4ac33041d34032982e4e4e03739" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned argos_lib::LEDSubsystem::numIntegratedLEDs</definition>
+        <argsstring></argsstring>
+        <name>numIntegratedLEDs</name>
+        <qualifiedname>argos_lib::LEDSubsystem::numIntegratedLEDs</qualifiedname>
+        <initializer>= 8</initializer>
+        <briefdescription>
+<para>Number of LEDs addressed before attached LED strip/panel. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/subsystems/led_subsystem.h" line="103" column="31" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/subsystems/led_subsystem.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classargos__lib_1_1_l_e_d_subsystem_1a90374bc412ff22fd88cee40649523bb2" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>LEDSubsystem::LEDSubsystem</definition>
+        <argsstring>(unsigned numAuxLEDs)</argsstring>
+        <name>LEDSubsystem</name>
+        <qualifiedname>argos_lib::LEDSubsystem::LEDSubsystem</qualifiedname>
+        <param>
+          <type>unsigned</type>
+          <declname>numAuxLEDs</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new <ref refid="classargos__lib_1_1_l_e_d_subsystem" kindref="compound">LEDSubsystem</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>numAuxLEDs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of LEDs attached to the CANdle </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/subsystems/led_subsystem.h" line="58" column="14" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/subsystems/led_subsystem.cpp" bodystart="31" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classargos__lib_1_1_l_e_d_subsystem_1a8ce3b116c8d583117bddd7b04f865a55" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LEDSubsystem::Periodic</definition>
+        <argsstring>() override</argsstring>
+        <name>Periodic</name>
+        <qualifiedname>argos_lib::LEDSubsystem::Periodic</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Will be called periodically whenever the CommandScheduler runs. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/subsystems/led_subsystem.h" line="63" column="10" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/subsystems/led_subsystem.cpp" bodystart="36" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classargos__lib_1_1_l_e_d_subsystem_1a8b61599c033bed404f3e4b140722bcf1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LEDSubsystem::StockAnimateAuxLEDs</definition>
+        <argsstring>(ctre::phoenix::led::Animation &amp;animation, int slot)</argsstring>
+        <name>StockAnimateAuxLEDs</name>
+        <qualifiedname>argos_lib::LEDSubsystem::StockAnimateAuxLEDs</qualifiedname>
+        <param>
+          <type>ctre::phoenix::led::Animation &amp;</type>
+          <declname>animation</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>slot</declname>
+        </param>
+        <briefdescription>
+<para>Set LEDs in attached strip/panel to use stock animation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>animation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Animation to assign where led offset 0 is beginning of attached LEDs </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>slot</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Animation slot to use </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/subsystems/led_subsystem.h" line="71" column="10" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/subsystems/led_subsystem.cpp" bodystart="50" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classargos__lib_1_1_l_e_d_subsystem_1a0d379f01885f3fe7ad31dd2f0063d299" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LEDSubsystem::StockAnimateIntegratedLEDs</definition>
+        <argsstring>(ctre::phoenix::led::Animation &amp;animation, int slot)</argsstring>
+        <name>StockAnimateIntegratedLEDs</name>
+        <qualifiedname>argos_lib::LEDSubsystem::StockAnimateIntegratedLEDs</qualifiedname>
+        <param>
+          <type>ctre::phoenix::led::Animation &amp;</type>
+          <declname>animation</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>slot</declname>
+        </param>
+        <briefdescription>
+<para>Set LEDs built into CANdle to use stock animation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>animation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Animation to assign </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>slot</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Animation slot to use </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/subsystems/led_subsystem.h" line="79" column="10" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/subsystems/led_subsystem.cpp" bodystart="56" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classargos__lib_1_1_l_e_d_subsystem_1a878699f90e7ab3ffb04c553357ff8203" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LEDSubsystem::CustomAnimateAuxLEDs</definition>
+        <argsstring>(argos_lib::led::Animation animation)</argsstring>
+        <name>CustomAnimateAuxLEDs</name>
+        <qualifiedname>argos_lib::LEDSubsystem::CustomAnimateAuxLEDs</qualifiedname>
+        <param>
+          <type><ref refid="structargos__lib_1_1led_1_1_animation" kindref="compound">argos_lib::led::Animation</ref></type>
+          <declname>animation</declname>
+        </param>
+        <briefdescription>
+<para>Set LEDs in attached strip/panel to use custom animation. The LEDs will be updated on every call of the subsystem periodic function. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>animation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Animation to use where led offset 0 is beginning of attached LEDs </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/subsystems/led_subsystem.h" line="87" column="10" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/subsystems/led_subsystem.cpp" bodystart="64" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classargos__lib_1_1_l_e_d_subsystem_1ab8afc83e62ce13ce6b15b34f8e9374ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LEDSubsystem::CustomAnimateIntegratedLEDs</definition>
+        <argsstring>(argos_lib::led::Animation animation)</argsstring>
+        <name>CustomAnimateIntegratedLEDs</name>
+        <qualifiedname>argos_lib::LEDSubsystem::CustomAnimateIntegratedLEDs</qualifiedname>
+        <param>
+          <type><ref refid="structargos__lib_1_1led_1_1_animation" kindref="compound">argos_lib::led::Animation</ref></type>
+          <declname>animation</declname>
+        </param>
+        <briefdescription>
+<para>Set LEDs built into CANdle to use custom animation. The LEDs will be updated on every call of the subsystem periodic function. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>animation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Animation to use </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/subsystems/led_subsystem.h" line="95" column="10" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/subsystems/led_subsystem.cpp" bodystart="72" bodyend="80"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classargos__lib_1_1_l_e_d_subsystem_1a9f2381091d179186293cf070a0283991" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; LEDUpdateGroup &gt;</type>
+        <definition>std::vector&lt; LEDSubsystem::LEDUpdateGroup &gt; LEDSubsystem::GetDeltaUpdate</definition>
+        <argsstring>(const std::vector&lt; LEDState &gt; &amp;prev, const std::vector&lt; LEDState &gt; &amp;current)</argsstring>
+        <name>GetDeltaUpdate</name>
+        <qualifiedname>argos_lib::LEDSubsystem::GetDeltaUpdate</qualifiedname>
+        <param>
+          <type>const std::vector&lt; <ref refid="structargos__lib_1_1_l_e_d_state" kindref="compound">LEDState</ref> &gt; &amp;</type>
+          <declname>prev</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="structargos__lib_1_1_l_e_d_state" kindref="compound">LEDState</ref> &gt; &amp;</type>
+          <declname>current</declname>
+        </param>
+        <briefdescription>
+<para>Get sendable LED block updates to change from prev to current. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>prev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Old LED state </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>current</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New LED state </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>std::vector&lt;LEDUpdateGroup&gt; Minimal set of updates to change from prev to current </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/subsystems/led_subsystem.h" line="112" column="17" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/subsystems/led_subsystem.cpp" bodystart="82" bodyend="111"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>argos_lib::LEDSubsystem</label>
+        <link refid="classargos__lib_1_1_l_e_d_subsystem"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>frc2::SubsystemBase</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>argos_lib::LEDSubsystem</label>
+        <link refid="classargos__lib_1_1_l_e_d_subsystem"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>frc2::SubsystemBase</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/subsystems/led_subsystem.h" line="47" column="3" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/subsystems/led_subsystem.h" bodystart="47" bodyend="132"/>
+    <listofallmembers>
+      <member refid="classargos__lib_1_1_l_e_d_subsystem_1a878699f90e7ab3ffb04c553357ff8203" prot="public" virt="non-virtual"><scope>argos_lib::LEDSubsystem</scope><name>CustomAnimateAuxLEDs</name></member>
+      <member refid="classargos__lib_1_1_l_e_d_subsystem_1ab8afc83e62ce13ce6b15b34f8e9374ca" prot="public" virt="non-virtual"><scope>argos_lib::LEDSubsystem</scope><name>CustomAnimateIntegratedLEDs</name></member>
+      <member refid="classargos__lib_1_1_l_e_d_subsystem_1a9f2381091d179186293cf070a0283991" prot="private" virt="non-virtual"><scope>argos_lib::LEDSubsystem</scope><name>GetDeltaUpdate</name></member>
+      <member refid="classargos__lib_1_1_l_e_d_subsystem_1a90374bc412ff22fd88cee40649523bb2" prot="public" virt="non-virtual"><scope>argos_lib::LEDSubsystem</scope><name>LEDSubsystem</name></member>
+      <member refid="classargos__lib_1_1_l_e_d_subsystem_1abb0f0867d6b1eed6c6f998d35a5f3dc8" prot="private" virt="non-virtual"><scope>argos_lib::LEDSubsystem</scope><name>m_controller</name></member>
+      <member refid="classargos__lib_1_1_l_e_d_subsystem_1a598520267ea78b6f488039054f20d322" prot="private" virt="non-virtual"><scope>argos_lib::LEDSubsystem</scope><name>m_currentLEDs</name></member>
+      <member refid="classargos__lib_1_1_l_e_d_subsystem_1a69d367470f4bbf36972913fd4a5950c5" prot="private" virt="non-virtual"><scope>argos_lib::LEDSubsystem</scope><name>m_customAnimations</name></member>
+      <member refid="classargos__lib_1_1_l_e_d_subsystem_1a32d7bfca14ac94af5072c24b2a21cf0a" prot="private" virt="non-virtual"><scope>argos_lib::LEDSubsystem</scope><name>m_prevLEDs</name></member>
+      <member refid="classargos__lib_1_1_l_e_d_subsystem_1a17fad4ac33041d34032982e4e4e03739" prot="private" virt="non-virtual"><scope>argos_lib::LEDSubsystem</scope><name>numIntegratedLEDs</name></member>
+      <member refid="classargos__lib_1_1_l_e_d_subsystem_1a8ce3b116c8d583117bddd7b04f865a55" prot="public" virt="non-virtual"><scope>argos_lib::LEDSubsystem</scope><name>Periodic</name></member>
+      <member refid="classargos__lib_1_1_l_e_d_subsystem_1a8b61599c033bed404f3e4b140722bcf1" prot="public" virt="non-virtual"><scope>argos_lib::LEDSubsystem</scope><name>StockAnimateAuxLEDs</name></member>
+      <member refid="classargos__lib_1_1_l_e_d_subsystem_1a0d379f01885f3fe7ad31dd2f0063d299" prot="public" virt="non-virtual"><scope>argos_lib::LEDSubsystem</scope><name>StockAnimateIntegratedLEDs</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

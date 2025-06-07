@@ -1,0 +1,171 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classargos__lib_1_1_hysteresis_filter" kind="class" language="C++" prot="public">
+    <compoundname>argos_lib::HysteresisFilter</compoundname>
+    <includes refid="hysteresis__filter_8h" local="no">hysteresis_filter.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classargos__lib_1_1_hysteresis_filter_1a4ed4f4030b84b9c34f1f429c494a57ff" prot="private" static="no" mutable="no">
+        <type>const T</type>
+        <definition>const T argos_lib::HysteresisFilter&lt; T &gt;::m_activateThreshold</definition>
+        <argsstring></argsstring>
+        <name>m_activateThreshold</name>
+        <qualifiedname>argos_lib::HysteresisFilter::m_activateThreshold</qualifiedname>
+        <briefdescription>
+<para>Threshold above which output becomes true. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/hysteresis_filter.h" line="48" column="13" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/hysteresis_filter.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classargos__lib_1_1_hysteresis_filter_1acceba91654ec49959ff3c5524ae7b176" prot="private" static="no" mutable="no">
+        <type>const T</type>
+        <definition>const T argos_lib::HysteresisFilter&lt; T &gt;::m_deactivateThreshold</definition>
+        <argsstring></argsstring>
+        <name>m_deactivateThreshold</name>
+        <qualifiedname>argos_lib::HysteresisFilter::m_deactivateThreshold</qualifiedname>
+        <briefdescription>
+<para>Threshold below which output becomes false. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/hysteresis_filter.h" line="49" column="13" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/hysteresis_filter.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classargos__lib_1_1_hysteresis_filter_1afddf5faa134b6d07cf2252ad9a5d176f" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool argos_lib::HysteresisFilter&lt; T &gt;::m_currentState</definition>
+        <argsstring></argsstring>
+        <name>m_currentState</name>
+        <qualifiedname>argos_lib::HysteresisFilter::m_currentState</qualifiedname>
+        <briefdescription>
+<para>Latest state after applying hysteresis. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/hysteresis_filter.h" line="50" column="10" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/hysteresis_filter.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classargos__lib_1_1_hysteresis_filter_1a71893324ea8606f6716261b14d79a20b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>argos_lib::HysteresisFilter&lt; T &gt;::HysteresisFilter</definition>
+        <argsstring>()=delete</argsstring>
+        <name>HysteresisFilter</name>
+        <qualifiedname>argos_lib::HysteresisFilter::HysteresisFilter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/hysteresis_filter.h" line="17" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classargos__lib_1_1_hysteresis_filter_1a48bc031f5d458919079c7329a1ab77ad" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>argos_lib::HysteresisFilter&lt; T &gt;::HysteresisFilter</definition>
+        <argsstring>(T deactivateThreshold, T activateThreshold)</argsstring>
+        <name>HysteresisFilter</name>
+        <qualifiedname>argos_lib::HysteresisFilter::HysteresisFilter</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>deactivateThreshold</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>activateThreshold</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new Hysteresis Filter object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>deactivateThreshold</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value below which output becomes false </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>activateThreshold</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value above which output becomes true </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/hysteresis_filter.h" line="25" column="5" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/hysteresis_filter.h" bodystart="25" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classargos__lib_1_1_hysteresis_filter_1adf15eb7ada6ce95b723069cddcdcd951" prot="public" static="no" nodiscard="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool argos_lib::HysteresisFilter&lt; T &gt;::operator()</definition>
+        <argsstring>(T newValue)</argsstring>
+        <name>operator()</name>
+        <qualifiedname>argos_lib::HysteresisFilter::operator()</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>newValue</declname>
+        </param>
+        <briefdescription>
+<para>Gets new status after applying hysteresis. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>newValue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Latest raw value to update the filter </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Filtered value after applying newValue </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/hysteresis_filter.h" line="34" column="11" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/hysteresis_filter.h" bodystart="34" bodyend="45"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>A simple hysteresis filter for giving a bool output for a threshold. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of threshold values </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+    </detaileddescription>
+    <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/hysteresis_filter.h" line="15" column="3" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/hysteresis_filter.h" bodystart="15" bodyend="51"/>
+    <listofallmembers>
+      <member refid="classargos__lib_1_1_hysteresis_filter_1a71893324ea8606f6716261b14d79a20b" prot="public" virt="non-virtual"><scope>argos_lib::HysteresisFilter</scope><name>HysteresisFilter</name></member>
+      <member refid="classargos__lib_1_1_hysteresis_filter_1a48bc031f5d458919079c7329a1ab77ad" prot="public" virt="non-virtual"><scope>argos_lib::HysteresisFilter</scope><name>HysteresisFilter</name></member>
+      <member refid="classargos__lib_1_1_hysteresis_filter_1a4ed4f4030b84b9c34f1f429c494a57ff" prot="private" virt="non-virtual"><scope>argos_lib::HysteresisFilter</scope><name>m_activateThreshold</name></member>
+      <member refid="classargos__lib_1_1_hysteresis_filter_1afddf5faa134b6d07cf2252ad9a5d176f" prot="private" virt="non-virtual"><scope>argos_lib::HysteresisFilter</scope><name>m_currentState</name></member>
+      <member refid="classargos__lib_1_1_hysteresis_filter_1acceba91654ec49959ff3c5524ae7b176" prot="private" virt="non-virtual"><scope>argos_lib::HysteresisFilter</scope><name>m_deactivateThreshold</name></member>
+      <member refid="classargos__lib_1_1_hysteresis_filter_1adf15eb7ada6ce95b723069cddcdcd951" prot="public" virt="non-virtual"><scope>argos_lib::HysteresisFilter</scope><name>operator()</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

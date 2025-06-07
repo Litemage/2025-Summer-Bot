@@ -1,0 +1,664 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="namespaceargos__lib_1_1led_1_1animation" kind="namespace" language="C++">
+    <compoundname>argos_lib::led::animation</compoundname>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="animiation_8h_1a15c181fa4d04e77baac4a0d838d5038f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structargos__lib_1_1led_1_1_animation" kindref="compound">Animation</ref></type>
+        <definition>argos_lib::led::Animation argos_lib::led::animation::Pong</definition>
+        <argsstring>(unsigned offset, unsigned width, unsigned height, unsigned ballSize, bool rainbow, frc::AddressableLED::LEDData ballColor, frc::AddressableLED::LEDData backgroundColor, units::millisecond_t frameTime, argos_lib::led::PanelScanParams scanParams)</argsstring>
+        <name>Pong</name>
+        <qualifiedname>argos_lib::led::animation::Pong</qualifiedname>
+        <param>
+          <type>unsigned</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>ballSize</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>rainbow</declname>
+        </param>
+        <param>
+          <type>frc::AddressableLED::LEDData</type>
+          <declname>ballColor</declname>
+        </param>
+        <param>
+          <type>frc::AddressableLED::LEDData</type>
+          <declname>backgroundColor</declname>
+        </param>
+        <param>
+          <type>units::millisecond_t</type>
+          <declname>frameTime</declname>
+        </param>
+        <param>
+          <type><ref refid="structargos__lib_1_1led_1_1_panel_scan_params" kindref="compound">argos_lib::led::PanelScanParams</ref></type>
+          <declname>scanParams</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="structargos__lib_1_1led_1_1_animation" kindref="compound">Animation</ref> that kind of works like a DVD player screensaver (<ulink url="https://youtu.be/QOtuX0jL85Y">https://youtu.be/QOtuX0jL85Y</ulink>). A ball bounces around the panel changing color. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Address of first LED in controlled panel </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Width of panel in pixels </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Height of panel in pixels </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ballSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Width and height of ball in pixels (it&apos;s a square... a circle would basically be the same at this size and I&apos;m lazy) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rainbow</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>When true, ball changes to a random hue on every bounce! </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ballColor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Initial color of the bouncing ball </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>backgroundColor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Background color behind the ball </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>frameTime</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time for ball to travel one pixel distance </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>scanParams</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Parameters controlling the serialization of the internal panel to pixel addresses </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="structargos__lib_1_1led_1_1_animation" kindref="compound">Animation</ref> to use to control a panel with this animation pattern</para>
+</simplesect>
+<simplesect kind="copyright"><para>Copyright (c) Argos FRC Team 1756. Open Source Software; you can modify and/or share it under the terms of the license file in the root directory of this project. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/led/animiation.h" line="68" column="17" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/led/animation.cpp" bodystart="16" bodyend="105" declfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/led/animiation.h" declline="68" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="animiation_8h_1ac1b6b5807415125daae8bf6b21595d03" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>AnimatedSprite</type>
+        <definition>argos_lib::led::AnimatedSprite argos_lib::led::animation::ChompingPacMan</definition>
+        <argsstring>(float radius, frc::AddressableLED::LEDData color, units::degree_t direction, units::millisecond_t chompPeriod, bool feathered=false)</argsstring>
+        <name>ChompingPacMan</name>
+        <qualifiedname>argos_lib::led::animation::ChompingPacMan</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>radius</declname>
+        </param>
+        <param>
+          <type>frc::AddressableLED::LEDData</type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>units::degree_t</type>
+          <declname>direction</declname>
+        </param>
+        <param>
+          <type>units::millisecond_t</type>
+          <declname>chompPeriod</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>feathered</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/led/animiation.h" line="78" column="22" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/led/animation.cpp" bodystart="107" bodyend="121" declfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/led/animiation.h" declline="78" declcolumn="22"/>
+      </memberdef>
+      <memberdef kind="function" id="animiation_8h_1a994a030e07a56f5f69fe038e9e8a36d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>AnimatedSprite</type>
+        <definition>argos_lib::led::AnimatedSprite argos_lib::led::animation::DyingPacMan</definition>
+        <argsstring>(float radius, frc::AddressableLED::LEDData color, units::degree_t direction, units::degree_t initialMouthAngle, units::millisecond_t animationTime, bool feathered=false)</argsstring>
+        <name>DyingPacMan</name>
+        <qualifiedname>argos_lib::led::animation::DyingPacMan</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>radius</declname>
+        </param>
+        <param>
+          <type>frc::AddressableLED::LEDData</type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>units::degree_t</type>
+          <declname>direction</declname>
+        </param>
+        <param>
+          <type>units::degree_t</type>
+          <declname>initialMouthAngle</declname>
+        </param>
+        <param>
+          <type>units::millisecond_t</type>
+          <declname>animationTime</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>feathered</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/led/animiation.h" line="83" column="22" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/led/animation.cpp" bodystart="123" bodyend="147" declfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/led/animiation.h" declline="83" declcolumn="22"/>
+      </memberdef>
+      <memberdef kind="function" id="animiation_8h_1a00da75b4bb72c0f93df2e4eaa9602326" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structargos__lib_1_1led_1_1_animation" kindref="compound">Animation</ref></type>
+        <definition>argos_lib::led::Animation argos_lib::led::animation::PacManPacing</definition>
+        <argsstring>(unsigned offset, unsigned width, unsigned height, bool rainbow, frc::AddressableLED::LEDData pacManColor, argos_lib::led::PrimaryScanDirection paceDirection, units::millisecond_t chompPeriod, units::millisecond_t moveSpeed, argos_lib::led::PanelScanParams scanParams, bool feathered=false)</argsstring>
+        <name>PacManPacing</name>
+        <qualifiedname>argos_lib::led::animation::PacManPacing</qualifiedname>
+        <param>
+          <type>unsigned</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>rainbow</declname>
+        </param>
+        <param>
+          <type>frc::AddressableLED::LEDData</type>
+          <declname>pacManColor</declname>
+        </param>
+        <param>
+          <type>argos_lib::led::PrimaryScanDirection</type>
+          <declname>paceDirection</declname>
+        </param>
+        <param>
+          <type>units::millisecond_t</type>
+          <declname>chompPeriod</declname>
+        </param>
+        <param>
+          <type>units::millisecond_t</type>
+          <declname>moveSpeed</declname>
+        </param>
+        <param>
+          <type><ref refid="structargos__lib_1_1led_1_1_panel_scan_params" kindref="compound">argos_lib::led::PanelScanParams</ref></type>
+          <declname>scanParams</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>feathered</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/led/animiation.h" line="90" column="17" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/led/animation.cpp" bodystart="149" bodyend="352" declfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/led/animiation.h" declline="90" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="animiation_8h_1a41d631893e3f31e2ad25db659590217f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void argos_lib::led::animation::DrawRectangle</definition>
+        <argsstring>(Panel &amp;dest, unsigned rectWidth, unsigned rectHeight, float x, float y, frc::AddressableLED::LEDData color)</argsstring>
+        <name>DrawRectangle</name>
+        <qualifiedname>argos_lib::led::animation::DrawRectangle</qualifiedname>
+        <param>
+          <type><ref refid="classargos__lib_1_1led_1_1_array2_d" kindref="compound">Panel</ref> &amp;</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>rectWidth</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>rectHeight</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>frc::AddressableLED::LEDData</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+<para>Draws an axis-aligned rectangle to a panel. All pixels outside the rectangle are unmodified. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dest</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Panel to draw to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rectWidth</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Width of rectangle in pixels </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rectHeight</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Height of rectangle in pixels </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Rectangle center x coordinate </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Rectangle center y coordinate </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Color of drawn rectangle </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/led/animiation.h" line="111" column="12" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/led/animation.cpp" bodystart="354" bodyend="366" declfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/led/animiation.h" declline="111" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="animiation_8h_1a3945140d49f7ade8fae8ad010c9718d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void argos_lib::led::animation::DrawCircle</definition>
+        <argsstring>(Panel &amp;dest, float radius, float x, float y, frc::AddressableLED::LEDData color, bool feathered=false)</argsstring>
+        <name>DrawCircle</name>
+        <qualifiedname>argos_lib::led::animation::DrawCircle</qualifiedname>
+        <param>
+          <type><ref refid="classargos__lib_1_1led_1_1_array2_d" kindref="compound">Panel</ref> &amp;</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>radius</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>frc::AddressableLED::LEDData</type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>feathered</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Draw a circle to the panel. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dest</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Panel to draw to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>float</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>radius </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Horizontal center </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vertical center </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Fill color </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>feathered</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>When true, make border pixels semi-transparent to soften edge </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/led/animiation.h" line="124" column="12" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/led/animation.cpp" bodystart="368" bodyend="372" declfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/led/animiation.h" declline="124" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="animiation_8h_1a9c525f501308447e54e3e38097dab2fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structargos__lib_1_1led_1_1_sprite" kindref="compound">Sprite</ref></type>
+        <definition>argos_lib::led::Sprite argos_lib::led::animation::DrawCircleSprite</definition>
+        <argsstring>(float radius, frc::AddressableLED::LEDData color, bool feathered=false)</argsstring>
+        <name>DrawCircleSprite</name>
+        <qualifiedname>argos_lib::led::animation::DrawCircleSprite</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>radius</declname>
+        </param>
+        <param>
+          <type>frc::AddressableLED::LEDData</type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>feathered</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Generate a sprite containing a circle with transparent background. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>radius</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Radius in pixels </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Fill color </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>feathered</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>When true, make border pixels semi-transparent to soften edge </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="structargos__lib_1_1led_1_1_sprite" kindref="compound">Sprite</ref> within square canvas with edge size ceil(2*radius) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/led/animiation.h" line="135" column="14" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/led/animation.cpp" bodystart="374" bodyend="400" declfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/led/animiation.h" declline="135" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="animiation_8h_1a69274fb7fe440c5414f44c8d50f59ee5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void argos_lib::led::animation::RenderSprite</definition>
+        <argsstring>(Panel &amp;dest, const Sprite &amp;sprite, float x, float y, float alpha=1.0)</argsstring>
+        <name>RenderSprite</name>
+        <qualifiedname>argos_lib::led::animation::RenderSprite</qualifiedname>
+        <param>
+          <type><ref refid="classargos__lib_1_1led_1_1_array2_d" kindref="compound">Panel</ref> &amp;</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structargos__lib_1_1led_1_1_sprite" kindref="compound">Sprite</ref> &amp;</type>
+          <declname>sprite</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>alpha</declname>
+          <defval>1.0</defval>
+        </param>
+        <briefdescription>
+<para>Draw a sprite centered at a point to a panel. This will align the sprite to the nearest pixel alignment on the panel. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dest</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Panel to draw to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sprite</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structargos__lib_1_1led_1_1_sprite" kindref="compound">Sprite</ref> to draw </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Horizontal center </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vertical center </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Global sprite transparency where 0 is fully transparent and 1 is fully opaque </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/led/animiation.h" line="147" column="12" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/led/animation.cpp" bodystart="402" bodyend="424" declfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/led/animiation.h" declline="147" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="animiation_8h_1a708a5e8f8f387d6688c0817e67ef0c86" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structargos__lib_1_1led_1_1_sprite" kindref="compound">Sprite</ref></type>
+        <definition>argos_lib::led::Sprite argos_lib::led::animation::DrawPacMan</definition>
+        <argsstring>(float radius, frc::AddressableLED::LEDData color, units::degree_t direction, units::degree_t mouthAngle, bool feathered=false)</argsstring>
+        <name>DrawPacMan</name>
+        <qualifiedname>argos_lib::led::animation::DrawPacMan</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>radius</declname>
+        </param>
+        <param>
+          <type>frc::AddressableLED::LEDData</type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>units::degree_t</type>
+          <declname>direction</declname>
+        </param>
+        <param>
+          <type>units::degree_t</type>
+          <declname>mouthAngle</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>feathered</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Generate PacMan sprite :D. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>radius</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Radius of our fearless hero </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Why does he <emphasis>have</emphasis> to be yellow? </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>direction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mouth direction </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mouthAngle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Jaw separation angle from mandible to palate </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>feathered</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>When true, make border pixels semi-transparent to soften edge </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>PacMan </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/led/animiation.h" line="159" column="14" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/led/animation.cpp" bodystart="426" bodyend="469" declfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/led/animiation.h" declline="159" declcolumn="14"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/led/animiation.h" line="51" column="5"/>
+  </compounddef>
+</doxygen>

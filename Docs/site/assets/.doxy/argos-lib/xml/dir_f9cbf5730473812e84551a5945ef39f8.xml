@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="dir_f9cbf5730473812e84551a5945ef39f8" kind="dir">
+    <compoundname>C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib</compoundname>
+    <innerdir refid="dir_cf4b00708d9639a2579b4441eb30ca52">C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp</innerdir>
+    <innerdir refid="dir_0330651415bf66743a1cd99e3d0db0bc">C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include</innerdir>
+    <innerdir refid="dir_8362aa97a1d745aa00f462ada9d778c3">C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/test</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/"/>
+  </compounddef>
+</doxygen>

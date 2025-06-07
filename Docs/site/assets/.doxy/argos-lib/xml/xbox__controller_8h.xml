@@ -1,0 +1,236 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="xbox__controller_8h" kind="file" language="C++">
+    <compoundname>xbox_controller.h</compoundname>
+    <includes local="no">frc/GenericHID.h</includes>
+    <includes local="no">frc2/command/button/Trigger.h</includes>
+    <includes local="no">array</includes>
+    <includes local="no">vector</includes>
+    <includes refid="debounce__settings_8h" local="yes">argos_lib/general/debounce_settings.h</includes>
+    <includes refid="vibration_8h" local="yes">vibration.h</includes>
+    <includedby refid="xbox__controller_8cpp" local="yes">C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/controller/xbox_controller.cpp</includedby>
+    <includedby refid="swappable__controllers__subsystem_8h" local="yes">C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/subsystems/swappable_controllers_subsystem.h</includedby>
+    <incdepgraph>
+      <node id="8">
+        <label>vibration.h</label>
+        <link refid="vibration_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/xbox_controller.h</label>
+        <link refid="xbox__controller_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>argos_lib/general/debounce_settings.h</label>
+        <link refid="debounce__settings_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>array</label>
+      </node>
+      <node id="2">
+        <label>frc/GenericHID.h</label>
+      </node>
+      <node id="3">
+        <label>frc2/command/button/Trigger.h</label>
+      </node>
+      <node id="9">
+        <label>functional</label>
+      </node>
+      <node id="7">
+        <label>units/time.h</label>
+      </node>
+      <node id="5">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/commands/swap_controllers_command.h</label>
+        <link refid="swap__controllers__command_8h_source"/>
+      </node>
+      <node id="1">
+        <label>C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/xbox_controller.h</label>
+        <link refid="xbox__controller_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/subsystems/swappable_controllers_subsystem.h</label>
+        <link refid="swappable__controllers__subsystem_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classargos__lib_1_1_xbox_controller" prot="public">argos_lib::XboxController</innerclass>
+    <innerclass refid="structargos__lib_1_1_xbox_controller_1_1_update_status" prot="public">argos_lib::XboxController::UpdateStatus</innerclass>
+    <innerclass refid="structargos__lib_1_1_xbox_controller_1_1_d_pad_buttons" prot="private">argos_lib::XboxController::DPadButtons</innerclass>
+    <innernamespace refid="namespaceargos__lib">argos_lib</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;frc/GenericHID.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;frc2/command/button/Trigger.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;array&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;argos_lib/general/debounce_settings.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;vibration.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceargos__lib" kindref="compound">argos_lib</ref><sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="classargos__lib_1_1_xbox_controller" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">XboxController<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>frc::GenericHID<sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="23" refid="classargos__lib_1_1_xbox_controller_1a83b7ab61e8cdc0191694a1463276df91" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="classargos__lib_1_1_xbox_controller_1a83b7ab61e8cdc0191694a1463276df91" kindref="member">JoystickHand</ref><sp/>{<sp/>kLeftHand,<sp/>kRightHand<sp/>};</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="classargos__lib_1_1_xbox_controller_1a067fb8b43b80533b5ec763b7105f40fc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="classargos__lib_1_1_xbox_controller_1a067fb8b43b80533b5ec763b7105f40fc" kindref="member">Button</ref><sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>kA<sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>kB<sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>kX<sp/>=<sp/>3,</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>kY<sp/>=<sp/>4,</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>kBumperLeft<sp/>=<sp/>5,</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>kBumperRight<sp/>=<sp/>6,</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>kBack<sp/>=<sp/>7,</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>kStart<sp/>=<sp/>8,</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>kStickLeft<sp/>=<sp/>9,</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>kStickRight<sp/>=<sp/>10,</highlight></codeline>
+<codeline lineno="36" refid="classargos__lib_1_1_xbox_controller_1a067fb8b43b80533b5ec763b7105f40fca5ca9b01dc72630050103311fe84c2972" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classargos__lib_1_1_xbox_controller_1a067fb8b43b80533b5ec763b7105f40fca5ca9b01dc72630050103311fe84c2972" kindref="member">kLeftTrigger</ref><sp/>=<sp/>11,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="37" refid="classargos__lib_1_1_xbox_controller_1a067fb8b43b80533b5ec763b7105f40fca3c77ef6a8e347f61ef35bd485f14878a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classargos__lib_1_1_xbox_controller_1a067fb8b43b80533b5ec763b7105f40fca3c77ef6a8e347f61ef35bd485f14878a" kindref="member">kRightTrigger</ref><sp/>=<sp/>12,<sp/><sp/></highlight></codeline>
+<codeline lineno="38" refid="classargos__lib_1_1_xbox_controller_1a067fb8b43b80533b5ec763b7105f40fca8a9e8c8811f2a710615e133456229ee5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classargos__lib_1_1_xbox_controller_1a067fb8b43b80533b5ec763b7105f40fca8a9e8c8811f2a710615e133456229ee5" kindref="member">kUp</ref><sp/>=<sp/>13,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="39" refid="classargos__lib_1_1_xbox_controller_1a067fb8b43b80533b5ec763b7105f40fca2dd2b017192f8a09367d48c7648213c9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classargos__lib_1_1_xbox_controller_1a067fb8b43b80533b5ec763b7105f40fca2dd2b017192f8a09367d48c7648213c9" kindref="member">kRight</ref><sp/>=<sp/>14,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="40" refid="classargos__lib_1_1_xbox_controller_1a067fb8b43b80533b5ec763b7105f40fca3bc2ec3237c6d119b0b5c4225122a07e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classargos__lib_1_1_xbox_controller_1a067fb8b43b80533b5ec763b7105f40fca3bc2ec3237c6d119b0b5c4225122a07e" kindref="member">kDown</ref><sp/>=<sp/>15,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="41" refid="classargos__lib_1_1_xbox_controller_1a067fb8b43b80533b5ec763b7105f40fca2d5fde1d924910a2a01ecd8e70a87c28" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classargos__lib_1_1_xbox_controller_1a067fb8b43b80533b5ec763b7105f40fca2d5fde1d924910a2a01ecd8e70a87c28" kindref="member">kLeft</ref><sp/>=<sp/>16,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>COUNT</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="structargos__lib_1_1_xbox_controller_1_1_update_status" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structargos__lib_1_1_xbox_controller_1_1_update_status" kindref="compound">UpdateStatus</ref><sp/>{</highlight></codeline>
+<codeline lineno="49" refid="structargos__lib_1_1_xbox_controller_1_1_update_status_1a8b0dfa6c97d33cc308c1be26d6b3e180" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structargos__lib_1_1_xbox_controller_1_1_update_status_1a8b0dfa6c97d33cc308c1be26d6b3e180" kindref="member">pressed</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="50" refid="structargos__lib_1_1_xbox_controller_1_1_update_status_1ad769829e7275b925a9ec9cafc70e198e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structargos__lib_1_1_xbox_controller_1_1_update_status_1ad769829e7275b925a9ec9cafc70e198e" kindref="member">released</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="51" refid="structargos__lib_1_1_xbox_controller_1_1_update_status_1ab2ccf7dddb335a48096822e9425e8d44" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structargos__lib_1_1_xbox_controller_1_1_update_status_1ab2ccf7dddb335a48096822e9425e8d44" kindref="member">debouncePress</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="52" refid="structargos__lib_1_1_xbox_controller_1_1_update_status_1ac501c6389960221bfa08cf7615155eb3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structargos__lib_1_1_xbox_controller_1_1_update_status_1ac501c6389960221bfa08cf7615155eb3" kindref="member">debounceRelease</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;<sp/><sp/></highlight></codeline>
+<codeline lineno="53" refid="structargos__lib_1_1_xbox_controller_1_1_update_status_1ac5ead71c2f9168bb43650a18606a104f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structargos__lib_1_1_xbox_controller_1_1_update_status_1ac5ead71c2f9168bb43650a18606a104f" kindref="member">rawActive</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="54" refid="structargos__lib_1_1_xbox_controller_1_1_update_status_1a6309274d7ea7260c5525dfc00ef3c4ec" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structargos__lib_1_1_xbox_controller_1_1_update_status_1a6309274d7ea7260c5525dfc00ef3c4ec" kindref="member">debounceActive</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/>Axis<sp/>{<sp/>kLeftX<sp/>=<sp/>0,<sp/>kLeftY<sp/>=<sp/>1,<sp/><ref refid="classargos__lib_1_1_xbox_controller_1a067fb8b43b80533b5ec763b7105f40fca5ca9b01dc72630050103311fe84c2972" kindref="member">kLeftTrigger</ref><sp/>=<sp/>2,<sp/><ref refid="classargos__lib_1_1_xbox_controller_1a067fb8b43b80533b5ec763b7105f40fca3c77ef6a8e347f61ef35bd485f14878a" kindref="member">kRightTrigger</ref><sp/>=<sp/>3,<sp/>kRightX<sp/>=<sp/>4,<sp/>kRightY<sp/>=<sp/>5,<sp/>COUNT<sp/>};</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classargos__lib_1_1_xbox_controller" kindref="compound">XboxController</ref>()<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classargos__lib_1_1_xbox_controller" kindref="compound">XboxController</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>port);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classargos__lib_1_1_xbox_controller_1aeeddcd789554e899d6fc243b481edb90" kindref="member">SetButtonDebounce</ref>(<ref refid="classargos__lib_1_1_xbox_controller_1a067fb8b43b80533b5ec763b7105f40fc" kindref="member">Button</ref><sp/>targetButton,<sp/><ref refid="structargos__lib_1_1_debounce_settings" kindref="compound">DebounceSettings</ref><sp/>newSettings);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classargos__lib_1_1_xbox_controller_1a34a99a66914262ee5e1e9b8dfbe46ef1" kindref="member">SwapSettings</ref>(<ref refid="classargos__lib_1_1_xbox_controller" kindref="compound">XboxController</ref>&amp;<sp/>other);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classargos__lib_1_1_xbox_controller_1af845a5fb5316e2f8d9c68e8cb60966ff" kindref="member">GetX</ref>(<ref refid="classargos__lib_1_1_xbox_controller_1a83b7ab61e8cdc0191694a1463276df91" kindref="member">JoystickHand</ref><sp/>hand)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classargos__lib_1_1_xbox_controller_1aa8e565e9547cea97e7bdd92143b7b8fa" kindref="member">GetY</ref>(<ref refid="classargos__lib_1_1_xbox_controller_1a83b7ab61e8cdc0191694a1463276df91" kindref="member">JoystickHand</ref><sp/>hand)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classargos__lib_1_1_xbox_controller_1adfd321a87d96b003748b642fdf711601" kindref="member">GetTriggerAxis</ref>(<ref refid="classargos__lib_1_1_xbox_controller_1a83b7ab61e8cdc0191694a1463276df91" kindref="member">JoystickHand</ref><sp/>hand)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classargos__lib_1_1_xbox_controller_1ae7bc91621898e77ae7118a2e12cfb8bd" kindref="member">GetDebouncedButton</ref>(<ref refid="classargos__lib_1_1_xbox_controller_1a067fb8b43b80533b5ec763b7105f40fc" kindref="member">Button</ref><sp/>buttonIdx);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classargos__lib_1_1_xbox_controller_1afbef95cfa675c9d7f4fac9b1fd1af79f" kindref="member">GetDebouncedButtonPressed</ref>(<ref refid="classargos__lib_1_1_xbox_controller_1a067fb8b43b80533b5ec763b7105f40fc" kindref="member">Button</ref><sp/>buttonIdx);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classargos__lib_1_1_xbox_controller_1a158a69ce5cc44c84e98bfd5f1bae3218" kindref="member">GetDebouncedButtonReleased</ref>(<ref refid="classargos__lib_1_1_xbox_controller_1a067fb8b43b80533b5ec763b7105f40fc" kindref="member">Button</ref><sp/>buttonIdx);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classargos__lib_1_1_xbox_controller_1ae7bc91621898e77ae7118a2e12cfb8bd" kindref="member">GetDebouncedButton</ref>(std::vector&lt;Button&gt;<sp/>buttonCombo);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classargos__lib_1_1_xbox_controller_1afbef95cfa675c9d7f4fac9b1fd1af79f" kindref="member">GetDebouncedButtonPressed</ref>(std::vector&lt;Button&gt;<sp/>buttonCombo);</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classargos__lib_1_1_xbox_controller_1a158a69ce5cc44c84e98bfd5f1bae3218" kindref="member">GetDebouncedButtonReleased</ref>(std::vector&lt;Button&gt;<sp/>buttonCombo);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classargos__lib_1_1_xbox_controller_1adccdc70b774b397aa5628b9d6352f590" kindref="member">GetRawButton</ref>(<ref refid="classargos__lib_1_1_xbox_controller_1a067fb8b43b80533b5ec763b7105f40fc" kindref="member">Button</ref><sp/>buttonIdx);</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classargos__lib_1_1_xbox_controller_1a932ee9d5507f553956cdccd270dca930" kindref="member">GetRawButtonPressed</ref>(<ref refid="classargos__lib_1_1_xbox_controller_1a067fb8b43b80533b5ec763b7105f40fc" kindref="member">Button</ref><sp/>buttonIdx);</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classargos__lib_1_1_xbox_controller_1acd543af0f487a0c8c0b80a6377cf168e" kindref="member">GetRawButtonReleased</ref>(<ref refid="classargos__lib_1_1_xbox_controller_1a067fb8b43b80533b5ec763b7105f40fc" kindref="member">Button</ref><sp/>buttonIdx);</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classargos__lib_1_1_xbox_controller_1adccdc70b774b397aa5628b9d6352f590" kindref="member">GetRawButton</ref>(std::vector&lt;Button&gt;<sp/>buttonCombo);</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classargos__lib_1_1_xbox_controller_1a932ee9d5507f553956cdccd270dca930" kindref="member">GetRawButtonPressed</ref>(std::vector&lt;Button&gt;<sp/>buttonCombo);</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classargos__lib_1_1_xbox_controller_1acd543af0f487a0c8c0b80a6377cf168e" kindref="member">GetRawButtonReleased</ref>(std::vector&lt;Button&gt;<sp/>buttonCombo);</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/>VibrationModel<sp/><ref refid="classargos__lib_1_1_xbox_controller_1ac2dbe34f55893300f05ff9694d8144de" kindref="member">GetVibration</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classargos__lib_1_1_xbox_controller_1a03150062f39deee57cd6e83cd05a9ea5" kindref="member">SetVibration</ref>(VibrationModel<sp/>newVibrationModel);</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classargos__lib_1_1_xbox_controller_1a37e4539aa4e0cc854c05ffb9a24ba6db" kindref="member">UpdateVibration</ref>();</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/>UpdateStatus<sp/><ref refid="classargos__lib_1_1_xbox_controller_1a9646359d9a7bd868f0973d53640c24dc" kindref="member">UpdateButton</ref>(<ref refid="classargos__lib_1_1_xbox_controller_1a067fb8b43b80533b5ec763b7105f40fc" kindref="member">Button</ref><sp/>buttonIdx);</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/>frc2::Trigger<sp/><ref refid="classargos__lib_1_1_xbox_controller_1a05d3525ce06746637b949d058f4987a0" kindref="member">TriggerRaw</ref>(<ref refid="classargos__lib_1_1_xbox_controller_1a067fb8b43b80533b5ec763b7105f40fc" kindref="member">Button</ref><sp/>button);</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/>frc2::Trigger<sp/><ref refid="classargos__lib_1_1_xbox_controller_1a05d3525ce06746637b949d058f4987a0" kindref="member">TriggerRaw</ref>(std::vector&lt;Button&gt;<sp/>buttonCombo);</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/>frc2::Trigger<sp/><ref refid="classargos__lib_1_1_xbox_controller_1a976135202ef3640cee8da7786cc8cbaf" kindref="member">TriggerRawAnyOf</ref>(std::vector&lt;Button&gt;<sp/>buttonCombo);</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"></highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/>frc2::Trigger<sp/><ref refid="classargos__lib_1_1_xbox_controller_1a55a1d428930a842d49e4aabc518d59fc" kindref="member">TriggerRawAllOf</ref>(std::vector&lt;Button&gt;<sp/>buttonCombo);</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/>frc2::Trigger<sp/><ref refid="classargos__lib_1_1_xbox_controller_1a0b086f832c1cef307a3ea04741da5a6d" kindref="member">TriggerRawNoneOf</ref>(std::vector&lt;Button&gt;<sp/>buttonCombo);</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/>frc2::Trigger<sp/><ref refid="classargos__lib_1_1_xbox_controller_1af201e315dfabb84823c09ed38b274dfd" kindref="member">TriggerRawOneOf</ref>(std::vector&lt;Button&gt;<sp/>buttonCombo);</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"></highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/>frc2::Trigger<sp/><ref refid="classargos__lib_1_1_xbox_controller_1ad3c0b12101691bfcfdfa80cb88df69e6" kindref="member">TriggerDebounced</ref>(<ref refid="classargos__lib_1_1_xbox_controller_1a067fb8b43b80533b5ec763b7105f40fc" kindref="member">Button</ref><sp/>button);</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"></highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/>frc2::Trigger<sp/><ref refid="classargos__lib_1_1_xbox_controller_1ad3c0b12101691bfcfdfa80cb88df69e6" kindref="member">TriggerDebounced</ref>(std::vector&lt;Button&gt;<sp/>buttonCombo);</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"></highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/>frc2::Trigger<sp/><ref refid="classargos__lib_1_1_xbox_controller_1aa42366fb0870f1503739d084bea2709b" kindref="member">TriggerDebouncedAnyOf</ref>(std::vector&lt;Button&gt;<sp/>buttonCombo);</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"></highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/>frc2::Trigger<sp/><ref refid="classargos__lib_1_1_xbox_controller_1afa43e996ddd85797c208fbd8a7dd1deb" kindref="member">TriggerDebouncedAllOf</ref>(std::vector&lt;Button&gt;<sp/>buttonCombo);</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"></highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/>frc2::Trigger<sp/><ref refid="classargos__lib_1_1_xbox_controller_1a7ae9af3e3502e2f25ed2f55285f3fcda" kindref="member">TriggerDebouncedNoneOf</ref>(std::vector&lt;Button&gt;<sp/>buttonCombo);</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"></highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/>frc2::Trigger<sp/><ref refid="classargos__lib_1_1_xbox_controller_1ac139207d20af38f564517c0d9a6aae0e" kindref="member">TriggerDebouncedOneOf</ref>(std::vector&lt;Button&gt;<sp/>buttonCombo);</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"></highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">DPadButtons<sp/>{</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>up<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>right<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;<sp/><sp/></highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>down<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>left<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"></highlight></codeline>
+<codeline lineno="343"><highlight class="normal"><sp/><sp/><sp/><sp/>DPadButtons<sp/>GetPOVButtons();</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"></highlight></codeline>
+<codeline lineno="352"><highlight class="normal"><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/>frc2::Trigger<sp/>TriggerAnyOf(std::vector&lt;Button&gt;<sp/>buttonCombo,</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::function&lt;</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">(<ref refid="classargos__lib_1_1_xbox_controller_1a067fb8b43b80533b5ec763b7105f40fc" kindref="member">Button</ref>)&gt;<sp/>buttonGetterFunc);</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"></highlight></codeline>
+<codeline lineno="362"><highlight class="normal"><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/>frc2::Trigger<sp/>TriggerAllOf(std::vector&lt;Button&gt;<sp/>buttonCombo,</highlight></codeline>
+<codeline lineno="363"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::function&lt;</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">(<ref refid="classargos__lib_1_1_xbox_controller_1a067fb8b43b80533b5ec763b7105f40fc" kindref="member">Button</ref>)&gt;<sp/>buttonGetterFunc);</highlight></codeline>
+<codeline lineno="364"><highlight class="normal"></highlight></codeline>
+<codeline lineno="372"><highlight class="normal"><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/>frc2::Trigger<sp/>TriggerNoneOf(std::vector&lt;Button&gt;<sp/>buttonCombo,</highlight></codeline>
+<codeline lineno="373"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::function&lt;</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">(<ref refid="classargos__lib_1_1_xbox_controller_1a067fb8b43b80533b5ec763b7105f40fc" kindref="member">Button</ref>)&gt;<sp/>buttonGetterFunc);</highlight></codeline>
+<codeline lineno="374"><highlight class="normal"></highlight></codeline>
+<codeline lineno="382"><highlight class="normal"><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/>frc2::Trigger<sp/>TriggerOneOf(std::vector&lt;Button&gt;<sp/>buttonCombo,</highlight></codeline>
+<codeline lineno="383"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::function&lt;</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">(<ref refid="classargos__lib_1_1_xbox_controller_1a067fb8b43b80533b5ec763b7105f40fc" kindref="member">Button</ref>)&gt;<sp/>buttonGetterFunc);</highlight></codeline>
+<codeline lineno="384"><highlight class="normal"></highlight></codeline>
+<codeline lineno="385"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>analogTriggerThresh<sp/>=<sp/>0.5;<sp/><sp/></highlight></codeline>
+<codeline lineno="386"><highlight class="normal"></highlight></codeline>
+<codeline lineno="387"><highlight class="normal"><sp/><sp/><sp/><sp/>std::array&lt;DebounceSettings,<sp/>static_cast&lt;int&gt;(Button::COUNT)&gt;<sp/>m_buttonDebounceSettings;</highlight></codeline>
+<codeline lineno="388"><highlight class="normal"><sp/><sp/><sp/><sp/>std::array&lt;bool,<sp/>static_cast&lt;int&gt;(Button::COUNT)&gt;<sp/>m_buttonDebounceStatus;</highlight></codeline>
+<codeline lineno="389"><highlight class="normal"><sp/><sp/><sp/><sp/>std::array&lt;bool,<sp/>static_cast&lt;int&gt;(Button::COUNT)&gt;<sp/>m_rawButtonStatus;</highlight></codeline>
+<codeline lineno="390"><highlight class="normal"><sp/><sp/><sp/><sp/>std::array&lt;std::chrono::time_point&lt;std::chrono::steady_clock&gt;,<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(Button::COUNT)&gt;</highlight></codeline>
+<codeline lineno="391"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_buttonDebounceTransitionTime;<sp/><sp/></highlight></codeline>
+<codeline lineno="392"><highlight class="normal"></highlight></codeline>
+<codeline lineno="393"><highlight class="normal"><sp/><sp/><sp/><sp/>VibrationModel<sp/>m_vibrationModel;<sp/><sp/></highlight></codeline>
+<codeline lineno="394"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="395"><highlight class="normal"></highlight></codeline>
+<codeline lineno="396"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>argos_lib</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/xbox_controller.h"/>
+  </compounddef>
+</doxygen>

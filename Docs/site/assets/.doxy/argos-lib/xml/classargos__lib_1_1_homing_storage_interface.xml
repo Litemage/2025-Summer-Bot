@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classargos__lib_1_1_homing_storage_interface" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>argos_lib::HomingStorageInterface</compoundname>
+    <derivedcompoundref refid="classargos__lib_1_1_f_s_homing_storage" prot="public" virt="non-virtual">argos_lib::FSHomingStorage&lt; T &gt;</derivedcompoundref>
+    <includes refid="homing__interface_8h" local="no">homing_interface.h</includes>
+    <templateparamlist>
+      <param>
+        <type>class T</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classargos__lib_1_1_homing_storage_interface_1a3a37aab6c51231a32235363ce0136cfc" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool argos_lib::HomingStorageInterface&lt; T &gt;::Save</definition>
+        <argsstring>(const T &amp;homePosition)=0</argsstring>
+        <name>Save</name>
+        <qualifiedname>argos_lib::HomingStorageInterface::Save</qualifiedname>
+        <reimplementedby refid="classargos__lib_1_1_f_s_homing_storage_1a1f11375b0d867260468d6eb48cb57103">Save</reimplementedby>
+        <param>
+          <type>const T &amp;</type>
+          <declname>homePosition</declname>
+        </param>
+        <briefdescription>
+<para>Save home position to persistent storage. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>homePosition</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Position to store </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true Save successful </para>
+</simplesect>
+<simplesect kind="return"><para>false Error saving </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/homing/homing_interface.h" line="48" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classargos__lib_1_1_homing_storage_interface_1a387052239e4d03996dc708a307757ceb" prot="public" static="no" nodiscard="yes" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::optional&lt; T &gt;</type>
+        <definition>virtual std::optional&lt; T &gt; argos_lib::HomingStorageInterface&lt; T &gt;::Load</definition>
+        <argsstring>()=0</argsstring>
+        <name>Load</name>
+        <qualifiedname>argos_lib::HomingStorageInterface::Load</qualifiedname>
+        <reimplementedby refid="classargos__lib_1_1_f_s_homing_storage_1ae9eef66236986abe10694319aedc23bd">Load</reimplementedby>
+        <briefdescription>
+<para>Load home position from persistent storage. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Poisition from persistent storage or std::nullopt if load failed or no positions were previously stored </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/homing/homing_interface.h" line="56" column="28"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Interface capable of saving and loading home positions from persistent storage. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of the home position. Should be a units type </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>argos_lib::FSHomingStorage&lt; T &gt;</label>
+        <link refid="classargos__lib_1_1_f_s_homing_storage"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>argos_lib::HomingStorageInterface&lt; T &gt;</label>
+        <link refid="classargos__lib_1_1_homing_storage_interface"/>
+      </node>
+    </inheritancegraph>
+    <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/homing/homing_interface.h" line="39" column="3" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/homing/homing_interface.h" bodystart="39" bodyend="57"/>
+    <listofallmembers>
+      <member refid="classargos__lib_1_1_homing_storage_interface_1a387052239e4d03996dc708a307757ceb" prot="public" virt="pure-virtual"><scope>argos_lib::HomingStorageInterface</scope><name>Load</name></member>
+      <member refid="classargos__lib_1_1_homing_storage_interface_1a3a37aab6c51231a32235363ce0136cfc" prot="public" virt="pure-virtual"><scope>argos_lib::HomingStorageInterface</scope><name>Save</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="namespaceargos__lib_1_1odometry__aim" kind="namespace" language="C++">
+    <compoundname>argos_lib::odometry_aim</compoundname>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="odometry__aim_8h_1a08bec02b75d0290047d5ed3c224961b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>units::degree_t</type>
+        <definition>units::degree_t argos_lib::odometry_aim::GetAngleToTarget</definition>
+        <argsstring>(const frc::Translation2d &amp;currentEstimatedRobotPose, const frc::Translation3d &amp;targetPoseOnField)</argsstring>
+        <name>GetAngleToTarget</name>
+        <qualifiedname>argos_lib::odometry_aim::GetAngleToTarget</qualifiedname>
+        <param>
+          <type>const frc::Translation2d &amp;</type>
+          <declname>currentEstimatedRobotPose</declname>
+        </param>
+        <param>
+          <type>const frc::Translation3d &amp;</type>
+          <declname>targetPoseOnField</declname>
+        </param>
+        <briefdescription>
+<para>Gets the Angle(Yaw) required for the Robot to orient towards the target of interest assuming the robot is field-centric. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>currentEstimatedRobotPose</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Fused pose of the robot currently on the field </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>targetPoseOnField</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Defines desired alias range </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Angle(Yaw) of robot in degrees</para>
+</simplesect>
+<simplesect kind="copyright"><para>Copyright (c) Argos FRC Team 1756. Open Source Software; you can modify and/or share it under the terms of the license file in the root directory of this project. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/odometry_aim.h" line="23" column="21" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/general/odometry_aim.cpp" bodystart="11" bodyend="17" declfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/odometry_aim.h" declline="23" declcolumn="21"/>
+      </memberdef>
+      <memberdef kind="function" id="odometry__aim_8h_1a90fbe8b23ceb82231b6313494b67eeed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>units::meter_t</type>
+        <definition>units::meter_t argos_lib::odometry_aim::GetDistanceToTarget</definition>
+        <argsstring>(const frc::Translation2d &amp;currentEstimatedRobotPose, const frc::Translation3d &amp;targetPoseOnField)</argsstring>
+        <name>GetDistanceToTarget</name>
+        <qualifiedname>argos_lib::odometry_aim::GetDistanceToTarget</qualifiedname>
+        <param>
+          <type>const frc::Translation2d &amp;</type>
+          <declname>currentEstimatedRobotPose</declname>
+        </param>
+        <param>
+          <type>const frc::Translation3d &amp;</type>
+          <declname>targetPoseOnField</declname>
+        </param>
+        <briefdescription>
+<para>Gets the Distance of the Robot to from the target of interest. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>currentEstimatedRobotPose</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Fused pose of the robot currently on the field </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>targetPoseOnField</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Defines desired alias range </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Distance in inches of robot from the target of interest </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/odometry_aim.h" line="33" column="20" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/general/odometry_aim.cpp" bodystart="19" bodyend="24" declfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/odometry_aim.h" declline="33" declcolumn="20"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/odometry_aim.h" line="14" column="3"/>
+  </compounddef>
+</doxygen>

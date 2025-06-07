@@ -1,0 +1,1665 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classargos__lib_1_1_xbox_controller" kind="class" language="C++" prot="public">
+    <compoundname>argos_lib::XboxController</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">frc::GenericHID</basecompoundref>
+    <innerclass refid="structargos__lib_1_1_xbox_controller_1_1_d_pad_buttons" prot="private">argos_lib::XboxController::DPadButtons</innerclass>
+    <innerclass refid="structargos__lib_1_1_xbox_controller_1_1_update_status" prot="public">argos_lib::XboxController::UpdateStatus</innerclass>
+    <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classargos__lib_1_1_xbox_controller_1a83b7ab61e8cdc0191694a1463276df91" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>JoystickHand</name>
+        <qualifiedname>argos_lib::XboxController::JoystickHand</qualifiedname>
+        <enumvalue id="classargos__lib_1_1_xbox_controller_1a83b7ab61e8cdc0191694a1463276df91a31883b41e330759208ddcb0548e59b9e" prot="public">
+          <name>kLeftHand</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classargos__lib_1_1_xbox_controller_1a83b7ab61e8cdc0191694a1463276df91a1ec8221b7ac1a9aeb9143ae29d481f55" prot="public">
+          <name>kRightHand</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Replaces legacy joystick hand API for WPILib. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/xbox_controller.h" line="23" column="5" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/xbox_controller.h" bodystart="23" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="enum" id="classargos__lib_1_1_xbox_controller_1a067fb8b43b80533b5ec763b7105f40fc" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>Button</name>
+        <qualifiedname>argos_lib::XboxController::Button</qualifiedname>
+        <enumvalue id="classargos__lib_1_1_xbox_controller_1a067fb8b43b80533b5ec763b7105f40fca30f767aa191cd5d261e767fd78393607" prot="public">
+          <name>kA</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classargos__lib_1_1_xbox_controller_1a067fb8b43b80533b5ec763b7105f40fca3e56c011b37f0bc78fb9eb175c1181c6" prot="public">
+          <name>kB</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classargos__lib_1_1_xbox_controller_1a067fb8b43b80533b5ec763b7105f40fca0ac0dd65e82e143ab04d378a0133bf9e" prot="public">
+          <name>kX</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classargos__lib_1_1_xbox_controller_1a067fb8b43b80533b5ec763b7105f40fca39b629a97c6f6ac91423cf042154dd86" prot="public">
+          <name>kY</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classargos__lib_1_1_xbox_controller_1a067fb8b43b80533b5ec763b7105f40fca2128e444a5ea03bbc16a607139800b6e" prot="public">
+          <name>kBumperLeft</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classargos__lib_1_1_xbox_controller_1a067fb8b43b80533b5ec763b7105f40fca1dc1fc92125ac8ace7255f69415d9845" prot="public">
+          <name>kBumperRight</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classargos__lib_1_1_xbox_controller_1a067fb8b43b80533b5ec763b7105f40fca1aa843cfb007a05d484edf751fdc905d" prot="public">
+          <name>kBack</name>
+          <initializer>= 7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classargos__lib_1_1_xbox_controller_1a067fb8b43b80533b5ec763b7105f40fca127f8e8149d57253ad94c9d2c752113d" prot="public">
+          <name>kStart</name>
+          <initializer>= 8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classargos__lib_1_1_xbox_controller_1a067fb8b43b80533b5ec763b7105f40fca7a5854def4bae2b036ead0ec71aa487c" prot="public">
+          <name>kStickLeft</name>
+          <initializer>= 9</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classargos__lib_1_1_xbox_controller_1a067fb8b43b80533b5ec763b7105f40fcaae5bfe2afd04fdba6fa361acf9d7fa92" prot="public">
+          <name>kStickRight</name>
+          <initializer>= 10</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classargos__lib_1_1_xbox_controller_1a067fb8b43b80533b5ec763b7105f40fca5ca9b01dc72630050103311fe84c2972" prot="public">
+          <name>kLeftTrigger</name>
+          <initializer>= 11</initializer>
+          <briefdescription>
+<para>virtual button </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classargos__lib_1_1_xbox_controller_1a067fb8b43b80533b5ec763b7105f40fca3c77ef6a8e347f61ef35bd485f14878a" prot="public">
+          <name>kRightTrigger</name>
+          <initializer>= 12</initializer>
+          <briefdescription>
+<para>virtual button </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classargos__lib_1_1_xbox_controller_1a067fb8b43b80533b5ec763b7105f40fca8a9e8c8811f2a710615e133456229ee5" prot="public">
+          <name>kUp</name>
+          <initializer>= 13</initializer>
+          <briefdescription>
+<para>virtual button </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classargos__lib_1_1_xbox_controller_1a067fb8b43b80533b5ec763b7105f40fca2dd2b017192f8a09367d48c7648213c9" prot="public">
+          <name>kRight</name>
+          <initializer>= 14</initializer>
+          <briefdescription>
+<para>virtual button </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classargos__lib_1_1_xbox_controller_1a067fb8b43b80533b5ec763b7105f40fca3bc2ec3237c6d119b0b5c4225122a07e" prot="public">
+          <name>kDown</name>
+          <initializer>= 15</initializer>
+          <briefdescription>
+<para>virtual button </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classargos__lib_1_1_xbox_controller_1a067fb8b43b80533b5ec763b7105f40fca2d5fde1d924910a2a01ecd8e70a87c28" prot="public">
+          <name>kLeft</name>
+          <initializer>= 16</initializer>
+          <briefdescription>
+<para>virtual button </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classargos__lib_1_1_xbox_controller_1a067fb8b43b80533b5ec763b7105f40fca4905ac9d6a22bdfc1ae096094ce6248d" prot="public">
+          <name>COUNT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/xbox_controller.h" line="25" column="5" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/xbox_controller.h" bodystart="25" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="enum" id="classargos__lib_1_1_xbox_controller_1aff2bf847008c81f1269494f552285a86" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>Axis</name>
+        <qualifiedname>argos_lib::XboxController::Axis</qualifiedname>
+        <enumvalue id="classargos__lib_1_1_xbox_controller_1aff2bf847008c81f1269494f552285a86a6f34c4ab25a9eaae98c6e7fd9ba4049e" prot="public">
+          <name>kLeftX</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classargos__lib_1_1_xbox_controller_1aff2bf847008c81f1269494f552285a86a53cca6638285b0e8cd52fc9b00f86e3c" prot="public">
+          <name>kLeftY</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classargos__lib_1_1_xbox_controller_1aff2bf847008c81f1269494f552285a86a5ca9b01dc72630050103311fe84c2972" prot="public">
+          <name>kLeftTrigger</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classargos__lib_1_1_xbox_controller_1aff2bf847008c81f1269494f552285a86a3c77ef6a8e347f61ef35bd485f14878a" prot="public">
+          <name>kRightTrigger</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classargos__lib_1_1_xbox_controller_1aff2bf847008c81f1269494f552285a86a2cfcb1616ef97872feca854c7f29f360" prot="public">
+          <name>kRightX</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classargos__lib_1_1_xbox_controller_1aff2bf847008c81f1269494f552285a86ae26bb0251a83bfaf870833ca25811eb7" prot="public">
+          <name>kRightY</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classargos__lib_1_1_xbox_controller_1aff2bf847008c81f1269494f552285a86a4905ac9d6a22bdfc1ae096094ce6248d" prot="public">
+          <name>COUNT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/xbox_controller.h" line="57" column="5" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/xbox_controller.h" bodystart="57" bodyend="57"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classargos__lib_1_1_xbox_controller_1a9afb840b2012d822c97c628b2e373ad6" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type>double</type>
+        <definition>double argos_lib::XboxController::analogTriggerThresh</definition>
+        <argsstring></argsstring>
+        <name>analogTriggerThresh</name>
+        <qualifiedname>argos_lib::XboxController::analogTriggerThresh</qualifiedname>
+        <initializer>= 0.5</initializer>
+        <briefdescription>
+<para>Percent trigger pressed to consider as a button press. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/xbox_controller.h" line="385" column="29" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/xbox_controller.h" bodystart="385" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classargos__lib_1_1_xbox_controller_1a97e71d669cd4ce2cee33a0faf0352cef" prot="private" static="no" mutable="no">
+        <type>std::array&lt; <ref refid="structargos__lib_1_1_debounce_settings" kindref="compound">DebounceSettings</ref>, static_cast&lt; int &gt;(Button::COUNT)&gt;</type>
+        <definition>std::array&lt;DebounceSettings, static_cast&lt;int&gt;(Button::COUNT)&gt; argos_lib::XboxController::m_buttonDebounceSettings</definition>
+        <argsstring></argsstring>
+        <name>m_buttonDebounceSettings</name>
+        <qualifiedname>argos_lib::XboxController::m_buttonDebounceSettings</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/xbox_controller.h" line="387" column="18" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/xbox_controller.h" bodystart="387" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classargos__lib_1_1_xbox_controller_1a2da11ea2ed7b4947a99face443767ea4" prot="private" static="no" mutable="no">
+        <type>std::array&lt; bool, static_cast&lt; int &gt;(Button::COUNT)&gt;</type>
+        <definition>std::array&lt;bool, static_cast&lt;int&gt;(Button::COUNT)&gt; argos_lib::XboxController::m_buttonDebounceStatus</definition>
+        <argsstring></argsstring>
+        <name>m_buttonDebounceStatus</name>
+        <qualifiedname>argos_lib::XboxController::m_buttonDebounceStatus</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/xbox_controller.h" line="388" column="18" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/xbox_controller.h" bodystart="388" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classargos__lib_1_1_xbox_controller_1a7f3f1cf3830e35dc7326dd877c76cbb1" prot="private" static="no" mutable="no">
+        <type>std::array&lt; bool, static_cast&lt; int &gt;(Button::COUNT)&gt;</type>
+        <definition>std::array&lt;bool, static_cast&lt;int&gt;(Button::COUNT)&gt; argos_lib::XboxController::m_rawButtonStatus</definition>
+        <argsstring></argsstring>
+        <name>m_rawButtonStatus</name>
+        <qualifiedname>argos_lib::XboxController::m_rawButtonStatus</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/xbox_controller.h" line="389" column="18" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/xbox_controller.h" bodystart="389" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classargos__lib_1_1_xbox_controller_1a745886a45f32be213304338d58f69e92" prot="private" static="no" mutable="no">
+        <type>std::array&lt; std::chrono::time_point&lt; std::chrono::steady_clock &gt;, static_cast&lt; int &gt;(Button::COUNT)&gt;</type>
+        <definition>std::array&lt;std::chrono::time_point&lt;std::chrono::steady_clock&gt;, static_cast&lt;int&gt;(Button::COUNT)&gt; argos_lib::XboxController::m_buttonDebounceTransitionTime</definition>
+        <argsstring></argsstring>
+        <name>m_buttonDebounceTransitionTime</name>
+        <qualifiedname>argos_lib::XboxController::m_buttonDebounceTransitionTime</qualifiedname>
+        <briefdescription>
+<para>Time when new value was first seen. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/xbox_controller.h" line="391" column="9" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/xbox_controller.h" bodystart="391" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classargos__lib_1_1_xbox_controller_1a3744c0aad2447435645779da4c7469ce" prot="private" static="no" mutable="no">
+        <type>VibrationModel</type>
+        <definition>VibrationModel argos_lib::XboxController::m_vibrationModel</definition>
+        <argsstring></argsstring>
+        <name>m_vibrationModel</name>
+        <qualifiedname>argos_lib::XboxController::m_vibrationModel</qualifiedname>
+        <briefdescription>
+<para>Active vibration model. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/xbox_controller.h" line="393" column="20" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/xbox_controller.h" bodystart="393" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classargos__lib_1_1_xbox_controller_1a6ee7c6aca1c6b19dcdded53a3ed510dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>argos_lib::XboxController::XboxController</definition>
+        <argsstring>()=delete</argsstring>
+        <name>XboxController</name>
+        <qualifiedname>argos_lib::XboxController::XboxController</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/xbox_controller.h" line="59" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classargos__lib_1_1_xbox_controller_1aa5ac0b7eae496aaf61aa1fe5bca0fa37" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>XboxController::XboxController</definition>
+        <argsstring>(int port)</argsstring>
+        <name>XboxController</name>
+        <qualifiedname>argos_lib::XboxController::XboxController</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>port</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new Xbox Controller object connected at port index. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>port</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of new controller </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/xbox_controller.h" line="65" column="14" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/controller/xbox_controller.cpp" bodystart="9" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classargos__lib_1_1_xbox_controller_1aeeddcd789554e899d6fc243b481edb90" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void XboxController::SetButtonDebounce</definition>
+        <argsstring>(Button targetButton, DebounceSettings newSettings)</argsstring>
+        <name>SetButtonDebounce</name>
+        <qualifiedname>argos_lib::XboxController::SetButtonDebounce</qualifiedname>
+        <param>
+          <type><ref refid="classargos__lib_1_1_xbox_controller_1a067fb8b43b80533b5ec763b7105f40fc" kindref="member">Button</ref></type>
+          <declname>targetButton</declname>
+        </param>
+        <param>
+          <type><ref refid="structargos__lib_1_1_debounce_settings" kindref="compound">DebounceSettings</ref></type>
+          <declname>newSettings</declname>
+        </param>
+        <briefdescription>
+<para>Configure debounce for a specified button. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>targetButton</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classargos__lib_1_1_xbox_controller_1a067fb8b43b80533b5ec763b7105f40fc" kindref="member">Button</ref> to configure </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>newSettings</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New debounce configuration </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/xbox_controller.h" line="73" column="10" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/controller/xbox_controller.cpp" bodystart="16" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classargos__lib_1_1_xbox_controller_1a34a99a66914262ee5e1e9b8dfbe46ef1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void XboxController::SwapSettings</definition>
+        <argsstring>(XboxController &amp;other)</argsstring>
+        <name>SwapSettings</name>
+        <qualifiedname>argos_lib::XboxController::SwapSettings</qualifiedname>
+        <param>
+          <type><ref refid="classargos__lib_1_1_xbox_controller" kindref="compound">XboxController</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Swap all configurations (debounce, etc) between this and other controller. Useful in conjunction with <ref refid="classargos__lib_1_1_swappable_controllers_subsystem" kindref="compound">argos_lib::SwappableControllersSubsystem</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Controller to swap settings with </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/xbox_controller.h" line="81" column="10" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/controller/xbox_controller.cpp" bodystart="20" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classargos__lib_1_1_xbox_controller_1af845a5fb5316e2f8d9c68e8cb60966ff" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double XboxController::GetX</definition>
+        <argsstring>(JoystickHand hand) const</argsstring>
+        <name>GetX</name>
+        <qualifiedname>argos_lib::XboxController::GetX</qualifiedname>
+        <param>
+          <type><ref refid="classargos__lib_1_1_xbox_controller_1a83b7ab61e8cdc0191694a1463276df91" kindref="member">JoystickHand</ref></type>
+          <declname>hand</declname>
+        </param>
+        <briefdescription>
+<para>Get X joystick percent from specified joystick. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>hand</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Left or right joystick </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>double Percent [-1,1] </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/xbox_controller.h" line="89" column="13" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/controller/xbox_controller.cpp" bodystart="31" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classargos__lib_1_1_xbox_controller_1aa8e565e9547cea97e7bdd92143b7b8fa" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double XboxController::GetY</definition>
+        <argsstring>(JoystickHand hand) const</argsstring>
+        <name>GetY</name>
+        <qualifiedname>argos_lib::XboxController::GetY</qualifiedname>
+        <param>
+          <type><ref refid="classargos__lib_1_1_xbox_controller_1a83b7ab61e8cdc0191694a1463276df91" kindref="member">JoystickHand</ref></type>
+          <declname>hand</declname>
+        </param>
+        <briefdescription>
+<para>Get Y joystick percent from specified joystick. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>hand</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Left or right joystick </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>double Percent [-1,1] </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/xbox_controller.h" line="96" column="13" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/controller/xbox_controller.cpp" bodystart="35" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classargos__lib_1_1_xbox_controller_1adfd321a87d96b003748b642fdf711601" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double XboxController::GetTriggerAxis</definition>
+        <argsstring>(JoystickHand hand) const</argsstring>
+        <name>GetTriggerAxis</name>
+        <qualifiedname>argos_lib::XboxController::GetTriggerAxis</qualifiedname>
+        <param>
+          <type><ref refid="classargos__lib_1_1_xbox_controller_1a83b7ab61e8cdc0191694a1463276df91" kindref="member">JoystickHand</ref></type>
+          <declname>hand</declname>
+        </param>
+        <briefdescription>
+<para>Get percent from specified controller trigger button. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>hand</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Left or right trigger </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>double Percent [0,1] </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/xbox_controller.h" line="103" column="13" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/controller/xbox_controller.cpp" bodystart="39" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classargos__lib_1_1_xbox_controller_1ae7bc91621898e77ae7118a2e12cfb8bd" prot="public" static="no" nodiscard="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool XboxController::GetDebouncedButton</definition>
+        <argsstring>(Button buttonIdx)</argsstring>
+        <name>GetDebouncedButton</name>
+        <qualifiedname>argos_lib::XboxController::GetDebouncedButton</qualifiedname>
+        <param>
+          <type><ref refid="classargos__lib_1_1_xbox_controller_1a067fb8b43b80533b5ec763b7105f40fc" kindref="member">Button</ref></type>
+          <declname>buttonIdx</declname>
+        </param>
+        <briefdescription>
+<para>Get the status of button after applying debounce. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buttonIdx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of requested button </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>debounced status </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/xbox_controller.h" line="111" column="11" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/controller/xbox_controller.cpp" bodystart="43" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classargos__lib_1_1_xbox_controller_1afbef95cfa675c9d7f4fac9b1fd1af79f" prot="public" static="no" nodiscard="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool XboxController::GetDebouncedButtonPressed</definition>
+        <argsstring>(Button buttonIdx)</argsstring>
+        <name>GetDebouncedButtonPressed</name>
+        <qualifiedname>argos_lib::XboxController::GetDebouncedButtonPressed</qualifiedname>
+        <param>
+          <type><ref refid="classargos__lib_1_1_xbox_controller_1a067fb8b43b80533b5ec763b7105f40fc" kindref="member">Button</ref></type>
+          <declname>buttonIdx</declname>
+        </param>
+        <briefdescription>
+<para>Detect if a button just transitioned from inactive to active after applying debounce. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buttonIdx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of requested button </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if inactive to active transition occurred </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/xbox_controller.h" line="118" column="11" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/controller/xbox_controller.cpp" bodystart="47" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classargos__lib_1_1_xbox_controller_1a158a69ce5cc44c84e98bfd5f1bae3218" prot="public" static="no" nodiscard="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool XboxController::GetDebouncedButtonReleased</definition>
+        <argsstring>(Button buttonIdx)</argsstring>
+        <name>GetDebouncedButtonReleased</name>
+        <qualifiedname>argos_lib::XboxController::GetDebouncedButtonReleased</qualifiedname>
+        <param>
+          <type><ref refid="classargos__lib_1_1_xbox_controller_1a067fb8b43b80533b5ec763b7105f40fc" kindref="member">Button</ref></type>
+          <declname>buttonIdx</declname>
+        </param>
+        <briefdescription>
+<para>Detect if a button just transitioned from active to inactive after applying debounce. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buttonIdx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of requested button </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if active to inactive transition occurred </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/xbox_controller.h" line="125" column="11" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/controller/xbox_controller.cpp" bodystart="51" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classargos__lib_1_1_xbox_controller_1a42093c23cd159fddbcb58c850ff78a2b" prot="public" static="no" nodiscard="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool XboxController::GetDebouncedButton</definition>
+        <argsstring>(std::vector&lt; Button &gt; buttonCombo)</argsstring>
+        <name>GetDebouncedButton</name>
+        <qualifiedname>argos_lib::XboxController::GetDebouncedButton</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classargos__lib_1_1_xbox_controller_1a067fb8b43b80533b5ec763b7105f40fc" kindref="member">Button</ref> &gt;</type>
+          <declname>buttonCombo</declname>
+        </param>
+        <briefdescription>
+<para>Get the status of a combination of buttons after applying debounce. Raw combo button state is active when all buttons are simultaneously active based on their independent debounce settings. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buttonCombo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buttons that make up the combination </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>debounced status </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/xbox_controller.h" line="135" column="11" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/controller/xbox_controller.cpp" bodystart="55" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classargos__lib_1_1_xbox_controller_1a0a6d9a111ee41266ddfd6b1eecc44ab0" prot="public" static="no" nodiscard="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool XboxController::GetDebouncedButtonPressed</definition>
+        <argsstring>(std::vector&lt; Button &gt; buttonCombo)</argsstring>
+        <name>GetDebouncedButtonPressed</name>
+        <qualifiedname>argos_lib::XboxController::GetDebouncedButtonPressed</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classargos__lib_1_1_xbox_controller_1a067fb8b43b80533b5ec763b7105f40fc" kindref="member">Button</ref> &gt;</type>
+          <declname>buttonCombo</declname>
+        </param>
+        <briefdescription>
+<para>Detect if a combination of buttons just transitioned from inactive to active after applying debounce. Raw combo button state is active when all buttons are simultaneously active based on their independent debounce settings. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buttonCombo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buttons that make up the combination </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if combination transition to active occurred </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/xbox_controller.h" line="144" column="11" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/controller/xbox_controller.cpp" bodystart="65" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classargos__lib_1_1_xbox_controller_1afd8186cefc16209323d91c4f0a64aa47" prot="public" static="no" nodiscard="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool XboxController::GetDebouncedButtonReleased</definition>
+        <argsstring>(std::vector&lt; Button &gt; buttonCombo)</argsstring>
+        <name>GetDebouncedButtonReleased</name>
+        <qualifiedname>argos_lib::XboxController::GetDebouncedButtonReleased</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classargos__lib_1_1_xbox_controller_1a067fb8b43b80533b5ec763b7105f40fc" kindref="member">Button</ref> &gt;</type>
+          <declname>buttonCombo</declname>
+        </param>
+        <briefdescription>
+<para>Detect if a combination of buttons just transitioned from active to inactive after applying debounce. Raw combo button state is active when all buttons are simultaneously active based on their independent debounce settings. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buttonCombo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buttons that make up the combination </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if combination transition to inactive occurred </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/xbox_controller.h" line="153" column="11" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/controller/xbox_controller.cpp" bodystart="76" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classargos__lib_1_1_xbox_controller_1adccdc70b774b397aa5628b9d6352f590" prot="public" static="no" nodiscard="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool XboxController::GetRawButton</definition>
+        <argsstring>(Button buttonIdx)</argsstring>
+        <name>GetRawButton</name>
+        <qualifiedname>argos_lib::XboxController::GetRawButton</qualifiedname>
+        <param>
+          <type><ref refid="classargos__lib_1_1_xbox_controller_1a067fb8b43b80533b5ec763b7105f40fc" kindref="member">Button</ref></type>
+          <declname>buttonIdx</declname>
+        </param>
+        <briefdescription>
+<para>Get the status of button. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buttonIdx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of requested button </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status ignoring any debounce </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/xbox_controller.h" line="161" column="11" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/controller/xbox_controller.cpp" bodystart="87" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classargos__lib_1_1_xbox_controller_1a932ee9d5507f553956cdccd270dca930" prot="public" static="no" nodiscard="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool XboxController::GetRawButtonPressed</definition>
+        <argsstring>(Button buttonIdx)</argsstring>
+        <name>GetRawButtonPressed</name>
+        <qualifiedname>argos_lib::XboxController::GetRawButtonPressed</qualifiedname>
+        <param>
+          <type><ref refid="classargos__lib_1_1_xbox_controller_1a067fb8b43b80533b5ec763b7105f40fc" kindref="member">Button</ref></type>
+          <declname>buttonIdx</declname>
+        </param>
+        <briefdescription>
+<para>Detect if a button just transitioned from inactive to active. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buttonIdx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of requested button </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if inactive to active transition occurred </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/xbox_controller.h" line="168" column="11" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/controller/xbox_controller.cpp" bodystart="91" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="classargos__lib_1_1_xbox_controller_1acd543af0f487a0c8c0b80a6377cf168e" prot="public" static="no" nodiscard="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool XboxController::GetRawButtonReleased</definition>
+        <argsstring>(Button buttonIdx)</argsstring>
+        <name>GetRawButtonReleased</name>
+        <qualifiedname>argos_lib::XboxController::GetRawButtonReleased</qualifiedname>
+        <param>
+          <type><ref refid="classargos__lib_1_1_xbox_controller_1a067fb8b43b80533b5ec763b7105f40fc" kindref="member">Button</ref></type>
+          <declname>buttonIdx</declname>
+        </param>
+        <briefdescription>
+<para>Detect if a button just transitioned from active to inactive. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buttonIdx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of requested button </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if active to inactive transition occurred </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/xbox_controller.h" line="175" column="11" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/controller/xbox_controller.cpp" bodystart="95" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classargos__lib_1_1_xbox_controller_1aef9f5330f44c3a99d248608917e4be9c" prot="public" static="no" nodiscard="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool XboxController::GetRawButton</definition>
+        <argsstring>(std::vector&lt; Button &gt; buttonCombo)</argsstring>
+        <name>GetRawButton</name>
+        <qualifiedname>argos_lib::XboxController::GetRawButton</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classargos__lib_1_1_xbox_controller_1a067fb8b43b80533b5ec763b7105f40fc" kindref="member">Button</ref> &gt;</type>
+          <declname>buttonCombo</declname>
+        </param>
+        <briefdescription>
+<para>Get the status of a combination of buttons ignoring debounce. Raw combo button state is active when all buttons are simultaneously active. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buttonCombo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buttons that make up the combination </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status ignoring any debounce </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/xbox_controller.h" line="185" column="11" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/controller/xbox_controller.cpp" bodystart="99" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="classargos__lib_1_1_xbox_controller_1ac3d13d007d0f25c3c5b9e1dd5f4c00d6" prot="public" static="no" nodiscard="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool XboxController::GetRawButtonPressed</definition>
+        <argsstring>(std::vector&lt; Button &gt; buttonCombo)</argsstring>
+        <name>GetRawButtonPressed</name>
+        <qualifiedname>argos_lib::XboxController::GetRawButtonPressed</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classargos__lib_1_1_xbox_controller_1a067fb8b43b80533b5ec763b7105f40fc" kindref="member">Button</ref> &gt;</type>
+          <declname>buttonCombo</declname>
+        </param>
+        <briefdescription>
+<para>Detect if a combination of buttons just transitioned from inactive to active. Raw combo button state is active when all buttons are simultaneously active. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buttonCombo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buttons that make up the combination </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if combination transition to active occurred </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/xbox_controller.h" line="193" column="11" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/controller/xbox_controller.cpp" bodystart="109" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="classargos__lib_1_1_xbox_controller_1a7d9346f400e771667e326c879db98583" prot="public" static="no" nodiscard="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool XboxController::GetRawButtonReleased</definition>
+        <argsstring>(std::vector&lt; Button &gt; buttonCombo)</argsstring>
+        <name>GetRawButtonReleased</name>
+        <qualifiedname>argos_lib::XboxController::GetRawButtonReleased</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classargos__lib_1_1_xbox_controller_1a067fb8b43b80533b5ec763b7105f40fc" kindref="member">Button</ref> &gt;</type>
+          <declname>buttonCombo</declname>
+        </param>
+        <briefdescription>
+<para>Detect if a combination of buttons just transitioned from active to inactive. Raw combo button state is active when all buttons are simultaneously active. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buttonCombo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buttons that make up the combination </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if combination transition to inactive occurred </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/xbox_controller.h" line="201" column="11" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/controller/xbox_controller.cpp" bodystart="120" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="classargos__lib_1_1_xbox_controller_1ac2dbe34f55893300f05ff9694d8144de" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>VibrationModel</type>
+        <definition>VibrationModel XboxController::GetVibration</definition>
+        <argsstring>() const</argsstring>
+        <name>GetVibration</name>
+        <qualifiedname>argos_lib::XboxController::GetVibration</qualifiedname>
+        <briefdescription>
+<para>Get the active vibration model. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Active vibration model </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/xbox_controller.h" line="208" column="20" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/controller/xbox_controller.cpp" bodystart="131" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="classargos__lib_1_1_xbox_controller_1a03150062f39deee57cd6e83cd05a9ea5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void XboxController::SetVibration</definition>
+        <argsstring>(VibrationModel newVibrationModel)</argsstring>
+        <name>SetVibration</name>
+        <qualifiedname>argos_lib::XboxController::SetVibration</qualifiedname>
+        <param>
+          <type>VibrationModel</type>
+          <declname>newVibrationModel</declname>
+        </param>
+        <briefdescription>
+<para>Sets a new vibration pattern and updates vibration output based on that new model. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>newVibrationModel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Model to generate vibration output </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/xbox_controller.h" line="215" column="10" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/controller/xbox_controller.cpp" bodystart="135" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="classargos__lib_1_1_xbox_controller_1a37e4539aa4e0cc854c05ffb9a24ba6db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void XboxController::UpdateVibration</definition>
+        <argsstring>()</argsstring>
+        <name>UpdateVibration</name>
+        <qualifiedname>argos_lib::XboxController::UpdateVibration</qualifiedname>
+        <briefdescription>
+<para>Update vibration output based on current vibration model. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/xbox_controller.h" line="220" column="10" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/controller/xbox_controller.cpp" bodystart="140" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="classargos__lib_1_1_xbox_controller_1a9646359d9a7bd868f0973d53640c24dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structargos__lib_1_1_xbox_controller_1_1_update_status" kindref="compound">UpdateStatus</ref></type>
+        <definition>XboxController::UpdateStatus XboxController::UpdateButton</definition>
+        <argsstring>(Button buttonIdx)</argsstring>
+        <name>UpdateButton</name>
+        <qualifiedname>argos_lib::XboxController::UpdateButton</qualifiedname>
+        <param>
+          <type><ref refid="classargos__lib_1_1_xbox_controller_1a067fb8b43b80533b5ec763b7105f40fc" kindref="member">Button</ref></type>
+          <declname>buttonIdx</declname>
+        </param>
+        <briefdescription>
+<para>Determines the new status of a button. This is used by the other status retrieval functions. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buttonIdx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of button to update </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="structargos__lib_1_1_xbox_controller_1_1_update_status" kindref="compound">UpdateStatus</ref> Full button state </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/xbox_controller.h" line="229" column="18" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/controller/xbox_controller.cpp" bodystart="146" bodyend="227"/>
+      </memberdef>
+      <memberdef kind="function" id="classargos__lib_1_1_xbox_controller_1a05d3525ce06746637b949d058f4987a0" prot="public" static="no" nodiscard="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>frc2::Trigger</type>
+        <definition>frc2::Trigger XboxController::TriggerRaw</definition>
+        <argsstring>(Button button)</argsstring>
+        <name>TriggerRaw</name>
+        <qualifiedname>argos_lib::XboxController::TriggerRaw</qualifiedname>
+        <param>
+          <type><ref refid="classargos__lib_1_1_xbox_controller_1a067fb8b43b80533b5ec763b7105f40fc" kindref="member">Button</ref></type>
+          <declname>button</declname>
+        </param>
+        <briefdescription>
+<para>Generates a trigger that is true when button is true. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>button</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classargos__lib_1_1_xbox_controller_1a067fb8b43b80533b5ec763b7105f40fc" kindref="member">Button</ref> to monitor </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>frc2::Trigger Trigger to monitor button </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/xbox_controller.h" line="237" column="20" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/controller/xbox_controller.cpp" bodystart="229" bodyend="231"/>
+      </memberdef>
+      <memberdef kind="function" id="classargos__lib_1_1_xbox_controller_1ad78edfb2af58ac2c583abb3763760f52" prot="public" static="no" nodiscard="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>frc2::Trigger</type>
+        <definition>frc2::Trigger XboxController::TriggerRaw</definition>
+        <argsstring>(std::vector&lt; Button &gt; buttonCombo)</argsstring>
+        <name>TriggerRaw</name>
+        <qualifiedname>argos_lib::XboxController::TriggerRaw</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classargos__lib_1_1_xbox_controller_1a067fb8b43b80533b5ec763b7105f40fc" kindref="member">Button</ref> &gt;</type>
+          <declname>buttonCombo</declname>
+        </param>
+        <briefdescription>
+<para>Generates a trigger that is true when all buttons in buttonCombo are true. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buttonCombo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buttons to monitor </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>frc2::Trigger Trigger to monitor buttons </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/xbox_controller.h" line="245" column="20" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/controller/xbox_controller.cpp" bodystart="233" bodyend="235"/>
+      </memberdef>
+      <memberdef kind="function" id="classargos__lib_1_1_xbox_controller_1a976135202ef3640cee8da7786cc8cbaf" prot="public" static="no" nodiscard="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>frc2::Trigger</type>
+        <definition>frc2::Trigger XboxController::TriggerRawAnyOf</definition>
+        <argsstring>(std::vector&lt; Button &gt; buttonCombo)</argsstring>
+        <name>TriggerRawAnyOf</name>
+        <qualifiedname>argos_lib::XboxController::TriggerRawAnyOf</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classargos__lib_1_1_xbox_controller_1a067fb8b43b80533b5ec763b7105f40fc" kindref="member">Button</ref> &gt;</type>
+          <declname>buttonCombo</declname>
+        </param>
+        <briefdescription>
+<para>Trigger when any of the selected buttons&apos; raw value is true. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buttonCombo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buttons to check </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>frc2::Trigger Trigger indicating any button raw value is true </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/xbox_controller.h" line="253" column="20" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/controller/xbox_controller.cpp" bodystart="237" bodyend="239"/>
+      </memberdef>
+      <memberdef kind="function" id="classargos__lib_1_1_xbox_controller_1a55a1d428930a842d49e4aabc518d59fc" prot="public" static="no" nodiscard="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>frc2::Trigger</type>
+        <definition>frc2::Trigger XboxController::TriggerRawAllOf</definition>
+        <argsstring>(std::vector&lt; Button &gt; buttonCombo)</argsstring>
+        <name>TriggerRawAllOf</name>
+        <qualifiedname>argos_lib::XboxController::TriggerRawAllOf</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classargos__lib_1_1_xbox_controller_1a067fb8b43b80533b5ec763b7105f40fc" kindref="member">Button</ref> &gt;</type>
+          <declname>buttonCombo</declname>
+        </param>
+        <briefdescription>
+<para>Trigger when all of the selected buttons&apos; raw values are true. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buttonCombo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buttons to check </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>frc2::Trigger Trigger indicating all button raw values are true </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/xbox_controller.h" line="261" column="20" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/controller/xbox_controller.cpp" bodystart="241" bodyend="243"/>
+      </memberdef>
+      <memberdef kind="function" id="classargos__lib_1_1_xbox_controller_1a0b086f832c1cef307a3ea04741da5a6d" prot="public" static="no" nodiscard="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>frc2::Trigger</type>
+        <definition>frc2::Trigger XboxController::TriggerRawNoneOf</definition>
+        <argsstring>(std::vector&lt; Button &gt; buttonCombo)</argsstring>
+        <name>TriggerRawNoneOf</name>
+        <qualifiedname>argos_lib::XboxController::TriggerRawNoneOf</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classargos__lib_1_1_xbox_controller_1a067fb8b43b80533b5ec763b7105f40fc" kindref="member">Button</ref> &gt;</type>
+          <declname>buttonCombo</declname>
+        </param>
+        <briefdescription>
+<para>Trigger when none of the selected buttons&apos; raw value is true. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buttonCombo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buttons to check </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>frc2::Trigger Trigger indicating none button raw value is true </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/xbox_controller.h" line="269" column="20" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/controller/xbox_controller.cpp" bodystart="245" bodyend="247"/>
+      </memberdef>
+      <memberdef kind="function" id="classargos__lib_1_1_xbox_controller_1af201e315dfabb84823c09ed38b274dfd" prot="public" static="no" nodiscard="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>frc2::Trigger</type>
+        <definition>frc2::Trigger XboxController::TriggerRawOneOf</definition>
+        <argsstring>(std::vector&lt; Button &gt; buttonCombo)</argsstring>
+        <name>TriggerRawOneOf</name>
+        <qualifiedname>argos_lib::XboxController::TriggerRawOneOf</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classargos__lib_1_1_xbox_controller_1a067fb8b43b80533b5ec763b7105f40fc" kindref="member">Button</ref> &gt;</type>
+          <declname>buttonCombo</declname>
+        </param>
+        <briefdescription>
+<para>Trigger when exactly one of the selected buttons&apos; raw value is true. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buttonCombo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buttons to check </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>frc2::Trigger Trigger indicating one button&apos;s raw value is true </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/xbox_controller.h" line="277" column="20" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/controller/xbox_controller.cpp" bodystart="249" bodyend="251"/>
+      </memberdef>
+      <memberdef kind="function" id="classargos__lib_1_1_xbox_controller_1ad3c0b12101691bfcfdfa80cb88df69e6" prot="public" static="no" nodiscard="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>frc2::Trigger</type>
+        <definition>frc2::Trigger XboxController::TriggerDebounced</definition>
+        <argsstring>(Button button)</argsstring>
+        <name>TriggerDebounced</name>
+        <qualifiedname>argos_lib::XboxController::TriggerDebounced</qualifiedname>
+        <param>
+          <type><ref refid="classargos__lib_1_1_xbox_controller_1a067fb8b43b80533b5ec763b7105f40fc" kindref="member">Button</ref></type>
+          <declname>button</declname>
+        </param>
+        <briefdescription>
+<para>Generates a trigger that is true when debounced button is true. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>button</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classargos__lib_1_1_xbox_controller_1a067fb8b43b80533b5ec763b7105f40fc" kindref="member">Button</ref> to monitor </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>frc2::Trigger Trigger to monitor debounced button </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/xbox_controller.h" line="285" column="20" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/controller/xbox_controller.cpp" bodystart="253" bodyend="255"/>
+      </memberdef>
+      <memberdef kind="function" id="classargos__lib_1_1_xbox_controller_1a38531dca77c8130db662e79387bfb074" prot="public" static="no" nodiscard="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>frc2::Trigger</type>
+        <definition>frc2::Trigger XboxController::TriggerDebounced</definition>
+        <argsstring>(std::vector&lt; Button &gt; buttonCombo)</argsstring>
+        <name>TriggerDebounced</name>
+        <qualifiedname>argos_lib::XboxController::TriggerDebounced</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classargos__lib_1_1_xbox_controller_1a067fb8b43b80533b5ec763b7105f40fc" kindref="member">Button</ref> &gt;</type>
+          <declname>buttonCombo</declname>
+        </param>
+        <briefdescription>
+<para>Generates a trigger that is true when all debounced buttons in buttonCombo are true. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buttonCombo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buttons to monitor </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>frc2::Trigger Trigger to monitor debounced buttons </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/xbox_controller.h" line="293" column="20" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/controller/xbox_controller.cpp" bodystart="257" bodyend="259"/>
+      </memberdef>
+      <memberdef kind="function" id="classargos__lib_1_1_xbox_controller_1aa42366fb0870f1503739d084bea2709b" prot="public" static="no" nodiscard="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>frc2::Trigger</type>
+        <definition>frc2::Trigger XboxController::TriggerDebouncedAnyOf</definition>
+        <argsstring>(std::vector&lt; Button &gt; buttonCombo)</argsstring>
+        <name>TriggerDebouncedAnyOf</name>
+        <qualifiedname>argos_lib::XboxController::TriggerDebouncedAnyOf</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classargos__lib_1_1_xbox_controller_1a067fb8b43b80533b5ec763b7105f40fc" kindref="member">Button</ref> &gt;</type>
+          <declname>buttonCombo</declname>
+        </param>
+        <briefdescription>
+<para>Trigger when any of the selected buttons&apos; debounced value is true. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buttonCombo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buttons to check </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>frc2::Trigger Trigger indicating any button debounced value is true </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/xbox_controller.h" line="301" column="20" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/controller/xbox_controller.cpp" bodystart="261" bodyend="263"/>
+      </memberdef>
+      <memberdef kind="function" id="classargos__lib_1_1_xbox_controller_1afa43e996ddd85797c208fbd8a7dd1deb" prot="public" static="no" nodiscard="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>frc2::Trigger</type>
+        <definition>frc2::Trigger XboxController::TriggerDebouncedAllOf</definition>
+        <argsstring>(std::vector&lt; Button &gt; buttonCombo)</argsstring>
+        <name>TriggerDebouncedAllOf</name>
+        <qualifiedname>argos_lib::XboxController::TriggerDebouncedAllOf</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classargos__lib_1_1_xbox_controller_1a067fb8b43b80533b5ec763b7105f40fc" kindref="member">Button</ref> &gt;</type>
+          <declname>buttonCombo</declname>
+        </param>
+        <briefdescription>
+<para>Trigger when all of the selected buttons&apos; debounced values are true. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buttonCombo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buttons to check </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>frc2::Trigger Trigger indicating all button debounced values are true </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/xbox_controller.h" line="309" column="20" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/controller/xbox_controller.cpp" bodystart="265" bodyend="267"/>
+      </memberdef>
+      <memberdef kind="function" id="classargos__lib_1_1_xbox_controller_1a7ae9af3e3502e2f25ed2f55285f3fcda" prot="public" static="no" nodiscard="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>frc2::Trigger</type>
+        <definition>frc2::Trigger XboxController::TriggerDebouncedNoneOf</definition>
+        <argsstring>(std::vector&lt; Button &gt; buttonCombo)</argsstring>
+        <name>TriggerDebouncedNoneOf</name>
+        <qualifiedname>argos_lib::XboxController::TriggerDebouncedNoneOf</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classargos__lib_1_1_xbox_controller_1a067fb8b43b80533b5ec763b7105f40fc" kindref="member">Button</ref> &gt;</type>
+          <declname>buttonCombo</declname>
+        </param>
+        <briefdescription>
+<para>Trigger when none of the selected buttons&apos; debounced value is true. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buttonCombo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buttons to check </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>frc2::Trigger Trigger indicating none button debounced value is true </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/xbox_controller.h" line="317" column="20" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/controller/xbox_controller.cpp" bodystart="269" bodyend="271"/>
+      </memberdef>
+      <memberdef kind="function" id="classargos__lib_1_1_xbox_controller_1ac139207d20af38f564517c0d9a6aae0e" prot="public" static="no" nodiscard="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>frc2::Trigger</type>
+        <definition>frc2::Trigger XboxController::TriggerDebouncedOneOf</definition>
+        <argsstring>(std::vector&lt; Button &gt; buttonCombo)</argsstring>
+        <name>TriggerDebouncedOneOf</name>
+        <qualifiedname>argos_lib::XboxController::TriggerDebouncedOneOf</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classargos__lib_1_1_xbox_controller_1a067fb8b43b80533b5ec763b7105f40fc" kindref="member">Button</ref> &gt;</type>
+          <declname>buttonCombo</declname>
+        </param>
+        <briefdescription>
+<para>Trigger when exactly one of the selected buttons&apos; debounced value is true. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buttonCombo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buttons to check </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>frc2::Trigger Trigger indicating one button&apos;s debounced value is true </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/xbox_controller.h" line="325" column="20" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/controller/xbox_controller.cpp" bodystart="273" bodyend="275"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classargos__lib_1_1_xbox_controller_1ad81f3f85b46a5d104f8fed6d276a7d4a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DPadButtons</type>
+        <definition>XboxController::DPadButtons XboxController::GetPOVButtons</definition>
+        <argsstring>()</argsstring>
+        <name>GetPOVButtons</name>
+        <qualifiedname>argos_lib::XboxController::GetPOVButtons</qualifiedname>
+        <briefdescription>
+<para>Convert POV angle to usable DPad button values. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>DPadButtons Active status for each cardinal direction </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/xbox_controller.h" line="343" column="17" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/controller/xbox_controller.cpp" bodystart="344" bodyend="350"/>
+      </memberdef>
+      <memberdef kind="function" id="classargos__lib_1_1_xbox_controller_1a5e29c25c18cbfb4291afe65870a03e29" prot="private" static="no" nodiscard="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>frc2::Trigger</type>
+        <definition>frc2::Trigger XboxController::TriggerAnyOf</definition>
+        <argsstring>(std::vector&lt; Button &gt; buttonCombo, std::function&lt; bool(Button)&gt; buttonGetterFunc)</argsstring>
+        <name>TriggerAnyOf</name>
+        <qualifiedname>argos_lib::XboxController::TriggerAnyOf</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classargos__lib_1_1_xbox_controller_1a067fb8b43b80533b5ec763b7105f40fc" kindref="member">Button</ref> &gt;</type>
+          <declname>buttonCombo</declname>
+        </param>
+        <param>
+          <type>std::function&lt; bool(<ref refid="classargos__lib_1_1_xbox_controller_1a067fb8b43b80533b5ec763b7105f40fc" kindref="member">Button</ref>)&gt;</type>
+          <declname>buttonGetterFunc</declname>
+        </param>
+        <briefdescription>
+<para>Trigger when any of the selected buttons is true according to the supplied buttonGetterFunc. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buttonCombo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buttons to check </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buttonGetterFunc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Function to evaluate to determine button state </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>frc2::Trigger Trigger indicating any button is true </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/xbox_controller.h" line="352" column="20" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/controller/xbox_controller.cpp" bodystart="277" bodyend="286"/>
+      </memberdef>
+      <memberdef kind="function" id="classargos__lib_1_1_xbox_controller_1a9f5e6cc42755ea7e500571c339e33e44" prot="private" static="no" nodiscard="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>frc2::Trigger</type>
+        <definition>frc2::Trigger XboxController::TriggerAllOf</definition>
+        <argsstring>(std::vector&lt; Button &gt; buttonCombo, std::function&lt; bool(Button)&gt; buttonGetterFunc)</argsstring>
+        <name>TriggerAllOf</name>
+        <qualifiedname>argos_lib::XboxController::TriggerAllOf</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classargos__lib_1_1_xbox_controller_1a067fb8b43b80533b5ec763b7105f40fc" kindref="member">Button</ref> &gt;</type>
+          <declname>buttonCombo</declname>
+        </param>
+        <param>
+          <type>std::function&lt; bool(<ref refid="classargos__lib_1_1_xbox_controller_1a067fb8b43b80533b5ec763b7105f40fc" kindref="member">Button</ref>)&gt;</type>
+          <declname>buttonGetterFunc</declname>
+        </param>
+        <briefdescription>
+<para>Trigger when all of the selected buttons is true according to the supplied buttonGetterFunc. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buttonCombo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buttons to check </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buttonGetterFunc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Function to evaluate to determine button state </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>frc2::Trigger Trigger indicating all buttons are true </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/xbox_controller.h" line="362" column="20" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/controller/xbox_controller.cpp" bodystart="288" bodyend="297"/>
+      </memberdef>
+      <memberdef kind="function" id="classargos__lib_1_1_xbox_controller_1a535b1eaf062df4368bf7fdbaefabfeb2" prot="private" static="no" nodiscard="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>frc2::Trigger</type>
+        <definition>frc2::Trigger XboxController::TriggerNoneOf</definition>
+        <argsstring>(std::vector&lt; Button &gt; buttonCombo, std::function&lt; bool(Button)&gt; buttonGetterFunc)</argsstring>
+        <name>TriggerNoneOf</name>
+        <qualifiedname>argos_lib::XboxController::TriggerNoneOf</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classargos__lib_1_1_xbox_controller_1a067fb8b43b80533b5ec763b7105f40fc" kindref="member">Button</ref> &gt;</type>
+          <declname>buttonCombo</declname>
+        </param>
+        <param>
+          <type>std::function&lt; bool(<ref refid="classargos__lib_1_1_xbox_controller_1a067fb8b43b80533b5ec763b7105f40fc" kindref="member">Button</ref>)&gt;</type>
+          <declname>buttonGetterFunc</declname>
+        </param>
+        <briefdescription>
+<para>Trigger when none of the selected buttons is true according to the supplied buttonGetterFunc. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buttonCombo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buttons to check </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buttonGetterFunc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Function to evaluate to determine button state </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>frc2::Trigger Trigger indicating no button is true </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/xbox_controller.h" line="372" column="20" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/controller/xbox_controller.cpp" bodystart="299" bodyend="308"/>
+      </memberdef>
+      <memberdef kind="function" id="classargos__lib_1_1_xbox_controller_1a26e1d7eb3700f978fcf3a2ee0c8f5b33" prot="private" static="no" nodiscard="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>frc2::Trigger</type>
+        <definition>frc2::Trigger XboxController::TriggerOneOf</definition>
+        <argsstring>(std::vector&lt; Button &gt; buttonCombo, std::function&lt; bool(Button)&gt; buttonGetterFunc)</argsstring>
+        <name>TriggerOneOf</name>
+        <qualifiedname>argos_lib::XboxController::TriggerOneOf</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classargos__lib_1_1_xbox_controller_1a067fb8b43b80533b5ec763b7105f40fc" kindref="member">Button</ref> &gt;</type>
+          <declname>buttonCombo</declname>
+        </param>
+        <param>
+          <type>std::function&lt; bool(<ref refid="classargos__lib_1_1_xbox_controller_1a067fb8b43b80533b5ec763b7105f40fc" kindref="member">Button</ref>)&gt;</type>
+          <declname>buttonGetterFunc</declname>
+        </param>
+        <briefdescription>
+<para>Trigger when exactly one of the selected buttons is true according to the supplied buttonGetterFunc. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buttonCombo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buttons to check </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buttonGetterFunc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Function to evaluate to determine button state </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>frc2::Trigger Trigger indicating one button is true </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/xbox_controller.h" line="382" column="20" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/controller/xbox_controller.cpp" bodystart="310" bodyend="342"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>argos_lib::XboxController</label>
+        <link refid="classargos__lib_1_1_xbox_controller"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>frc::GenericHID</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>argos_lib::XboxController</label>
+        <link refid="classargos__lib_1_1_xbox_controller"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>frc::GenericHID</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/xbox_controller.h" line="18" column="3" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/xbox_controller.h" bodystart="18" bodyend="394"/>
+    <listofallmembers>
+      <member refid="classargos__lib_1_1_xbox_controller_1a9afb840b2012d822c97c628b2e373ad6" prot="private" virt="non-virtual"><scope>argos_lib::XboxController</scope><name>analogTriggerThresh</name></member>
+      <member refid="classargos__lib_1_1_xbox_controller_1aff2bf847008c81f1269494f552285a86" prot="public" virt="non-virtual"><scope>argos_lib::XboxController</scope><name>Axis</name></member>
+      <member refid="classargos__lib_1_1_xbox_controller_1a067fb8b43b80533b5ec763b7105f40fc" prot="public" virt="non-virtual"><scope>argos_lib::XboxController</scope><name>Button</name></member>
+      <member refid="classargos__lib_1_1_xbox_controller_1ae7bc91621898e77ae7118a2e12cfb8bd" prot="public" virt="non-virtual"><scope>argos_lib::XboxController</scope><name>GetDebouncedButton</name></member>
+      <member refid="classargos__lib_1_1_xbox_controller_1a42093c23cd159fddbcb58c850ff78a2b" prot="public" virt="non-virtual"><scope>argos_lib::XboxController</scope><name>GetDebouncedButton</name></member>
+      <member refid="classargos__lib_1_1_xbox_controller_1afbef95cfa675c9d7f4fac9b1fd1af79f" prot="public" virt="non-virtual"><scope>argos_lib::XboxController</scope><name>GetDebouncedButtonPressed</name></member>
+      <member refid="classargos__lib_1_1_xbox_controller_1a0a6d9a111ee41266ddfd6b1eecc44ab0" prot="public" virt="non-virtual"><scope>argos_lib::XboxController</scope><name>GetDebouncedButtonPressed</name></member>
+      <member refid="classargos__lib_1_1_xbox_controller_1a158a69ce5cc44c84e98bfd5f1bae3218" prot="public" virt="non-virtual"><scope>argos_lib::XboxController</scope><name>GetDebouncedButtonReleased</name></member>
+      <member refid="classargos__lib_1_1_xbox_controller_1afd8186cefc16209323d91c4f0a64aa47" prot="public" virt="non-virtual"><scope>argos_lib::XboxController</scope><name>GetDebouncedButtonReleased</name></member>
+      <member refid="classargos__lib_1_1_xbox_controller_1ad81f3f85b46a5d104f8fed6d276a7d4a" prot="private" virt="non-virtual"><scope>argos_lib::XboxController</scope><name>GetPOVButtons</name></member>
+      <member refid="classargos__lib_1_1_xbox_controller_1adccdc70b774b397aa5628b9d6352f590" prot="public" virt="non-virtual"><scope>argos_lib::XboxController</scope><name>GetRawButton</name></member>
+      <member refid="classargos__lib_1_1_xbox_controller_1aef9f5330f44c3a99d248608917e4be9c" prot="public" virt="non-virtual"><scope>argos_lib::XboxController</scope><name>GetRawButton</name></member>
+      <member refid="classargos__lib_1_1_xbox_controller_1a932ee9d5507f553956cdccd270dca930" prot="public" virt="non-virtual"><scope>argos_lib::XboxController</scope><name>GetRawButtonPressed</name></member>
+      <member refid="classargos__lib_1_1_xbox_controller_1ac3d13d007d0f25c3c5b9e1dd5f4c00d6" prot="public" virt="non-virtual"><scope>argos_lib::XboxController</scope><name>GetRawButtonPressed</name></member>
+      <member refid="classargos__lib_1_1_xbox_controller_1acd543af0f487a0c8c0b80a6377cf168e" prot="public" virt="non-virtual"><scope>argos_lib::XboxController</scope><name>GetRawButtonReleased</name></member>
+      <member refid="classargos__lib_1_1_xbox_controller_1a7d9346f400e771667e326c879db98583" prot="public" virt="non-virtual"><scope>argos_lib::XboxController</scope><name>GetRawButtonReleased</name></member>
+      <member refid="classargos__lib_1_1_xbox_controller_1adfd321a87d96b003748b642fdf711601" prot="public" virt="non-virtual"><scope>argos_lib::XboxController</scope><name>GetTriggerAxis</name></member>
+      <member refid="classargos__lib_1_1_xbox_controller_1ac2dbe34f55893300f05ff9694d8144de" prot="public" virt="non-virtual"><scope>argos_lib::XboxController</scope><name>GetVibration</name></member>
+      <member refid="classargos__lib_1_1_xbox_controller_1af845a5fb5316e2f8d9c68e8cb60966ff" prot="public" virt="non-virtual"><scope>argos_lib::XboxController</scope><name>GetX</name></member>
+      <member refid="classargos__lib_1_1_xbox_controller_1aa8e565e9547cea97e7bdd92143b7b8fa" prot="public" virt="non-virtual"><scope>argos_lib::XboxController</scope><name>GetY</name></member>
+      <member refid="classargos__lib_1_1_xbox_controller_1a83b7ab61e8cdc0191694a1463276df91" prot="public" virt="non-virtual"><scope>argos_lib::XboxController</scope><name>JoystickHand</name></member>
+      <member refid="classargos__lib_1_1_xbox_controller_1a97e71d669cd4ce2cee33a0faf0352cef" prot="private" virt="non-virtual"><scope>argos_lib::XboxController</scope><name>m_buttonDebounceSettings</name></member>
+      <member refid="classargos__lib_1_1_xbox_controller_1a2da11ea2ed7b4947a99face443767ea4" prot="private" virt="non-virtual"><scope>argos_lib::XboxController</scope><name>m_buttonDebounceStatus</name></member>
+      <member refid="classargos__lib_1_1_xbox_controller_1a745886a45f32be213304338d58f69e92" prot="private" virt="non-virtual"><scope>argos_lib::XboxController</scope><name>m_buttonDebounceTransitionTime</name></member>
+      <member refid="classargos__lib_1_1_xbox_controller_1a7f3f1cf3830e35dc7326dd877c76cbb1" prot="private" virt="non-virtual"><scope>argos_lib::XboxController</scope><name>m_rawButtonStatus</name></member>
+      <member refid="classargos__lib_1_1_xbox_controller_1a3744c0aad2447435645779da4c7469ce" prot="private" virt="non-virtual"><scope>argos_lib::XboxController</scope><name>m_vibrationModel</name></member>
+      <member refid="classargos__lib_1_1_xbox_controller_1aeeddcd789554e899d6fc243b481edb90" prot="public" virt="non-virtual"><scope>argos_lib::XboxController</scope><name>SetButtonDebounce</name></member>
+      <member refid="classargos__lib_1_1_xbox_controller_1a03150062f39deee57cd6e83cd05a9ea5" prot="public" virt="non-virtual"><scope>argos_lib::XboxController</scope><name>SetVibration</name></member>
+      <member refid="classargos__lib_1_1_xbox_controller_1a34a99a66914262ee5e1e9b8dfbe46ef1" prot="public" virt="non-virtual"><scope>argos_lib::XboxController</scope><name>SwapSettings</name></member>
+      <member refid="classargos__lib_1_1_xbox_controller_1a9f5e6cc42755ea7e500571c339e33e44" prot="private" virt="non-virtual"><scope>argos_lib::XboxController</scope><name>TriggerAllOf</name></member>
+      <member refid="classargos__lib_1_1_xbox_controller_1a5e29c25c18cbfb4291afe65870a03e29" prot="private" virt="non-virtual"><scope>argos_lib::XboxController</scope><name>TriggerAnyOf</name></member>
+      <member refid="classargos__lib_1_1_xbox_controller_1ad3c0b12101691bfcfdfa80cb88df69e6" prot="public" virt="non-virtual"><scope>argos_lib::XboxController</scope><name>TriggerDebounced</name></member>
+      <member refid="classargos__lib_1_1_xbox_controller_1a38531dca77c8130db662e79387bfb074" prot="public" virt="non-virtual"><scope>argos_lib::XboxController</scope><name>TriggerDebounced</name></member>
+      <member refid="classargos__lib_1_1_xbox_controller_1afa43e996ddd85797c208fbd8a7dd1deb" prot="public" virt="non-virtual"><scope>argos_lib::XboxController</scope><name>TriggerDebouncedAllOf</name></member>
+      <member refid="classargos__lib_1_1_xbox_controller_1aa42366fb0870f1503739d084bea2709b" prot="public" virt="non-virtual"><scope>argos_lib::XboxController</scope><name>TriggerDebouncedAnyOf</name></member>
+      <member refid="classargos__lib_1_1_xbox_controller_1a7ae9af3e3502e2f25ed2f55285f3fcda" prot="public" virt="non-virtual"><scope>argos_lib::XboxController</scope><name>TriggerDebouncedNoneOf</name></member>
+      <member refid="classargos__lib_1_1_xbox_controller_1ac139207d20af38f564517c0d9a6aae0e" prot="public" virt="non-virtual"><scope>argos_lib::XboxController</scope><name>TriggerDebouncedOneOf</name></member>
+      <member refid="classargos__lib_1_1_xbox_controller_1a535b1eaf062df4368bf7fdbaefabfeb2" prot="private" virt="non-virtual"><scope>argos_lib::XboxController</scope><name>TriggerNoneOf</name></member>
+      <member refid="classargos__lib_1_1_xbox_controller_1a26e1d7eb3700f978fcf3a2ee0c8f5b33" prot="private" virt="non-virtual"><scope>argos_lib::XboxController</scope><name>TriggerOneOf</name></member>
+      <member refid="classargos__lib_1_1_xbox_controller_1a05d3525ce06746637b949d058f4987a0" prot="public" virt="non-virtual"><scope>argos_lib::XboxController</scope><name>TriggerRaw</name></member>
+      <member refid="classargos__lib_1_1_xbox_controller_1ad78edfb2af58ac2c583abb3763760f52" prot="public" virt="non-virtual"><scope>argos_lib::XboxController</scope><name>TriggerRaw</name></member>
+      <member refid="classargos__lib_1_1_xbox_controller_1a55a1d428930a842d49e4aabc518d59fc" prot="public" virt="non-virtual"><scope>argos_lib::XboxController</scope><name>TriggerRawAllOf</name></member>
+      <member refid="classargos__lib_1_1_xbox_controller_1a976135202ef3640cee8da7786cc8cbaf" prot="public" virt="non-virtual"><scope>argos_lib::XboxController</scope><name>TriggerRawAnyOf</name></member>
+      <member refid="classargos__lib_1_1_xbox_controller_1a0b086f832c1cef307a3ea04741da5a6d" prot="public" virt="non-virtual"><scope>argos_lib::XboxController</scope><name>TriggerRawNoneOf</name></member>
+      <member refid="classargos__lib_1_1_xbox_controller_1af201e315dfabb84823c09ed38b274dfd" prot="public" virt="non-virtual"><scope>argos_lib::XboxController</scope><name>TriggerRawOneOf</name></member>
+      <member refid="classargos__lib_1_1_xbox_controller_1a9646359d9a7bd868f0973d53640c24dc" prot="public" virt="non-virtual"><scope>argos_lib::XboxController</scope><name>UpdateButton</name></member>
+      <member refid="classargos__lib_1_1_xbox_controller_1a37e4539aa4e0cc854c05ffb9a24ba6db" prot="public" virt="non-virtual"><scope>argos_lib::XboxController</scope><name>UpdateVibration</name></member>
+      <member refid="classargos__lib_1_1_xbox_controller_1a6ee7c6aca1c6b19dcdded53a3ed510dd" prot="public" virt="non-virtual"><scope>argos_lib::XboxController</scope><name>XboxController</name></member>
+      <member refid="classargos__lib_1_1_xbox_controller_1aa5ac0b7eae496aaf61aa1fe5bca0fa37" prot="public" virt="non-virtual"><scope>argos_lib::XboxController</scope><name>XboxController</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="structargos__lib_1_1led_1_1_sprite" kind="struct" language="C++" prot="public">
+    <compoundname>argos_lib::led::Sprite</compoundname>
+    <includes refid="animiation_8h" local="no">animiation.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structargos__lib_1_1led_1_1_sprite_1a8118d092d262880dc7f3b844fe19fc67" prot="public" static="no" mutable="no">
+        <type><ref refid="classargos__lib_1_1led_1_1_array2_d" kindref="compound">Panel</ref></type>
+        <definition>Panel argos_lib::led::Sprite::colors</definition>
+        <argsstring></argsstring>
+        <name>colors</name>
+        <qualifiedname>argos_lib::led::Sprite::colors</qualifiedname>
+        <briefdescription>
+<para>Colors of the sprite. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/led/animiation.h" line="45" column="13" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/led/animiation.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structargos__lib_1_1led_1_1_sprite_1a5c6ac5d8f3e63c3dd66fa3ec1097a386" prot="public" static="no" mutable="no">
+        <type><ref refid="classargos__lib_1_1led_1_1_array2_d" kindref="compound">Mask</ref></type>
+        <definition>Mask argos_lib::led::Sprite::alpha</definition>
+        <argsstring></argsstring>
+        <name>alpha</name>
+        <qualifiedname>argos_lib::led::Sprite::alpha</qualifiedname>
+        <briefdescription>
+<para>Per-pixel transparency. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/led/animiation.h" line="46" column="12" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/led/animiation.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para><ulink url="https://en.wikipedia.org/wiki/Sprite_(computer_graphics)">https://en.wikipedia.org/wiki/Sprite_(computer_graphics)</ulink> </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>argos_lib::led::Array2D&lt; float &gt;</label>
+        <link refid="classargos__lib_1_1led_1_1_array2_d"/>
+      </node>
+      <node id="2">
+        <label>argos_lib::led::Array2D&lt; frc::AddressableLED::LEDData &gt;</label>
+        <link refid="classargos__lib_1_1led_1_1_array2_d"/>
+      </node>
+      <node id="1">
+        <label>argos_lib::led::Sprite</label>
+        <link refid="structargos__lib_1_1led_1_1_sprite"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>colors</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>alpha</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/led/animiation.h" line="44" column="5" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/led/animiation.h" bodystart="44" bodyend="47"/>
+    <listofallmembers>
+      <member refid="structargos__lib_1_1led_1_1_sprite_1a5c6ac5d8f3e63c3dd66fa3ec1097a386" prot="public" virt="non-virtual"><scope>argos_lib::led::Sprite</scope><name>alpha</name></member>
+      <member refid="structargos__lib_1_1led_1_1_sprite_1a8118d092d262880dc7f3b844fe19fc67" prot="public" virt="non-virtual"><scope>argos_lib::led::Sprite</scope><name>colors</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

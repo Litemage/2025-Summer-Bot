@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="dir_ce90de3a31c0930a75a0088390301e44" kind="dir">
+    <compoundname>C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general</compoundname>
+    <innerfile refid="angle__utils_8h">angle_utils.h</innerfile>
+    <innerfile refid="color_8h">color.h</innerfile>
+    <innerfile refid="debounce__settings_8h">debounce_settings.h</innerfile>
+    <innerfile refid="debouncer_8h">debouncer.h</innerfile>
+    <innerfile refid="edge__detector_8h">edge_detector.h</innerfile>
+    <innerfile refid="general_8h">general.h</innerfile>
+    <innerfile refid="generic__debouncer_8h">generic_debouncer.h</innerfile>
+    <innerfile refid="hysteresis__filter_8h">hysteresis_filter.h</innerfile>
+    <innerfile refid="interpolation_8h">interpolation.h</innerfile>
+    <innerfile refid="log_8h">log.h</innerfile>
+    <innerfile refid="nt__motor__pid__tuner_8h">nt_motor_pid_tuner.h</innerfile>
+    <innerfile refid="nt__subscriber_8h">nt_subscriber.h</innerfile>
+    <innerfile refid="odometry__aim_8h">odometry_aim.h</innerfile>
+    <innerfile refid="swerve__utils_8h">swerve_utils.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/"/>
+  </compounddef>
+</doxygen>

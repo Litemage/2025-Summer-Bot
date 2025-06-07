@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="_example_subsystem_8cpp" kind="file" language="C++">
+    <compoundname>ExampleSubsystem.cpp</compoundname>
+    <includes refid="_example_subsystem_8h" local="yes">subsystems/ExampleSubsystem.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/cpp/subsystems/ExampleSubsystem.cpp</label>
+        <link refid="_example_subsystem_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>subsystems/ExampleSubsystem.h</label>
+        <link refid="_example_subsystem_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>frc2/command/CommandPtr.h</label>
+      </node>
+      <node id="4">
+        <label>frc2/command/SubsystemBase.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>FIRST<sp/>and<sp/>other<sp/>WPILib<sp/>contributors.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Open<sp/>Source<sp/>Software;<sp/>you<sp/>can<sp/>modify<sp/>and/or<sp/>share<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>the<sp/>WPILib<sp/>BSD<sp/>license<sp/>file<sp/>in<sp/>the<sp/>root<sp/>directory<sp/>of<sp/>this<sp/>project.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;subsystems/ExampleSubsystem.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">ExampleSubsystem::ExampleSubsystem()<sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Implementation<sp/>of<sp/>subsystem<sp/>constructor<sp/>goes<sp/>here.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal">frc2::CommandPtr<sp/><ref refid="class_example_subsystem_1a5c2ea6e0606b8417e9048b4acdd25c4f" kindref="member">ExampleSubsystem::ExampleMethodCommand</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Inline<sp/>construction<sp/>of<sp/>command<sp/>goes<sp/>here.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Subsystem::RunOnce<sp/>implicitly<sp/>requires<sp/>`this`<sp/>subsystem.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>RunOnce([</highlight><highlight class="comment">/*<sp/>this<sp/>*/</highlight><highlight class="normal">]<sp/>{<sp/></highlight><highlight class="comment">/*<sp/>one-time<sp/>action<sp/>goes<sp/>here<sp/>*/</highlight><highlight class="normal"><sp/>});</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_example_subsystem_1a53ca16dd083c89be2a760436607031d9" kindref="member">ExampleSubsystem::ExampleCondition</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Query<sp/>some<sp/>boolean<sp/>state,<sp/>such<sp/>as<sp/>a<sp/>digital<sp/>sensor.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_example_subsystem_1ae3a0c58819a31cca623fcb2fb8af0e1c" kindref="member">ExampleSubsystem::Periodic</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Implementation<sp/>of<sp/>subsystem<sp/>periodic<sp/>method<sp/>goes<sp/>here.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_example_subsystem_1a08d866697c4da747ff7aa906438ef99b" kindref="member">ExampleSubsystem::SimulationPeriodic</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Implementation<sp/>of<sp/>subsystem<sp/>simulation<sp/>periodic<sp/>method<sp/>goes<sp/>here.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/cpp/subsystems/ExampleSubsystem.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,148 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="structargos__lib_1_1_l_e_d_state" kind="struct" language="C++" prot="public">
+    <compoundname>argos_lib::LEDState</compoundname>
+    <includes refid="led__subsystem_8h" local="no">led_subsystem.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structargos__lib_1_1_l_e_d_state_1a7b626cd1b28d0d794f17ee8732b366cf" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool argos_lib::LEDState::animated</definition>
+        <argsstring></argsstring>
+        <name>animated</name>
+        <qualifiedname>argos_lib::LEDState::animated</qualifiedname>
+        <initializer>{false}</initializer>
+        <briefdescription>
+<para>True indicates this is using a stock animation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/subsystems/led_subsystem.h" line="20" column="10" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/subsystems/led_subsystem.h" bodystart="20" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="variable" id="structargos__lib_1_1_l_e_d_state_1a8e1dd5e60d5a6e2fe7824ebff2ce1ce7" prot="public" static="no" mutable="no">
+        <type>frc::AddressableLED::LEDData</type>
+        <definition>frc::AddressableLED::LEDData argos_lib::LEDState::color</definition>
+        <argsstring></argsstring>
+        <name>color</name>
+        <qualifiedname>argos_lib::LEDState::color</qualifiedname>
+        <briefdescription>
+<para>Color of LED. Only used when animated is false. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/subsystems/led_subsystem.h" line="21" column="34" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/subsystems/led_subsystem.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structargos__lib_1_1_l_e_d_state_1a0fe479231226770fa2805bb4d66e0a37" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool LEDState::operator==</definition>
+        <argsstring>(const LEDState &amp;other) const</argsstring>
+        <name>operator==</name>
+        <qualifiedname>argos_lib::LEDState::operator==</qualifiedname>
+        <param>
+          <type>const <ref refid="structargos__lib_1_1_l_e_d_state" kindref="compound">LEDState</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>It&apos;s an equality comparison operator... </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structargos__lib_1_1_l_e_d_state" kindref="compound">LEDState</ref> to compare to </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True when both states are equivalent </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/subsystems/led_subsystem.h" line="29" column="10" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/subsystems/led_subsystem.cpp" bodystart="19" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="structargos__lib_1_1_l_e_d_state_1af540ce9306944088ab6e86b6bc675b29" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool LEDState::operator!=</definition>
+        <argsstring>(const LEDState &amp;other) const</argsstring>
+        <name>operator!=</name>
+        <qualifiedname>argos_lib::LEDState::operator!=</qualifiedname>
+        <param>
+          <type>const <ref refid="structargos__lib_1_1_l_e_d_state" kindref="compound">LEDState</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>It&apos;s an inequality comparison operator... </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structargos__lib_1_1_l_e_d_state" kindref="compound">LEDState</ref> to compare to </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True when states are different </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/subsystems/led_subsystem.h" line="36" column="10" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/subsystems/led_subsystem.cpp" bodystart="22" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="structargos__lib_1_1_l_e_d_state_1ad3824a46a07dd8b78af57e8ca8df288b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structargos__lib_1_1_l_e_d_state" kindref="compound">LEDState</ref> &amp;</type>
+        <definition>LEDState &amp; LEDState::operator=</definition>
+        <argsstring>(const frc::AddressableLED::LEDData &amp;other)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>argos_lib::LEDState::operator=</qualifiedname>
+        <param>
+          <type>const frc::AddressableLED::LEDData &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Copy assignment operator. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New value to assign to self </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="structargos__lib_1_1_l_e_d_state" kindref="compound">LEDState</ref>&amp; Reference to this object after assignment </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/subsystems/led_subsystem.h" line="44" column="14" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/subsystems/led_subsystem.cpp" bodystart="26" bodyend="29"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Color and animation status for an individual LED. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/subsystems/led_subsystem.h" line="19" column="3" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/subsystems/led_subsystem.h" bodystart="19" bodyend="45"/>
+    <listofallmembers>
+      <member refid="structargos__lib_1_1_l_e_d_state_1a7b626cd1b28d0d794f17ee8732b366cf" prot="public" virt="non-virtual"><scope>argos_lib::LEDState</scope><name>animated</name></member>
+      <member refid="structargos__lib_1_1_l_e_d_state_1a8e1dd5e60d5a6e2fe7824ebff2ce1ce7" prot="public" virt="non-virtual"><scope>argos_lib::LEDState</scope><name>color</name></member>
+      <member refid="structargos__lib_1_1_l_e_d_state_1af540ce9306944088ab6e86b6bc675b29" prot="public" virt="non-virtual"><scope>argos_lib::LEDState</scope><name>operator!=</name></member>
+      <member refid="structargos__lib_1_1_l_e_d_state_1ad3824a46a07dd8b78af57e8ca8df288b" prot="public" virt="non-virtual"><scope>argos_lib::LEDState</scope><name>operator=</name></member>
+      <member refid="structargos__lib_1_1_l_e_d_state_1a0fe479231226770fa2805bb4d66e0a37" prot="public" virt="non-virtual"><scope>argos_lib::LEDState</scope><name>operator==</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

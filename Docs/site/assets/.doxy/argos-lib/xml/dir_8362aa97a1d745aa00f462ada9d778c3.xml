@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="dir_8362aa97a1d745aa00f462ada9d778c3" kind="dir">
+    <compoundname>C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/test</compoundname>
+    <innerfile refid="edge__detector__test_8cpp">edge_detector_test.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/test/"/>
+  </compounddef>
+</doxygen>

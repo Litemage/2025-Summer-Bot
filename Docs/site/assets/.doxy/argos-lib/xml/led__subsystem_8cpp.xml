@@ -1,0 +1,244 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="led__subsystem_8cpp" kind="file" language="C++">
+    <compoundname>led_subsystem.cpp</compoundname>
+    <includes refid="led__subsystem_8h" local="yes">argos_lib/subsystems/led_subsystem.h</includes>
+    <includes local="no">algorithm</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/subsystems/led_subsystem.cpp</label>
+        <link refid="led__subsystem_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>argos_lib/led/animiation.h</label>
+        <link refid="animiation_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>argos_lib/led/panel.h</label>
+        <link refid="panel_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>argos_lib/subsystems/led_subsystem.h</label>
+        <link refid="led__subsystem_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>algorithm</label>
+      </node>
+      <node id="11">
+        <label>ctre/phoenix/led/CANdle.h</label>
+      </node>
+      <node id="5">
+        <label>frc/AddressableLED.h</label>
+      </node>
+      <node id="12">
+        <label>frc2/command/SubsystemBase.h</label>
+      </node>
+      <node id="10">
+        <label>functional</label>
+      </node>
+      <node id="8">
+        <label>units/angle.h</label>
+      </node>
+      <node id="9">
+        <label>units/time.h</label>
+      </node>
+      <node id="7">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="led__subsystem_8cpp_1adad1c3ae617ddbea26542da02fd9cce0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool operator==</definition>
+        <argsstring>(const frc::AddressableLED::LEDData &amp;a, const frc::AddressableLED::LEDData &amp;b)</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const frc::AddressableLED::LEDData &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const frc::AddressableLED::LEDData &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/subsystems/led_subsystem.cpp" line="11" column="6" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/subsystems/led_subsystem.cpp" bodystart="11" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="led__subsystem_8cpp_1a81eb21a21411bb28738df0ca2cc0d2d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool operator!=</definition>
+        <argsstring>(const frc::AddressableLED::LEDData &amp;a, const frc::AddressableLED::LEDData &amp;b)</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const frc::AddressableLED::LEDData &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const frc::AddressableLED::LEDData &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/subsystems/led_subsystem.cpp" line="15" column="6" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/subsystems/led_subsystem.cpp" bodystart="15" bodyend="17"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;argos_lib/subsystems/led_subsystem.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;algorithm&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceargos__lib" kindref="compound">argos_lib</ref>;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>operator==(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>frc::AddressableLED::LEDData&amp;<sp/>a,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>frc::AddressableLED::LEDData&amp;<sp/>b)<sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>a.r<sp/>==<sp/>b.r<sp/>&amp;&amp;<sp/>a.g<sp/>==<sp/>b.g<sp/>&amp;&amp;<sp/>a.b<sp/>==<sp/>b.b;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>operator!=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>frc::AddressableLED::LEDData&amp;<sp/>a,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>frc::AddressableLED::LEDData&amp;<sp/>b)<sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>!(a<sp/>==<sp/>b);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structargos__lib_1_1_l_e_d_state_1a0fe479231226770fa2805bb4d66e0a37" kindref="member">LEDState::operator==</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structargos__lib_1_1_l_e_d_state" kindref="compound">LEDState</ref>&amp;<sp/>other)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structargos__lib_1_1_l_e_d_state_1a7b626cd1b28d0d794f17ee8732b366cf" kindref="member">animated</ref><sp/>==<sp/>other.<ref refid="structargos__lib_1_1_l_e_d_state_1a7b626cd1b28d0d794f17ee8732b366cf" kindref="member">animated</ref><sp/>&amp;&amp;<sp/><ref refid="structargos__lib_1_1_l_e_d_state_1a8e1dd5e60d5a6e2fe7824ebff2ce1ce7" kindref="member">color</ref><sp/>==<sp/>other.<ref refid="structargos__lib_1_1_l_e_d_state_1a8e1dd5e60d5a6e2fe7824ebff2ce1ce7" kindref="member">color</ref>;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structargos__lib_1_1_l_e_d_state_1af540ce9306944088ab6e86b6bc675b29" kindref="member">LEDState::operator!=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structargos__lib_1_1_l_e_d_state" kindref="compound">LEDState</ref>&amp;<sp/>other)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>!<ref refid="structargos__lib_1_1_l_e_d_state_1a0fe479231226770fa2805bb4d66e0a37" kindref="member">operator==</ref>(other);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><ref refid="structargos__lib_1_1_l_e_d_state" kindref="compound">LEDState</ref>&amp;<sp/><ref refid="structargos__lib_1_1_l_e_d_state_1ad3824a46a07dd8b78af57e8ca8df288b" kindref="member">LEDState::operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>frc::AddressableLED::LEDData&amp;<sp/>other)<sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><ref refid="structargos__lib_1_1_l_e_d_state_1a8e1dd5e60d5a6e2fe7824ebff2ce1ce7" kindref="member">color</ref><sp/>=<sp/>other;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><ref refid="classargos__lib_1_1_l_e_d_subsystem_1a90374bc412ff22fd88cee40649523bb2" kindref="member">LEDSubsystem::LEDSubsystem</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>numAuxLEDs)</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/>m_currentLEDs{numAuxLEDs<sp/>+<sp/>numIntegratedLEDs}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>,<sp/>m_prevLEDs{numAuxLEDs<sp/>+<sp/>numIntegratedLEDs}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>,<sp/>m_controller{1,<sp/></highlight><highlight class="stringliteral">&quot;rio&quot;</highlight><highlight class="normal">}<sp/>{}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classargos__lib_1_1_l_e_d_subsystem_1a8ce3b116c8d583117bddd7b04f865a55" kindref="member">LEDSubsystem::Periodic</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Use<sp/>animation<sp/>functions<sp/>to<sp/>determine<sp/>all<sp/>new<sp/>LED<sp/>states</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>animation<sp/>:<sp/>m_customAnimations)<sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>animatedString<sp/>=<sp/>animation.update();</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>std::copy_n(animatedString.begin(),<sp/>animation.numLEDs,<sp/>std::next(m_currentLEDs.begin(),<sp/>animation.offset));</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Only<sp/>send<sp/>updates<sp/>for<sp/>LEDs<sp/>that<sp/>changed<sp/>to<sp/>reduce<sp/>CAN<sp/>messages</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>updatesToSend<sp/>=<sp/>GetDeltaUpdate(m_prevLEDs,<sp/>m_currentLEDs);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>update<sp/>:<sp/>updatesToSend)<sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>m_controller.SetLEDs(update.color.r,<sp/>update.color.g,<sp/>update.color.b,<sp/>0,<sp/>update.startIndex,<sp/>update.numLEDs);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/>m_prevLEDs<sp/>=<sp/>m_currentLEDs;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classargos__lib_1_1_l_e_d_subsystem_1a8b61599c033bed404f3e4b140722bcf1" kindref="member">LEDSubsystem::StockAnimateAuxLEDs</ref>(ctre::phoenix::led::Animation&amp;<sp/>animation,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>slot)<sp/>{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/>animation.SetLedOffset(animation.GetLedOffset()<sp/>+<sp/>numIntegratedLEDs);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/>std::fill_n(std::next(m_currentLEDs.begin(),<sp/>animation.GetLedOffset()),<sp/>animation.GetNumLed(),<sp/>LEDState{true,<sp/>{}});</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/>m_controller.Animate(animation,<sp/>slot);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classargos__lib_1_1_l_e_d_subsystem_1a0d379f01885f3fe7ad31dd2f0063d299" kindref="member">LEDSubsystem::StockAnimateIntegratedLEDs</ref>(ctre::phoenix::led::Animation&amp;<sp/>animation,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>slot)<sp/>{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Ensure<sp/>we<sp/>stay<sp/>within<sp/>the<sp/>number<sp/>of<sp/>LEDs<sp/>in<sp/>this<sp/>subsystem</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/>std::fill_n(m_currentLEDs.begin(),<sp/>numIntegratedLEDs,<sp/>LEDState{true,<sp/>{}});</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/>animation.SetNumLed(numIntegratedLEDs);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/>animation.SetLedOffset(0);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/>m_controller.Animate(animation,<sp/>slot);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classargos__lib_1_1_l_e_d_subsystem_1a878699f90e7ab3ffb04c553357ff8203" kindref="member">LEDSubsystem::CustomAnimateAuxLEDs</ref>(argos_lib::led::Animation<sp/>animation)<sp/>{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Ensure<sp/>we<sp/>stay<sp/>within<sp/>the<sp/>number<sp/>of<sp/>LEDs<sp/>in<sp/>this<sp/>subsystem</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/>animation.<ref refid="structargos__lib_1_1led_1_1_animation_1a50c345c0c626c8cbd80afd20d559d857" kindref="member">offset</ref><sp/>+=<sp/>numIntegratedLEDs;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/>animation.<ref refid="structargos__lib_1_1led_1_1_animation_1a8549d8d7c0bf30ce50e1c8bdd0312995" kindref="member">numLEDs</ref><sp/>=<sp/>std::min&lt;size_t&gt;(std::max&lt;size_t&gt;(0,<sp/>m_currentLEDs.size()<sp/>-<sp/>animation.<ref refid="structargos__lib_1_1led_1_1_animation_1a50c345c0c626c8cbd80afd20d559d857" kindref="member">offset</ref>),<sp/>animation.<ref refid="structargos__lib_1_1led_1_1_animation_1a8549d8d7c0bf30ce50e1c8bdd0312995" kindref="member">numLEDs</ref>);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/>std::fill_n(std::next(m_currentLEDs.begin(),<sp/>animation.<ref refid="structargos__lib_1_1led_1_1_animation_1a50c345c0c626c8cbd80afd20d559d857" kindref="member">offset</ref>),<sp/>animation.<ref refid="structargos__lib_1_1led_1_1_animation_1a8549d8d7c0bf30ce50e1c8bdd0312995" kindref="member">numLEDs</ref>,<sp/>LEDState{false,<sp/>{}});</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/>m_customAnimations.push_back(animation);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classargos__lib_1_1_l_e_d_subsystem_1ab8afc83e62ce13ce6b15b34f8e9374ca" kindref="member">LEDSubsystem::CustomAnimateIntegratedLEDs</ref>(argos_lib::led::Animation<sp/>animation)<sp/>{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Ensure<sp/>this<sp/>animation<sp/>doesn&apos;t<sp/>go<sp/>past<sp/>the<sp/>integrated<sp/>LED<sp/>addresses</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(animation.<ref refid="structargos__lib_1_1led_1_1_animation_1a8549d8d7c0bf30ce50e1c8bdd0312995" kindref="member">numLEDs</ref><sp/>&gt;<sp/>numIntegratedLEDs)<sp/>{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>animation.<ref refid="structargos__lib_1_1led_1_1_animation_1a8549d8d7c0bf30ce50e1c8bdd0312995" kindref="member">numLEDs</ref><sp/>=<sp/>numIntegratedLEDs;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/>animation.<ref refid="structargos__lib_1_1led_1_1_animation_1a50c345c0c626c8cbd80afd20d559d857" kindref="member">offset</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/>std::fill_n(m_currentLEDs.begin(),<sp/>animation.<ref refid="structargos__lib_1_1led_1_1_animation_1a8549d8d7c0bf30ce50e1c8bdd0312995" kindref="member">numLEDs</ref>,<sp/>LEDState{false,<sp/>{}});</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/>m_customAnimations.push_back(animation);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal">std::vector&lt;LEDSubsystem::LEDUpdateGroup&gt;<sp/>LEDSubsystem::GetDeltaUpdate(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;LEDState&gt;&amp;<sp/>prev,</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;LEDState&gt;&amp;<sp/>current)<sp/>{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/>std::vector&lt;bool&gt;<sp/>changed(current.size());</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Only<sp/>update<sp/>LEDs<sp/>that<sp/>changed<sp/>and<sp/>are<sp/>not<sp/>using<sp/>built-in<sp/>animations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/>std::transform(</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>prev.begin(),<sp/>prev.end(),<sp/>current.begin(),<sp/>changed.begin(),<sp/>[](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>LEDState&amp;<sp/>prev,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>LEDState&amp;<sp/>current)<sp/>{</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>current.animated<sp/>==<sp/>false<sp/>&amp;&amp;<sp/>current<sp/>!=<sp/>prev;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Find<sp/>blocks<sp/>of<sp/>identical<sp/>colors</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>searchStart<sp/>=<sp/>current.begin();</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/>std::vector&lt;LEDSubsystem::LEDUpdateGroup&gt;<sp/>retVal;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(searchStart<sp/>!=<sp/>current.end())<sp/>{</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>rangeEnd<sp/>=</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::adjacent_find(searchStart,<sp/>current.end(),<sp/>[](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>LEDState&amp;<sp/>a,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>LEDState&amp;<sp/>b)<sp/>{<sp/>return<sp/>a<sp/>!=<sp/>b;<sp/>});</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(rangeEnd<sp/>==<sp/>current.end())<sp/>{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>rangeEnd<sp/>=<sp/>std::prev(rangeEnd);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>numLEDs<sp/>=<sp/>std::distance(searchStart,<sp/>rangeEnd)<sp/>+<sp/>1;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>offset<sp/>=<sp/>std::distance(current.begin(),<sp/>searchStart);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Skip<sp/>updates<sp/>for<sp/>sections<sp/>that<sp/>we<sp/>shouldn&apos;t<sp/>be<sp/>updating</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(std::any_of(std::next(changed.begin(),<sp/>offset),<sp/>std::next(changed.begin(),<sp/>offset<sp/>+<sp/>numLEDs),<sp/>[](</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>changed)<sp/>{</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>changed;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}))<sp/>{</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>retVal.emplace_back(offset,<sp/>numLEDs,<sp/>searchStart-&gt;color);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>searchStart<sp/>=<sp/>std::next(rangeEnd);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>retVal;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/subsystems/led_subsystem.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,256 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classargos__lib_1_1_swappable_controllers_subsystem" kind="class" language="C++" prot="public">
+    <compoundname>argos_lib::SwappableControllersSubsystem</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">frc2::SubsystemBase</basecompoundref>
+    <includes refid="swappable__controllers__subsystem_8h" local="no">swappable_controllers_subsystem.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classargos__lib_1_1_swappable_controllers_subsystem_1a6a6a51e0c28a82a64463ef31b2759219" prot="private" static="no" mutable="no">
+        <type><ref refid="classargos__lib_1_1_xbox_controller" kindref="compound">argos_lib::XboxController</ref></type>
+        <definition>argos_lib::XboxController argos_lib::SwappableControllersSubsystem::m_driverController</definition>
+        <argsstring></argsstring>
+        <name>m_driverController</name>
+        <qualifiedname>argos_lib::SwappableControllersSubsystem::m_driverController</qualifiedname>
+        <briefdescription>
+<para>Managed driver controller. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/subsystems/swappable_controllers_subsystem.h" line="58" column="31" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/subsystems/swappable_controllers_subsystem.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classargos__lib_1_1_swappable_controllers_subsystem_1adfd79a22e4e3087e4167fbc61fbb4f31" prot="private" static="no" mutable="no">
+        <type><ref refid="classargos__lib_1_1_xbox_controller" kindref="compound">argos_lib::XboxController</ref></type>
+        <definition>argos_lib::XboxController argos_lib::SwappableControllersSubsystem::m_operatorController</definition>
+        <argsstring></argsstring>
+        <name>m_operatorController</name>
+        <qualifiedname>argos_lib::SwappableControllersSubsystem::m_operatorController</qualifiedname>
+        <briefdescription>
+<para>Managed operator controller. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/subsystems/swappable_controllers_subsystem.h" line="59" column="31" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/subsystems/swappable_controllers_subsystem.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classargos__lib_1_1_swappable_controllers_subsystem_1a2c83736ce7a9579062732218dbc5a974" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool argos_lib::SwappableControllersSubsystem::m_swapped</definition>
+        <argsstring></argsstring>
+        <name>m_swapped</name>
+        <qualifiedname>argos_lib::SwappableControllersSubsystem::m_swapped</qualifiedname>
+        <briefdescription>
+<para>Indicates if controllers are currently swapped. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/subsystems/swappable_controllers_subsystem.h" line="60" column="10" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/subsystems/swappable_controllers_subsystem.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classargos__lib_1_1_swappable_controllers_subsystem_1a4d46001829c2f8ac85c526933bf95ff3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>argos_lib::SwappableControllersSubsystem::SwappableControllersSubsystem</definition>
+        <argsstring>()=delete</argsstring>
+        <name>SwappableControllersSubsystem</name>
+        <qualifiedname>argos_lib::SwappableControllersSubsystem::SwappableControllersSubsystem</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/subsystems/swappable_controllers_subsystem.h" line="20" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classargos__lib_1_1_swappable_controllers_subsystem_1a612a6d561346edd3da41f3f3af6cf5ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SwappableControllersSubsystem::SwappableControllersSubsystem</definition>
+        <argsstring>(int driverControllerPort, int operatorControllerPort)</argsstring>
+        <name>SwappableControllersSubsystem</name>
+        <qualifiedname>argos_lib::SwappableControllersSubsystem::SwappableControllersSubsystem</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>driverControllerPort</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>operatorControllerPort</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new Swappable Controllers Subsystem object with two controllers. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>driverControllerPort</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of driver controller </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>operatorControllerPort</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of operator controller </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/subsystems/swappable_controllers_subsystem.h" line="27" column="5" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/subsystems/swappable_controllers_subsystem.cpp" bodystart="9" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classargos__lib_1_1_swappable_controllers_subsystem_1a2c737dd54058e12c551de5e96992637d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SwappableControllersSubsystem::Swap</definition>
+        <argsstring>()</argsstring>
+        <name>Swap</name>
+        <qualifiedname>argos_lib::SwappableControllersSubsystem::Swap</qualifiedname>
+        <briefdescription>
+<para>Swap driver and operator controller rolls. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/subsystems/swappable_controllers_subsystem.h" line="32" column="10" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/subsystems/swappable_controllers_subsystem.cpp" bodystart="12" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classargos__lib_1_1_swappable_controllers_subsystem_1aab24f6aac86bd7a79f2e6af9de0d35e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classargos__lib_1_1_xbox_controller" kindref="compound">argos_lib::XboxController</ref> &amp;</type>
+        <definition>XboxController &amp; SwappableControllersSubsystem::DriverController</definition>
+        <argsstring>()</argsstring>
+        <name>DriverController</name>
+        <qualifiedname>argos_lib::SwappableControllersSubsystem::DriverController</qualifiedname>
+        <briefdescription>
+<para>Get reference to active driver controller. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Active driver controller based on swaps up to this point </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/subsystems/swappable_controllers_subsystem.h" line="39" column="31" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/subsystems/swappable_controllers_subsystem.cpp" bodystart="17" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classargos__lib_1_1_swappable_controllers_subsystem_1a6a137c6ef1768f6f621799055c66582b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classargos__lib_1_1_xbox_controller" kindref="compound">argos_lib::XboxController</ref> &amp;</type>
+        <definition>XboxController &amp; SwappableControllersSubsystem::OperatorController</definition>
+        <argsstring>()</argsstring>
+        <name>OperatorController</name>
+        <qualifiedname>argos_lib::SwappableControllersSubsystem::OperatorController</qualifiedname>
+        <briefdescription>
+<para>Get reference to active operator controller. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Active operator controller based on swaps up to this point </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/subsystems/swappable_controllers_subsystem.h" line="45" column="31" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/subsystems/swappable_controllers_subsystem.cpp" bodystart="20" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classargos__lib_1_1_swappable_controllers_subsystem_1a8f16b598b661a722e6f77570099bd619" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SwappableControllersSubsystem::Periodic</definition>
+        <argsstring>() override</argsstring>
+        <name>Periodic</name>
+        <qualifiedname>argos_lib::SwappableControllersSubsystem::Periodic</qualifiedname>
+        <briefdescription>
+<para>Will be called periodically whenever the CommandScheduler runs. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Will be called periodically whenever the CommandScheduler runs. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/subsystems/swappable_controllers_subsystem.h" line="50" column="10" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/subsystems/swappable_controllers_subsystem.cpp" bodystart="27" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classargos__lib_1_1_swappable_controllers_subsystem_1ac6723631d6da5d864ed219ec2b75513d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SwappableControllersSubsystem::VibrateAll</definition>
+        <argsstring>(argos_lib::VibrationModel newModel)</argsstring>
+        <name>VibrateAll</name>
+        <qualifiedname>argos_lib::SwappableControllersSubsystem::VibrateAll</qualifiedname>
+        <param>
+          <type>argos_lib::VibrationModel</type>
+          <declname>newModel</declname>
+        </param>
+        <briefdescription>
+<para>Change vibration model for both controllers. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/subsystems/swappable_controllers_subsystem.h" line="55" column="10" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/subsystems/swappable_controllers_subsystem.cpp" bodystart="31" bodyend="34"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classargos__lib_1_1_swappable_controllers_subsystem_1a838b20adf26856f0c543172253084e4f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SwappableControllersSubsystem::UpdateVibration</definition>
+        <argsstring>()</argsstring>
+        <name>UpdateVibration</name>
+        <qualifiedname>argos_lib::SwappableControllersSubsystem::UpdateVibration</qualifiedname>
+        <briefdescription>
+<para>Update vibration on both controllers based on their active vibration models. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/subsystems/swappable_controllers_subsystem.h" line="65" column="10" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/subsystems/swappable_controllers_subsystem.cpp" bodystart="36" bodyend="39"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Allows two controllers to swap between &quot;Driver&quot; and &quot;Operator&quot; control schemes on the fly by swapping the m_driverController and m_operatorController objects. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>argos_lib::SwappableControllersSubsystem</label>
+        <link refid="classargos__lib_1_1_swappable_controllers_subsystem"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>frc2::SubsystemBase</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>argos_lib::SwappableControllersSubsystem</label>
+        <link refid="classargos__lib_1_1_swappable_controllers_subsystem"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>frc2::SubsystemBase</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/subsystems/swappable_controllers_subsystem.h" line="18" column="3" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/subsystems/swappable_controllers_subsystem.h" bodystart="18" bodyend="66"/>
+    <listofallmembers>
+      <member refid="classargos__lib_1_1_swappable_controllers_subsystem_1aab24f6aac86bd7a79f2e6af9de0d35e2" prot="public" virt="non-virtual"><scope>argos_lib::SwappableControllersSubsystem</scope><name>DriverController</name></member>
+      <member refid="classargos__lib_1_1_swappable_controllers_subsystem_1a6a6a51e0c28a82a64463ef31b2759219" prot="private" virt="non-virtual"><scope>argos_lib::SwappableControllersSubsystem</scope><name>m_driverController</name></member>
+      <member refid="classargos__lib_1_1_swappable_controllers_subsystem_1adfd79a22e4e3087e4167fbc61fbb4f31" prot="private" virt="non-virtual"><scope>argos_lib::SwappableControllersSubsystem</scope><name>m_operatorController</name></member>
+      <member refid="classargos__lib_1_1_swappable_controllers_subsystem_1a2c83736ce7a9579062732218dbc5a974" prot="private" virt="non-virtual"><scope>argos_lib::SwappableControllersSubsystem</scope><name>m_swapped</name></member>
+      <member refid="classargos__lib_1_1_swappable_controllers_subsystem_1a6a137c6ef1768f6f621799055c66582b" prot="public" virt="non-virtual"><scope>argos_lib::SwappableControllersSubsystem</scope><name>OperatorController</name></member>
+      <member refid="classargos__lib_1_1_swappable_controllers_subsystem_1a8f16b598b661a722e6f77570099bd619" prot="public" virt="non-virtual"><scope>argos_lib::SwappableControllersSubsystem</scope><name>Periodic</name></member>
+      <member refid="classargos__lib_1_1_swappable_controllers_subsystem_1a2c737dd54058e12c551de5e96992637d" prot="public" virt="non-virtual"><scope>argos_lib::SwappableControllersSubsystem</scope><name>Swap</name></member>
+      <member refid="classargos__lib_1_1_swappable_controllers_subsystem_1a4d46001829c2f8ac85c526933bf95ff3" prot="public" virt="non-virtual"><scope>argos_lib::SwappableControllersSubsystem</scope><name>SwappableControllersSubsystem</name></member>
+      <member refid="classargos__lib_1_1_swappable_controllers_subsystem_1a612a6d561346edd3da41f3f3af6cf5ff" prot="public" virt="non-virtual"><scope>argos_lib::SwappableControllersSubsystem</scope><name>SwappableControllersSubsystem</name></member>
+      <member refid="classargos__lib_1_1_swappable_controllers_subsystem_1a838b20adf26856f0c543172253084e4f" prot="private" virt="non-virtual"><scope>argos_lib::SwappableControllersSubsystem</scope><name>UpdateVibration</name></member>
+      <member refid="classargos__lib_1_1_swappable_controllers_subsystem_1ac6723631d6da5d864ed219ec2b75513d" prot="public" virt="non-virtual"><scope>argos_lib::SwappableControllersSubsystem</scope><name>VibrateAll</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

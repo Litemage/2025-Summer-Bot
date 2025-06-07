@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="structargos__lib_1_1_interp_map_point" kind="struct" language="C++" prot="public">
+    <compoundname>argos_lib::InterpMapPoint</compoundname>
+    <includes refid="interpolation_8h" local="no">interpolation.h</includes>
+    <templateparamlist>
+      <param>
+        <type>class T</type>
+      </param>
+      <param>
+        <type>class V</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structargos__lib_1_1_interp_map_point_1a9e01f5c3284c16c9038b1522737e58c0" prot="public" static="no" mutable="no">
+        <type>T</type>
+        <definition>T argos_lib::InterpMapPoint&lt; T, V &gt;::inVal</definition>
+        <argsstring></argsstring>
+        <name>inVal</name>
+        <qualifiedname>argos_lib::InterpMapPoint::inVal</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/interpolation.h" line="19" column="7" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/interpolation.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structargos__lib_1_1_interp_map_point_1aa7e32d1ba5922d09e60eb5931d0174c5" prot="public" static="no" mutable="no">
+        <type>V</type>
+        <definition>V argos_lib::InterpMapPoint&lt; T, V &gt;::outVal</definition>
+        <argsstring></argsstring>
+        <name>outVal</name>
+        <qualifiedname>argos_lib::InterpMapPoint::outVal</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/interpolation.h" line="20" column="7" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/interpolation.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structargos__lib_1_1_interp_map_point_1a0b0fd00ae26aee92b7cfb3c04e804b4d" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr</type>
+        <definition>argos_lib::InterpMapPoint&lt; T, V &gt;::InterpMapPoint</definition>
+        <argsstring>(T in, V out)</argsstring>
+        <name>InterpMapPoint</name>
+        <qualifiedname>argos_lib::InterpMapPoint::InterpMapPoint</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>V</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/interpolation.h" line="22" column="15" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/interpolation.h" bodystart="22" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="structargos__lib_1_1_interp_map_point_1a0f6a7990da51a8efc51fe7b4edf2adb2" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool argos_lib::InterpMapPoint&lt; T, V &gt;::operator&lt;</definition>
+        <argsstring>(const InterpMapPoint&lt; T, V &gt; &amp;other)</argsstring>
+        <name>operator&lt;</name>
+        <qualifiedname>argos_lib::InterpMapPoint::operator&lt;</qualifiedname>
+        <param>
+          <type>const <ref refid="structargos__lib_1_1_interp_map_point" kindref="compound">InterpMapPoint</ref>&lt; T, V &gt; &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/interpolation.h" line="24" column="15" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/interpolation.h" bodystart="24" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="structargos__lib_1_1_interp_map_point_1acb1bdfa954b79bf0baabe38fd3480830" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool argos_lib::InterpMapPoint&lt; T, V &gt;::operator==</definition>
+        <argsstring>(const InterpMapPoint&lt; T, V &gt; &amp;other)</argsstring>
+        <name>operator==</name>
+        <qualifiedname>argos_lib::InterpMapPoint::operator==</qualifiedname>
+        <param>
+          <type>const <ref refid="structargos__lib_1_1_interp_map_point" kindref="compound">InterpMapPoint</ref>&lt; T, V &gt; &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/interpolation.h" line="25" column="20" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/interpolation.h" bodystart="25" bodyend="25"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Point that helps generate an interpolation map. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Internal type. Typically float or double </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+    </detaileddescription>
+    <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/interpolation.h" line="18" column="3" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/interpolation.h" bodystart="18" bodyend="26"/>
+    <listofallmembers>
+      <member refid="structargos__lib_1_1_interp_map_point_1a0b0fd00ae26aee92b7cfb3c04e804b4d" prot="public" virt="non-virtual"><scope>argos_lib::InterpMapPoint</scope><name>InterpMapPoint</name></member>
+      <member refid="structargos__lib_1_1_interp_map_point_1a9e01f5c3284c16c9038b1522737e58c0" prot="public" virt="non-virtual"><scope>argos_lib::InterpMapPoint</scope><name>inVal</name></member>
+      <member refid="structargos__lib_1_1_interp_map_point_1a0f6a7990da51a8efc51fe7b4edf2adb2" prot="public" virt="non-virtual"><scope>argos_lib::InterpMapPoint</scope><name>operator&lt;</name></member>
+      <member refid="structargos__lib_1_1_interp_map_point_1acb1bdfa954b79bf0baabe38fd3480830" prot="public" virt="non-virtual"><scope>argos_lib::InterpMapPoint</scope><name>operator==</name></member>
+      <member refid="structargos__lib_1_1_interp_map_point_1aa7e32d1ba5922d09e60eb5931d0174c5" prot="public" virt="non-virtual"><scope>argos_lib::InterpMapPoint</scope><name>outVal</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,465 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="namespaceargos__lib_1_1led" kind="namespace" language="C++">
+    <compoundname>argos_lib::led</compoundname>
+    <innerclass refid="structargos__lib_1_1led_1_1_animation" prot="public">argos_lib::led::Animation</innerclass>
+    <innerclass refid="classargos__lib_1_1led_1_1_array2_d" prot="public">argos_lib::led::Array2D</innerclass>
+    <innerclass refid="structargos__lib_1_1led_1_1_panel_scan_params" prot="public">argos_lib::led::PanelScanParams</innerclass>
+    <innerclass refid="structargos__lib_1_1led_1_1_sprite" prot="public">argos_lib::led::Sprite</innerclass>
+    <innernamespace refid="namespaceargos__lib_1_1led_1_1animation">argos_lib::led::animation</innernamespace>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="panel_8h_1a54b3233eaeb43c747bc80e5a84973b83" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>PrimaryScanDirection</name>
+        <qualifiedname>argos_lib::led::PrimaryScanDirection</qualifiedname>
+        <enumvalue id="panel_8h_1a54b3233eaeb43c747bc80e5a84973b83a06ce2a25e5d12c166a36f654dbea6012" prot="public">
+          <name>Vertical</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="panel_8h_1a54b3233eaeb43c747bc80e5a84973b83ac1b5fa03ecdb95d4a45dd1c40b02527f" prot="public">
+          <name>Horizontal</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>When representing a panel as a strip, sequential addresses are in this direction. Note that the actual scan direction will alternate on every row/column in the secondary scan direction. For example, if the primary scan direction is vertical, adjacent columns will alternate between up and down. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/led/panel.h" line="99" column="5" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/led/panel.h" bodystart="99" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="enum" id="panel_8h_1a6727776c9e779682289934f0c6a63a5f" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>FirstPixelPosition</name>
+        <qualifiedname>argos_lib::led::FirstPixelPosition</qualifiedname>
+        <enumvalue id="panel_8h_1a6727776c9e779682289934f0c6a63a5fa1d85a557894c340c318493f33bfa8efb" prot="public">
+          <name>TopRight</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="panel_8h_1a6727776c9e779682289934f0c6a63a5fab32beb056fbfe36afbabc6c88c81ab36" prot="public">
+          <name>TopLeft</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="panel_8h_1a6727776c9e779682289934f0c6a63a5fa98e5a1c44509157ebcaf46c515c78875" prot="public">
+          <name>BottomLeft</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="panel_8h_1a6727776c9e779682289934f0c6a63a5fa9146bfc669fddc88db2c4d89297d0e9a" prot="public">
+          <name>BottomRight</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>When representing a panel as a strip, which pixel is the first address. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/led/panel.h" line="104" column="5" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/led/panel.h" bodystart="104" bodyend="104"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="animiation_8h_1affa46b4fb6b8276a18faeac57ce4ca67" prot="public" static="no">
+        <type>std::function&lt; <ref refid="structargos__lib_1_1led_1_1_sprite" kindref="compound">Sprite</ref>()&gt;</type>
+        <definition>using argos_lib::led::AnimatedSprite =  std::function&lt;Sprite()&gt;</definition>
+        <argsstring></argsstring>
+        <name>AnimatedSprite</name>
+        <qualifiedname>argos_lib::led::AnimatedSprite</qualifiedname>
+        <briefdescription>
+<para>Callable to get dynamic sprite. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/led/animiation.h" line="49" column="5" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/led/animiation.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="panel_8h_1aa8ba39839794052da0754c82f59b5b78" prot="public" static="no">
+        <type><ref refid="classargos__lib_1_1led_1_1_array2_d" kindref="compound">Array2D</ref>&lt; frc::AddressableLED::LEDData &gt;</type>
+        <definition>using argos_lib::led::Panel =  Array2D&lt;frc::AddressableLED::LEDData&gt;</definition>
+        <argsstring></argsstring>
+        <name>Panel</name>
+        <qualifiedname>argos_lib::led::Panel</qualifiedname>
+        <briefdescription>
+<para>Pixels in a panel. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/led/panel.h" line="84" column="5" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/led/panel.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="panel_8h_1a6b146ac9fb378fa8f777bcfbe0ab39d2" prot="public" static="no">
+        <type><ref refid="classargos__lib_1_1led_1_1_array2_d" kindref="compound">Array2D</ref>&lt; float &gt;</type>
+        <definition>using argos_lib::led::Mask =  Array2D&lt;float&gt;</definition>
+        <argsstring></argsstring>
+        <name>Mask</name>
+        <qualifiedname>argos_lib::led::Mask</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Transparency mask (alpha channel) for a panel. Range [0,1] where 0 is fully transparent and 1 is fully opaque. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/led/panel.h" line="85" column="5" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/led/panel.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="panel_8h_1ab78bf5eb14b362da1cc70f202c9107e1" prot="public" static="no">
+        <type>std::vector&lt; frc::AddressableLED::LEDData &gt;</type>
+        <definition>using argos_lib::led::Strip =  std::vector&lt;frc::AddressableLED::LEDData&gt;</definition>
+        <argsstring></argsstring>
+        <name>Strip</name>
+        <qualifiedname>argos_lib::led::Strip</qualifiedname>
+        <briefdescription>
+<para>A strip of LEDs. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/led/panel.h" line="91" column="5" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/led/panel.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="geometry_8h_1a48a78dbd6552bb06270c6d2b211bd787" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>units::degree_t</type>
+        <definition>units::degree_t argos_lib::led::FlipHorizontal</definition>
+        <argsstring>(units::degree_t incidentAngle)</argsstring>
+        <name>FlipHorizontal</name>
+        <qualifiedname>argos_lib::led::FlipHorizontal</qualifiedname>
+        <param>
+          <type>units::degree_t</type>
+          <declname>incidentAngle</declname>
+        </param>
+        <briefdescription>
+<para>Flip an angle horizontally as though a ray bounces off a horizontal surface. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>incidentAngle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Angle of original motion </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Reflected angle</para>
+</simplesect>
+<simplesect kind="copyright"><para>Copyright (c) Argos FRC Team 1756. Open Source Software; you can modify and/or share it under the terms of the license file in the root directory of this project. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/led/geometry.h" line="20" column="21" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/led/geometry.cpp" bodystart="9" bodyend="11" declfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/led/geometry.h" declline="20" declcolumn="21"/>
+      </memberdef>
+      <memberdef kind="function" id="geometry_8h_1af04cda165dad8ba8f8ef10595962915e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>units::degree_t</type>
+        <definition>units::degree_t argos_lib::led::FlipVertical</definition>
+        <argsstring>(units::degree_t inicidentAngle)</argsstring>
+        <name>FlipVertical</name>
+        <qualifiedname>argos_lib::led::FlipVertical</qualifiedname>
+        <param>
+          <type>units::degree_t</type>
+          <declname>inicidentAngle</declname>
+        </param>
+        <briefdescription>
+<para>Flip an angle vertically as though a ray bounces off a vertical surface. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>incidentAngle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Angle of original motion </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Reflected angle </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/led/geometry.h" line="28" column="21" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/led/geometry.cpp" bodystart="13" bodyend="15" declfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/led/geometry.h" declline="28" declcolumn="21"/>
+      </memberdef>
+      <memberdef kind="function" id="geometry_8h_1a2ee9d53bdbfd0bcb2180bd7e82e6a8ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool argos_lib::led::PointInBox</definition>
+        <argsstring>(float corner1X, float corner1Y, float corner2X, float corner2Y, float pointX, float pointY)</argsstring>
+        <name>PointInBox</name>
+        <qualifiedname>argos_lib::led::PointInBox</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>corner1X</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>corner1Y</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>corner2X</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>corner2Y</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>pointX</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>pointY</declname>
+        </param>
+        <briefdescription>
+<para>Determine if a point (pointX, pointY) is within the bounds of an axis-aligned bounding box with opposite corners (corner1X, corner1Y) and (corner2X, corner2Y) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>corner1X</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First corner X coordinate </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>corner1Y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First corner Y coordinate </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>corner2X</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Second corner X coordinate </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>corner2Y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Second corner Y coordinate </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pointX</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Test point X coordinate </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pointY</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Test point Y coordinate </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if point is in bounding box </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/led/geometry.h" line="42" column="10" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/led/geometry.cpp" bodystart="17" bodyend="25" declfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/led/geometry.h" declline="42" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="geometry_8h_1aad4f6c8a06fc513c1ba70d18d23a1f0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::optional&lt; std::pair&lt; float, float &gt; &gt;</type>
+        <definition>std::optional&lt; std::pair&lt; float, float &gt; &gt; argos_lib::led::SegmentIntersection</definition>
+        <argsstring>(float s1x1, float s1y1, float s1x2, float s1y2, float s2x1, float s2y1, float s2x2, float s2y2)</argsstring>
+        <name>SegmentIntersection</name>
+        <qualifiedname>argos_lib::led::SegmentIntersection</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>s1x1</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>s1y1</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>s1x2</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>s1y2</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>s2x1</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>s2y1</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>s2x2</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>s2y2</declname>
+        </param>
+        <briefdescription>
+<para>Finds the intersection point of two lines <ndash/> [(s1x1, s1y1), (s1x2, s1y2)] and [(s2x1, s2y1), (s2x2, s2y2)] <ndash/> if it exists. If the two lines are colinear, no intersection point is returned. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s1x1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First point of first segment x coordinate </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>s1y1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First point of first segment y coordinate </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>s1x2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Second point of first segment x coordinate </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>s1y2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Second point of first segment y coordinate </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>s2x1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First point of second segment x coordinate </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>s2y1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First point of second segment y coordinate </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>s2x2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Second point of second segment x coordinate </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>s2y2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Second point of second segment y coordinate </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>(x,y) pair indicating intersection point if it exists, std::nullopt otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/led/geometry.h" line="59" column="19" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/led/geometry.cpp" bodystart="27" bodyend="64" declfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/led/geometry.h" declline="59" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="panel_8h_1a5e45ae0bfc52f02e8c2502686121520e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Strip</type>
+        <definition>argos_lib::led::Strip argos_lib::led::Serialize</definition>
+        <argsstring>(const Panel &amp;panel, const PanelScanParams &amp;params)</argsstring>
+        <name>Serialize</name>
+        <qualifiedname>argos_lib::led::Serialize</qualifiedname>
+        <param>
+          <type>const <ref refid="classargos__lib_1_1led_1_1_array2_d" kindref="compound">Panel</ref> &amp;</type>
+          <declname>panel</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structargos__lib_1_1led_1_1_panel_scan_params" kindref="compound">PanelScanParams</ref> &amp;</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+<para>Convert a panel to a 1D vector of pixels in addressing order. This is a helper function because many panel animations are easier to design in 2D space then convert back to address order when it comes time to display. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>panel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Panel to serialize </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>params</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Parameters describing panel addressing and orientation </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A strip representation of panel with all pixels in address order</para>
+</simplesect>
+<simplesect kind="copyright"><para>Copyright (c) Argos FRC Team 1756. Open Source Software; you can modify and/or share it under the terms of the license file in the root directory of this project. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/led/panel.h" line="120" column="11" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/led/panel.cpp" bodystart="7" bodyend="95" declfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/led/panel.h" declline="120" declcolumn="11"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/led/animiation.h" line="16" column="3"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="class_example_command" kind="class" language="C++" prot="public">
+    <compoundname>ExampleCommand</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">frc2::CommandHelper&lt; frc2::Command, ExampleCommand &gt;</basecompoundref>
+    <includes refid="_example_command_8h" local="no">ExampleCommand.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_example_command_1a63ab0064f619498c6a4886764d526a42" prot="private" static="no" mutable="no">
+        <type><ref refid="class_example_subsystem" kindref="compound">ExampleSubsystem</ref> *</type>
+        <definition>ExampleSubsystem* ExampleCommand::m_subsystem</definition>
+        <argsstring></argsstring>
+        <name>m_subsystem</name>
+        <qualifiedname>ExampleCommand::m_subsystem</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/include/commands/ExampleCommand.h" line="30" column="20" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/include/commands/ExampleCommand.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_example_command_1a207aa09dcaaee93d9f96db3b768d32bd" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ExampleCommand::ExampleCommand</definition>
+        <argsstring>(ExampleSubsystem *subsystem)</argsstring>
+        <name>ExampleCommand</name>
+        <qualifiedname>ExampleCommand::ExampleCommand</qualifiedname>
+        <param>
+          <type><ref refid="class_example_subsystem" kindref="compound">ExampleSubsystem</ref> *</type>
+          <declname>subsystem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Creates a new <ref refid="class_example_command" kindref="compound">ExampleCommand</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>subsystem</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The subsystem used by this command. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/include/commands/ExampleCommand.h" line="27" column="12" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/cpp/commands/ExampleCommand.cpp" bodystart="7" bodyend="11"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>An example command that uses an example subsystem.</para>
+<para>Note that this extends CommandHelper, rather extending Command directly; this is crucially important, or else the decorator functions in Command will <emphasis>not</emphasis> work! </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>ExampleCommand</label>
+        <link refid="class_example_command"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>frc2::CommandHelper&lt; frc2::Command, ExampleCommand &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>ExampleCommand</label>
+        <link refid="class_example_command"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>frc2::CommandHelper&lt; frc2::Command, ExampleCommand &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/include/commands/ExampleCommand.h" line="19" column="1" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/include/commands/ExampleCommand.h" bodystart="20" bodyend="31"/>
+    <listofallmembers>
+      <member refid="class_example_command_1a207aa09dcaaee93d9f96db3b768d32bd" prot="public" virt="non-virtual"><scope>ExampleCommand</scope><name>ExampleCommand</name></member>
+      <member refid="class_example_command_1a63ab0064f619498c6a4886764d526a42" prot="private" virt="non-virtual"><scope>ExampleCommand</scope><name>m_subsystem</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

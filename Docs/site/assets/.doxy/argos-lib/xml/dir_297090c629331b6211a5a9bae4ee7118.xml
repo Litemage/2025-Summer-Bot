@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="dir_297090c629331b6211a5a9bae4ee7118" kind="dir">
+    <compoundname>C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/config</compoundname>
+    <innerfile refid="cancoder__config_8h">cancoder_config.h</innerfile>
+    <innerfile refid="compile__time__member__check_8h">compile_time_member_check.h</innerfile>
+    <innerfile refid="config__types_8h">config_types.h</innerfile>
+    <innerfile refid="falcon__config_8h">falcon_config.h</innerfile>
+    <innerfile refid="status__frame__config_8h">status_frame_config.h</innerfile>
+    <innerfile refid="talonsrx__config_8h">talonsrx_config.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/config/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,167 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="namespaceargos__lib_1_1status__frame__config" kind="namespace" language="C++">
+    <compoundname>argos_lib::status_frame_config</compoundname>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="status__frame__config_8h_1ab0898de418508676238dc0b2b9b210d6" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>MotorPresetMode</name>
+        <qualifiedname>argos_lib::status_frame_config::MotorPresetMode</qualifiedname>
+        <enumvalue id="status__frame__config_8h_1ab0898de418508676238dc0b2b9b210d6a972e73b7a882d0802a4e3a16946a2f94" prot="public">
+          <name>Basic</name>
+          <briefdescription>
+<para>Baseline SRX, slow sensor reporting rate. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="status__frame__config_8h_1ab0898de418508676238dc0b2b9b210d6ab6c0e7acf588dbc494ac63f4e8022320" prot="public">
+          <name>BasicFX</name>
+          <briefdescription>
+<para>Baseline FX, slow sensor reporting rate. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="status__frame__config_8h_1ab0898de418508676238dc0b2b9b210d6a5158a250e30f1fb4415d86ded2c8e0c5" prot="public">
+          <name>Leader</name>
+          <briefdescription>
+<para>SRX leader, fast reporting rate. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="status__frame__config_8h_1ab0898de418508676238dc0b2b9b210d6a55c15f15e91a212907cd98d7939a8db6" prot="public">
+          <name>LeaderFX</name>
+          <briefdescription>
+<para>FX leader, fast reporting rate. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="status__frame__config_8h_1ab0898de418508676238dc0b2b9b210d6a829e620db67faa54c8ca8441f1239d41" prot="public">
+          <name>Follower</name>
+          <briefdescription>
+<para>SRX follower, near zero reporting rates. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="status__frame__config_8h_1ab0898de418508676238dc0b2b9b210d6af276da87ddfccdb55db7bde49c938904" prot="public">
+          <name>FollowerFX</name>
+          <briefdescription>
+<para>FX follower, near zero reporting rates. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="status__frame__config_8h_1ab0898de418508676238dc0b2b9b210d6a2f9bb69e217fb3b5ea492856f562c7b5" prot="public">
+          <name>MotionProfiling</name>
+          <briefdescription>
+<para>SRX with motion profiling enabled. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="status__frame__config_8h_1ab0898de418508676238dc0b2b9b210d6a0a71c04f9a1c237dc894e38cf7850d84" prot="public">
+          <name>MotionProfilingFX</name>
+          <briefdescription>
+<para>FX with motion profiling enabled. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="status__frame__config_8h_1ab0898de418508676238dc0b2b9b210d6a89dd2948ecda7325c0001d8a0e51a2d8" prot="public">
+          <name>Tuning</name>
+          <briefdescription>
+<para>SRX with increased reporting frequency to aid PID tuning. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="status__frame__config_8h_1ab0898de418508676238dc0b2b9b210d6ad46a3c5678779cf05cd17ebc830b976d" prot="public">
+          <name>TuningFX</name>
+          <briefdescription>
+<para>FX with increased reporting frequency to aid PID tuning. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Motor mode used for setting status frame update periods. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/config/status_frame_config.h" line="15" column="5" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/config/status_frame_config.h" bodystart="15" bodyend="26"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="status__frame__config_8h_1ae4aa57ff0c25254df2b3130cd24e9054" prot="public" static="no">
+        <type>ctre::phoenix6::hardware::core::CoreTalonFX</type>
+        <definition>using argos_lib::status_frame_config::BaseTalon =  ctre::phoenix6::hardware::core::CoreTalonFX</definition>
+        <argsstring></argsstring>
+        <name>BaseTalon</name>
+        <qualifiedname>argos_lib::status_frame_config::BaseTalon</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/config/status_frame_config.h" line="11" column="5" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/config/status_frame_config.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="status__frame__config_8h_1a9dd16ea44dbeab8949b98bbe24467391" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void argos_lib::status_frame_config::SetMotorStatusFrameRates</definition>
+        <argsstring>(BaseTalon &amp;motor, MotorPresetMode motorMode)</argsstring>
+        <name>SetMotorStatusFrameRates</name>
+        <qualifiedname>argos_lib::status_frame_config::SetMotorStatusFrameRates</qualifiedname>
+        <param>
+          <type>BaseTalon &amp;</type>
+          <declname>motor</declname>
+        </param>
+        <param>
+          <type>MotorPresetMode</type>
+          <declname>motorMode</declname>
+        </param>
+        <briefdescription>
+<para>Set motor controller status frame update periods based on the motor preset. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>motor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Motor controller to configure </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>motorMode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Preset mode to use </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+<para><xrefsect id="todo_1_todo000001"><xreftitle>Todo</xreftitle><xrefdescription><para>Update for Phoenix 6 frames <ulink url="https://pro.docs.ctr-electronics.com/en/latest/docs/migration/migration-guide/status-signals-guide.html#changing-update-frequency-status-frame-period">https://pro.docs.ctr-electronics.com/en/latest/docs/migration/migration-guide/status-signals-guide.html#changing-update-frequency-status-frame-period</ulink> </para>
+</xrefdescription></xrefsect></para>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/config/status_frame_config.h" line="34" column="10" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/config/status_frame_config.cpp" bodystart="9" bodyend="83" declfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/config/status_frame_config.h" declline="34" declcolumn="10"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/config/status_frame_config.h" line="10" column="3"/>
+  </compounddef>
+</doxygen>

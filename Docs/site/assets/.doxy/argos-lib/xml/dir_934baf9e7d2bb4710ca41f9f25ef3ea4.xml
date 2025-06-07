@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="dir_934baf9e7d2bb4710ca41f9f25ef3ea4" kind="dir">
+    <compoundname>C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib</compoundname>
+    <innerdir refid="dir_b5b6a4436ac847838034b63997323b48">C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/commands</innerdir>
+    <innerdir refid="dir_297090c629331b6211a5a9bae4ee7118">C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/config</innerdir>
+    <innerdir refid="dir_1b5ab51e1de305e693feb9e8d9da64c0">C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller</innerdir>
+    <innerdir refid="dir_ce90de3a31c0930a75a0088390301e44">C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general</innerdir>
+    <innerdir refid="dir_d41870077d9859a02d90bd74c6566322">C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/homing</innerdir>
+    <innerdir refid="dir_92b511606ba5c2da7e2dda655454d24f">C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/led</innerdir>
+    <innerdir refid="dir_74a079771991058d11b5f8805d16e2a9">C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/subsystems</innerdir>
+    <innerdir refid="dir_4b5bf1f302d4aefee80cb53d26fbb3eb">C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/testing</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="dir_d41870077d9859a02d90bd74c6566322" kind="dir">
+    <compoundname>C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/homing</compoundname>
+    <innerfile refid="fs__homing_8h">fs_homing.h</innerfile>
+    <innerfile refid="homing__interface_8h">homing_interface.h</innerfile>
+    <innerfile refid="network__tables__homing__storage_8h">network_tables_homing_storage.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/homing/"/>
+  </compounddef>
+</doxygen>

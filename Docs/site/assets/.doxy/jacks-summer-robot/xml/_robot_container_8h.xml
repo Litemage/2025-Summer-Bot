@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="_robot_container_8h" kind="file" language="C++">
+    <compoundname>RobotContainer.h</compoundname>
+    <includes local="no">frc2/command/CommandPtr.h</includes>
+    <includes local="no">frc2/command/button/CommandXboxController.h</includes>
+    <includes refid="_constants_8h" local="yes">Constants.h</includes>
+    <includes refid="_example_subsystem_8h" local="yes">subsystems/ExampleSubsystem.h</includes>
+    <includedby refid="_robot_container_8cpp" local="yes">C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/cpp/RobotContainer.cpp</includedby>
+    <includedby refid="_robot_8h" local="yes">C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/include/Robot.h</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>Constants.h</label>
+        <link refid="_constants_8h_source"/>
+      </node>
+      <node id="1">
+        <label>C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/include/RobotContainer.h</label>
+        <link refid="_robot_container_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>subsystems/ExampleSubsystem.h</label>
+        <link refid="_example_subsystem_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>frc2/command/CommandPtr.h</label>
+      </node>
+      <node id="6">
+        <label>frc2/command/SubsystemBase.h</label>
+      </node>
+      <node id="3">
+        <label>frc2/command/button/CommandXboxController.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/include/Robot.h</label>
+        <link refid="_robot_8h_source"/>
+      </node>
+      <node id="1">
+        <label>C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/include/RobotContainer.h</label>
+        <link refid="_robot_container_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_robot_container" prot="public">RobotContainer</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>FIRST<sp/>and<sp/>other<sp/>WPILib<sp/>contributors.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Open<sp/>Source<sp/>Software;<sp/>you<sp/>can<sp/>modify<sp/>and/or<sp/>share<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>the<sp/>WPILib<sp/>BSD<sp/>license<sp/>file<sp/>in<sp/>the<sp/>root<sp/>directory<sp/>of<sp/>this<sp/>project.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;frc2/command/CommandPtr.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;frc2/command/button/CommandXboxController.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Constants.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;subsystems/ExampleSubsystem.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="class_robot_container" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">RobotContainer<sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/>RobotContainer();</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/>frc2::CommandPtr<sp/>GetAutonomousCommand();</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Replace<sp/>with<sp/>CommandPS4Controller<sp/>or<sp/>CommandJoystick<sp/>if<sp/>needed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/>frc2::CommandXboxController<sp/>m_driverController{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>OperatorConstants::kDriverControllerPort};</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>robot&apos;s<sp/>subsystems<sp/>are<sp/>defined<sp/>here...</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><ref refid="class_example_subsystem" kindref="compound">ExampleSubsystem</ref><sp/>m_subsystem;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ConfigureBindings();</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/include/RobotContainer.h"/>
+  </compounddef>
+</doxygen>

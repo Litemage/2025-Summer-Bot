@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classargos__lib_1_1_swerve_home_storage_interface" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>argos_lib::SwerveHomeStorageInterface</compoundname>
+    <derivedcompoundref refid="classargos__lib_1_1_swerve_f_s_homing_storage" prot="public" virt="non-virtual">argos_lib::SwerveFSHomingStorage</derivedcompoundref>
+    <derivedcompoundref refid="classargos__lib_1_1swerve_1_1_network_tables_homing_storage" prot="public" virt="non-virtual">argos_lib::swerve::NetworkTablesHomingStorage</derivedcompoundref>
+    <includes refid="homing__interface_8h" local="no">homing_interface.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classargos__lib_1_1_swerve_home_storage_interface_1abc7618d705ec5beb418e13240e9e0f16" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool argos_lib::SwerveHomeStorageInterface::Save</definition>
+        <argsstring>(const argos_lib::swerve::SwerveModulePositions &amp;homePosition)=0</argsstring>
+        <name>Save</name>
+        <qualifiedname>argos_lib::SwerveHomeStorageInterface::Save</qualifiedname>
+        <reimplementedby refid="classargos__lib_1_1swerve_1_1_network_tables_homing_storage_1a52ef5021c25ee0704647342b46d4937b">Save</reimplementedby>
+        <reimplementedby refid="classargos__lib_1_1_swerve_f_s_homing_storage_1a280967f3bb419d15e4d73661385d29e4">Save</reimplementedby>
+        <reimplementedby refid="class_network_tables_homing_storage_1a52ef5021c25ee0704647342b46d4937b">Save</reimplementedby>
+        <reimplementedby refid="class_swerve_f_s_homing_storage_1a280967f3bb419d15e4d73661385d29e4">Save</reimplementedby>
+        <param>
+          <type>const <ref refid="structargos__lib_1_1swerve_1_1_swerve_module_positions" kindref="compound">argos_lib::swerve::SwerveModulePositions</ref> &amp;</type>
+          <declname>homePosition</declname>
+        </param>
+        <briefdescription>
+<para>Save home position to persistent storage. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>homePosition</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Positions to store </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true Save successful </para>
+</simplesect>
+<simplesect kind="return"><para>false Error saving </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/homing/homing_interface.h" line="22" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classargos__lib_1_1_swerve_home_storage_interface_1a6c432e83d81c5f2952c87fe2150265d6" prot="public" static="no" nodiscard="yes" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::optional&lt; <ref refid="structargos__lib_1_1swerve_1_1_swerve_module_positions" kindref="compound">argos_lib::swerve::SwerveModulePositions</ref> &gt;</type>
+        <definition>virtual std::optional&lt; argos_lib::swerve::SwerveModulePositions &gt; argos_lib::SwerveHomeStorageInterface::Load</definition>
+        <argsstring>()=0</argsstring>
+        <name>Load</name>
+        <qualifiedname>argos_lib::SwerveHomeStorageInterface::Load</qualifiedname>
+        <reimplementedby refid="classargos__lib_1_1swerve_1_1_network_tables_homing_storage_1a28e16e477e81da4a0205078ff6dd1a54">Load</reimplementedby>
+        <reimplementedby refid="classargos__lib_1_1_swerve_f_s_homing_storage_1ac308a4502b5a52cd429280c079be828a">Load</reimplementedby>
+        <reimplementedby refid="class_network_tables_homing_storage_1a28e16e477e81da4a0205078ff6dd1a54">Load</reimplementedby>
+        <reimplementedby refid="class_swerve_f_s_homing_storage_1ac308a4502b5a52cd429280c079be828a">Load</reimplementedby>
+        <briefdescription>
+<para>Load home position from persistent storage. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Poisitions from persistent storage or std::nullopt if load failed or no positions were previously stored </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/homing/homing_interface.h" line="30" column="28"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Interface capable of saving and loading module home positions from persistent storage. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>argos_lib::SwerveFSHomingStorage</label>
+        <link refid="classargos__lib_1_1_swerve_f_s_homing_storage"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>argos_lib::SwerveHomeStorageInterface</label>
+        <link refid="classargos__lib_1_1_swerve_home_storage_interface"/>
+      </node>
+      <node id="3">
+        <label>argos_lib::swerve::NetworkTablesHomingStorage</label>
+        <link refid="classargos__lib_1_1swerve_1_1_network_tables_homing_storage"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/homing/homing_interface.h" line="13" column="3" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/homing/homing_interface.h" bodystart="13" bodyend="31"/>
+    <listofallmembers>
+      <member refid="classargos__lib_1_1_swerve_home_storage_interface_1a6c432e83d81c5f2952c87fe2150265d6" prot="public" virt="pure-virtual"><scope>argos_lib::SwerveHomeStorageInterface</scope><name>Load</name></member>
+      <member refid="classargos__lib_1_1_swerve_home_storage_interface_1abc7618d705ec5beb418e13240e9e0f16" prot="public" virt="pure-virtual"><scope>argos_lib::SwerveHomeStorageInterface</scope><name>Save</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

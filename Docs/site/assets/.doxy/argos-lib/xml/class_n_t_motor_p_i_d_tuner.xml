@@ -1,0 +1,284 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="class_n_t_motor_p_i_d_tuner" kind="class" language="C++" prot="public">
+    <compoundname>NTMotorPIDTuner</compoundname>
+    <includes refid="nt__motor__pid__tuner_8h" local="no">nt_motor_pid_tuner.h</includes>
+    <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="class_n_t_motor_p_i_d_tuner_1a112f28d7a6de8882345c307fba66771e" prot="private" static="no">
+        <type>ctre::phoenix6::hardware::core::CoreTalonFX</type>
+        <definition>using argos_lib::NTMotorPIDTuner::BaseTalon =  ctre::phoenix6::hardware::core::CoreTalonFX</definition>
+        <argsstring></argsstring>
+        <name>BaseTalon</name>
+        <qualifiedname>NTMotorPIDTuner::BaseTalon</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/nt_motor_pid_tuner.h" line="62" column="5" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/nt_motor_pid_tuner.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_n_t_motor_p_i_d_tuner_1a1927a427e82d6f8c4f5c521bb0621c72" prot="private" static="no" mutable="no">
+        <type><ref refid="classargos__lib_1_1_n_t_subscriber" kindref="compound">argos_lib::NTSubscriber</ref></type>
+        <definition>argos_lib::NTSubscriber argos_lib::NTMotorPIDTuner::m_updateSubscriber</definition>
+        <argsstring></argsstring>
+        <name>m_updateSubscriber</name>
+        <qualifiedname>NTMotorPIDTuner::m_updateSubscriber</qualifiedname>
+        <briefdescription>
+<para>Subscriber to manage all updates from user inputs through network tables. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/nt_motor_pid_tuner.h" line="85" column="9" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/nt_motor_pid_tuner.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_n_t_motor_p_i_d_tuner_1afa880e15a74394331e5d541c2f29db91" prot="private" static="no" mutable="no">
+        <type>const std::vector&lt; BaseTalon * &gt;</type>
+        <definition>const std::vector&lt;BaseTalon*&gt; argos_lib::NTMotorPIDTuner::m_pMotors</definition>
+        <argsstring></argsstring>
+        <name>m_pMotors</name>
+        <qualifiedname>NTMotorPIDTuner::m_pMotors</qualifiedname>
+        <briefdescription>
+<para>Motors being configured and monitored. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/nt_motor_pid_tuner.h" line="86" column="23" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/nt_motor_pid_tuner.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_n_t_motor_p_i_d_tuner_1a6c17f19500a67e15a9fddecf311b69fd" prot="private" static="no" mutable="no">
+        <type>const unsigned</type>
+        <definition>const unsigned argos_lib::NTMotorPIDTuner::m_pidSlot</definition>
+        <argsstring></argsstring>
+        <name>m_pidSlot</name>
+        <qualifiedname>NTMotorPIDTuner::m_pidSlot</qualifiedname>
+        <briefdescription>
+<para>PID slot index actively used on motors. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/nt_motor_pid_tuner.h" line="87" column="20" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/nt_motor_pid_tuner.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_n_t_motor_p_i_d_tuner_1a91c33a2aef6c5a80564d4df2c7b1e0bf" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; nt::NetworkTable &gt;</type>
+        <definition>std::shared_ptr&lt;nt::NetworkTable&gt; argos_lib::NTMotorPIDTuner::m_pntTable</definition>
+        <argsstring></argsstring>
+        <name>m_pntTable</name>
+        <qualifiedname>NTMotorPIDTuner::m_pntTable</qualifiedname>
+        <briefdescription>
+<para>Network table containing status and tuning keys. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/nt_motor_pid_tuner.h" line="88" column="21" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/nt_motor_pid_tuner.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_n_t_motor_p_i_d_tuner_1a0e1d0cb486d6e6039b206b398065bb14" prot="private" static="no" mutable="no">
+        <type><ref refid="structargos__lib_1_1_closed_loop_sensor_conversions" kindref="compound">ClosedLoopSensorConversions</ref></type>
+        <definition>ClosedLoopSensorConversions argos_lib::NTMotorPIDTuner::m_sensorConversions</definition>
+        <argsstring></argsstring>
+        <name>m_sensorConversions</name>
+        <qualifiedname>NTMotorPIDTuner::m_sensorConversions</qualifiedname>
+        <briefdescription>
+<para>Sensor conversion factors used to translate raw sensor readings. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/nt_motor_pid_tuner.h" line="90" column="9" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/nt_motor_pid_tuner.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_n_t_motor_p_i_d_tuner_1a46f4eeaa9d7e6cf7139bff552239bb51" prot="private" static="no" mutable="no">
+        <type>std::mutex</type>
+        <definition>std::mutex argos_lib::NTMotorPIDTuner::m_threadMutex</definition>
+        <argsstring></argsstring>
+        <name>m_threadMutex</name>
+        <qualifiedname>NTMotorPIDTuner::m_threadMutex</qualifiedname>
+        <briefdescription>
+<para>Lock to aid notifying thread of stop. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/nt_motor_pid_tuner.h" line="92" column="16" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/nt_motor_pid_tuner.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_n_t_motor_p_i_d_tuner_1aad13bf81b68e3bda0daf7f7b134fdb25" prot="private" static="no" mutable="no">
+        <type>std::condition_variable</type>
+        <definition>std::condition_variable argos_lib::NTMotorPIDTuner::m_threadStopCv</definition>
+        <argsstring></argsstring>
+        <name>m_threadStopCv</name>
+        <qualifiedname>NTMotorPIDTuner::m_threadStopCv</qualifiedname>
+        <briefdescription>
+<para>Used to notify thread to stop at shutdown. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/nt_motor_pid_tuner.h" line="93" column="29" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/nt_motor_pid_tuner.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_n_t_motor_p_i_d_tuner_1a81cbc3fb161f450561111e285933581c" prot="private" static="no" mutable="no">
+        <type>std::thread</type>
+        <definition>std::thread argos_lib::NTMotorPIDTuner::m_statusUpdateThread</definition>
+        <argsstring></argsstring>
+        <name>m_statusUpdateThread</name>
+        <qualifiedname>NTMotorPIDTuner::m_statusUpdateThread</qualifiedname>
+        <briefdescription>
+<para>Thread monitoring motors. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/nt_motor_pid_tuner.h" line="94" column="17" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/nt_motor_pid_tuner.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_n_t_motor_p_i_d_tuner_1ae674944f0e7386a7010fb3c17cf88f54" prot="private" static="no" mutable="no">
+        <type>ctre::phoenix6::configs::SlotConfigs</type>
+        <definition>ctre::phoenix6::configs::SlotConfigs argos_lib::NTMotorPIDTuner::m_activeConfigs</definition>
+        <argsstring></argsstring>
+        <name>m_activeConfigs</name>
+        <qualifiedname>NTMotorPIDTuner::m_activeConfigs</qualifiedname>
+        <briefdescription>
+<para>Current PID configurations. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/nt_motor_pid_tuner.h" line="96" column="42" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/nt_motor_pid_tuner.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_n_t_motor_p_i_d_tuner_1a4ca59a827710197a7df0a139e63172e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>NTMotorPIDTuner::NTMotorPIDTuner</definition>
+        <argsstring>(const std::string &amp;tableName, std::initializer_list&lt; BaseTalon * &gt; motors, unsigned pidSlot, ClosedLoopSensorConversions sensorConversions={})</argsstring>
+        <name>NTMotorPIDTuner</name>
+        <qualifiedname>NTMotorPIDTuner::NTMotorPIDTuner</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>tableName</declname>
+        </param>
+        <param>
+          <type>std::initializer_list&lt; BaseTalon * &gt;</type>
+          <declname>motors</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>pidSlot</declname>
+        </param>
+        <param>
+          <type><ref refid="structargos__lib_1_1_closed_loop_sensor_conversions" kindref="compound">ClosedLoopSensorConversions</ref></type>
+          <declname>sensorConversions</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+<para>Construct a new <ref refid="class_n_t_motor_p_i_d_tuner" kindref="compound">NTMotorPIDTuner</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tableName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Root table in which to make tuning and status keys </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>motors</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointers to motors that should be monitored and configured. Can be one motor if only one motor uses the control loop parameters </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pidSlot</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PID slot to save tunes into </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sensorConversions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Sensor conversion factors to make status values human readable </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/nt_motor_pid_tuner.h" line="73" column="5" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/general/nt_motor_pid_tuner.cpp" bodystart="17" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="class_n_t_motor_p_i_d_tuner_1abe7aa15b3b781d8118366b079d1afdcc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>NTMotorPIDTuner::~NTMotorPIDTuner</definition>
+        <argsstring>()</argsstring>
+        <name>~NTMotorPIDTuner</name>
+        <qualifiedname>NTMotorPIDTuner::~NTMotorPIDTuner</qualifiedname>
+        <briefdescription>
+<para>Destroy the <ref refid="class_n_t_motor_p_i_d_tuner" kindref="compound">NTMotorPIDTuner</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/nt_motor_pid_tuner.h" line="81" column="5" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/general/nt_motor_pid_tuner.cpp" bodystart="109" bodyend="112"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_n_t_motor_p_i_d_tuner_1ac6dab53d0071dc6c5507cc643ea51e24" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void NTMotorPIDTuner::UpdateClosedLoopMonitoringThread</definition>
+        <argsstring>()</argsstring>
+        <name>UpdateClosedLoopMonitoringThread</name>
+        <qualifiedname>NTMotorPIDTuner::UpdateClosedLoopMonitoringThread</qualifiedname>
+        <briefdescription>
+<para>Update statuses from all motors. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/nt_motor_pid_tuner.h" line="101" column="10" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/general/nt_motor_pid_tuner.cpp" bodystart="114" bodyend="185"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Allows user to set PID parameters from network tables and update the motor configurations on updates. Also monitors status information from motors to aid tuning. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="note"><para>This runs a background thread to read statuses of motors without calling repeatedly </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/nt_motor_pid_tuner.h" line="61" column="3" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/nt_motor_pid_tuner.h" bodystart="61" bodyend="102"/>
+    <listofallmembers>
+      <member refid="class_n_t_motor_p_i_d_tuner_1a112f28d7a6de8882345c307fba66771e" prot="private" virt="non-virtual"><scope>NTMotorPIDTuner</scope><name>BaseTalon</name></member>
+      <member refid="class_n_t_motor_p_i_d_tuner_1ae674944f0e7386a7010fb3c17cf88f54" prot="private" virt="non-virtual"><scope>NTMotorPIDTuner</scope><name>m_activeConfigs</name></member>
+      <member refid="class_n_t_motor_p_i_d_tuner_1a6c17f19500a67e15a9fddecf311b69fd" prot="private" virt="non-virtual"><scope>NTMotorPIDTuner</scope><name>m_pidSlot</name></member>
+      <member refid="class_n_t_motor_p_i_d_tuner_1afa880e15a74394331e5d541c2f29db91" prot="private" virt="non-virtual"><scope>NTMotorPIDTuner</scope><name>m_pMotors</name></member>
+      <member refid="class_n_t_motor_p_i_d_tuner_1a91c33a2aef6c5a80564d4df2c7b1e0bf" prot="private" virt="non-virtual"><scope>NTMotorPIDTuner</scope><name>m_pntTable</name></member>
+      <member refid="class_n_t_motor_p_i_d_tuner_1a0e1d0cb486d6e6039b206b398065bb14" prot="private" virt="non-virtual"><scope>NTMotorPIDTuner</scope><name>m_sensorConversions</name></member>
+      <member refid="class_n_t_motor_p_i_d_tuner_1a81cbc3fb161f450561111e285933581c" prot="private" virt="non-virtual"><scope>NTMotorPIDTuner</scope><name>m_statusUpdateThread</name></member>
+      <member refid="class_n_t_motor_p_i_d_tuner_1a46f4eeaa9d7e6cf7139bff552239bb51" prot="private" virt="non-virtual"><scope>NTMotorPIDTuner</scope><name>m_threadMutex</name></member>
+      <member refid="class_n_t_motor_p_i_d_tuner_1aad13bf81b68e3bda0daf7f7b134fdb25" prot="private" virt="non-virtual"><scope>NTMotorPIDTuner</scope><name>m_threadStopCv</name></member>
+      <member refid="class_n_t_motor_p_i_d_tuner_1a1927a427e82d6f8c4f5c521bb0621c72" prot="private" virt="non-virtual"><scope>NTMotorPIDTuner</scope><name>m_updateSubscriber</name></member>
+      <member refid="class_n_t_motor_p_i_d_tuner_1a4ca59a827710197a7df0a139e63172e5" prot="public" virt="non-virtual"><scope>NTMotorPIDTuner</scope><name>NTMotorPIDTuner</name></member>
+      <member refid="class_n_t_motor_p_i_d_tuner_1ac6dab53d0071dc6c5507cc643ea51e24" prot="private" virt="non-virtual"><scope>NTMotorPIDTuner</scope><name>UpdateClosedLoopMonitoringThread</name></member>
+      <member refid="class_n_t_motor_p_i_d_tuner_1abe7aa15b3b781d8118366b079d1afdcc" prot="public" virt="non-virtual"><scope>NTMotorPIDTuner</scope><name>~NTMotorPIDTuner</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="structargos__lib_1_1_debounce_settings" kind="struct" language="C++" prot="public">
+    <compoundname>argos_lib::DebounceSettings</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structargos__lib_1_1_debounce_settings_1a9e481ebb97bd9182d285eb8059b4c3a8" prot="public" static="no" mutable="no">
+        <type>units::millisecond_t</type>
+        <definition>units::millisecond_t argos_lib::DebounceSettings::activateTime</definition>
+        <argsstring></argsstring>
+        <name>activateTime</name>
+        <qualifiedname>argos_lib::DebounceSettings::activateTime</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/debounce_settings.h" line="12" column="26" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/debounce_settings.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structargos__lib_1_1_debounce_settings_1a244f36e15164715e4f0c785d7f788689" prot="public" static="no" mutable="no">
+        <type>units::millisecond_t</type>
+        <definition>units::millisecond_t argos_lib::DebounceSettings::clearTime</definition>
+        <argsstring></argsstring>
+        <name>clearTime</name>
+        <qualifiedname>argos_lib::DebounceSettings::clearTime</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/debounce_settings.h" line="13" column="26" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/debounce_settings.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/debounce_settings.h" line="11" column="3" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/debounce_settings.h" bodystart="11" bodyend="14"/>
+    <listofallmembers>
+      <member refid="structargos__lib_1_1_debounce_settings_1a9e481ebb97bd9182d285eb8059b4c3a8" prot="public" virt="non-virtual"><scope>argos_lib::DebounceSettings</scope><name>activateTime</name></member>
+      <member refid="structargos__lib_1_1_debounce_settings_1a244f36e15164715e4f0c785d7f788689" prot="public" virt="non-virtual"><scope>argos_lib::DebounceSettings</scope><name>clearTime</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

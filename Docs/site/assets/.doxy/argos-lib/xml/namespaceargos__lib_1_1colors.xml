@@ -1,0 +1,193 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="namespaceargos__lib_1_1colors" kind="namespace" language="C++">
+    <compoundname>argos_lib::colors</compoundname>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="color_8h_1af0938b62f29c04931815eae8828cecb6" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type><ref refid="structargos__lib_1_1_argos_color" kindref="compound">ArgosColor</ref></type>
+        <definition>ArgosColor argos_lib::colors::kOff</definition>
+        <argsstring></argsstring>
+        <name>kOff</name>
+        <qualifiedname>argos_lib::colors::kOff</qualifiedname>
+        <initializer>= <ref refid="structargos__lib_1_1_argos_color" kindref="compound">ArgosColor</ref>{0, 0, 0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/color.h" line="41" column="33" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/color.h" bodystart="41" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="variable" id="color_8h_1a496008c35f338b52f5c477acd1273292" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type><ref refid="structargos__lib_1_1_argos_color" kindref="compound">ArgosColor</ref></type>
+        <definition>ArgosColor argos_lib::colors::kWhite</definition>
+        <argsstring></argsstring>
+        <name>kWhite</name>
+        <qualifiedname>argos_lib::colors::kWhite</qualifiedname>
+        <initializer>= <ref refid="structargos__lib_1_1_argos_color" kindref="compound">ArgosColor</ref>{120, 120, 120}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/color.h" line="42" column="33" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/color.h" bodystart="42" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="variable" id="color_8h_1a9857a7f2c1c14b16e4da1df7585d67e8" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type><ref refid="structargos__lib_1_1_argos_color" kindref="compound">ArgosColor</ref></type>
+        <definition>ArgosColor argos_lib::colors::kReallyRed</definition>
+        <argsstring></argsstring>
+        <name>kReallyRed</name>
+        <qualifiedname>argos_lib::colors::kReallyRed</qualifiedname>
+        <initializer>= <ref refid="structargos__lib_1_1_argos_color" kindref="compound">ArgosColor</ref>{255, 0, 0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/color.h" line="43" column="33" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/color.h" bodystart="43" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="variable" id="color_8h_1a4d4541c550646a5da34aea152bd8d1b4" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type><ref refid="structargos__lib_1_1_argos_color" kindref="compound">ArgosColor</ref></type>
+        <definition>ArgosColor argos_lib::colors::kReallyGreen</definition>
+        <argsstring></argsstring>
+        <name>kReallyGreen</name>
+        <qualifiedname>argos_lib::colors::kReallyGreen</qualifiedname>
+        <initializer>= <ref refid="structargos__lib_1_1_argos_color" kindref="compound">ArgosColor</ref>{0, 255, 0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/color.h" line="44" column="33" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/color.h" bodystart="44" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="variable" id="color_8h_1af4a9caf2b9517b42b612305a0e0a9b0d" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type><ref refid="structargos__lib_1_1_argos_color" kindref="compound">ArgosColor</ref></type>
+        <definition>ArgosColor argos_lib::colors::kReallyBlue</definition>
+        <argsstring></argsstring>
+        <name>kReallyBlue</name>
+        <qualifiedname>argos_lib::colors::kReallyBlue</qualifiedname>
+        <initializer>= <ref refid="structargos__lib_1_1_argos_color" kindref="compound">ArgosColor</ref>{0, 0, 255}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/color.h" line="45" column="33" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/color.h" bodystart="45" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="variable" id="color_8h_1a10efcc6b41962d6b2516acadf8984165" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type><ref refid="structargos__lib_1_1_argos_color" kindref="compound">ArgosColor</ref></type>
+        <definition>ArgosColor argos_lib::colors::kCubePurple</definition>
+        <argsstring></argsstring>
+        <name>kCubePurple</name>
+        <qualifiedname>argos_lib::colors::kCubePurple</qualifiedname>
+        <initializer>= <ref refid="structargos__lib_1_1_argos_color" kindref="compound">ArgosColor</ref>{130, 0, 130}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/color.h" line="46" column="33" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/color.h" bodystart="46" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="variable" id="color_8h_1afc454e57501ee2d9d8cbeddcf77a0196" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type><ref refid="structargos__lib_1_1_argos_color" kindref="compound">ArgosColor</ref></type>
+        <definition>ArgosColor argos_lib::colors::kConeYellow</definition>
+        <argsstring></argsstring>
+        <name>kConeYellow</name>
+        <qualifiedname>argos_lib::colors::kConeYellow</qualifiedname>
+        <initializer>= <ref refid="structargos__lib_1_1_argos_color" kindref="compound">ArgosColor</ref>{222, 178, 18}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/color.h" line="47" column="33" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/color.h" bodystart="47" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="variable" id="color_8h_1a275f67fd896166c6cbbd6ff366f5482d" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type><ref refid="structargos__lib_1_1_argos_color" kindref="compound">ArgosColor</ref></type>
+        <definition>ArgosColor argos_lib::colors::kHotPink</definition>
+        <argsstring></argsstring>
+        <name>kHotPink</name>
+        <qualifiedname>argos_lib::colors::kHotPink</qualifiedname>
+        <initializer>= <ref refid="structargos__lib_1_1_argos_color" kindref="compound">ArgosColor</ref>{255, 105, 180}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/color.h" line="48" column="33" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/color.h" bodystart="48" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="variable" id="color_8h_1a78f4597ad7620aa8ffb489205d1fec8c" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type><ref refid="structargos__lib_1_1_argos_color" kindref="compound">ArgosColor</ref></type>
+        <definition>ArgosColor argos_lib::colors::kCatYellow</definition>
+        <argsstring></argsstring>
+        <name>kCatYellow</name>
+        <qualifiedname>argos_lib::colors::kCatYellow</qualifiedname>
+        <initializer>= <ref refid="structargos__lib_1_1_argos_color" kindref="compound">ArgosColor</ref>{255, 163, 0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/color.h" line="49" column="33" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/color.h" bodystart="49" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="variable" id="color_8h_1a63c9bade3645de68ef156cdad142b940" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type><ref refid="structargos__lib_1_1_argos_color" kindref="compound">ArgosColor</ref></type>
+        <definition>ArgosColor argos_lib::colors::kPurple</definition>
+        <argsstring></argsstring>
+        <name>kPurple</name>
+        <qualifiedname>argos_lib::colors::kPurple</qualifiedname>
+        <initializer>= <ref refid="structargos__lib_1_1_argos_color" kindref="compound">ArgosColor</ref>{75, 0, 130}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/color.h" line="50" column="33" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/color.h" bodystart="50" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="variable" id="color_8h_1a0c1edda3f1f205f0a8332692b761a0cb" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type><ref refid="structargos__lib_1_1_argos_color" kindref="compound">ArgosColor</ref></type>
+        <definition>ArgosColor argos_lib::colors::kNoteOrange</definition>
+        <argsstring></argsstring>
+        <name>kNoteOrange</name>
+        <qualifiedname>argos_lib::colors::kNoteOrange</qualifiedname>
+        <initializer>= <ref refid="structargos__lib_1_1_argos_color" kindref="compound">ArgosColor</ref>{255, 130, 50}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/color.h" line="51" column="33" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/color.h" bodystart="51" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="variable" id="color_8h_1acf7c78d42787af469c699349a66195ed" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type><ref refid="structargos__lib_1_1_argos_color" kindref="compound">ArgosColor</ref></type>
+        <definition>ArgosColor argos_lib::colors::kPlum</definition>
+        <argsstring></argsstring>
+        <name>kPlum</name>
+        <qualifiedname>argos_lib::colors::kPlum</qualifiedname>
+        <initializer>= <ref refid="structargos__lib_1_1_argos_color" kindref="compound">ArgosColor</ref>{160, 100, 150}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/color.h" line="52" column="33" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/color.h" bodystart="52" bodyend="52"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/color.h" line="40" column="3"/>
+  </compounddef>
+</doxygen>

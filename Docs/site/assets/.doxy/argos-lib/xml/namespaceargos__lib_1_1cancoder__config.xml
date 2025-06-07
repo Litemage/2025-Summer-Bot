@@ -1,0 +1,175 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="namespaceargos__lib_1_1cancoder__config" kind="namespace" language="C++">
+    <compoundname>argos_lib::cancoder_config</compoundname>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="cancoder__config_8h_1a9b9bd513b333766ee7fe94de6581591f" prot="public" static="no">
+        <type>ctre::phoenix6::hardware::CANcoder</type>
+        <definition>using argos_lib::cancoder_config::CANcoder =  ctre::phoenix6::hardware::CANcoder</definition>
+        <argsstring></argsstring>
+        <name>CANcoder</name>
+        <qualifiedname>argos_lib::cancoder_config::CANcoder</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/config/cancoder_config.h" line="15" column="5" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/config/cancoder_config.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="cancoder__config_8h_1a297b3bd650a0482da7362f8599c4e3f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool argos_lib::cancoder_config::CanCoderConfig</definition>
+        <argsstring>(CANcoder &amp;encoder, units::millisecond_t configTimeout)</argsstring>
+        <name>CanCoderConfig</name>
+        <qualifiedname>argos_lib::cancoder_config::CanCoderConfig</qualifiedname>
+        <param>
+          <type>CANcoder &amp;</type>
+          <declname>encoder</declname>
+        </param>
+        <param>
+          <type>units::millisecond_t</type>
+          <declname>configTimeout</declname>
+        </param>
+        <briefdescription>
+<para>Configures a CTRE CanCoder with only the fields provided. All other fields are given the factory default values. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Structure containing any combination of the following members:<itemizedlist>
+<listitem><para>direction</para>
+</listitem><listitem><para>magOffset</para>
+</listitem><listitem><para>absoluteSensorDiscontinuityPoint </para>
+</listitem></itemizedlist>
+</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>encoder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>CANcoder object to configure </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>configTimeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time to wait for response from CANcoder </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true Configuration succeeded </para>
+</simplesect>
+<simplesect kind="return"><para>false Configuration failed </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/config/cancoder_config.h" line="35" column="10" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/config/cancoder_config.h" bodystart="35" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="cancoder__config_8h_1a791f6a2c74237cc053bfa028f0049542" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename CompetitionConfig</type>
+          </param>
+          <param>
+            <type>typename PracticeConfig</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool argos_lib::cancoder_config::CanCoderConfig</definition>
+        <argsstring>(CANcoder &amp;encoder, units::millisecond_t configTimeout, argos_lib::RobotInstance instance)</argsstring>
+        <name>CanCoderConfig</name>
+        <qualifiedname>argos_lib::cancoder_config::CanCoderConfig</qualifiedname>
+        <param>
+          <type>CANcoder &amp;</type>
+          <declname>encoder</declname>
+        </param>
+        <param>
+          <type>units::millisecond_t</type>
+          <declname>configTimeout</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceargos__lib_1a4231c977f4047dcc9edf48b1bd43f51c" kindref="member">argos_lib::RobotInstance</ref></type>
+          <declname>instance</declname>
+        </param>
+        <briefdescription>
+<para>Configures a CTRE CanCoder with configuration values according to specified robot instance. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>CompetitionConfig</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Configurations to use in competition robot instance </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>PracticeConfig</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Configurations to use in practice robot instance </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>encoder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>CANcoder object to configure </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>configTimeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time to wait for response from CANcoder </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>instance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Robot instance to use </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true Configuration succeeded </para>
+</simplesect>
+<simplesect kind="return"><para>false Configuration failed </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/config/cancoder_config.h" line="64" column="10" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/config/cancoder_config.h" bodystart="64" bodyend="74"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/config/cancoder_config.h" line="14" column="3"/>
+  </compounddef>
+</doxygen>

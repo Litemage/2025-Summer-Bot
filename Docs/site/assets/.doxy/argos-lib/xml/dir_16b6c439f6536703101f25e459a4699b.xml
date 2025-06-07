@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="dir_16b6c439f6536703101f25e459a4699b" kind="dir">
+    <compoundname>C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/general</compoundname>
+    <innerfile refid="angle__utils_8cpp">angle_utils.cpp</innerfile>
+    <innerfile refid="debouncer_8cpp">debouncer.cpp</innerfile>
+    <innerfile refid="edge__detector_8cpp">edge_detector.cpp</innerfile>
+    <innerfile refid="nt__motor__pid__tuner_8cpp">nt_motor_pid_tuner.cpp</innerfile>
+    <innerfile refid="nt__subscriber_8cpp">nt_subscriber.cpp</innerfile>
+    <innerfile refid="odometry__aim_8cpp">odometry_aim.cpp</innerfile>
+    <innerfile refid="swerve__utils_8cpp">swerve_utils.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/general/"/>
+  </compounddef>
+</doxygen>

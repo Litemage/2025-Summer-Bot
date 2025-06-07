@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="structargos__lib_1_1_vibration_status" kind="struct" language="C++" prot="public">
+    <compoundname>argos_lib::VibrationStatus</compoundname>
+    <includes refid="vibration_8h" local="no">vibration.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structargos__lib_1_1_vibration_status_1ad4388f73527addefbc8625c2874b948f" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double argos_lib::VibrationStatus::intensityLeft</definition>
+        <argsstring></argsstring>
+        <name>intensityLeft</name>
+        <qualifiedname>argos_lib::VibrationStatus::intensityLeft</qualifiedname>
+        <initializer>= 0.0</initializer>
+        <briefdescription>
+<para>Intensity percent for left vibration [0,1.0]. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/vibration.h" line="17" column="12" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/vibration.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structargos__lib_1_1_vibration_status_1a8b6baa5946c60611d18dcbe97cd926c3" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double argos_lib::VibrationStatus::intensityRight</definition>
+        <argsstring></argsstring>
+        <name>intensityRight</name>
+        <qualifiedname>argos_lib::VibrationStatus::intensityRight</qualifiedname>
+        <initializer>= 0.0</initializer>
+        <briefdescription>
+<para>Intensity percent for right vibration [0,1.0]. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/vibration.h" line="18" column="12" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/vibration.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Vibration percentages that can be sent to controller for user feedback. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/vibration.h" line="16" column="3" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/vibration.h" bodystart="16" bodyend="19"/>
+    <listofallmembers>
+      <member refid="structargos__lib_1_1_vibration_status_1ad4388f73527addefbc8625c2874b948f" prot="public" virt="non-virtual"><scope>argos_lib::VibrationStatus</scope><name>intensityLeft</name></member>
+      <member refid="structargos__lib_1_1_vibration_status_1a8b6baa5946c60611d18dcbe97cd926c3" prot="public" virt="non-virtual"><scope>argos_lib::VibrationStatus</scope><name>intensityRight</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

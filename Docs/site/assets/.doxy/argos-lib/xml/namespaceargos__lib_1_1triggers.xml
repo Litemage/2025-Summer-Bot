@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="namespaceargos__lib_1_1triggers" kind="namespace" language="C++">
+    <compoundname>argos_lib::triggers</compoundname>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="trigger__composition_8h_1aac5724fcc14d19f8a62f8322951ce905" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>frc2::Trigger</type>
+        <definition>frc2::Trigger argos_lib::triggers::OneOf</definition>
+        <argsstring>(std::vector&lt; frc2::Trigger &gt; triggers)</argsstring>
+        <name>OneOf</name>
+        <qualifiedname>argos_lib::triggers::OneOf</qualifiedname>
+        <param>
+          <type>std::vector&lt; frc2::Trigger &gt;</type>
+          <declname>triggers</declname>
+        </param>
+        <briefdescription>
+<para>Generates composite trigger that is true when exactly one of the triggers is true. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>triggers</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Triggers to check </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>frc2::Trigger Composite trigger </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/trigger_composition.h" line="19" column="19" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/controller/trigger_composition.cpp" bodystart="35" bodyend="53" declfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/trigger_composition.h" declline="19" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="trigger__composition_8h_1a3770b226c48ce2538037dc18f93858e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>frc2::Trigger</type>
+        <definition>frc2::Trigger argos_lib::triggers::NoneOf</definition>
+        <argsstring>(std::vector&lt; frc2::Trigger &gt; triggers)</argsstring>
+        <name>NoneOf</name>
+        <qualifiedname>argos_lib::triggers::NoneOf</qualifiedname>
+        <param>
+          <type>std::vector&lt; frc2::Trigger &gt;</type>
+          <declname>triggers</declname>
+        </param>
+        <briefdescription>
+<para>Generates composite trigger that is true when none of the triggers is true. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>triggers</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Triggers to check </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>frc2::Trigger Composite trigger </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/trigger_composition.h" line="27" column="19" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/controller/trigger_composition.cpp" bodystart="55" bodyend="57" declfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/trigger_composition.h" declline="27" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="trigger__composition_8h_1a23be801e978b9111f27e8abfe0fb44eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>frc2::Trigger</type>
+        <definition>frc2::Trigger argos_lib::triggers::AnyOf</definition>
+        <argsstring>(std::vector&lt; frc2::Trigger &gt; triggers)</argsstring>
+        <name>AnyOf</name>
+        <qualifiedname>argos_lib::triggers::AnyOf</qualifiedname>
+        <param>
+          <type>std::vector&lt; frc2::Trigger &gt;</type>
+          <declname>triggers</declname>
+        </param>
+        <briefdescription>
+<para>Generates composite trigger that is true when any of the triggers is true. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>triggers</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Triggers to check </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>frc2::Trigger Composite trigger </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/trigger_composition.h" line="35" column="19" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/controller/trigger_composition.cpp" bodystart="59" bodyend="61" declfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/trigger_composition.h" declline="35" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="trigger__composition_8h_1a80bf15285294c9f9ab356dbc35a8d78d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>frc2::Trigger</type>
+        <definition>frc2::Trigger argos_lib::triggers::AllOf</definition>
+        <argsstring>(std::vector&lt; frc2::Trigger &gt; triggers)</argsstring>
+        <name>AllOf</name>
+        <qualifiedname>argos_lib::triggers::AllOf</qualifiedname>
+        <param>
+          <type>std::vector&lt; frc2::Trigger &gt;</type>
+          <declname>triggers</declname>
+        </param>
+        <briefdescription>
+<para>Generates composite trigger that is true when all of the triggers are true. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>triggers</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Triggers to check </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>frc2::Trigger Composite trigger </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/trigger_composition.h" line="43" column="19" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/controller/trigger_composition.cpp" bodystart="63" bodyend="65" declfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/trigger_composition.h" declline="43" declcolumn="19"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/trigger_composition.h" line="12" column="3"/>
+  </compounddef>
+</doxygen>

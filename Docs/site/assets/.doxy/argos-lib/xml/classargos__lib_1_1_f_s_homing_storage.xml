@@ -1,0 +1,176 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classargos__lib_1_1_f_s_homing_storage" kind="class" language="C++" prot="public">
+    <compoundname>argos_lib::FSHomingStorage</compoundname>
+    <basecompoundref refid="classargos__lib_1_1_homing_storage_interface" prot="public" virt="non-virtual">argos_lib::HomingStorageInterface&lt; T &gt;</basecompoundref>
+    <includes refid="fs__homing_8h" local="no">fs_homing.h</includes>
+    <templateparamlist>
+      <param>
+        <type>class T</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classargos__lib_1_1_f_s_homing_storage_1ac1ad1249efe7cd9194c02bc475f35844" prot="private" static="no" mutable="no">
+        <type>const fs::path</type>
+        <definition>const fs::path argos_lib::FSHomingStorage&lt; T &gt;::m_homesPath</definition>
+        <argsstring></argsstring>
+        <name>m_homesPath</name>
+        <qualifiedname>argos_lib::FSHomingStorage::m_homesPath</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/homing/fs_homing.h" line="129" column="20" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/homing/fs_homing.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classargos__lib_1_1_f_s_homing_storage_1a9730b19c7495456089b05d001da86b08" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>argos_lib::FSHomingStorage&lt; T &gt;::FSHomingStorage</definition>
+        <argsstring>(const fs::path &amp;homeFilePath)</argsstring>
+        <name>FSHomingStorage</name>
+        <qualifiedname>argos_lib::FSHomingStorage::FSHomingStorage</qualifiedname>
+        <param>
+          <type>const fs::path &amp;</type>
+          <declname>homeFilePath</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new <ref refid="classargos__lib_1_1_f_s_homing_storage" kindref="compound">FSHomingStorage</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>homeFilePath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Path to save homes to relative to internally-managed root directory </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/homing/fs_homing.h" line="62" column="14" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/homing/fs_homing.h" bodystart="62" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classargos__lib_1_1_f_s_homing_storage_1a1f11375b0d867260468d6eb48cb57103" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>bool argos_lib::FSHomingStorage&lt; T &gt;::Save</definition>
+        <argsstring>(const T &amp;homePosition) override</argsstring>
+        <name>Save</name>
+        <qualifiedname>argos_lib::FSHomingStorage::Save</qualifiedname>
+        <reimplements refid="classargos__lib_1_1_homing_storage_interface_1a3a37aab6c51231a32235363ce0136cfc">Save</reimplements>
+        <param>
+          <type>const T &amp;</type>
+          <declname>homePosition</declname>
+        </param>
+        <briefdescription>
+<para>Save home position to persistent storage. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>homePosition</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Position to store </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true Save successful </para>
+</simplesect>
+<simplesect kind="return"><para>false Error saving </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/homing/fs_homing.h" line="64" column="10" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/homing/fs_homing.h" bodystart="64" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classargos__lib_1_1_f_s_homing_storage_1ae9eef66236986abe10694319aedc23bd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>std::optional&lt; T &gt;</type>
+        <definition>std::optional&lt; T &gt; argos_lib::FSHomingStorage&lt; T &gt;::Load</definition>
+        <argsstring>() override</argsstring>
+        <name>Load</name>
+        <qualifiedname>argos_lib::FSHomingStorage::Load</qualifiedname>
+        <reimplements refid="classargos__lib_1_1_homing_storage_interface_1a387052239e4d03996dc708a307757ceb">Load</reimplements>
+        <briefdescription>
+<para>Load home position from persistent storage. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Poisition from persistent storage or std::nullopt if load failed or no positions were previously stored </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/homing/fs_homing.h" line="87" column="19" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/homing/fs_homing.h" bodystart="87" bodyend="110"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classargos__lib_1_1_f_s_homing_storage_1a6fe6669b188f8a3cead75304c5a04993" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>fs::path</type>
+        <definition>fs::path argos_lib::FSHomingStorage&lt; T &gt;::GetFilePath</definition>
+        <argsstring>()</argsstring>
+        <name>GetFilePath</name>
+        <qualifiedname>argos_lib::FSHomingStorage::GetFilePath</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/homing/fs_homing.h" line="113" column="14" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/homing/fs_homing.h" bodystart="113" bodyend="127"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Saves and loads home positions from filesystem. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of the home position. Should be a units type </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>argos_lib::FSHomingStorage&lt; T &gt;</label>
+        <link refid="classargos__lib_1_1_f_s_homing_storage"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>argos_lib::HomingStorageInterface&lt; T &gt;</label>
+        <link refid="classargos__lib_1_1_homing_storage_interface"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>argos_lib::FSHomingStorage&lt; T &gt;</label>
+        <link refid="classargos__lib_1_1_f_s_homing_storage"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>argos_lib::HomingStorageInterface&lt; T &gt;</label>
+        <link refid="classargos__lib_1_1_homing_storage_interface"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/homing/fs_homing.h" line="55" column="3" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/homing/fs_homing.h" bodystart="55" bodyend="130"/>
+    <listofallmembers>
+      <member refid="classargos__lib_1_1_f_s_homing_storage_1a9730b19c7495456089b05d001da86b08" prot="public" virt="non-virtual"><scope>argos_lib::FSHomingStorage</scope><name>FSHomingStorage</name></member>
+      <member refid="classargos__lib_1_1_f_s_homing_storage_1a6fe6669b188f8a3cead75304c5a04993" prot="private" virt="non-virtual"><scope>argos_lib::FSHomingStorage</scope><name>GetFilePath</name></member>
+      <member refid="classargos__lib_1_1_f_s_homing_storage_1ae9eef66236986abe10694319aedc23bd" prot="public" virt="virtual"><scope>argos_lib::FSHomingStorage</scope><name>Load</name></member>
+      <member refid="classargos__lib_1_1_f_s_homing_storage_1ac1ad1249efe7cd9194c02bc475f35844" prot="private" virt="non-virtual"><scope>argos_lib::FSHomingStorage</scope><name>m_homesPath</name></member>
+      <member refid="classargos__lib_1_1_f_s_homing_storage_1a1f11375b0d867260468d6eb48cb57103" prot="public" virt="virtual"><scope>argos_lib::FSHomingStorage</scope><name>Save</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

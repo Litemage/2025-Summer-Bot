@@ -1,0 +1,245 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classargos__lib_1_1_edge_detector" kind="class" language="C++" prot="public">
+    <compoundname>argos_lib::EdgeDetector</compoundname>
+    <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classargos__lib_1_1_edge_detector_1ae125e05a416bb2c2e72b21394c8ad0df" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>EdgeDetectSettings</name>
+        <qualifiedname>argos_lib::EdgeDetector::EdgeDetectSettings</qualifiedname>
+        <enumvalue id="classargos__lib_1_1_edge_detector_1ae125e05a416bb2c2e72b21394c8ad0dfa22f576e3f47848ce8490ad69e8f4a67d" prot="public">
+          <name>DETECT_BOTH</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classargos__lib_1_1_edge_detector_1ae125e05a416bb2c2e72b21394c8ad0dfadf6697238f01afd8a3fe95a7103f5cf7" prot="public">
+          <name>DETECT_FALLING</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classargos__lib_1_1_edge_detector_1ae125e05a416bb2c2e72b21394c8ad0dfab0d60e234a75a67fe01f7a7fd4a710f8" prot="public">
+          <name>DETECT_RISING</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/edge_detector.h" line="13" column="5" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/edge_detector.h" bodystart="13" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="enum" id="classargos__lib_1_1_edge_detector_1a018f1887cd0eb8a500297a96e133ec5f" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>edgeStatus</name>
+        <qualifiedname>argos_lib::EdgeDetector::edgeStatus</qualifiedname>
+        <enumvalue id="classargos__lib_1_1_edge_detector_1a018f1887cd0eb8a500297a96e133ec5fa4f9d4539ac1e11a251e2afe022eba4e6" prot="public">
+          <name>FALLING</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classargos__lib_1_1_edge_detector_1a018f1887cd0eb8a500297a96e133ec5fab3762d500f2ada6030da058853c195d6" prot="public">
+          <name>RISING</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classargos__lib_1_1_edge_detector_1a018f1887cd0eb8a500297a96e133ec5fabb1ca97ec761fc37101737ba0aa2e7c5" prot="public">
+          <name>ERROR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classargos__lib_1_1_edge_detector_1a018f1887cd0eb8a500297a96e133ec5fab50339a10e1de285ac99d4c3990b8693" prot="public">
+          <name>NONE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/edge_detector.h" line="15" column="5" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/edge_detector.h" bodystart="15" bodyend="15"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classargos__lib_1_1_edge_detector_1a8359b28aaeac22e04099444877566fd3" prot="private" static="no" mutable="no">
+        <type>EdgeDetector::EdgeDetectSettings</type>
+        <definition>EdgeDetector::EdgeDetectSettings argos_lib::EdgeDetector::m_settings</definition>
+        <argsstring></argsstring>
+        <name>m_settings</name>
+        <qualifiedname>argos_lib::EdgeDetector::m_settings</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/edge_detector.h" line="26" column="38" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/edge_detector.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classargos__lib_1_1_edge_detector_1a467cc7fceb15cd7cefb40f43ac6d297b" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool argos_lib::EdgeDetector::m_previousValue</definition>
+        <argsstring></argsstring>
+        <name>m_previousValue</name>
+        <qualifiedname>argos_lib::EdgeDetector::m_previousValue</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/edge_detector.h" line="28" column="10" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/edge_detector.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classargos__lib_1_1_edge_detector_1a064f274c2f31583e2291c986303c24fb" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>EdgeDetector::EdgeDetector</definition>
+        <argsstring>(EdgeDetector::EdgeDetectSettings _settings, bool initialValue=false)</argsstring>
+        <name>EdgeDetector</name>
+        <qualifiedname>argos_lib::EdgeDetector::EdgeDetector</qualifiedname>
+        <param>
+          <type>EdgeDetector::EdgeDetectSettings</type>
+          <declname>_settings</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>initialValue</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/edge_detector.h" line="17" column="14" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/general/edge_detector.cpp" bodystart="11" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classargos__lib_1_1_edge_detector_1a70da21a49ba54b0097badfb4d278bcb1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool EdgeDetector::operator()</definition>
+        <argsstring>(bool curVal)</argsstring>
+        <name>operator()</name>
+        <qualifiedname>argos_lib::EdgeDetector::operator()</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>curVal</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/edge_detector.h" line="19" column="10" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/general/edge_detector.cpp" bodystart="16" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classargos__lib_1_1_edge_detector_1ac4d5b680f8ac7b94370958ac9b88d205" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>edgeStatus</type>
+        <definition>EdgeDetector::edgeStatus EdgeDetector::Calculate</definition>
+        <argsstring>(bool curVal)</argsstring>
+        <name>Calculate</name>
+        <qualifiedname>argos_lib::EdgeDetector::Calculate</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>curVal</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/edge_detector.h" line="21" column="16" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/general/edge_detector.cpp" bodystart="32" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classargos__lib_1_1_edge_detector_1a354d3413c86be34c1dbb93dc6fbe0e12" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string EdgeDetector::ToString</definition>
+        <argsstring>(edgeStatus status)</argsstring>
+        <name>ToString</name>
+        <qualifiedname>argos_lib::EdgeDetector::ToString</qualifiedname>
+        <param>
+          <type>edgeStatus</type>
+          <declname>status</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/edge_detector.h" line="23" column="17" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/general/edge_detector.cpp" bodystart="53" bodyend="72"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classargos__lib_1_1_edge_detector_1ab21eee9433c65ae80560372ab487f485" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>edgeStatus</type>
+        <definition>EdgeDetector::edgeStatus EdgeDetector::DetectFalling</definition>
+        <argsstring>(bool currentValue)</argsstring>
+        <name>DetectFalling</name>
+        <qualifiedname>argos_lib::EdgeDetector::DetectFalling</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>currentValue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/edge_detector.h" line="30" column="16" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/general/edge_detector.cpp" bodystart="74" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classargos__lib_1_1_edge_detector_1a47a3ee6ec09c9b707f63b229105aac3e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>edgeStatus</type>
+        <definition>EdgeDetector::edgeStatus EdgeDetector::DetectRising</definition>
+        <argsstring>(bool currentValue)</argsstring>
+        <name>DetectRising</name>
+        <qualifiedname>argos_lib::EdgeDetector::DetectRising</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>currentValue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/edge_detector.h" line="32" column="16" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/general/edge_detector.cpp" bodystart="82" bodyend="88"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/edge_detector.h" line="11" column="3" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/edge_detector.h" bodystart="11" bodyend="33"/>
+    <listofallmembers>
+      <member refid="classargos__lib_1_1_edge_detector_1ac4d5b680f8ac7b94370958ac9b88d205" prot="public" virt="non-virtual"><scope>argos_lib::EdgeDetector</scope><name>Calculate</name></member>
+      <member refid="classargos__lib_1_1_edge_detector_1ab21eee9433c65ae80560372ab487f485" prot="private" virt="non-virtual"><scope>argos_lib::EdgeDetector</scope><name>DetectFalling</name></member>
+      <member refid="classargos__lib_1_1_edge_detector_1a47a3ee6ec09c9b707f63b229105aac3e" prot="private" virt="non-virtual"><scope>argos_lib::EdgeDetector</scope><name>DetectRising</name></member>
+      <member refid="classargos__lib_1_1_edge_detector_1a064f274c2f31583e2291c986303c24fb" prot="public" virt="non-virtual"><scope>argos_lib::EdgeDetector</scope><name>EdgeDetector</name></member>
+      <member refid="classargos__lib_1_1_edge_detector_1ae125e05a416bb2c2e72b21394c8ad0df" prot="public" virt="non-virtual"><scope>argos_lib::EdgeDetector</scope><name>EdgeDetectSettings</name></member>
+      <member refid="classargos__lib_1_1_edge_detector_1a018f1887cd0eb8a500297a96e133ec5f" prot="public" virt="non-virtual"><scope>argos_lib::EdgeDetector</scope><name>edgeStatus</name></member>
+      <member refid="classargos__lib_1_1_edge_detector_1a467cc7fceb15cd7cefb40f43ac6d297b" prot="private" virt="non-virtual"><scope>argos_lib::EdgeDetector</scope><name>m_previousValue</name></member>
+      <member refid="classargos__lib_1_1_edge_detector_1a8359b28aaeac22e04099444877566fd3" prot="private" virt="non-virtual"><scope>argos_lib::EdgeDetector</scope><name>m_settings</name></member>
+      <member refid="classargos__lib_1_1_edge_detector_1a70da21a49ba54b0097badfb4d278bcb1" prot="public" virt="non-virtual"><scope>argos_lib::EdgeDetector</scope><name>operator()</name></member>
+      <member refid="classargos__lib_1_1_edge_detector_1a354d3413c86be34c1dbb93dc6fbe0e12" prot="public" virt="non-virtual"><scope>argos_lib::EdgeDetector</scope><name>ToString</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

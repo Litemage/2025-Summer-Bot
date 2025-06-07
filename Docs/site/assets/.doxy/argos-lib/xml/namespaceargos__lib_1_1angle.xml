@@ -1,0 +1,209 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="namespaceargos__lib_1_1angle" kind="namespace" language="C++">
+    <compoundname>argos_lib::angle</compoundname>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="angle__utils_8h_1a79938a46e7bf95ab61ecb0cdcccbf23f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>units::degree_t</type>
+        <definition>units::degree_t argos_lib::angle::NearestAngle</definition>
+        <argsstring>(units::degree_t desiredAngle, units::degree_t referenceAngle)</argsstring>
+        <name>NearestAngle</name>
+        <qualifiedname>argos_lib::angle::NearestAngle</qualifiedname>
+        <param>
+          <type>units::degree_t</type>
+          <declname>desiredAngle</declname>
+        </param>
+        <param>
+          <type>units::degree_t</type>
+          <declname>referenceAngle</declname>
+        </param>
+        <briefdescription>
+<para>Finds closest angle alias of desiredAngle relative to referencedAngle. All inputs are normalized so ranges are unbounded. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>desiredAngle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Angle to find alias for </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>referenceAngle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Defines desired alias range </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Angle alias of desiredAngle in range (referencedAngle - 180_deg, referencedAngle + 180_deg] </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/angle_utils.h" line="19" column="21" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/general/angle_utils.cpp" bodystart="15" bodyend="27" declfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/angle_utils.h" declline="19" declcolumn="21"/>
+      </memberdef>
+      <memberdef kind="function" id="angle__utils_8h_1a0c8f2ff8506296c8314db9c42d8455b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>units::degree_t</type>
+        <definition>units::degree_t argos_lib::angle::InvertedAngle</definition>
+        <argsstring>(units::degree_t desiredAngle, units::degree_t referenceAngle)</argsstring>
+        <name>InvertedAngle</name>
+        <qualifiedname>argos_lib::angle::InvertedAngle</qualifiedname>
+        <param>
+          <type>units::degree_t</type>
+          <declname>desiredAngle</declname>
+        </param>
+        <param>
+          <type>units::degree_t</type>
+          <declname>referenceAngle</declname>
+        </param>
+        <briefdescription>
+<para>Finds closest angle alias of a vector 180-degrees offset from desiredAngle relative to referencedAngle. All inputs are normalized so ranges are unbounded. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>desiredAngle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Angle to find 180-degree offset alias for </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>referenceAngle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Defines desired alias range </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Offset angle alias of desiredAngle in range (referencedAngle - 180_deg, referencedAngle + 180_deg] </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/angle_utils.h" line="29" column="21" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/general/angle_utils.cpp" bodystart="29" bodyend="34" declfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/angle_utils.h" declline="29" declcolumn="21"/>
+      </memberdef>
+      <memberdef kind="function" id="angle__utils_8h_1a47b900c9e45eabfd06cbb75a44d53282" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>units::degree_t</type>
+        <definition>units::degree_t argos_lib::angle::ConstrainAngle</definition>
+        <argsstring>(units::degree_t inVal, units::degree_t minVal, units::degree_t maxVal)</argsstring>
+        <name>ConstrainAngle</name>
+        <qualifiedname>argos_lib::angle::ConstrainAngle</qualifiedname>
+        <param>
+          <type>units::degree_t</type>
+          <declname>inVal</declname>
+        </param>
+        <param>
+          <type>units::degree_t</type>
+          <declname>minVal</declname>
+        </param>
+        <param>
+          <type>units::degree_t</type>
+          <declname>maxVal</declname>
+        </param>
+        <briefdescription>
+<para>Normalize angle to specified range. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>inVal</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Angle to constrain </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>minVal</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Normalization lower bound </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>maxVal</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Normalization upper bound </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Normalized value in range [minVal, maxVal] </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/angle_utils.h" line="39" column="21" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/general/angle_utils.cpp" bodystart="36" bodyend="45" declfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/angle_utils.h" declline="39" declcolumn="21"/>
+      </memberdef>
+      <memberdef kind="function" id="angle__utils_8h_1ab5ea266016f470c8e64637358039c125" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double argos_lib::angle::ConstrainAngle</definition>
+        <argsstring>(double inVal, double minVal, double maxVal)</argsstring>
+        <name>ConstrainAngle</name>
+        <qualifiedname>argos_lib::angle::ConstrainAngle</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>inVal</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>minVal</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>maxVal</declname>
+        </param>
+        <briefdescription>
+<para>Normalize angle to specified range. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>inVal</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Angle to constrain (degrees) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>minVal</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Normalization lower bound (degrees) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>maxVal</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Normalization upper bound (degrees) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Normalized value in range [minVal, maxVal] (degrees) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/angle_utils.h" line="48" column="12" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/general/angle_utils.cpp" bodystart="47" bodyend="52" declfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/angle_utils.h" declline="48" declcolumn="12"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/angle_utils.h" line="10" column="3"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="class_example_subsystem" kind="class" language="C++" prot="public">
+    <compoundname>ExampleSubsystem</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">frc2::SubsystemBase</basecompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_example_subsystem_1a63b261f3bb2c25af53b12c5464054be5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ExampleSubsystem::ExampleSubsystem</definition>
+        <argsstring>()</argsstring>
+        <name>ExampleSubsystem</name>
+        <qualifiedname>ExampleSubsystem::ExampleSubsystem</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/include/subsystems/ExampleSubsystem.h" line="12" column="3" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/cpp/subsystems/ExampleSubsystem.cpp" bodystart="7" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_example_subsystem_1a5c2ea6e0606b8417e9048b4acdd25c4f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>frc2::CommandPtr</type>
+        <definition>frc2::CommandPtr ExampleSubsystem::ExampleMethodCommand</definition>
+        <argsstring>()</argsstring>
+        <name>ExampleMethodCommand</name>
+        <qualifiedname>ExampleSubsystem::ExampleMethodCommand</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Example command factory method. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/include/subsystems/ExampleSubsystem.h" line="17" column="20" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/cpp/subsystems/ExampleSubsystem.cpp" bodystart="11" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_example_subsystem_1a53ca16dd083c89be2a760436607031d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ExampleSubsystem::ExampleCondition</definition>
+        <argsstring>()</argsstring>
+        <name>ExampleCondition</name>
+        <qualifiedname>ExampleSubsystem::ExampleCondition</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>An example method querying a boolean state of the subsystem (for example, a digital sensor).</para>
+<para><simplesect kind="return"><para>value of some boolean subsystem state, such as a digital sensor. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/include/subsystems/ExampleSubsystem.h" line="25" column="8" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/cpp/subsystems/ExampleSubsystem.cpp" bodystart="17" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_example_subsystem_1ae3a0c58819a31cca623fcb2fb8af0e1c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ExampleSubsystem::Periodic</definition>
+        <argsstring>() override</argsstring>
+        <name>Periodic</name>
+        <qualifiedname>ExampleSubsystem::Periodic</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Will be called periodically whenever the CommandScheduler runs. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/include/subsystems/ExampleSubsystem.h" line="30" column="8" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/cpp/subsystems/ExampleSubsystem.cpp" bodystart="22" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="class_example_subsystem_1a08d866697c4da747ff7aa906438ef99b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ExampleSubsystem::SimulationPeriodic</definition>
+        <argsstring>() override</argsstring>
+        <name>SimulationPeriodic</name>
+        <qualifiedname>ExampleSubsystem::SimulationPeriodic</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Will be called periodically whenever the CommandScheduler runs during simulation. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/include/subsystems/ExampleSubsystem.h" line="36" column="8" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/cpp/subsystems/ExampleSubsystem.cpp" bodystart="26" bodyend="28"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>ExampleSubsystem</label>
+        <link refid="class_example_subsystem"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>frc2::SubsystemBase</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>ExampleSubsystem</label>
+        <link refid="class_example_subsystem"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>frc2::SubsystemBase</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/include/subsystems/ExampleSubsystem.h" line="10" column="1" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/include/subsystems/ExampleSubsystem.h" bodystart="10" bodyend="41"/>
+    <listofallmembers>
+      <member refid="class_example_subsystem_1a53ca16dd083c89be2a760436607031d9" prot="public" virt="non-virtual"><scope>ExampleSubsystem</scope><name>ExampleCondition</name></member>
+      <member refid="class_example_subsystem_1a5c2ea6e0606b8417e9048b4acdd25c4f" prot="public" virt="non-virtual"><scope>ExampleSubsystem</scope><name>ExampleMethodCommand</name></member>
+      <member refid="class_example_subsystem_1a63b261f3bb2c25af53b12c5464054be5" prot="public" virt="non-virtual"><scope>ExampleSubsystem</scope><name>ExampleSubsystem</name></member>
+      <member refid="class_example_subsystem_1ae3a0c58819a31cca623fcb2fb8af0e1c" prot="public" virt="non-virtual"><scope>ExampleSubsystem</scope><name>Periodic</name></member>
+      <member refid="class_example_subsystem_1a08d866697c4da747ff7aa906438ef99b" prot="public" virt="non-virtual"><scope>ExampleSubsystem</scope><name>SimulationPeriodic</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

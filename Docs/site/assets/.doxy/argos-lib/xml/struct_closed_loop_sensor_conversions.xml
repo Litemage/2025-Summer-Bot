@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="struct_closed_loop_sensor_conversions" kind="struct" language="C++" prot="public">
+    <compoundname>ClosedLoopSensorConversions</compoundname>
+    <includes refid="nt__motor__pid__tuner_8h" local="no">nt_motor_pid_tuner.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_closed_loop_sensor_conversions_1ab9a10d9abb462e2ffd44ecb8574a8293" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double argos_lib::ClosedLoopSensorConversions::position</definition>
+        <argsstring></argsstring>
+        <name>position</name>
+        <qualifiedname>ClosedLoopSensorConversions::position</qualifiedname>
+        <initializer>{1.0}</initializer>
+        <briefdescription>
+<para>Multiply by this to convert sensor position units to physical units. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/nt_motor_pid_tuner.h" line="49" column="12" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/nt_motor_pid_tuner.h" bodystart="49" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_closed_loop_sensor_conversions_1a8e14b6f5f83570e8a50acfcd75c06369" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double argos_lib::ClosedLoopSensorConversions::velocity</definition>
+        <argsstring></argsstring>
+        <name>velocity</name>
+        <qualifiedname>ClosedLoopSensorConversions::velocity</qualifiedname>
+        <initializer>{1.0}</initializer>
+        <briefdescription>
+<para>Multiply by this to convert sensor velocity units to physical units. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/nt_motor_pid_tuner.h" line="50" column="12" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/nt_motor_pid_tuner.h" bodystart="50" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_closed_loop_sensor_conversions_1aaf9be32ee19cb40f0fdcf67b5efaa419" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double argos_lib::ClosedLoopSensorConversions::setpoint</definition>
+        <argsstring></argsstring>
+        <name>setpoint</name>
+        <qualifiedname>ClosedLoopSensorConversions::setpoint</qualifiedname>
+        <initializer>{
+        1.0}</initializer>
+        <briefdescription>
+<para>Multiply by this to convert sensor setpoint units to physical units (should be the same as either position or velocity) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/nt_motor_pid_tuner.h" line="51" column="12" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/nt_motor_pid_tuner.h" bodystart="51" bodyend="52"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Conversion factors to aid displaying sensor values as meaningful numbers. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/nt_motor_pid_tuner.h" line="48" column="3" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/nt_motor_pid_tuner.h" bodystart="48" bodyend="53"/>
+    <listofallmembers>
+      <member refid="struct_closed_loop_sensor_conversions_1ab9a10d9abb462e2ffd44ecb8574a8293" prot="public" virt="non-virtual"><scope>ClosedLoopSensorConversions</scope><name>position</name></member>
+      <member refid="struct_closed_loop_sensor_conversions_1aaf9be32ee19cb40f0fdcf67b5efaa419" prot="public" virt="non-virtual"><scope>ClosedLoopSensorConversions</scope><name>setpoint</name></member>
+      <member refid="struct_closed_loop_sensor_conversions_1a8e14b6f5f83570e8a50acfcd75c06369" prot="public" virt="non-virtual"><scope>ClosedLoopSensorConversions</scope><name>velocity</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

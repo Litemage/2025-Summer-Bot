@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="vibration_8h" kind="file" language="C++">
+    <compoundname>vibration.h</compoundname>
+    <includes local="no">units/time.h</includes>
+    <includes local="no">functional</includes>
+    <includedby refid="vibration_8cpp" local="yes">C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/controller/vibration.cpp</includedby>
+    <includedby refid="xbox__controller_8h" local="yes">C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/xbox_controller.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/vibration.h</label>
+        <link refid="vibration_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>functional</label>
+      </node>
+      <node id="2">
+        <label>units/time.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="4">
+        <label>C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/commands/swap_controllers_command.h</label>
+        <link refid="swap__controllers__command_8h_source"/>
+      </node>
+      <node id="1">
+        <label>C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/vibration.h</label>
+        <link refid="vibration_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/xbox_controller.h</label>
+        <link refid="xbox__controller_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/subsystems/swappable_controllers_subsystem.h</label>
+        <link refid="swappable__controllers__subsystem_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structargos__lib_1_1_vibration_status" prot="public">argos_lib::VibrationStatus</innerclass>
+    <innernamespace refid="namespaceargos__lib">argos_lib</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;units/time.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;functional&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceargos__lib" kindref="compound">argos_lib</ref><sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="structargos__lib_1_1_vibration_status" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structargos__lib_1_1_vibration_status" kindref="compound">VibrationStatus</ref><sp/>{</highlight></codeline>
+<codeline lineno="17" refid="structargos__lib_1_1_vibration_status_1ad4388f73527addefbc8625c2874b948f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structargos__lib_1_1_vibration_status_1ad4388f73527addefbc8625c2874b948f" kindref="member">intensityLeft</ref><sp/>=<sp/>0.0;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="18" refid="structargos__lib_1_1_vibration_status_1a8b6baa5946c60611d18dcbe97cd926c3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structargos__lib_1_1_vibration_status_1a8b6baa5946c60611d18dcbe97cd926c3" kindref="member">intensityRight</ref><sp/>=<sp/>0.0;<sp/><sp/></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">VibrationModel<sp/>=<sp/>std::function&lt;<ref refid="structargos__lib_1_1_vibration_status" kindref="compound">VibrationStatus</ref>()&gt;;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/>VibrationModel<sp/><ref refid="namespaceargos__lib_1a9bdc8d0bc40d923285b6350108692133" kindref="member">VibrationOff</ref>();</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/>VibrationModel<sp/><ref refid="namespaceargos__lib_1aadda81a361b1738ff80d513f9a74c32e" kindref="member">VibrationConstant</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>intensity);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/>VibrationModel<sp/><ref refid="namespaceargos__lib_1aadda81a361b1738ff80d513f9a74c32e" kindref="member">VibrationConstant</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>intensityLeft,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>intensityRight);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/>VibrationModel<sp/><ref refid="namespaceargos__lib_1af417e6c76c86d4cebf77851dca11c23d" kindref="member">VibrationSyncPulse</ref>(units::millisecond_t<sp/>pulsePeriod,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>intensityOn,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>intensityOff<sp/>=<sp/>0.0);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/>VibrationModel<sp/><ref refid="namespaceargos__lib_1ae562daa4c83e3bdb85b2a17aadd00855" kindref="member">VibrationSyncWave</ref>(units::millisecond_t<sp/>pulsePeriod,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>intensityOn,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>intensityOff<sp/>=<sp/>0.0);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/>VibrationModel<sp/><ref refid="namespaceargos__lib_1ad60f0b7c80267a6a8e576ef289de00e8" kindref="member">VibrationAlternatePulse</ref>(units::millisecond_t<sp/>pulsePeriod,</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>intensityOn,</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>intensityOff<sp/>=<sp/>0.0);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/>VibrationModel<sp/><ref refid="namespaceargos__lib_1a489dff46429e8ae8064c6b37a744e2f5" kindref="member">VibrationAlternateWave</ref>(units::millisecond_t<sp/>pulsePeriod,</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>intensityOn,</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>intensityOff<sp/>=<sp/>0.0);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/>VibrationModel<sp/><ref refid="namespaceargos__lib_1adfd26102f3bb55fd38f1f624158cc235" kindref="member">TemporaryVibrationPattern</ref>(VibrationModel<sp/>temporaryModel,</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>units::millisecond_t<sp/>temporaryModelDuration,</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VibrationModel<sp/>lastingModel<sp/>=<sp/><ref refid="namespaceargos__lib_1a9bdc8d0bc40d923285b6350108692133" kindref="member">VibrationOff</ref>());</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>argos_lib</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/vibration.h"/>
+  </compounddef>
+</doxygen>

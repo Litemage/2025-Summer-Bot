@@ -1,0 +1,243 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="class_robot" kind="class" language="C++" prot="public">
+    <compoundname>Robot</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">frc::TimedRobot</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_robot_1acd05116368239145afa411529a261f19" prot="private" static="no" mutable="no">
+        <type>std::optional&lt; frc2::CommandPtr &gt;</type>
+        <definition>std::optional&lt;frc2::CommandPtr&gt; Robot::m_autonomousCommand</definition>
+        <argsstring></argsstring>
+        <name>m_autonomousCommand</name>
+        <qualifiedname>Robot::m_autonomousCommand</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/include/Robot.h" line="31" column="17" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/include/Robot.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_robot_1ae31bf18f9afb23bab45458605fb73ea7" prot="private" static="no" mutable="no">
+        <type><ref refid="class_robot_container" kindref="compound">RobotContainer</ref></type>
+        <definition>RobotContainer Robot::m_container</definition>
+        <argsstring></argsstring>
+        <name>m_container</name>
+        <qualifiedname>Robot::m_container</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/include/Robot.h" line="33" column="18" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/include/Robot.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_robot_1a4fc7c70ae20623f05e06f2ecb388b6c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Robot::Robot</definition>
+        <argsstring>()</argsstring>
+        <name>Robot</name>
+        <qualifiedname>Robot::Robot</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/include/Robot.h" line="16" column="3" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/cpp/Robot.cpp" bodystart="9" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_robot_1a8fad82c2250bcfb83b743b5c0dd6ed27" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Robot::RobotPeriodic</definition>
+        <argsstring>() override</argsstring>
+        <name>RobotPeriodic</name>
+        <qualifiedname>Robot::RobotPeriodic</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is called every 20 ms, no matter the mode. Use this for items like diagnostics that you want to run during disabled, autonomous, teleoperated and test.</para>
+<para>This runs after the mode specific periodic functions, but before LiveWindow and SmartDashboard integrated updating. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/include/Robot.h" line="17" column="8" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/cpp/Robot.cpp" bodystart="19" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_robot_1a810e6143a208a6314491366e3c714357" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Robot::DisabledInit</definition>
+        <argsstring>() override</argsstring>
+        <name>DisabledInit</name>
+        <qualifiedname>Robot::DisabledInit</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is called once each time the robot enters Disabled mode. You can use it to reset any subsystem information you want to clear when the robot is disabled. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/include/Robot.h" line="18" column="8" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/cpp/Robot.cpp" bodystart="28" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="class_robot_1a8c7309f5f1cb242ea8c74f1abf03b540" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Robot::DisabledPeriodic</definition>
+        <argsstring>() override</argsstring>
+        <name>DisabledPeriodic</name>
+        <qualifiedname>Robot::DisabledPeriodic</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/include/Robot.h" line="19" column="8" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/cpp/Robot.cpp" bodystart="30" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="class_robot_1a2136cfc015936285218c8a8db984d6bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Robot::AutonomousInit</definition>
+        <argsstring>() override</argsstring>
+        <name>AutonomousInit</name>
+        <qualifiedname>Robot::AutonomousInit</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This autonomous runs the autonomous command selected by your <computeroutput><ref refid="class_robot_container" kindref="compound">RobotContainer</ref></computeroutput> class. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/include/Robot.h" line="20" column="8" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/cpp/Robot.cpp" bodystart="36" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="class_robot_1ac11143dd674e0e02fef5329e2df24830" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Robot::AutonomousPeriodic</definition>
+        <argsstring>() override</argsstring>
+        <name>AutonomousPeriodic</name>
+        <qualifiedname>Robot::AutonomousPeriodic</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/include/Robot.h" line="21" column="8" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/cpp/Robot.cpp" bodystart="44" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="class_robot_1aa3e246794bfbbb4406fc87f351762038" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Robot::TeleopInit</definition>
+        <argsstring>() override</argsstring>
+        <name>TeleopInit</name>
+        <qualifiedname>Robot::TeleopInit</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/include/Robot.h" line="22" column="8" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/cpp/Robot.cpp" bodystart="46" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="class_robot_1a324322627c63b3870daf7c7ddc5bea63" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Robot::TeleopPeriodic</definition>
+        <argsstring>() override</argsstring>
+        <name>TeleopPeriodic</name>
+        <qualifiedname>Robot::TeleopPeriodic</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is called periodically during operator control. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/include/Robot.h" line="23" column="8" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/cpp/Robot.cpp" bodystart="59" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="class_robot_1af0ac44a962e609e9b042285e699d1db8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Robot::TestPeriodic</definition>
+        <argsstring>() override</argsstring>
+        <name>TestPeriodic</name>
+        <qualifiedname>Robot::TestPeriodic</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is called periodically during test mode. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/include/Robot.h" line="24" column="8" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/cpp/Robot.cpp" bodystart="64" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="class_robot_1a0ec3407013454a8017474d0beb756ac8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Robot::SimulationInit</definition>
+        <argsstring>() override</argsstring>
+        <name>SimulationInit</name>
+        <qualifiedname>Robot::SimulationInit</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is called once when the robot is first started up. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/include/Robot.h" line="25" column="8" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/cpp/Robot.cpp" bodystart="69" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="class_robot_1a210b114f375fd78f0abd2c69b0e721a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Robot::SimulationPeriodic</definition>
+        <argsstring>() override</argsstring>
+        <name>SimulationPeriodic</name>
+        <qualifiedname>Robot::SimulationPeriodic</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is called periodically whilst in simulation. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/include/Robot.h" line="26" column="8" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/cpp/Robot.cpp" bodystart="74" bodyend="74"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Robot</label>
+        <link refid="class_robot"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>frc::TimedRobot</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Robot</label>
+        <link refid="class_robot"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>frc::TimedRobot</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/include/Robot.h" line="14" column="1" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/include/Robot.h" bodystart="14" bodyend="34"/>
+    <listofallmembers>
+      <member refid="class_robot_1a2136cfc015936285218c8a8db984d6bc" prot="public" virt="non-virtual"><scope>Robot</scope><name>AutonomousInit</name></member>
+      <member refid="class_robot_1ac11143dd674e0e02fef5329e2df24830" prot="public" virt="non-virtual"><scope>Robot</scope><name>AutonomousPeriodic</name></member>
+      <member refid="class_robot_1a810e6143a208a6314491366e3c714357" prot="public" virt="non-virtual"><scope>Robot</scope><name>DisabledInit</name></member>
+      <member refid="class_robot_1a8c7309f5f1cb242ea8c74f1abf03b540" prot="public" virt="non-virtual"><scope>Robot</scope><name>DisabledPeriodic</name></member>
+      <member refid="class_robot_1acd05116368239145afa411529a261f19" prot="private" virt="non-virtual"><scope>Robot</scope><name>m_autonomousCommand</name></member>
+      <member refid="class_robot_1ae31bf18f9afb23bab45458605fb73ea7" prot="private" virt="non-virtual"><scope>Robot</scope><name>m_container</name></member>
+      <member refid="class_robot_1a4fc7c70ae20623f05e06f2ecb388b6c4" prot="public" virt="non-virtual"><scope>Robot</scope><name>Robot</name></member>
+      <member refid="class_robot_1a8fad82c2250bcfb83b743b5c0dd6ed27" prot="public" virt="non-virtual"><scope>Robot</scope><name>RobotPeriodic</name></member>
+      <member refid="class_robot_1a0ec3407013454a8017474d0beb756ac8" prot="public" virt="non-virtual"><scope>Robot</scope><name>SimulationInit</name></member>
+      <member refid="class_robot_1a210b114f375fd78f0abd2c69b0e721a2" prot="public" virt="non-virtual"><scope>Robot</scope><name>SimulationPeriodic</name></member>
+      <member refid="class_robot_1aa3e246794bfbbb4406fc87f351762038" prot="public" virt="non-virtual"><scope>Robot</scope><name>TeleopInit</name></member>
+      <member refid="class_robot_1a324322627c63b3870daf7c7ddc5bea63" prot="public" virt="non-virtual"><scope>Robot</scope><name>TeleopPeriodic</name></member>
+      <member refid="class_robot_1af0ac44a962e609e9b042285e699d1db8" prot="public" virt="non-virtual"><scope>Robot</scope><name>TestPeriodic</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

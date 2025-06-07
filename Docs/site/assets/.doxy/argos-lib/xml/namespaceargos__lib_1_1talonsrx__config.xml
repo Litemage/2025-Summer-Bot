@@ -1,0 +1,179 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="namespaceargos__lib_1_1talonsrx__config" kind="namespace" language="C++">
+    <compoundname>argos_lib::talonsrx_config</compoundname>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="talonsrx__config_8h_1a8c8fd9b28a61b9d954c242cd6529f624" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool argos_lib::talonsrx_config::TalonSRXConfig</definition>
+        <argsstring>(ctre::phoenix::motorcontrol::can::TalonSRX &amp;motorController, units::millisecond_t configTimeout)</argsstring>
+        <name>TalonSRXConfig</name>
+        <qualifiedname>argos_lib::talonsrx_config::TalonSRXConfig</qualifiedname>
+        <param>
+          <type>ctre::phoenix::motorcontrol::can::TalonSRX &amp;</type>
+          <declname>motorController</declname>
+        </param>
+        <param>
+          <type>units::millisecond_t</type>
+          <declname>configTimeout</declname>
+        </param>
+        <briefdescription>
+<para>Configures a CTRE TalonSRX with only the fields provided. All other fields are given the factory default values. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Structure containing any combination of the following members:<itemizedlist>
+<listitem><para>inverted</para>
+</listitem><listitem><para>neutralMode</para>
+</listitem><listitem><para>pid0_allowableError</para>
+</listitem><listitem><para>pid0_iZone</para>
+</listitem><listitem><para>pid0_kD,</para>
+</listitem><listitem><para>pid0_kF</para>
+</listitem><listitem><para>pid0_kI</para>
+</listitem><listitem><para>pid0_kP</para>
+</listitem><listitem><para>pid0_selectedSensor</para>
+</listitem><listitem><para>remoteFilter0_addr,</para>
+</listitem><listitem><para>remoteFilter0_type</para>
+</listitem><listitem><para>sensorPhase</para>
+</listitem><listitem><para>voltCompSat</para>
+</listitem><listitem><para>statusFrameMotorMode</para>
+</listitem><listitem><para>peakCurrentLimit</para>
+</listitem><listitem><para>peakCurrentDuration</para>
+</listitem><listitem><para>continuousCurrentLimit</para>
+</listitem><listitem><para>peakOutputForward</para>
+</listitem><listitem><para>peakOutputReverse</para>
+</listitem><listitem><para>forwardLimitSwitchSource</para>
+</listitem><listitem><para>reverseLimitSwitchSource</para>
+</listitem><listitem><para>forwardLimitSwitchNormal</para>
+</listitem><listitem><para>reverseLimitSwitchNormal </para>
+</listitem></itemizedlist>
+</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>motorController</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>TalonSRX object to configure </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>configTimeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time to wait for response from TalonSRX </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true Configuration succeeded </para>
+</simplesect>
+<simplesect kind="return"><para>false Configuration failed </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/config/talonsrx_config.h" line="75" column="10" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/config/talonsrx_config.h" bodystart="75" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="function" id="talonsrx__config_8h_1a7a7e9ff5622909e0f6b1a2a6b0b8193c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename CompetitionConfig</type>
+          </param>
+          <param>
+            <type>typename PracticeConfig</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool argos_lib::talonsrx_config::TalonSRXConfig</definition>
+        <argsstring>(ctre::phoenix::motorcontrol::can::TalonSRX &amp;motorController, units::millisecond_t configTimeout, argos_lib::RobotInstance instance)</argsstring>
+        <name>TalonSRXConfig</name>
+        <qualifiedname>argos_lib::talonsrx_config::TalonSRXConfig</qualifiedname>
+        <param>
+          <type>ctre::phoenix::motorcontrol::can::TalonSRX &amp;</type>
+          <declname>motorController</declname>
+        </param>
+        <param>
+          <type>units::millisecond_t</type>
+          <declname>configTimeout</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceargos__lib_1a4231c977f4047dcc9edf48b1bd43f51c" kindref="member">argos_lib::RobotInstance</ref></type>
+          <declname>instance</declname>
+        </param>
+        <briefdescription>
+<para>Configures a CTRE TalonSRX with configuration values according to specified robot instance. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>CompetitionConfig</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Configurations to use in competition robot instance </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>PracticeConfig</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Configurations to use in practice robot instance </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>motorController</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>TalonSRX object to configure </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>configTimeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time to wait for response from TalonSRX </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>instance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Robot instance to use </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true Configuration succeeded </para>
+</simplesect>
+<simplesect kind="return"><para>false Configuration failed </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/config/talonsrx_config.h" line="192" column="10" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/config/talonsrx_config.h" bodystart="192" bodyend="204"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/config/talonsrx_config.h" line="17" column="3"/>
+  </compounddef>
+</doxygen>

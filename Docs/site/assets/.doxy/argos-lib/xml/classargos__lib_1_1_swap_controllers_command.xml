@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classargos__lib_1_1_swap_controllers_command" kind="class" language="C++" prot="public">
+    <compoundname>argos_lib::SwapControllersCommand</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">frc2::CommandHelper&lt; frc2::Command, SwapControllersCommand &gt;</basecompoundref>
+    <includes refid="swap__controllers__command_8h" local="no">swap_controllers_command.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classargos__lib_1_1_swap_controllers_command_1a40781c6f0285bb21091d71134a012b39" prot="private" static="no" mutable="no">
+        <type><ref refid="classargos__lib_1_1_swappable_controllers_subsystem" kindref="compound">SwappableControllersSubsystem</ref> *</type>
+        <definition>SwappableControllersSubsystem* argos_lib::SwapControllersCommand::m_pControllerSubsystem</definition>
+        <argsstring></argsstring>
+        <name>m_pControllerSubsystem</name>
+        <qualifiedname>argos_lib::SwapControllersCommand::m_pControllerSubsystem</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/commands/swap_controllers_command.h" line="32" column="35" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/commands/swap_controllers_command.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classargos__lib_1_1_swap_controllers_command_1a69c8cc75f25134539277bf2f7be7deb4" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SwapControllersCommand::SwapControllersCommand</definition>
+        <argsstring>(SwappableControllersSubsystem *controllers)</argsstring>
+        <name>SwapControllersCommand</name>
+        <qualifiedname>argos_lib::SwapControllersCommand::SwapControllersCommand</qualifiedname>
+        <param>
+          <type><ref refid="classargos__lib_1_1_swappable_controllers_subsystem" kindref="compound">SwappableControllersSubsystem</ref> *</type>
+          <declname>controllers</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/commands/swap_controllers_command.h" line="19" column="14" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/commands/swap_controllers_command.cpp" bodystart="9" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classargos__lib_1_1_swap_controllers_command_1aee37eb53ea8beb23636d6332bbe2294b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SwapControllersCommand::Initialize</definition>
+        <argsstring>() override</argsstring>
+        <name>Initialize</name>
+        <qualifiedname>argos_lib::SwapControllersCommand::Initialize</qualifiedname>
+        <briefdescription>
+<para>Indicate swap has started, but don&apos;t actually swap yet. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/commands/swap_controllers_command.h" line="24" column="10" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/commands/swap_controllers_command.cpp" bodystart="12" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classargos__lib_1_1_swap_controllers_command_1a096e86b1c6ede8e0f3eee2aabcbab305" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SwapControllersCommand::End</definition>
+        <argsstring>(bool) override</argsstring>
+        <name>End</name>
+        <qualifiedname>argos_lib::SwapControllersCommand::End</qualifiedname>
+        <param>
+          <type>bool</type>
+        </param>
+        <briefdescription>
+<para>Swap controllers when trigger ends. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/commands/swap_controllers_command.h" line="29" column="10" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/commands/swap_controllers_command.cpp" bodystart="16" bodyend="19"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Swaps rolls of two controllers. Useful if one controller breaks during a match. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>argos_lib::SwapControllersCommand</label>
+        <link refid="classargos__lib_1_1_swap_controllers_command"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>frc2::CommandHelper&lt; frc2::Command, SwapControllersCommand &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>argos_lib::SwapControllersCommand</label>
+        <link refid="classargos__lib_1_1_swap_controllers_command"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>frc2::CommandHelper&lt; frc2::Command, SwapControllersCommand &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/commands/swap_controllers_command.h" line="17" column="3" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/commands/swap_controllers_command.h" bodystart="17" bodyend="33"/>
+    <listofallmembers>
+      <member refid="classargos__lib_1_1_swap_controllers_command_1a096e86b1c6ede8e0f3eee2aabcbab305" prot="public" virt="non-virtual"><scope>argos_lib::SwapControllersCommand</scope><name>End</name></member>
+      <member refid="classargos__lib_1_1_swap_controllers_command_1aee37eb53ea8beb23636d6332bbe2294b" prot="public" virt="non-virtual"><scope>argos_lib::SwapControllersCommand</scope><name>Initialize</name></member>
+      <member refid="classargos__lib_1_1_swap_controllers_command_1a40781c6f0285bb21091d71134a012b39" prot="private" virt="non-virtual"><scope>argos_lib::SwapControllersCommand</scope><name>m_pControllerSubsystem</name></member>
+      <member refid="classargos__lib_1_1_swap_controllers_command_1a69c8cc75f25134539277bf2f7be7deb4" prot="public" virt="non-virtual"><scope>argos_lib::SwapControllersCommand</scope><name>SwapControllersCommand</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

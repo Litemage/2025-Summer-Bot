@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="namespaceargos__lib_1_1swerve" kind="namespace" language="C++">
+    <compoundname>argos_lib::swerve</compoundname>
+    <innerclass refid="classargos__lib_1_1swerve_1_1_network_tables_homing_storage" prot="public">argos_lib::swerve::NetworkTablesHomingStorage</innerclass>
+    <innerclass refid="structargos__lib_1_1swerve_1_1_swerve_module_positions" prot="public">argos_lib::swerve::SwerveModulePositions</innerclass>
+    <innerclass refid="structargos__lib_1_1swerve_1_1_translation_speeds" prot="public">argos_lib::swerve::TranslationSpeeds</innerclass>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="swerve__utils_8h_1acc421e76b48b21874789c52224edf454" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>frc::SwerveModuleState</type>
+        <definition>frc::SwerveModuleState argos_lib::swerve::Optimize</definition>
+        <argsstring>(frc::SwerveModuleState desiredState, units::degree_t currentModuleAngle, units::degrees_per_second_t currentModuleAngularRate, units::feet_per_second_t currentModuleDriveVel, units::feet_per_second_t maxVelocity)</argsstring>
+        <name>Optimize</name>
+        <qualifiedname>argos_lib::swerve::Optimize</qualifiedname>
+        <param>
+          <type>frc::SwerveModuleState</type>
+          <declname>desiredState</declname>
+        </param>
+        <param>
+          <type>units::degree_t</type>
+          <declname>currentModuleAngle</declname>
+        </param>
+        <param>
+          <type>units::degrees_per_second_t</type>
+          <declname>currentModuleAngularRate</declname>
+        </param>
+        <param>
+          <type>units::feet_per_second_t</type>
+          <declname>currentModuleDriveVel</declname>
+        </param>
+        <param>
+          <type>units::feet_per_second_t</type>
+          <declname>maxVelocity</declname>
+        </param>
+        <briefdescription>
+<para>Optimize swerve module to minimize rotations and drive direction changes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>desiredState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Requested state. Output must result in same motion </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>currentModuleAngle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Module rotation angle in relative or absolute position </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>currentModuleAngularRate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Current module rotation speed. To prevent rapid changes in rotation direction. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>currentModuleDriveVel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Current module drive velocity. To prevent rapid changes in drive motor velocity. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>maxVelocity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Max velocity for determining max transition change thresholds </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Optimized swerve module state that results in same motion as desiredState </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/swerve_utils.h" line="29" column="28" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/general/swerve_utils.cpp" bodystart="16" bodyend="46" declfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/swerve_utils.h" declline="29" declcolumn="28"/>
+      </memberdef>
+      <memberdef kind="function" id="swerve__utils_8h_1af8857006b761b89ad1de58df49a41895" prot="public" static="no" nodiscard="yes" constexpr="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structargos__lib_1_1swerve_1_1_translation_speeds" kindref="compound">TranslationSpeeds</ref></type>
+        <definition>TranslationSpeeds argos_lib::swerve::CircularInterpolate</definition>
+        <argsstring>(const TranslationSpeeds rawSpeeds, const T interpMap)</argsstring>
+        <name>CircularInterpolate</name>
+        <qualifiedname>argos_lib::swerve::CircularInterpolate</qualifiedname>
+        <param>
+          <type>const <ref refid="structargos__lib_1_1swerve_1_1_translation_speeds" kindref="compound">TranslationSpeeds</ref></type>
+          <declname>rawSpeeds</declname>
+        </param>
+        <param>
+          <type>const T</type>
+          <declname>interpMap</declname>
+        </param>
+        <briefdescription>
+<para>Use <ref refid="classargos__lib_1_1_interpolation_map" kindref="compound">argos_lib::InterpolationMap</ref> to apply mapping according to joystick vector magnitude. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of interpolated input </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rawSpeeds</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Joystick inputs as percentages </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>interpMap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Interpolation map to apply to magnitudes </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Remapped joystick percentages. Angle of vector will match rawSpeeds, but magnitude will scale according to interpMap. This results in circular deadband and other mapping results. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/swerve_utils.h" line="63" column="34" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/swerve_utils.h" bodystart="63" bodyend="69"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/swerve_utils.h" line="17" column="3"/>
+  </compounddef>
+</doxygen>

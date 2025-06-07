@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="dir_df3bee86fdbfb464c3a94507855b0bdc" kind="dir">
+    <compoundname>C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/include</compoundname>
+    <innerdir refid="dir_8351edd85a1483fb2b79b8acebf64e28">C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/include/commands</innerdir>
+    <innerdir refid="dir_5b31952f813df36dabbaa31d5b8f92e5">C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/include/subsystems</innerdir>
+    <innerfile refid="_constants_8h">Constants.h</innerfile>
+    <innerfile refid="_robot_8h">Robot.h</innerfile>
+    <innerfile refid="_robot_container_8h">RobotContainer.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/include/"/>
+  </compounddef>
+</doxygen>

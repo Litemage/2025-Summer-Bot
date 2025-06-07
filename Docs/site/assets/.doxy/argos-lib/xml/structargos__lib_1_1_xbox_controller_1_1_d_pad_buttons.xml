@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="structargos__lib_1_1_xbox_controller_1_1_d_pad_buttons" kind="struct" language="C++" prot="private">
+    <compoundname>argos_lib::XboxController::DPadButtons</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structargos__lib_1_1_xbox_controller_1_1_d_pad_buttons_1a8ca185325796ee021b569cdc760d9cf4" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool argos_lib::XboxController::DPadButtons::up</definition>
+        <argsstring></argsstring>
+        <name>up</name>
+        <qualifiedname>argos_lib::XboxController::DPadButtons::up</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+<para>Up active (including adjacent diagonals) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/xbox_controller.h" line="332" column="12" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/xbox_controller.h" bodystart="332" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structargos__lib_1_1_xbox_controller_1_1_d_pad_buttons_1ad10d915cd0e43bf94764df20c1909328" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool argos_lib::XboxController::DPadButtons::right</definition>
+        <argsstring></argsstring>
+        <name>right</name>
+        <qualifiedname>argos_lib::XboxController::DPadButtons::right</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+<para>Right active (including adjacent diagonals) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/xbox_controller.h" line="333" column="12" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/xbox_controller.h" bodystart="333" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structargos__lib_1_1_xbox_controller_1_1_d_pad_buttons_1a43a245198029386d12c9cb8ed29ec218" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool argos_lib::XboxController::DPadButtons::down</definition>
+        <argsstring></argsstring>
+        <name>down</name>
+        <qualifiedname>argos_lib::XboxController::DPadButtons::down</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+<para>Down active (including adjacent diagonals) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/xbox_controller.h" line="334" column="12" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/xbox_controller.h" bodystart="334" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structargos__lib_1_1_xbox_controller_1_1_d_pad_buttons_1a3a7369d663e373845fcd218fd3e6e086" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool argos_lib::XboxController::DPadButtons::left</definition>
+        <argsstring></argsstring>
+        <name>left</name>
+        <qualifiedname>argos_lib::XboxController::DPadButtons::left</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+<para>Left active (including adjacent diagonals) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/xbox_controller.h" line="335" column="12" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/xbox_controller.h" bodystart="335" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Parsed directional pad button states. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/xbox_controller.h" line="331" column="5" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/xbox_controller.h" bodystart="331" bodyend="336"/>
+    <listofallmembers>
+      <member refid="structargos__lib_1_1_xbox_controller_1_1_d_pad_buttons_1a43a245198029386d12c9cb8ed29ec218" prot="public" virt="non-virtual"><scope>argos_lib::XboxController::DPadButtons</scope><name>down</name></member>
+      <member refid="structargos__lib_1_1_xbox_controller_1_1_d_pad_buttons_1a3a7369d663e373845fcd218fd3e6e086" prot="public" virt="non-virtual"><scope>argos_lib::XboxController::DPadButtons</scope><name>left</name></member>
+      <member refid="structargos__lib_1_1_xbox_controller_1_1_d_pad_buttons_1ad10d915cd0e43bf94764df20c1909328" prot="public" virt="non-virtual"><scope>argos_lib::XboxController::DPadButtons</scope><name>right</name></member>
+      <member refid="structargos__lib_1_1_xbox_controller_1_1_d_pad_buttons_1a8ca185325796ee021b569cdc760d9cf4" prot="public" virt="non-virtual"><scope>argos_lib::XboxController::DPadButtons</scope><name>up</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,253 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="class_network_tables_homing_storage" kind="class" language="C++" prot="public">
+    <compoundname>NetworkTablesHomingStorage</compoundname>
+    <basecompoundref refid="classargos__lib_1_1_swerve_home_storage_interface" prot="public" virt="non-virtual">argos_lib::SwerveHomeStorageInterface</basecompoundref>
+    <includes refid="network__tables__homing__storage_8h" local="no">network_tables_homing_storage.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_network_tables_homing_storage_1a208f3a4973858388577a35ac58cd8d17" prot="private" static="no" mutable="no">
+        <type>const std::string</type>
+        <definition>const std::string argos_lib::swerve::NetworkTablesHomingStorage::m_tableName</definition>
+        <argsstring></argsstring>
+        <name>m_tableName</name>
+        <qualifiedname>NetworkTablesHomingStorage::m_tableName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/homing/network_tables_homing_storage.h" line="50" column="25" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/homing/network_tables_homing_storage.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_network_tables_homing_storage_1ad03d20ff51cf1ccae25bea913ba27ec8" prot="private" static="no" mutable="no">
+        <type>const std::string</type>
+        <definition>const std::string argos_lib::swerve::NetworkTablesHomingStorage::m_frontLeftPath</definition>
+        <argsstring></argsstring>
+        <name>m_frontLeftPath</name>
+        <qualifiedname>NetworkTablesHomingStorage::m_frontLeftPath</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/homing/network_tables_homing_storage.h" line="51" column="25" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/homing/network_tables_homing_storage.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_network_tables_homing_storage_1aab0932c0fdc6daab8133f9b120524217" prot="private" static="no" mutable="no">
+        <type>const std::string</type>
+        <definition>const std::string argos_lib::swerve::NetworkTablesHomingStorage::m_frontRightPath</definition>
+        <argsstring></argsstring>
+        <name>m_frontRightPath</name>
+        <qualifiedname>NetworkTablesHomingStorage::m_frontRightPath</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/homing/network_tables_homing_storage.h" line="52" column="25" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/homing/network_tables_homing_storage.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_network_tables_homing_storage_1af48dedd70bb82c9c495e220415efd48e" prot="private" static="no" mutable="no">
+        <type>const std::string</type>
+        <definition>const std::string argos_lib::swerve::NetworkTablesHomingStorage::m_rearRightPath</definition>
+        <argsstring></argsstring>
+        <name>m_rearRightPath</name>
+        <qualifiedname>NetworkTablesHomingStorage::m_rearRightPath</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/homing/network_tables_homing_storage.h" line="53" column="25" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/homing/network_tables_homing_storage.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_network_tables_homing_storage_1a4d49f9d2e35c5ab0a98bf99761c319c2" prot="private" static="no" mutable="no">
+        <type>const std::string</type>
+        <definition>const std::string argos_lib::swerve::NetworkTablesHomingStorage::m_rearLeftPath</definition>
+        <argsstring></argsstring>
+        <name>m_rearLeftPath</name>
+        <qualifiedname>NetworkTablesHomingStorage::m_rearLeftPath</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/homing/network_tables_homing_storage.h" line="54" column="25" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/homing/network_tables_homing_storage.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_network_tables_homing_storage_1a4d4d42822dd11e3ac4b7b65abb5a4c05" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>NetworkTablesHomingStorage::NetworkTablesHomingStorage</definition>
+        <argsstring>(const std::string &amp;tableName, const std::string &amp;frontLeftPath, const std::string &amp;frontRightPath, const std::string &amp;rearRightPath, const std::string &amp;rearLeftPath)</argsstring>
+        <name>NetworkTablesHomingStorage</name>
+        <qualifiedname>NetworkTablesHomingStorage::NetworkTablesHomingStorage</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>tableName</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>frontLeftPath</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>frontRightPath</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>rearRightPath</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>rearLeftPath</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new Network Tables Homing Storage object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tableName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Network table name </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>frontLeftPath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Key name for front left module </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>frontRightPath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Key name for front right module </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rearRightPath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Key name for rear right module </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rearLeftPath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Key name for rear left module </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/homing/network_tables_homing_storage.h" line="29" column="7" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/homing/network_tables_homing_storage.cpp" bodystart="11" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="class_network_tables_homing_storage_1a52ef5021c25ee0704647342b46d4937b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool NetworkTablesHomingStorage::Save</definition>
+        <argsstring>(const argos_lib::swerve::SwerveModulePositions &amp;homePosition) override</argsstring>
+        <name>Save</name>
+        <qualifiedname>NetworkTablesHomingStorage::Save</qualifiedname>
+        <reimplements refid="classargos__lib_1_1_swerve_home_storage_interface_1abc7618d705ec5beb418e13240e9e0f16">Save</reimplements>
+        <param>
+          <type>const <ref refid="structargos__lib_1_1swerve_1_1_swerve_module_positions" kindref="compound">argos_lib::swerve::SwerveModulePositions</ref> &amp;</type>
+          <declname>homePosition</declname>
+        </param>
+        <briefdescription>
+<para>Save home positions to network tables. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>homePosition</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Positions to store </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if successful </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/homing/network_tables_homing_storage.h" line="41" column="12" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/homing/network_tables_homing_storage.cpp" bodystart="29" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="class_network_tables_homing_storage_1a28e16e477e81da4a0205078ff6dd1a54" prot="public" static="no" nodiscard="yes" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::optional&lt; <ref refid="structargos__lib_1_1swerve_1_1_swerve_module_positions" kindref="compound">argos_lib::swerve::SwerveModulePositions</ref> &gt;</type>
+        <definition>std::optional&lt; argos_lib::swerve::SwerveModulePositions &gt; NetworkTablesHomingStorage::Load</definition>
+        <argsstring>() override</argsstring>
+        <name>Load</name>
+        <qualifiedname>NetworkTablesHomingStorage::Load</qualifiedname>
+        <reimplements refid="classargos__lib_1_1_swerve_home_storage_interface_1a6c432e83d81c5f2952c87fe2150265d6">Load</reimplements>
+        <briefdescription>
+<para>Load home positions from network tables. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Loaded positions or nullopt if failed </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/homing/network_tables_homing_storage.h" line="47" column="22" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/homing/network_tables_homing_storage.cpp" bodystart="41" bodyend="50"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Saves and loads swerve module homes to networkTables. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="copyright"><para>Copyright (c) Argos FRC Team 1756. Open Source Software; you can modify and/or share it under the terms of the license file in the root directory of this project. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>NetworkTablesHomingStorage</label>
+        <link refid="class_network_tables_homing_storage"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>argos_lib::SwerveHomeStorageInterface</label>
+        <link refid="classargos__lib_1_1_swerve_home_storage_interface"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>NetworkTablesHomingStorage</label>
+        <link refid="class_network_tables_homing_storage"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>argos_lib::SwerveHomeStorageInterface</label>
+        <link refid="classargos__lib_1_1_swerve_home_storage_interface"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/homing/network_tables_homing_storage.h" line="18" column="5" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/homing/network_tables_homing_storage.h" bodystart="18" bodyend="55"/>
+    <listofallmembers>
+      <member refid="class_network_tables_homing_storage_1a28e16e477e81da4a0205078ff6dd1a54" prot="public" virt="virtual"><scope>NetworkTablesHomingStorage</scope><name>Load</name></member>
+      <member refid="class_network_tables_homing_storage_1ad03d20ff51cf1ccae25bea913ba27ec8" prot="private" virt="non-virtual"><scope>NetworkTablesHomingStorage</scope><name>m_frontLeftPath</name></member>
+      <member refid="class_network_tables_homing_storage_1aab0932c0fdc6daab8133f9b120524217" prot="private" virt="non-virtual"><scope>NetworkTablesHomingStorage</scope><name>m_frontRightPath</name></member>
+      <member refid="class_network_tables_homing_storage_1a4d49f9d2e35c5ab0a98bf99761c319c2" prot="private" virt="non-virtual"><scope>NetworkTablesHomingStorage</scope><name>m_rearLeftPath</name></member>
+      <member refid="class_network_tables_homing_storage_1af48dedd70bb82c9c495e220415efd48e" prot="private" virt="non-virtual"><scope>NetworkTablesHomingStorage</scope><name>m_rearRightPath</name></member>
+      <member refid="class_network_tables_homing_storage_1a208f3a4973858388577a35ac58cd8d17" prot="private" virt="non-virtual"><scope>NetworkTablesHomingStorage</scope><name>m_tableName</name></member>
+      <member refid="class_network_tables_homing_storage_1a4d4d42822dd11e3ac4b7b65abb5a4c05" prot="public" virt="non-virtual"><scope>NetworkTablesHomingStorage</scope><name>NetworkTablesHomingStorage</name></member>
+      <member refid="class_network_tables_homing_storage_1a52ef5021c25ee0704647342b46d4937b" prot="public" virt="virtual"><scope>NetworkTablesHomingStorage</scope><name>Save</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

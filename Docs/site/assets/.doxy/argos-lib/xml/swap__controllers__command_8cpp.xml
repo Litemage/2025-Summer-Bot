@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="swap__controllers__command_8cpp" kind="file" language="C++">
+    <compoundname>swap_controllers_command.cpp</compoundname>
+    <includes refid="swap__controllers__command_8h" local="yes">argos_lib/commands/swap_controllers_command.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/commands/swap_controllers_command.cpp</label>
+        <link refid="swap__controllers__command_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>argos_lib/commands/swap_controllers_command.h</label>
+        <link refid="swap__controllers__command_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>vibration.h</label>
+        <link refid="vibration_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>argos_lib/controller/xbox_controller.h</label>
+        <link refid="xbox__controller_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>argos_lib/general/debounce_settings.h</label>
+        <link refid="debounce__settings_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>argos_lib/subsystems/swappable_controllers_subsystem.h</label>
+        <link refid="swappable__controllers__subsystem_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>array</label>
+      </node>
+      <node id="8">
+        <label>frc/GenericHID.h</label>
+      </node>
+      <node id="3">
+        <label>frc2/command/Command.h</label>
+      </node>
+      <node id="4">
+        <label>frc2/command/CommandHelper.h</label>
+      </node>
+      <node id="6">
+        <label>frc2/command/SubsystemBase.h</label>
+      </node>
+      <node id="9">
+        <label>frc2/command/button/Trigger.h</label>
+      </node>
+      <node id="15">
+        <label>functional</label>
+      </node>
+      <node id="13">
+        <label>units/time.h</label>
+      </node>
+      <node id="11">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;argos_lib/commands/swap_controllers_command.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceargos__lib" kindref="compound">argos_lib</ref>;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal">SwapControllersCommand::SwapControllersCommand(<ref refid="classargos__lib_1_1_swappable_controllers_subsystem" kindref="compound">SwappableControllersSubsystem</ref>*<sp/>controllers)</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/>m_pControllerSubsystem(controllers)<sp/>{}</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classargos__lib_1_1_swap_controllers_command_1aee37eb53ea8beb23636d6332bbe2294b" kindref="member">SwapControllersCommand::Initialize</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/>m_pControllerSubsystem-&gt;VibrateAll(<ref refid="namespaceargos__lib_1aadda81a361b1738ff80d513f9a74c32e" kindref="member">argos_lib::VibrationConstant</ref>(1));</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classargos__lib_1_1_swap_controllers_command_1a096e86b1c6ede8e0f3eee2aabcbab305" kindref="member">SwapControllersCommand::End</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/>m_pControllerSubsystem-&gt;Swap();</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/>m_pControllerSubsystem-&gt;VibrateAll(<ref refid="namespaceargos__lib_1a9bdc8d0bc40d923285b6350108692133" kindref="member">argos_lib::VibrationOff</ref>());</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/commands/swap_controllers_command.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="led__subsystem_8h" kind="file" language="C++">
+    <compoundname>led_subsystem.h</compoundname>
+    <includes refid="animiation_8h" local="no">argos_lib/led/animiation.h</includes>
+    <includes refid="panel_8h" local="no">argos_lib/led/panel.h</includes>
+    <includes local="no">ctre/phoenix/led/CANdle.h</includes>
+    <includes local="no">frc/AddressableLED.h</includes>
+    <includes local="no">frc2/command/SubsystemBase.h</includes>
+    <includes local="no">vector</includes>
+    <includedby refid="led__subsystem_8cpp" local="yes">C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/subsystems/led_subsystem.cpp</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>argos_lib/led/animiation.h</label>
+        <link refid="animiation_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>argos_lib/led/panel.h</label>
+        <link refid="panel_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/subsystems/led_subsystem.h</label>
+        <link refid="led__subsystem_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>algorithm</label>
+      </node>
+      <node id="10">
+        <label>ctre/phoenix/led/CANdle.h</label>
+      </node>
+      <node id="4">
+        <label>frc/AddressableLED.h</label>
+      </node>
+      <node id="11">
+        <label>frc2/command/SubsystemBase.h</label>
+      </node>
+      <node id="9">
+        <label>functional</label>
+      </node>
+      <node id="7">
+        <label>units/angle.h</label>
+      </node>
+      <node id="8">
+        <label>units/time.h</label>
+      </node>
+      <node id="6">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structargos__lib_1_1_l_e_d_state" prot="public">argos_lib::LEDState</innerclass>
+    <innerclass refid="classargos__lib_1_1_l_e_d_subsystem" prot="public">argos_lib::LEDSubsystem</innerclass>
+    <innerclass refid="structargos__lib_1_1_l_e_d_subsystem_1_1_l_e_d_update_group" prot="private">argos_lib::LEDSubsystem::LEDUpdateGroup</innerclass>
+    <innernamespace refid="namespaceargos__lib">argos_lib</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;argos_lib/led/animiation.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;argos_lib/led/panel.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ctre/phoenix/led/CANdle.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;frc/AddressableLED.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;frc2/command/SubsystemBase.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceargos__lib" kindref="compound">argos_lib</ref><sp/>{</highlight></codeline>
+<codeline lineno="19" refid="structargos__lib_1_1_l_e_d_state" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structargos__lib_1_1_l_e_d_state" kindref="compound">LEDState</ref><sp/>{</highlight></codeline>
+<codeline lineno="20" refid="structargos__lib_1_1_l_e_d_state_1a7b626cd1b28d0d794f17ee8732b366cf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structargos__lib_1_1_l_e_d_state_1a7b626cd1b28d0d794f17ee8732b366cf" kindref="member">animated</ref>{</highlight><highlight class="keyword">false</highlight><highlight class="normal">};<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="21" refid="structargos__lib_1_1_l_e_d_state_1a8e1dd5e60d5a6e2fe7824ebff2ce1ce7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>frc::AddressableLED::LEDData<sp/><ref refid="structargos__lib_1_1_l_e_d_state_1a8e1dd5e60d5a6e2fe7824ebff2ce1ce7" kindref="member">color</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structargos__lib_1_1_l_e_d_state_1a0fe479231226770fa2805bb4d66e0a37" kindref="member">operator==</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structargos__lib_1_1_l_e_d_state" kindref="compound">LEDState</ref>&amp;<sp/>other)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structargos__lib_1_1_l_e_d_state_1af540ce9306944088ab6e86b6bc675b29" kindref="member">operator!=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structargos__lib_1_1_l_e_d_state" kindref="compound">LEDState</ref>&amp;<sp/>other)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structargos__lib_1_1_l_e_d_state" kindref="compound">LEDState</ref>&amp;<sp/><ref refid="structargos__lib_1_1_l_e_d_state_1ad3824a46a07dd8b78af57e8ca8df288b" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>frc::AddressableLED::LEDData&amp;<sp/>other);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="classargos__lib_1_1_l_e_d_subsystem" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classargos__lib_1_1_l_e_d_subsystem_1a90374bc412ff22fd88cee40649523bb2" kindref="member">LEDSubsystem</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>frc2::SubsystemBase<sp/>{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Forward<sp/>declaration</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">LEDUpdateGroup;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classargos__lib_1_1_l_e_d_subsystem_1a90374bc412ff22fd88cee40649523bb2" kindref="member">LEDSubsystem</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>numAuxLEDs);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classargos__lib_1_1_l_e_d_subsystem_1a8ce3b116c8d583117bddd7b04f865a55" kindref="member">Periodic</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classargos__lib_1_1_l_e_d_subsystem_1a8b61599c033bed404f3e4b140722bcf1" kindref="member">StockAnimateAuxLEDs</ref>(ctre::phoenix::led::Animation&amp;<sp/>animation,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>slot);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classargos__lib_1_1_l_e_d_subsystem_1a0d379f01885f3fe7ad31dd2f0063d299" kindref="member">StockAnimateIntegratedLEDs</ref>(ctre::phoenix::led::Animation&amp;<sp/>animation,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>slot);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classargos__lib_1_1_l_e_d_subsystem_1a878699f90e7ab3ffb04c553357ff8203" kindref="member">CustomAnimateAuxLEDs</ref>(<ref refid="structargos__lib_1_1led_1_1_animation" kindref="compound">argos_lib::led::Animation</ref><sp/>animation);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classargos__lib_1_1_l_e_d_subsystem_1ab8afc83e62ce13ce6b15b34f8e9374ca" kindref="member">CustomAnimateIntegratedLEDs</ref>(<ref refid="structargos__lib_1_1led_1_1_animation" kindref="compound">argos_lib::led::Animation</ref><sp/>animation);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;LEDState&gt;<sp/>m_currentLEDs;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;LEDState&gt;<sp/>m_prevLEDs;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;argos_lib::led::Animation&gt;<sp/>m_customAnimations;<sp/><sp/></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>ctre::phoenix::led::CANdle<sp/>m_controller;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>numIntegratedLEDs<sp/>=<sp/>8;<sp/><sp/></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;LEDUpdateGroup&gt;<sp/>GetDeltaUpdate(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;LEDState&gt;&amp;<sp/>prev,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;LEDState&gt;&amp;<sp/>current);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">LEDUpdateGroup<sp/>{</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>LEDUpdateGroup(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>startIndex,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>numLEDs,<sp/>frc::AddressableLED::LEDData<sp/>color)</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>startIndex{startIndex},<sp/>numLEDs{numLEDs},<sp/>color{color}<sp/>{};</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>startIndex;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>numLEDs;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>frc::AddressableLED::LEDData<sp/>color;<sp/><sp/></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="133"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>argos_lib</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/subsystems/led_subsystem.h"/>
+  </compounddef>
+</doxygen>

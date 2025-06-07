@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="geometry_8cpp" kind="file" language="C++">
+    <compoundname>geometry.cpp</compoundname>
+    <includes refid="geometry_8h" local="yes">argos_lib/led/geometry.h</includes>
+    <includes local="no">algorithm</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/led/geometry.cpp</label>
+        <link refid="geometry_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>argos_lib/led/geometry.h</label>
+        <link refid="geometry_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>algorithm</label>
+      </node>
+      <node id="4">
+        <label>optional</label>
+      </node>
+      <node id="3">
+        <label>units/angle.h</label>
+      </node>
+      <node id="5">
+        <label>utility</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;argos_lib/led/geometry.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;algorithm&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal">units::degree_t<sp/>argos_lib::led::FlipHorizontal(units::degree_t<sp/>incidentAngle)<sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>360_deg<sp/>-<sp/>incidentAngle;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal">units::degree_t<sp/>argos_lib::led::FlipVertical(units::degree_t<sp/>inicidentAngle)<sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>180_deg<sp/>-<sp/>inicidentAngle;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>argos_lib::led::PointInBox(</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>corner1X,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>corner1Y,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>corner2X,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>corner2Y,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>pointX,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>pointY)<sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Allow<sp/>user<sp/>to<sp/>specify<sp/>any<sp/>two<sp/>opposite<sp/>corners<sp/>of<sp/>the<sp/>axis-aligned<sp/>bounding<sp/>box<sp/>and<sp/>extract</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>minimum<sp/>and<sp/>maximum<sp/>x/y<sp/>coordinates</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>[minX,<sp/>maxX]<sp/>=<sp/>std::minmax(corner1X,<sp/>corner2X);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>[minY,<sp/>maxY]<sp/>=<sp/>std::minmax(corner1Y,<sp/>corner2Y);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>pointX<sp/>&gt;=<sp/>minX<sp/>&amp;&amp;<sp/>pointX<sp/>&lt;=<sp/>maxX<sp/>&amp;&amp;<sp/>pointY<sp/>&gt;=<sp/>minY<sp/>&amp;&amp;<sp/>pointY<sp/>&lt;=<sp/>maxY;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal">std::optional&lt;std::pair&lt;float,<sp/>float&gt;&gt;<sp/>argos_lib::led::SegmentIntersection(</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>s1x1,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>s1y1,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>s1x2,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>s1y2,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>s2x1,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>s2y1,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>s2x2,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>s2y2)<sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Get<sp/>slope-intercept<sp/>(y=mx+c)<sp/>form<sp/>of<sp/>line<sp/>colinear<sp/>with<sp/>each<sp/>segment</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>slope1<sp/>=<sp/>(s1y2<sp/>-<sp/>s1y1)<sp/>/<sp/>(s1x2<sp/>-<sp/>s1x1);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>intercept1<sp/>=<sp/>s1y1<sp/>-<sp/>slope1<sp/>*<sp/>s1x1;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>slope2<sp/>=<sp/>(s2y2<sp/>-<sp/>s2y1)<sp/>/<sp/>(s2x2<sp/>-<sp/>s2x1);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>intercept2<sp/>=<sp/>s2y1<sp/>-<sp/>slope2<sp/>*<sp/>s2x1;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>If<sp/>segments<sp/>are<sp/>colinear,<sp/>there<sp/>is<sp/>no<sp/>singular<sp/>intersection<sp/>point</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(std::abs(slope1<sp/>-<sp/>slope2)<sp/>&lt;=<sp/>std::numeric_limits&lt;float&gt;::epsilon())<sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::nullopt;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>intersectX<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>intersectY<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(std::abs(s1x1<sp/>-<sp/>s1x2)<sp/>&lt;=<sp/>std::numeric_limits&lt;float&gt;::epsilon())<sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>First<sp/>segment<sp/>is<sp/>vertical</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>intersectX<sp/>=<sp/>s1x1;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>intersectY<sp/>=<sp/>slope2<sp/>*<sp/>intersectX<sp/>+<sp/>intercept2;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(std::abs(s2x1<sp/>-<sp/>s2x2)<sp/>&lt;=<sp/>std::numeric_limits&lt;float&gt;::epsilon())<sp/>{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Second<sp/>segment<sp/>is<sp/>vertical</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>intersectX<sp/>=<sp/>s2x1;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>intersectY<sp/>=<sp/>slope1<sp/>*<sp/>intersectX<sp/>+<sp/>intercept1;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Both<sp/>segments<sp/>have<sp/>defined<sp/>slope</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>intersectX<sp/>=<sp/>(intercept2<sp/>-<sp/>intercept1)<sp/>/<sp/>(slope1<sp/>-<sp/>slope2);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>intersectY<sp/>=<sp/>slope1<sp/>*<sp/>intersectX<sp/>+<sp/>intercept1;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Once<sp/>we<sp/>know<sp/>the<sp/>lines<sp/>intersect,<sp/>ensure<sp/>the<sp/>intersection<sp/>point<sp/>is<sp/>within<sp/>the<sp/>bounds<sp/>of<sp/>both<sp/>segments</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(PointInBox(s1x1,<sp/>s1y1,<sp/>s1x2,<sp/>s1y2,<sp/>intersectX,<sp/>intersectY)<sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>PointInBox(s2x1,<sp/>s2y1,<sp/>s2x2,<sp/>s2y2,<sp/>intersectX,<sp/>intersectY))<sp/>{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::make_pair(intersectX,<sp/>intersectY);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::nullopt;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/led/geometry.cpp"/>
+  </compounddef>
+</doxygen>

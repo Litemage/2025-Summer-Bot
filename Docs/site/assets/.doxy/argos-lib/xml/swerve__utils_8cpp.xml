@@ -1,0 +1,318 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="swerve__utils_8cpp" kind="file" language="C++">
+    <compoundname>swerve_utils.cpp</compoundname>
+    <includes refid="swerve__utils_8h" local="yes">argos_lib/general/swerve_utils.h</includes>
+    <includes local="no">cmath</includes>
+    <includes refid="angle__utils_8h" local="yes">argos_lib/general/angle_utils.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/general/swerve_utils.cpp</label>
+        <link refid="swerve__utils_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>argos_lib/general/angle_utils.h</label>
+        <link refid="angle__utils_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>interpolation.h</label>
+        <link refid="interpolation_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>argos_lib/general/swerve_utils.h</label>
+        <link refid="swerve__utils_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>algorithm</label>
+      </node>
+      <node id="10">
+        <label>array</label>
+      </node>
+      <node id="11">
+        <label>cmath</label>
+      </node>
+      <node id="3">
+        <label>frc/kinematics/SwerveModuleState.h</label>
+      </node>
+      <node id="7">
+        <label>optional</label>
+      </node>
+      <node id="4">
+        <label>units/angle.h</label>
+      </node>
+      <node id="5">
+        <label>units/angular_velocity.h</label>
+      </node>
+      <node id="6">
+        <label>units/velocity.h</label>
+      </node>
+    </incdepgraph>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="swerve__utils_8cpp_1a47b900c9e45eabfd06cbb75a44d53282" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>units::degree_t</type>
+        <definition>units::degree_t argos_lib::angle::ConstrainAngle</definition>
+        <argsstring>(units::degree_t inVal, units::degree_t minVal, units::degree_t maxVal)</argsstring>
+        <name>ConstrainAngle</name>
+        <param>
+          <type>units::degree_t</type>
+          <declname>inVal</declname>
+        </param>
+        <param>
+          <type>units::degree_t</type>
+          <declname>minVal</declname>
+        </param>
+        <param>
+          <type>units::degree_t</type>
+          <declname>maxVal</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="copyright"><para>Copyright (c) Argos FRC Team 1756. Open Source Software; you can modify and/or share it under the terms of the license file in the root directory of this project. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/general/swerve_utils.cpp" line="11" column="1" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/general/angle_utils.cpp" bodystart="36" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="swerve__utils_8cpp_1a0c8f2ff8506296c8314db9c42d8455b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>units::degree_t</type>
+        <definition>units::degree_t argos_lib::angle::InvertedAngle</definition>
+        <argsstring>(units::degree_t desiredAngle, units::degree_t referenceAngle)</argsstring>
+        <name>InvertedAngle</name>
+        <param>
+          <type>units::degree_t</type>
+          <declname>desiredAngle</declname>
+        </param>
+        <param>
+          <type>units::degree_t</type>
+          <declname>referenceAngle</declname>
+        </param>
+        <briefdescription>
+<para>Finds closest angle alias of a vector 180-degrees offset from desiredAngle relative to referencedAngle. All inputs are normalized so ranges are unbounded. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>desiredAngle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Angle to find 180-degree offset alias for </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>referenceAngle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Defines desired alias range </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Offset angle alias of desiredAngle in range (referencedAngle - 180_deg, referencedAngle + 180_deg] </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/general/swerve_utils.cpp" line="12" column="1" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/general/angle_utils.cpp" bodystart="29" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="swerve__utils_8cpp_1a79938a46e7bf95ab61ecb0cdcccbf23f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>units::degree_t</type>
+        <definition>units::degree_t argos_lib::angle::NearestAngle</definition>
+        <argsstring>(units::degree_t desiredAngle, units::degree_t referenceAngle)</argsstring>
+        <name>NearestAngle</name>
+        <param>
+          <type>units::degree_t</type>
+          <declname>desiredAngle</declname>
+        </param>
+        <param>
+          <type>units::degree_t</type>
+          <declname>referenceAngle</declname>
+        </param>
+        <briefdescription>
+<para>Finds closest angle alias of desiredAngle relative to referencedAngle. All inputs are normalized so ranges are unbounded. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>desiredAngle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Angle to find alias for </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>referenceAngle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Defines desired alias range </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Angle alias of desiredAngle in range (referencedAngle - 180_deg, referencedAngle + 180_deg] </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/general/swerve_utils.cpp" line="13" column="1" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/general/angle_utils.cpp" bodystart="15" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="swerve__utils_8cpp_1acc421e76b48b21874789c52224edf454" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>frc::SwerveModuleState</type>
+        <definition>frc::SwerveModuleState argos_lib::swerve::Optimize</definition>
+        <argsstring>(frc::SwerveModuleState desiredState, units::degree_t currentModuleAngle, units::degrees_per_second_t currentModuleAngularRate, units::feet_per_second_t currentModuleDriveVel, units::feet_per_second_t maxVelocity)</argsstring>
+        <name>Optimize</name>
+        <param>
+          <type>frc::SwerveModuleState</type>
+          <declname>desiredState</declname>
+        </param>
+        <param>
+          <type>units::degree_t</type>
+          <declname>currentModuleAngle</declname>
+        </param>
+        <param>
+          <type>units::degrees_per_second_t</type>
+          <declname>currentModuleAngularRate</declname>
+        </param>
+        <param>
+          <type>units::feet_per_second_t</type>
+          <declname>currentModuleDriveVel</declname>
+        </param>
+        <param>
+          <type>units::feet_per_second_t</type>
+          <declname>maxVelocity</declname>
+        </param>
+        <briefdescription>
+<para>Optimize swerve module to minimize rotations and drive direction changes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>desiredState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Requested state. Output must result in same motion </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>currentModuleAngle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Module rotation angle in relative or absolute position </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>currentModuleAngularRate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Current module rotation speed. To prevent rapid changes in rotation direction. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>currentModuleDriveVel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Current module drive velocity. To prevent rapid changes in drive motor velocity. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>maxVelocity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Max velocity for determining max transition change thresholds </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Optimized swerve module state that results in same motion as desiredState </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/general/swerve_utils.cpp" line="14" column="1" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/general/swerve_utils.cpp" bodystart="16" bodyend="46"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;argos_lib/general/swerve_utils.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cmath&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;argos_lib/general/angle_utils.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">argos_lib::angle::ConstrainAngle;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">argos_lib::angle::InvertedAngle;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">argos_lib::angle::NearestAngle;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">argos_lib::swerve::Optimize;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal">frc::SwerveModuleState<sp/>argos_lib::swerve::Optimize(frc::SwerveModuleState<sp/>desiredState,</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>units::degree_t<sp/>currentModuleAngle,</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>units::degrees_per_second_t<sp/>currentModuleAngularRate,</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>units::feet_per_second_t<sp/>currentModuleDriveVel,</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>units::feet_per_second_t<sp/>maxVelocity)<sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/>frc::SwerveModuleState<sp/>closestForwardState{desiredState};</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/>frc::SwerveModuleState<sp/>closestInverseState{desiredState};</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/>closestForwardState.angle<sp/>=<sp/>NearestAngle(desiredState.angle.Degrees(),<sp/>currentModuleAngle);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/>closestInverseState.angle<sp/>=<sp/>InvertedAngle(closestForwardState.angle.Degrees(),<sp/>currentModuleAngle);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/>closestInverseState.speed<sp/>=<sp/>closestInverseState.speed<sp/>*<sp/>-1.0;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>fwdTurnSign<sp/>=<sp/>std::signbit((closestForwardState.angle.Degrees()<sp/>-<sp/>currentModuleAngle).to&lt;</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&gt;());</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>revTurnSign<sp/>=<sp/>std::signbit((closestInverseState.angle.Degrees()<sp/>-<sp/>currentModuleAngle).to&lt;</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&gt;());</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/>[[maybe_unused]]<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>velPreferFwd<sp/>=<sp/>currentModuleDriveVel<sp/>&gt;<sp/>maxVelocity<sp/>/<sp/>2;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>velPreferRev<sp/>=<sp/>currentModuleDriveVel<sp/>&lt;<sp/>-maxVelocity<sp/>/<sp/>2;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>angVelHasPreference<sp/>=<sp/>units::math::fabs(currentModuleAngularRate)<sp/>&gt;<sp/>20_deg_per_s;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/>[[maybe_unused]]<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>angVelPreferFwd<sp/>=</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>angVelHasPreference<sp/>&amp;&amp;<sp/>fwdTurnSign<sp/>==<sp/>std::signbit(currentModuleAngularRate.to&lt;</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&gt;());</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>angVelPreferRev<sp/>=</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>angVelHasPreference<sp/>&amp;&amp;<sp/>revTurnSign<sp/>==<sp/>std::signbit(currentModuleAngularRate.to&lt;</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&gt;());</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>fwdDist<sp/>=<sp/>units::math::fabs(closestForwardState.angle.Degrees()<sp/>-<sp/>currentModuleAngle);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>revDist<sp/>=<sp/>180_deg<sp/>-<sp/>fwdDist;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(fwdDist<sp/>&lt;<sp/>revDist<sp/>&amp;&amp;<sp/>!(velPreferRev<sp/>&amp;&amp;<sp/>angVelPreferRev))<sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>closestForwardState;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>closestInverseState;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/general/swerve_utils.cpp"/>
+  </compounddef>
+</doxygen>

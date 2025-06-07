@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="structargos__lib_1_1swerve_1_1_translation_speeds" kind="struct" language="C++" prot="public">
+    <compoundname>argos_lib::swerve::TranslationSpeeds</compoundname>
+    <includes refid="swerve__utils_8h" local="no">swerve_utils.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structargos__lib_1_1swerve_1_1_translation_speeds_1aa0cbf8154965ba46b3e176b50f5f9e70" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double argos_lib::swerve::TranslationSpeeds::forwardSpeedPct</definition>
+        <argsstring></argsstring>
+        <name>forwardSpeedPct</name>
+        <qualifiedname>argos_lib::swerve::TranslationSpeeds::forwardSpeedPct</qualifiedname>
+        <briefdescription>
+<para>Speed with positive forward in range [-1, 1]. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/swerve_utils.h" line="49" column="14" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/swerve_utils.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structargos__lib_1_1swerve_1_1_translation_speeds_1a2c1b846dae148fc6a7f31a0e07ec9826" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double argos_lib::swerve::TranslationSpeeds::leftSpeedPct</definition>
+        <argsstring></argsstring>
+        <name>leftSpeedPct</name>
+        <qualifiedname>argos_lib::swerve::TranslationSpeeds::leftSpeedPct</qualifiedname>
+        <briefdescription>
+<para>Speed with positive left in range [-1, 1]. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/swerve_utils.h" line="50" column="14" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/swerve_utils.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Translation speeds as percent max output. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/swerve_utils.h" line="48" column="5" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/swerve_utils.h" bodystart="48" bodyend="51"/>
+    <listofallmembers>
+      <member refid="structargos__lib_1_1swerve_1_1_translation_speeds_1aa0cbf8154965ba46b3e176b50f5f9e70" prot="public" virt="non-virtual"><scope>argos_lib::swerve::TranslationSpeeds</scope><name>forwardSpeedPct</name></member>
+      <member refid="structargos__lib_1_1swerve_1_1_translation_speeds_1a2c1b846dae148fc6a7f31a0e07ec9826" prot="public" virt="non-virtual"><scope>argos_lib::swerve::TranslationSpeeds</scope><name>leftSpeedPct</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

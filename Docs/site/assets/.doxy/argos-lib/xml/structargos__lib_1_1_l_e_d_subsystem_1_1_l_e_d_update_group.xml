@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="structargos__lib_1_1_l_e_d_subsystem_1_1_l_e_d_update_group" kind="struct" language="C++" prot="private">
+    <compoundname>argos_lib::LEDSubsystem::LEDUpdateGroup</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structargos__lib_1_1_l_e_d_subsystem_1_1_l_e_d_update_group_1a4390595b656c3bc55170c4cf3230752c" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned argos_lib::LEDSubsystem::LEDUpdateGroup::startIndex</definition>
+        <argsstring></argsstring>
+        <name>startIndex</name>
+        <qualifiedname>argos_lib::LEDSubsystem::LEDUpdateGroup::startIndex</qualifiedname>
+        <briefdescription>
+<para>Address of first LED. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/subsystems/led_subsystem.h" line="128" column="16" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/subsystems/led_subsystem.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structargos__lib_1_1_l_e_d_subsystem_1_1_l_e_d_update_group_1a68a9c3c78b46121bd5670a5921dd1497" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned argos_lib::LEDSubsystem::LEDUpdateGroup::numLEDs</definition>
+        <argsstring></argsstring>
+        <name>numLEDs</name>
+        <qualifiedname>argos_lib::LEDSubsystem::LEDUpdateGroup::numLEDs</qualifiedname>
+        <briefdescription>
+<para>Number of LEDs in group. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/subsystems/led_subsystem.h" line="129" column="16" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/subsystems/led_subsystem.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structargos__lib_1_1_l_e_d_subsystem_1_1_l_e_d_update_group_1ada28dea1f136da7e81e04bca74527fd6" prot="public" static="no" mutable="no">
+        <type>frc::AddressableLED::LEDData</type>
+        <definition>frc::AddressableLED::LEDData argos_lib::LEDSubsystem::LEDUpdateGroup::color</definition>
+        <argsstring></argsstring>
+        <name>color</name>
+        <qualifiedname>argos_lib::LEDSubsystem::LEDUpdateGroup::color</qualifiedname>
+        <briefdescription>
+<para>Color of LEDs. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/subsystems/led_subsystem.h" line="130" column="36" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/subsystems/led_subsystem.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structargos__lib_1_1_l_e_d_subsystem_1_1_l_e_d_update_group_1aa4a5fe68f5e8a6276b5a56bb5b4f5b3c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>argos_lib::LEDSubsystem::LEDUpdateGroup::LEDUpdateGroup</definition>
+        <argsstring>(unsigned startIndex, unsigned numLEDs, frc::AddressableLED::LEDData color)</argsstring>
+        <name>LEDUpdateGroup</name>
+        <qualifiedname>argos_lib::LEDSubsystem::LEDUpdateGroup::LEDUpdateGroup</qualifiedname>
+        <param>
+          <type>unsigned</type>
+          <declname>startIndex</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>numLEDs</declname>
+        </param>
+        <param>
+          <type>frc::AddressableLED::LEDData</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new LEDUpdateGroup with specified color. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>startIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Address of first LED in group </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>numLEDs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of LEDs in group </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Color of LEDs in group </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/subsystems/led_subsystem.h" line="125" column="7" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/subsystems/led_subsystem.h" bodystart="125" bodyend="126"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Represents a contiguous block of LEDs that have the same color. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/subsystems/led_subsystem.h" line="117" column="5" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/subsystems/led_subsystem.h" bodystart="117" bodyend="131"/>
+    <listofallmembers>
+      <member refid="structargos__lib_1_1_l_e_d_subsystem_1_1_l_e_d_update_group_1ada28dea1f136da7e81e04bca74527fd6" prot="public" virt="non-virtual"><scope>argos_lib::LEDSubsystem::LEDUpdateGroup</scope><name>color</name></member>
+      <member refid="structargos__lib_1_1_l_e_d_subsystem_1_1_l_e_d_update_group_1aa4a5fe68f5e8a6276b5a56bb5b4f5b3c" prot="public" virt="non-virtual"><scope>argos_lib::LEDSubsystem::LEDUpdateGroup</scope><name>LEDUpdateGroup</name></member>
+      <member refid="structargos__lib_1_1_l_e_d_subsystem_1_1_l_e_d_update_group_1a68a9c3c78b46121bd5670a5921dd1497" prot="public" virt="non-virtual"><scope>argos_lib::LEDSubsystem::LEDUpdateGroup</scope><name>numLEDs</name></member>
+      <member refid="structargos__lib_1_1_l_e_d_subsystem_1_1_l_e_d_update_group_1a4390595b656c3bc55170c4cf3230752c" prot="public" virt="non-virtual"><scope>argos_lib::LEDSubsystem::LEDUpdateGroup</scope><name>startIndex</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,200 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="namespaceargos__lib_1_1falcon__config" kind="namespace" language="C++">
+    <compoundname>argos_lib::falcon_config</compoundname>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="falcon__config_8h_1a6e14612a97fa4ef102be054c8e027b62" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool argos_lib::falcon_config::FalconConfig</definition>
+        <argsstring>(ctre::phoenix6::hardware::TalonFX &amp;motorController, units::millisecond_t configTimeout)</argsstring>
+        <name>FalconConfig</name>
+        <qualifiedname>argos_lib::falcon_config::FalconConfig</qualifiedname>
+        <param>
+          <type>ctre::phoenix6::hardware::TalonFX &amp;</type>
+          <declname>motorController</declname>
+        </param>
+        <param>
+          <type>units::millisecond_t</type>
+          <declname>configTimeout</declname>
+        </param>
+        <briefdescription>
+<para>Configures a CTRE Falcon with only the fields provided. All other fields are given the factory default values. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Structure containing any combination of the following members:<itemizedlist>
+<listitem><para>forwardLimit_deviceID</para>
+</listitem><listitem><para>forwardLimit_normalState</para>
+</listitem><listitem><para>forwardLimit_source</para>
+</listitem><listitem><para>inverted</para>
+</listitem><listitem><para>neutralDeadband</para>
+</listitem><listitem><para>neutralMode</para>
+</listitem><listitem><para>dutyCycleNeutralDeadband</para>
+</listitem><listitem><para>peakOutputForward</para>
+</listitem><listitem><para>peakOutputReverse</para>
+</listitem><listitem><para>voltageOpenLoopRampPeriod</para>
+</listitem><listitem><para>dutyCycleOpenLoopRampPeriod</para>
+</listitem><listitem><para>pid0_kP</para>
+</listitem><listitem><para>pid0_kI</para>
+</listitem><listitem><para>pid0_kD</para>
+</listitem><listitem><para>pid0_kS</para>
+</listitem><listitem><para>pid0_kV</para>
+</listitem><listitem><para>pid0_kA</para>
+</listitem><listitem><para>pid0_kG</para>
+</listitem><listitem><para>pid0_gravityType</para>
+</listitem><listitem><para>pid1_kP</para>
+</listitem><listitem><para>pid1_kI</para>
+</listitem><listitem><para>pid1_kD</para>
+</listitem><listitem><para>pid1_kS</para>
+</listitem><listitem><para>pid1_kV</para>
+</listitem><listitem><para>pid1_kA</para>
+</listitem><listitem><para>pid1_kG</para>
+</listitem><listitem><para>pid1_gravityType</para>
+</listitem><listitem><para>motionMagic_cruiseVelocity</para>
+</listitem><listitem><para>motionMagic_acceleration</para>
+</listitem><listitem><para>motionMagic_jerk</para>
+</listitem><listitem><para>motionMagic_expo_kV</para>
+</listitem><listitem><para>motionMagic_expo_kA</para>
+</listitem><listitem><para>reverseLimit_deviceID</para>
+</listitem><listitem><para>reverseLimit_normalState</para>
+</listitem><listitem><para>reverseLimit_source</para>
+</listitem><listitem><para>rotorToSensorRatio</para>
+</listitem><listitem><para>selectedSensor</para>
+</listitem><listitem><para>selectedSensor_addr</para>
+</listitem><listitem><para>sensorToMechanismRatio</para>
+</listitem><listitem><para>statorCurrentLimit</para>
+</listitem><listitem><para>statusFrameMotorMode</para>
+</listitem><listitem><para>supplyCurrentLimit</para>
+</listitem><listitem><para>supplyCurrentLowerLimit</para>
+</listitem><listitem><para>supplyCurrentLowerTime </para>
+</listitem></itemizedlist>
+</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>motorController</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Falcon object to configure </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>configTimeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time to wait for response from Falcon </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true Configuration succeeded </para>
+</simplesect>
+<simplesect kind="return"><para>false Configuration failed </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/config/falcon_config.h" line="123" column="10" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/config/falcon_config.h" bodystart="123" bodyend="330"/>
+      </memberdef>
+      <memberdef kind="function" id="falcon__config_8h_1a459472232a09995e15c595ce2c8998af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename CompetitionConfig</type>
+          </param>
+          <param>
+            <type>typename PracticeConfig</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool argos_lib::falcon_config::FalconConfig</definition>
+        <argsstring>(ctre::phoenix6::hardware::TalonFX &amp;motorController, units::millisecond_t configTimeout, argos_lib::RobotInstance instance)</argsstring>
+        <name>FalconConfig</name>
+        <qualifiedname>argos_lib::falcon_config::FalconConfig</qualifiedname>
+        <param>
+          <type>ctre::phoenix6::hardware::TalonFX &amp;</type>
+          <declname>motorController</declname>
+        </param>
+        <param>
+          <type>units::millisecond_t</type>
+          <declname>configTimeout</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceargos__lib_1a4231c977f4047dcc9edf48b1bd43f51c" kindref="member">argos_lib::RobotInstance</ref></type>
+          <declname>instance</declname>
+        </param>
+        <briefdescription>
+<para>Configures a CTRE Falcon with configuration values according to specified robot instance. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>CompetitionConfig</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Configurations to use in competition robot instance </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>PracticeConfig</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Configurations to use in practice robot instance </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>motorController</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Falcon object to configure </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>configTimeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time to wait for response from Falcon </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>instance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Robot instance to use </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true Configuration succeeded </para>
+</simplesect>
+<simplesect kind="return"><para>false Configuration failed </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/config/falcon_config.h" line="344" column="10" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/config/falcon_config.h" bodystart="344" bodyend="356"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/config/falcon_config.h" line="19" column="3"/>
+  </compounddef>
+</doxygen>

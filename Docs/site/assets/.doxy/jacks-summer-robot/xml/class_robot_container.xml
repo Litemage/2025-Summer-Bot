@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="class_robot_container" kind="class" language="C++" prot="public">
+    <compoundname>RobotContainer</compoundname>
+    <includes refid="_robot_container_8h" local="no">RobotContainer.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_robot_container_1a1d1aa84a06ddf1f4e1f52d093eee7345" prot="private" static="no" mutable="no">
+        <type>frc2::CommandXboxController</type>
+        <definition>frc2::CommandXboxController RobotContainer::m_driverController</definition>
+        <argsstring></argsstring>
+        <name>m_driverController</name>
+        <qualifiedname>RobotContainer::m_driverController</qualifiedname>
+        <initializer>{
+      OperatorConstants::kDriverControllerPort}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/include/RobotContainer.h" line="28" column="31" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/include/RobotContainer.h" bodystart="28" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_robot_container_1ae3ebfb4bc92500318a6ba691c84f04e0" prot="private" static="no" mutable="no">
+        <type><ref refid="class_example_subsystem" kindref="compound">ExampleSubsystem</ref></type>
+        <definition>ExampleSubsystem RobotContainer::m_subsystem</definition>
+        <argsstring></argsstring>
+        <name>m_subsystem</name>
+        <qualifiedname>RobotContainer::m_subsystem</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/include/RobotContainer.h" line="32" column="20" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/include/RobotContainer.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_robot_container_1ac508e6c51edfa97eb18e3412fe83ad8f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>RobotContainer::RobotContainer</definition>
+        <argsstring>()</argsstring>
+        <name>RobotContainer</name>
+        <qualifiedname>RobotContainer::RobotContainer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/include/RobotContainer.h" line="22" column="3" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/cpp/RobotContainer.cpp" bodystart="12" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_robot_container_1ac4c0fbb295701307cc4ef82c2a9cafc0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>frc2::CommandPtr</type>
+        <definition>frc2::CommandPtr RobotContainer::GetAutonomousCommand</definition>
+        <argsstring>()</argsstring>
+        <name>GetAutonomousCommand</name>
+        <qualifiedname>RobotContainer::GetAutonomousCommand</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/include/RobotContainer.h" line="24" column="20" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/cpp/RobotContainer.cpp" bodystart="32" bodyend="35"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_robot_container_1a7ef289b1e2aab4def60d7b6c708c8a37" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RobotContainer::ConfigureBindings</definition>
+        <argsstring>()</argsstring>
+        <name>ConfigureBindings</name>
+        <qualifiedname>RobotContainer::ConfigureBindings</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/include/RobotContainer.h" line="34" column="8" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/cpp/RobotContainer.cpp" bodystart="19" bodyend="30"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This class is where the bulk of the robot should be declared. Since Command-based is a &quot;declarative&quot; paradigm, very little robot logic should actually be handled in the <computeroutput><ref refid="class_robot" kindref="compound">Robot</ref></computeroutput> periodic methods (other than the scheduler calls). Instead, the structure of the robot (including subsystems, commands, and trigger mappings) should be declared here. </para>
+    </detaileddescription>
+    <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/include/RobotContainer.h" line="20" column="1" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/include/RobotContainer.h" bodystart="20" bodyend="35"/>
+    <listofallmembers>
+      <member refid="class_robot_container_1a7ef289b1e2aab4def60d7b6c708c8a37" prot="private" virt="non-virtual"><scope>RobotContainer</scope><name>ConfigureBindings</name></member>
+      <member refid="class_robot_container_1ac4c0fbb295701307cc4ef82c2a9cafc0" prot="public" virt="non-virtual"><scope>RobotContainer</scope><name>GetAutonomousCommand</name></member>
+      <member refid="class_robot_container_1a1d1aa84a06ddf1f4e1f52d093eee7345" prot="private" virt="non-virtual"><scope>RobotContainer</scope><name>m_driverController</name></member>
+      <member refid="class_robot_container_1ae3ebfb4bc92500318a6ba691c84f04e0" prot="private" virt="non-virtual"><scope>RobotContainer</scope><name>m_subsystem</name></member>
+      <member refid="class_robot_container_1ac508e6c51edfa97eb18e3412fe83ad8f" prot="public" virt="non-virtual"><scope>RobotContainer</scope><name>RobotContainer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

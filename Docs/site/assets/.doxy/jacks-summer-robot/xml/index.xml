@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.14.0" xml:lang="en-US">
+  <compound refid="class_example_command" kind="class"><name>ExampleCommand</name>
+    <member refid="class_example_command_1a63ab0064f619498c6a4886764d526a42" kind="variable"><name>m_subsystem</name></member>
+    <member refid="class_example_command_1a207aa09dcaaee93d9f96db3b768d32bd" kind="function"><name>ExampleCommand</name></member>
+  </compound>
+  <compound refid="class_example_subsystem" kind="class"><name>ExampleSubsystem</name>
+    <member refid="class_example_subsystem_1a63b261f3bb2c25af53b12c5464054be5" kind="function"><name>ExampleSubsystem</name></member>
+    <member refid="class_example_subsystem_1a5c2ea6e0606b8417e9048b4acdd25c4f" kind="function"><name>ExampleMethodCommand</name></member>
+    <member refid="class_example_subsystem_1a53ca16dd083c89be2a760436607031d9" kind="function"><name>ExampleCondition</name></member>
+    <member refid="class_example_subsystem_1ae3a0c58819a31cca623fcb2fb8af0e1c" kind="function"><name>Periodic</name></member>
+    <member refid="class_example_subsystem_1a08d866697c4da747ff7aa906438ef99b" kind="function"><name>SimulationPeriodic</name></member>
+  </compound>
+  <compound refid="class_robot" kind="class"><name>Robot</name>
+    <member refid="class_robot_1acd05116368239145afa411529a261f19" kind="variable"><name>m_autonomousCommand</name></member>
+    <member refid="class_robot_1ae31bf18f9afb23bab45458605fb73ea7" kind="variable"><name>m_container</name></member>
+    <member refid="class_robot_1a4fc7c70ae20623f05e06f2ecb388b6c4" kind="function"><name>Robot</name></member>
+    <member refid="class_robot_1a8fad82c2250bcfb83b743b5c0dd6ed27" kind="function"><name>RobotPeriodic</name></member>
+    <member refid="class_robot_1a810e6143a208a6314491366e3c714357" kind="function"><name>DisabledInit</name></member>
+    <member refid="class_robot_1a8c7309f5f1cb242ea8c74f1abf03b540" kind="function"><name>DisabledPeriodic</name></member>
+    <member refid="class_robot_1a2136cfc015936285218c8a8db984d6bc" kind="function"><name>AutonomousInit</name></member>
+    <member refid="class_robot_1ac11143dd674e0e02fef5329e2df24830" kind="function"><name>AutonomousPeriodic</name></member>
+    <member refid="class_robot_1aa3e246794bfbbb4406fc87f351762038" kind="function"><name>TeleopInit</name></member>
+    <member refid="class_robot_1a324322627c63b3870daf7c7ddc5bea63" kind="function"><name>TeleopPeriodic</name></member>
+    <member refid="class_robot_1af0ac44a962e609e9b042285e699d1db8" kind="function"><name>TestPeriodic</name></member>
+    <member refid="class_robot_1a0ec3407013454a8017474d0beb756ac8" kind="function"><name>SimulationInit</name></member>
+    <member refid="class_robot_1a210b114f375fd78f0abd2c69b0e721a2" kind="function"><name>SimulationPeriodic</name></member>
+  </compound>
+  <compound refid="class_robot_container" kind="class"><name>RobotContainer</name>
+    <member refid="class_robot_container_1a1d1aa84a06ddf1f4e1f52d093eee7345" kind="variable"><name>m_driverController</name></member>
+    <member refid="class_robot_container_1ae3ebfb4bc92500318a6ba691c84f04e0" kind="variable"><name>m_subsystem</name></member>
+    <member refid="class_robot_container_1ac508e6c51edfa97eb18e3412fe83ad8f" kind="function"><name>RobotContainer</name></member>
+    <member refid="class_robot_container_1ac4c0fbb295701307cc4ef82c2a9cafc0" kind="function"><name>GetAutonomousCommand</name></member>
+    <member refid="class_robot_container_1a7ef289b1e2aab4def60d7b6c708c8a37" kind="function"><name>ConfigureBindings</name></member>
+  </compound>
+  <compound refid="namespaceautos" kind="namespace"><name>autos</name>
+    <member refid="_autos_8h_1a033a72f8c66a8b7cd20ca6696d888c9d" kind="function"><name>ExampleAuto</name></member>
+  </compound>
+  <compound refid="namespacefrc" kind="namespace"><name>frc</name>
+  </compound>
+  <compound refid="namespacefrc2" kind="namespace"><name>frc2</name>
+  </compound>
+  <compound refid="namespace_operator_constants" kind="namespace"><name>OperatorConstants</name>
+    <member refid="namespace_operator_constants_1a722633c57dbf906e1f8f8a557563cecb" kind="variable"><name>kDriverControllerPort</name></member>
+  </compound>
+  <compound refid="_autos_8cpp" kind="file"><name>Autos.cpp</name>
+  </compound>
+  <compound refid="_example_command_8cpp" kind="file"><name>ExampleCommand.cpp</name>
+  </compound>
+  <compound refid="_robot_8cpp" kind="file"><name>Robot.cpp</name>
+    <member refid="_robot_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="_robot_container_8cpp" kind="file"><name>RobotContainer.cpp</name>
+  </compound>
+  <compound refid="_example_subsystem_8cpp" kind="file"><name>ExampleSubsystem.cpp</name>
+  </compound>
+  <compound refid="_autos_8h" kind="file"><name>Autos.h</name>
+  </compound>
+  <compound refid="_example_command_8h" kind="file"><name>ExampleCommand.h</name>
+  </compound>
+  <compound refid="_constants_8h" kind="file"><name>Constants.h</name>
+  </compound>
+  <compound refid="_robot_8h" kind="file"><name>Robot.h</name>
+  </compound>
+  <compound refid="_robot_container_8h" kind="file"><name>RobotContainer.h</name>
+  </compound>
+  <compound refid="_example_subsystem_8h" kind="file"><name>ExampleSubsystem.h</name>
+  </compound>
+  <compound refid="dir_936b7b8edf6aa316affdf0e21f6b0c34" kind="dir"><name>C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/cpp/commands</name>
+  </compound>
+  <compound refid="dir_8351edd85a1483fb2b79b8acebf64e28" kind="dir"><name>C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/include/commands</name>
+  </compound>
+  <compound refid="dir_fdf2b31f12d3ebb2f617242d0514024b" kind="dir"><name>C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/cpp</name>
+  </compound>
+  <compound refid="dir_df3bee86fdbfb464c3a94507855b0bdc" kind="dir"><name>C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/include</name>
+  </compound>
+  <compound refid="dir_5eb159725f84c66aafd839904a4acdd0" kind="dir"><name>C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main</name>
+  </compound>
+  <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src</name>
+  </compound>
+  <compound refid="dir_2a59f1b00facdb43e21fc1c516c8806d" kind="dir"><name>C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/cpp/subsystems</name>
+  </compound>
+  <compound refid="dir_5b31952f813df36dabbaa31d5b8f92e5" kind="dir"><name>C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/include/subsystems</name>
+  </compound>
+</doxygenindex>

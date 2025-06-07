@@ -1,0 +1,193 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="namespaceargos__lib_1_1gamma__corrected__colors" kind="namespace" language="C++">
+    <compoundname>argos_lib::gamma_corrected_colors</compoundname>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="color_8h_1acdd24e765a84c7b697ce5175822c8386" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type><ref refid="structargos__lib_1_1_argos_color" kindref="compound">ArgosColor</ref></type>
+        <definition>ArgosColor argos_lib::gamma_corrected_colors::kOff</definition>
+        <argsstring></argsstring>
+        <name>kOff</name>
+        <qualifiedname>argos_lib::gamma_corrected_colors::kOff</qualifiedname>
+        <initializer>= GammaCorrect(argos_lib::colors::kOff)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/color.h" line="59" column="33" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/color.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="color_8h_1aa4ab6e69b7c4f10029a17c028cd315a9" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type><ref refid="structargos__lib_1_1_argos_color" kindref="compound">ArgosColor</ref></type>
+        <definition>ArgosColor argos_lib::gamma_corrected_colors::kWhite</definition>
+        <argsstring></argsstring>
+        <name>kWhite</name>
+        <qualifiedname>argos_lib::gamma_corrected_colors::kWhite</qualifiedname>
+        <initializer>= GammaCorrect(argos_lib::colors::kWhite)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/color.h" line="60" column="33" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/color.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="color_8h_1af7e20daca92069f93d59f5cb8d958b93" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type><ref refid="structargos__lib_1_1_argos_color" kindref="compound">ArgosColor</ref></type>
+        <definition>ArgosColor argos_lib::gamma_corrected_colors::kReallyRed</definition>
+        <argsstring></argsstring>
+        <name>kReallyRed</name>
+        <qualifiedname>argos_lib::gamma_corrected_colors::kReallyRed</qualifiedname>
+        <initializer>= GammaCorrect(argos_lib::colors::kReallyRed)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/color.h" line="61" column="33" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/color.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="color_8h_1a2eb15f17b941537bbe235197e10145bb" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type><ref refid="structargos__lib_1_1_argos_color" kindref="compound">ArgosColor</ref></type>
+        <definition>ArgosColor argos_lib::gamma_corrected_colors::kReallyGreen</definition>
+        <argsstring></argsstring>
+        <name>kReallyGreen</name>
+        <qualifiedname>argos_lib::gamma_corrected_colors::kReallyGreen</qualifiedname>
+        <initializer>= GammaCorrect(argos_lib::colors::kReallyGreen)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/color.h" line="62" column="33" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/color.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="color_8h_1a10e02625646e9f33e11b9b652fdee3e7" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type><ref refid="structargos__lib_1_1_argos_color" kindref="compound">ArgosColor</ref></type>
+        <definition>ArgosColor argos_lib::gamma_corrected_colors::kReallyBlue</definition>
+        <argsstring></argsstring>
+        <name>kReallyBlue</name>
+        <qualifiedname>argos_lib::gamma_corrected_colors::kReallyBlue</qualifiedname>
+        <initializer>= GammaCorrect(argos_lib::colors::kReallyBlue)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/color.h" line="63" column="33" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/color.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="color_8h_1a7d4b84a11b000d5b791597041f4f9712" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type><ref refid="structargos__lib_1_1_argos_color" kindref="compound">ArgosColor</ref></type>
+        <definition>ArgosColor argos_lib::gamma_corrected_colors::kCubePurple</definition>
+        <argsstring></argsstring>
+        <name>kCubePurple</name>
+        <qualifiedname>argos_lib::gamma_corrected_colors::kCubePurple</qualifiedname>
+        <initializer>= GammaCorrect(argos_lib::colors::kCubePurple)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/color.h" line="64" column="33" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/color.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="color_8h_1a77c13bed42d1f21c685ccc38102b0f82" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type><ref refid="structargos__lib_1_1_argos_color" kindref="compound">ArgosColor</ref></type>
+        <definition>ArgosColor argos_lib::gamma_corrected_colors::kConeYellow</definition>
+        <argsstring></argsstring>
+        <name>kConeYellow</name>
+        <qualifiedname>argos_lib::gamma_corrected_colors::kConeYellow</qualifiedname>
+        <initializer>= GammaCorrect(argos_lib::colors::kConeYellow)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/color.h" line="65" column="33" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/color.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="color_8h_1a5d35b08a938e8494ea494faccb0c0633" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type><ref refid="structargos__lib_1_1_argos_color" kindref="compound">ArgosColor</ref></type>
+        <definition>ArgosColor argos_lib::gamma_corrected_colors::kHotPink</definition>
+        <argsstring></argsstring>
+        <name>kHotPink</name>
+        <qualifiedname>argos_lib::gamma_corrected_colors::kHotPink</qualifiedname>
+        <initializer>= GammaCorrect(argos_lib::colors::kHotPink)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/color.h" line="66" column="33" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/color.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="color_8h_1a304e61b81ffbdf0522da9b988e995160" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type><ref refid="structargos__lib_1_1_argos_color" kindref="compound">ArgosColor</ref></type>
+        <definition>ArgosColor argos_lib::gamma_corrected_colors::kCatYellow</definition>
+        <argsstring></argsstring>
+        <name>kCatYellow</name>
+        <qualifiedname>argos_lib::gamma_corrected_colors::kCatYellow</qualifiedname>
+        <initializer>= GammaCorrect(argos_lib::colors::kCatYellow)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/color.h" line="67" column="33" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/color.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="color_8h_1ade2d4dbae2a7383ed6ab4e106549b0fc" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type><ref refid="structargos__lib_1_1_argos_color" kindref="compound">ArgosColor</ref></type>
+        <definition>ArgosColor argos_lib::gamma_corrected_colors::kPurple</definition>
+        <argsstring></argsstring>
+        <name>kPurple</name>
+        <qualifiedname>argos_lib::gamma_corrected_colors::kPurple</qualifiedname>
+        <initializer>= GammaCorrect(argos_lib::colors::kPurple)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/color.h" line="68" column="33" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/color.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="color_8h_1a778fc12d8083c5a9eff619ae92fde2d6" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type><ref refid="structargos__lib_1_1_argos_color" kindref="compound">ArgosColor</ref></type>
+        <definition>ArgosColor argos_lib::gamma_corrected_colors::kNoteOrange</definition>
+        <argsstring></argsstring>
+        <name>kNoteOrange</name>
+        <qualifiedname>argos_lib::gamma_corrected_colors::kNoteOrange</qualifiedname>
+        <initializer>= GammaCorrect(argos_lib::colors::kNoteOrange)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/color.h" line="69" column="33" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/color.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="color_8h_1aba13304f46a415fa1965b0247bfbfeab" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type><ref refid="structargos__lib_1_1_argos_color" kindref="compound">ArgosColor</ref></type>
+        <definition>ArgosColor argos_lib::gamma_corrected_colors::kPlum</definition>
+        <argsstring></argsstring>
+        <name>kPlum</name>
+        <qualifiedname>argos_lib::gamma_corrected_colors::kPlum</qualifiedname>
+        <initializer>= GammaCorrect(argos_lib::colors::kPlum)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/color.h" line="70" column="33" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/color.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/color.h" line="58" column="3"/>
+  </compounddef>
+</doxygen>

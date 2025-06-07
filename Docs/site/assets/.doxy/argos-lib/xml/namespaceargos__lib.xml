@@ -1,0 +1,897 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="namespaceargos__lib" kind="namespace" language="C++">
+    <compoundname>argos_lib</compoundname>
+    <innerclass refid="structargos__lib_1_1_argos_color" prot="public">argos_lib::ArgosColor</innerclass>
+    <innerclass refid="classargos__lib_1_1_argos_logger" prot="public">argos_lib::ArgosLogger</innerclass>
+    <innerclass refid="structargos__lib_1_1_c_a_n_address" prot="public">argos_lib::CANAddress</innerclass>
+    <innerclass refid="structargos__lib_1_1_closed_loop_sensor_conversions" prot="public">argos_lib::ClosedLoopSensorConversions</innerclass>
+    <innerclass refid="classargos__lib_1_1_debouncer" prot="public">argos_lib::Debouncer</innerclass>
+    <innerclass refid="structargos__lib_1_1_debounce_settings" prot="public">argos_lib::DebounceSettings</innerclass>
+    <innerclass refid="classargos__lib_1_1_edge_detector" prot="public">argos_lib::EdgeDetector</innerclass>
+    <innerclass refid="classargos__lib_1_1_f_s_homing_storage" prot="public">argos_lib::FSHomingStorage</innerclass>
+    <innerclass refid="classargos__lib_1_1_generic_debouncer" prot="public">argos_lib::GenericDebouncer</innerclass>
+    <innerclass refid="classargos__lib_1_1_homing_storage_interface" prot="public">argos_lib::HomingStorageInterface</innerclass>
+    <innerclass refid="classargos__lib_1_1_hysteresis_filter" prot="public">argos_lib::HysteresisFilter</innerclass>
+    <innerclass refid="structargos__lib_1_1_interp_map_point" prot="public">argos_lib::InterpMapPoint</innerclass>
+    <innerclass refid="classargos__lib_1_1_interpolation_map" prot="public">argos_lib::InterpolationMap</innerclass>
+    <innerclass refid="structargos__lib_1_1_l_e_d_state" prot="public">argos_lib::LEDState</innerclass>
+    <innerclass refid="classargos__lib_1_1_l_e_d_subsystem" prot="public">argos_lib::LEDSubsystem</innerclass>
+    <innerclass refid="classargos__lib_1_1_n_t_motor_p_i_d_tuner" prot="public">argos_lib::NTMotorPIDTuner</innerclass>
+    <innerclass refid="classargos__lib_1_1_n_t_subscriber" prot="public">argos_lib::NTSubscriber</innerclass>
+    <innerclass refid="classargos__lib_1_1_swap_controllers_command" prot="public">argos_lib::SwapControllersCommand</innerclass>
+    <innerclass refid="classargos__lib_1_1_swappable_controllers_subsystem" prot="public">argos_lib::SwappableControllersSubsystem</innerclass>
+    <innerclass refid="classargos__lib_1_1_swerve_f_s_homing_storage" prot="public">argos_lib::SwerveFSHomingStorage</innerclass>
+    <innerclass refid="classargos__lib_1_1_swerve_home_storage_interface" prot="public">argos_lib::SwerveHomeStorageInterface</innerclass>
+    <innerclass refid="structargos__lib_1_1_vibration_status" prot="public">argos_lib::VibrationStatus</innerclass>
+    <innerclass refid="classargos__lib_1_1_xbox_controller" prot="public">argos_lib::XboxController</innerclass>
+    <innernamespace refid="namespaceargos__lib_1_1angle">argos_lib::angle</innernamespace>
+    <innernamespace refid="namespaceargos__lib_1_1cancoder__config">argos_lib::cancoder_config</innernamespace>
+    <innernamespace refid="namespaceargos__lib_1_1colors">argos_lib::colors</innernamespace>
+    <innernamespace refid="namespaceargos__lib_1_1falcon__config">argos_lib::falcon_config</innernamespace>
+    <innernamespace refid="namespaceargos__lib_1_1gamma__corrected__colors">argos_lib::gamma_corrected_colors</innernamespace>
+    <innernamespace refid="namespaceargos__lib_1_1led">argos_lib::led</innernamespace>
+    <innernamespace refid="namespaceargos__lib_1_1odometry__aim">argos_lib::odometry_aim</innernamespace>
+    <innernamespace refid="namespaceargos__lib_1_1status__frame__config">argos_lib::status_frame_config</innernamespace>
+    <innernamespace refid="namespaceargos__lib_1_1swerve">argos_lib::swerve</innernamespace>
+    <innernamespace refid="namespaceargos__lib_1_1talonsrx__config">argos_lib::talonsrx_config</innernamespace>
+    <innernamespace refid="namespaceargos__lib_1_1testing">argos_lib::testing</innernamespace>
+    <innernamespace refid="namespaceargos__lib_1_1triggers">argos_lib::triggers</innernamespace>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespaceargos__lib_1a4231c977f4047dcc9edf48b1bd43f51c" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>RobotInstance</name>
+        <qualifiedname>argos_lib::RobotInstance</qualifiedname>
+        <enumvalue id="namespaceargos__lib_1a4231c977f4047dcc9edf48b1bd43f51ca1bdedea8c6cb664d4dc2f80c4286dd2c" prot="public">
+          <name>Competition</name>
+          <briefdescription>
+<para>Competition robot. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceargos__lib_1a4231c977f4047dcc9edf48b1bd43f51ca8c004d7e3b8a5a850ab2459c3afc2f57" prot="public">
+          <name>Practice</name>
+          <briefdescription>
+<para>Practice robot. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Differentiates between practice robot and competition robot. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/config/config_types.h" line="13" column="3" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/config/config_types.h" bodystart="13" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespaceargos__lib_1a6606f307b5553bfdaa7c9e272e43c512" prot="public" static="no" strong="no">
+        <type></type>
+        <name>LogLevel</name>
+        <qualifiedname>argos_lib::LogLevel</qualifiedname>
+        <enumvalue id="namespaceargos__lib_1a6606f307b5553bfdaa7c9e272e43c512a58076bd34b940e7df4d51e4bf245fe74" prot="public">
+          <name>INFO</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceargos__lib_1a6606f307b5553bfdaa7c9e272e43c512a55ca1d79d7affea58e10e05c1163367d" prot="public">
+          <name>ERR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Represents a log level of either information, or error. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/log.h" line="19" column="3" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/log.h" bodystart="19" bodyend="19"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespaceargos__lib_1ab9a2dfdf5e8b0248498ae325be1c0957" prot="public" static="no">
+        <type>std::function&lt; <ref refid="structargos__lib_1_1_vibration_status" kindref="compound">VibrationStatus</ref>()&gt;</type>
+        <definition>using argos_lib::VibrationModel =  std::function&lt;VibrationStatus()&gt;</definition>
+        <argsstring></argsstring>
+        <name>VibrationModel</name>
+        <qualifiedname>argos_lib::VibrationModel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/vibration.h" line="21" column="3" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/vibration.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="namespaceargos__lib_1a4dd6df1dc6e82ae47b7fad52aa6afacc" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>std::array&lt; uint8_t, 256 &gt;</type>
+        <definition>std::array&lt;uint8_t, 256&gt; argos_lib::gamma8</definition>
+        <argsstring></argsstring>
+        <name>gamma8</name>
+        <qualifiedname>argos_lib::gamma8</qualifiedname>
+        <initializer>= {
+      0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,
+      0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   1,   1,   1,   1,
+      1,   1,   1,   1,   1,   1,   1,   1,   1,   2,   2,   2,   2,   2,   2,   2,
+      2,   3,   3,   3,   3,   3,   3,   3,   4,   4,   4,   4,   4,   5,   5,   5,
+      5,   6,   6,   6,   6,   7,   7,   7,   7,   8,   8,   8,   9,   9,   9,   10,
+      10,  10,  11,  11,  11,  12,  12,  13,  13,  13,  14,  14,  15,  15,  16,  16,
+      17,  17,  18,  18,  19,  19,  20,  20,  21,  21,  22,  22,  23,  24,  24,  25,
+      25,  26,  27,  27,  28,  29,  29,  30,  31,  32,  32,  33,  34,  35,  35,  36,
+      37,  38,  39,  39,  40,  41,  42,  43,  44,  45,  46,  47,  48,  49,  50,  50,
+      51,  52,  54,  55,  56,  57,  58,  59,  60,  61,  62,  63,  64,  66,  67,  68,
+      69,  70,  72,  73,  74,  75,  77,  78,  79,  81,  82,  83,  85,  86,  87,  89,
+      90,  92,  93,  95,  96,  98,  99,  101, 102, 104, 105, 107, 109, 110, 112, 114,
+      115, 117, 119, 120, 122, 124, 126, 127, 129, 131, 133, 135, 137, 138, 140, 142,
+      144, 146, 148, 150, 152, 154, 156, 158, 160, 162, 164, 167, 169, 171, 173, 175,
+      177, 180, 182, 184, 186, 189, 191, 193, 196, 198, 200, 203, 205, 208, 210, 213,
+      215, 218, 220, 223, 225, 228, 231, 233, 236, 239, 241, 244, 247, 249, 252, 255}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/color.h" line="21" column="24" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/color.h" bodystart="21" bodyend="37"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceargos__lib_1a811945cb3eb97c182b7ca11fd143405a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceargos__lib_1a4231c977f4047dcc9edf48b1bd43f51c" kindref="member">RobotInstance</ref></type>
+        <definition>argos_lib::RobotInstance argos_lib::GetRobotInstance</definition>
+        <argsstring>()</argsstring>
+        <name>GetRobotInstance</name>
+        <qualifiedname>argos_lib::GetRobotInstance</qualifiedname>
+        <briefdescription>
+<para>Detect robot instance. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="namespaceargos__lib_1a4231c977f4047dcc9edf48b1bd43f51c" kindref="member">RobotInstance</ref></para>
+</simplesect>
+<simplesect kind="copyright"><para>Copyright (c) Argos FRC Team 1756. Open Source Software; you can modify and/or share it under the terms of the license file in the root directory of this project. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/config/config_types.h" line="23" column="17" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/config/robot_instance.cpp" bodystart="11" bodyend="30" declfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/config/config_types.h" declline="23" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceargos__lib_1a0994287edce2234a26ff4e2a3948bd49" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int argos_lib::GetCANAddr</definition>
+        <argsstring>(const argos_lib::CANAddress &amp;compAddress, const argos_lib::CANAddress &amp;practiceAddress, argos_lib::RobotInstance instance)</argsstring>
+        <name>GetCANAddr</name>
+        <qualifiedname>argos_lib::GetCANAddr</qualifiedname>
+        <param>
+          <type>const <ref refid="structargos__lib_1_1_c_a_n_address" kindref="compound">argos_lib::CANAddress</ref> &amp;</type>
+          <declname>compAddress</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structargos__lib_1_1_c_a_n_address" kindref="compound">argos_lib::CANAddress</ref> &amp;</type>
+          <declname>practiceAddress</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceargos__lib_1a4231c977f4047dcc9edf48b1bd43f51c" kindref="member">argos_lib::RobotInstance</ref></type>
+          <declname>instance</declname>
+        </param>
+        <briefdescription>
+<para>Gets integer address from <ref refid="structargos__lib_1_1_c_a_n_address" kindref="compound">CANAddress</ref> objects based on robot instance. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>compAddress</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The competiton robot <ref refid="structargos__lib_1_1_c_a_n_address" kindref="compound">CANAddress</ref> object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>practiceAddress</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The practice robot <ref refid="structargos__lib_1_1_c_a_n_address" kindref="compound">CANAddress</ref> object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>instance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Current instance of robot </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>returns compAddress.addr if instance is competition, practiceAddress.addr if instance is practice </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/config/config_types.h" line="38" column="21" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/config/config_types.h" bodystart="38" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceargos__lib_1adf389e9320904d9e0b0ab1ad5bb43675" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string_view</type>
+        <definition>static std::string_view argos_lib::GetCANBus</definition>
+        <argsstring>(const argos_lib::CANAddress &amp;compAddress, const argos_lib::CANAddress &amp;practiceAddress, argos_lib::RobotInstance instance)</argsstring>
+        <name>GetCANBus</name>
+        <qualifiedname>argos_lib::GetCANBus</qualifiedname>
+        <param>
+          <type>const <ref refid="structargos__lib_1_1_c_a_n_address" kindref="compound">argos_lib::CANAddress</ref> &amp;</type>
+          <declname>compAddress</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structargos__lib_1_1_c_a_n_address" kindref="compound">argos_lib::CANAddress</ref> &amp;</type>
+          <declname>practiceAddress</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceargos__lib_1a4231c977f4047dcc9edf48b1bd43f51c" kindref="member">argos_lib::RobotInstance</ref></type>
+          <declname>instance</declname>
+        </param>
+        <briefdescription>
+<para>Gets std::string_view bus name from <ref refid="structargos__lib_1_1_c_a_n_address" kindref="compound">CANAddress</ref> objects based on robot instance. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>compAddress</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The competiton robot <ref refid="structargos__lib_1_1_c_a_n_address" kindref="compound">CANAddress</ref> object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>practiceAddress</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The practice robot <ref refid="structargos__lib_1_1_c_a_n_address" kindref="compound">CANAddress</ref> object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>instance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Current instance of robot </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>returns compAddress.busName if instance is competition, practiceAddress.busName if instance is practice </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/config/config_types.h" line="49" column="34" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/config/config_types.h" bodystart="49" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceargos__lib_1a9bdc8d0bc40d923285b6350108692133" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>VibrationModel</type>
+        <definition>VibrationModel argos_lib::VibrationOff</definition>
+        <argsstring>()</argsstring>
+        <name>VibrationOff</name>
+        <qualifiedname>argos_lib::VibrationOff</qualifiedname>
+        <briefdescription>
+<para>Turn off vibration. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>VibrationModel </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/vibration.h" line="28" column="18" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/controller/vibration.cpp" bodystart="12" bodyend="14" declfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/vibration.h" declline="28" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceargos__lib_1aadda81a361b1738ff80d513f9a74c32e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>VibrationModel</type>
+        <definition>VibrationModel argos_lib::VibrationConstant</definition>
+        <argsstring>(double intensity)</argsstring>
+        <name>VibrationConstant</name>
+        <qualifiedname>argos_lib::VibrationConstant</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>intensity</declname>
+        </param>
+        <briefdescription>
+<para>Set vibration to a constant value where left and right are the same intensity. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>intensity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Percent vibration output [0,1.0] </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>VibrationModel </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/vibration.h" line="36" column="18" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/controller/vibration.cpp" bodystart="16" bodyend="18" declfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/vibration.h" declline="36" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceargos__lib_1af48079b006bba7c41aae85cce88ff3e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>VibrationModel</type>
+        <definition>VibrationModel argos_lib::VibrationConstant</definition>
+        <argsstring>(double intensityLeft, double intensityRight)</argsstring>
+        <name>VibrationConstant</name>
+        <qualifiedname>argos_lib::VibrationConstant</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>intensityLeft</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>intensityRight</declname>
+        </param>
+        <briefdescription>
+<para>Set vibration to a constant value where left and right have discrete intensities. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>intensityLeft</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Left vibration percent output [0,1.0] </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>intensityRight</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Right vibration percent output [0,1.0] </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>VibrationModel </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/vibration.h" line="45" column="18" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/controller/vibration.cpp" bodystart="20" bodyend="22" declfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/vibration.h" declline="45" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceargos__lib_1af417e6c76c86d4cebf77851dca11c23d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>VibrationModel</type>
+        <definition>VibrationModel argos_lib::VibrationSyncPulse</definition>
+        <argsstring>(units::millisecond_t pulsePeriod, double intensityOn, double intensityOff=0.0)</argsstring>
+        <name>VibrationSyncPulse</name>
+        <qualifiedname>argos_lib::VibrationSyncPulse</qualifiedname>
+        <param>
+          <type>units::millisecond_t</type>
+          <declname>pulsePeriod</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>intensityOn</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>intensityOff</declname>
+          <defval>0.0</defval>
+        </param>
+        <briefdescription>
+<para>Toggle vibration between intensityOn and intensityOff levels. Left and right have the same vibration intensity. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pulsePeriod</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time to complete one intensityOn-&gt;intensityOff cycle </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>intensityOn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vibration percent output when in intensityOn portion of cycle [0,1.0] </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>intensityOff</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vibration percent output when in intensityOff portion of cycle [0,1.0] </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>VibrationModel </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/vibration.h" line="56" column="18" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/controller/vibration.cpp" bodystart="24" bodyend="36" declfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/vibration.h" declline="56" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceargos__lib_1ae562daa4c83e3bdb85b2a17aadd00855" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>VibrationModel</type>
+        <definition>VibrationModel argos_lib::VibrationSyncWave</definition>
+        <argsstring>(units::millisecond_t pulsePeriod, double intensityOn, double intensityOff=0.0)</argsstring>
+        <name>VibrationSyncWave</name>
+        <qualifiedname>argos_lib::VibrationSyncWave</qualifiedname>
+        <param>
+          <type>units::millisecond_t</type>
+          <declname>pulsePeriod</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>intensityOn</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>intensityOff</declname>
+          <defval>0.0</defval>
+        </param>
+        <briefdescription>
+<para>Smoothly transition vibration between intensityOn and intensityOff levels. Left and right have the same vibration intensity. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pulsePeriod</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time to complete one intensityOn-&gt;intensityOff cycle </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>intensityOn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vibration percent output when at peak of intensityOn portion of cycle [0,1.0] </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>intensityOff</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vibration percent output when in trough of intensityOff portion of cycle [0,1.0] </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>VibrationModel </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/vibration.h" line="67" column="18" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/controller/vibration.cpp" bodystart="52" bodyend="64" declfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/vibration.h" declline="67" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceargos__lib_1ad60f0b7c80267a6a8e576ef289de00e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>VibrationModel</type>
+        <definition>VibrationModel argos_lib::VibrationAlternatePulse</definition>
+        <argsstring>(units::millisecond_t pulsePeriod, double intensityOn, double intensityOff=0.0)</argsstring>
+        <name>VibrationAlternatePulse</name>
+        <qualifiedname>argos_lib::VibrationAlternatePulse</qualifiedname>
+        <param>
+          <type>units::millisecond_t</type>
+          <declname>pulsePeriod</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>intensityOn</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>intensityOff</declname>
+          <defval>0.0</defval>
+        </param>
+        <briefdescription>
+<para>Toggle vibration between intensityOn and intensityOff levels. Left output is in intensityOn phase while right output is in intensityOff phase and vice-versa. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pulsePeriod</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time to complete one intensityOn-&gt;intensityOff cycle </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>intensityOn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vibration percent output when in intensityOn portion of cycle [0,1.0] </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>intensityOff</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vibration percent output when in intensityOff portion of cycle [0,1.0] </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>VibrationModel </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/vibration.h" line="79" column="18" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/controller/vibration.cpp" bodystart="38" bodyend="50" declfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/vibration.h" declline="79" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceargos__lib_1a489dff46429e8ae8064c6b37a744e2f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>VibrationModel</type>
+        <definition>VibrationModel argos_lib::VibrationAlternateWave</definition>
+        <argsstring>(units::millisecond_t pulsePeriod, double intensityOn, double intensityOff=0.0)</argsstring>
+        <name>VibrationAlternateWave</name>
+        <qualifiedname>argos_lib::VibrationAlternateWave</qualifiedname>
+        <param>
+          <type>units::millisecond_t</type>
+          <declname>pulsePeriod</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>intensityOn</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>intensityOff</declname>
+          <defval>0.0</defval>
+        </param>
+        <briefdescription>
+<para>Smoothly transition vibration between intensityOn and intensityOff levels. Left output is in intensityOn phase while right output is in intensityOff phase and vice-versa. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pulsePeriod</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time to complete one intensityOn-&gt;intensityOff cycle </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>intensityOn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vibration percent output when at peak of intensityOn portion of cycle [0,1.0] </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>intensityOff</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vibration percent output when in trough of intensityOff portion of cycle [0,1.0] </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>VibrationModel </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/vibration.h" line="93" column="18" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/controller/vibration.cpp" bodystart="66" bodyend="81" declfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/vibration.h" declline="93" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceargos__lib_1adfd26102f3bb55fd38f1f624158cc235" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>VibrationModel</type>
+        <definition>VibrationModel argos_lib::TemporaryVibrationPattern</definition>
+        <argsstring>(VibrationModel temporaryModel, units::millisecond_t temporaryModelDuration, VibrationModel lastingModel=VibrationOff())</argsstring>
+        <name>TemporaryVibrationPattern</name>
+        <qualifiedname>argos_lib::TemporaryVibrationPattern</qualifiedname>
+        <param>
+          <type>VibrationModel</type>
+          <declname>temporaryModel</declname>
+        </param>
+        <param>
+          <type>units::millisecond_t</type>
+          <declname>temporaryModelDuration</declname>
+        </param>
+        <param>
+          <type>VibrationModel</type>
+          <declname>lastingModel</declname>
+          <defval><ref refid="namespaceargos__lib_1a9bdc8d0bc40d923285b6350108692133" kindref="member">VibrationOff</ref>()</defval>
+        </param>
+        <briefdescription>
+<para>Run a vibration model for a specified duration, then run another model in perpetuity thereafter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>temporaryModel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Model to run for the specified duration </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>temporaryModelDuration</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Amount of time to run temporaryModel </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lastingModel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Model to run forever after the specified duration </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>VibrationModel </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/vibration.h" line="105" column="18" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/controller/vibration.cpp" bodystart="83" bodyend="95" declfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/vibration.h" declline="105" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceargos__lib_1a3a00bdc7d08d90270732e9c5d61a0509" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structargos__lib_1_1_argos_color" kindref="compound">ArgosColor</ref></type>
+        <definition>ArgosColor argos_lib::GammaCorrect</definition>
+        <argsstring>(ArgosColor original)</argsstring>
+        <name>GammaCorrect</name>
+        <qualifiedname>argos_lib::GammaCorrect</qualifiedname>
+        <param>
+          <type><ref refid="structargos__lib_1_1_argos_color" kindref="compound">ArgosColor</ref></type>
+          <declname>original</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/color.h" line="55" column="24" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/color.h" bodystart="55" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceargos__lib_1a9171e0a9994ef5267f1f9ef32549ee8a" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>static constexpr bool argos_lib::InThreshold</definition>
+        <argsstring>(const T value, const T target, const T threshold)</argsstring>
+        <name>InThreshold</name>
+        <qualifiedname>argos_lib::InThreshold</qualifiedname>
+        <param>
+          <type>const T</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>const T</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>const T</type>
+          <declname>threshold</declname>
+        </param>
+        <briefdescription>
+<para>Detect if a value is within a threshold of a target value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type that implements operator+(), operator-(), operator&lt;=() and operator&gt;=() </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value to check </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Center of range </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>threshold</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Allowable error from target </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true when value is within threshold of target, false otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/general.h" line="19" column="25" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/general.h" bodystart="19" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceargos__lib_1ad64b1c60180c848877a6b120baf052e7" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+          <param>
+            <type>class V</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool argos_lib::operator&lt;</definition>
+        <argsstring>(const InterpMapPoint&lt; T, V &gt; &amp;a, const T &amp;b)</argsstring>
+        <name>operator&lt;</name>
+        <qualifiedname>argos_lib::operator&lt;</qualifiedname>
+        <param>
+          <type>const <ref refid="structargos__lib_1_1_interp_map_point" kindref="compound">InterpMapPoint</ref>&lt; T, V &gt; &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/interpolation.h" line="29" column="13" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/interpolation.h" bodystart="29" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceargos__lib_1a2503d5262181b3a6ba47396af30ab300" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+          <param>
+            <type>class V</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool argos_lib::operator&lt;</definition>
+        <argsstring>(const T &amp;a, const InterpMapPoint&lt; T, V &gt; &amp;b)</argsstring>
+        <name>operator&lt;</name>
+        <qualifiedname>argos_lib::operator&lt;</qualifiedname>
+        <param>
+          <type>const T &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structargos__lib_1_1_interp_map_point" kindref="compound">InterpMapPoint</ref>&lt; T, V &gt; &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/interpolation.h" line="34" column="13" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/interpolation.h" bodystart="34" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceargos__lib_1af6079d815b8153bb230664f85c02bbbf" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Callable</type>
+          </param>
+        </templateparamlist>
+        <type>double</type>
+        <definition>double argos_lib::GetPositionConversionFactor</definition>
+        <argsstring>(Callable toPhysicalUnitsFunction)</argsstring>
+        <name>GetPositionConversionFactor</name>
+        <qualifiedname>argos_lib::GetPositionConversionFactor</qualifiedname>
+        <param>
+          <type>Callable</type>
+          <declname>toPhysicalUnitsFunction</declname>
+        </param>
+        <briefdescription>
+<para>Generates a double value to convert sensor position values to physical units represented as a double. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Callable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Function that generates a units value from a double </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>toPhysicalUnitsFunction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Conversion function </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>double Physical unit value stripped of unit so it&apos;s just a double </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/nt_motor_pid_tuner.h" line="29" column="20" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/nt_motor_pid_tuner.h" bodystart="29" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceargos__lib_1a34f624b827c4718d5bfb4a163b3199f3" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Callable</type>
+          </param>
+        </templateparamlist>
+        <type>double</type>
+        <definition>double argos_lib::GetVelocityConversionFactor</definition>
+        <argsstring>(Callable toPhysicalUnitsFunction)</argsstring>
+        <name>GetVelocityConversionFactor</name>
+        <qualifiedname>argos_lib::GetVelocityConversionFactor</qualifiedname>
+        <param>
+          <type>Callable</type>
+          <declname>toPhysicalUnitsFunction</declname>
+        </param>
+        <briefdescription>
+<para>Generates a double value to convert sensor velocity values to physical units represented as a double. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Callable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Function that generates a units value from a double </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>toPhysicalUnitsFunction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Conversion function </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>double Physical unit value stripped of unit so it&apos;s just a double </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/nt_motor_pid_tuner.h" line="41" column="20" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/nt_motor_pid_tuner.h" bodystart="41" bodyend="43"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="copyright"><para>Copyright (c) Argos FRC Team 1756. Open Source Software; you can modify and/or share it under the terms of the license file in the root directory of this project. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/commands/swap_controllers_command.h" line="12" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,162 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classargos__lib_1_1_swerve_f_s_homing_storage" kind="class" language="C++" prot="public">
+    <compoundname>argos_lib::SwerveFSHomingStorage</compoundname>
+    <basecompoundref refid="classargos__lib_1_1_swerve_home_storage_interface" prot="public" virt="non-virtual">argos_lib::SwerveHomeStorageInterface</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classargos__lib_1_1_swerve_f_s_homing_storage_1ab3ddb0976ea5e982989285db2e5ce01b" prot="private" static="no" mutable="no">
+        <type>const fs::path</type>
+        <definition>const fs::path argos_lib::SwerveFSHomingStorage::m_swerveHomesPath</definition>
+        <argsstring></argsstring>
+        <name>m_swerveHomesPath</name>
+        <qualifiedname>argos_lib::SwerveFSHomingStorage::m_swerveHomesPath</qualifiedname>
+        <briefdescription>
+<para>Path of persistent storage file relative to home directory. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/homing/fs_homing.h" line="46" column="20" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/homing/fs_homing.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classargos__lib_1_1_swerve_f_s_homing_storage_1a8b1f2db79a5beb4e9db8fa9d5b7c224a" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SwerveFSHomingStorage::SwerveFSHomingStorage</definition>
+        <argsstring>(const fs::path &amp;swerveHomesPath)</argsstring>
+        <name>SwerveFSHomingStorage</name>
+        <qualifiedname>argos_lib::SwerveFSHomingStorage::SwerveFSHomingStorage</qualifiedname>
+        <param>
+          <type>const fs::path &amp;</type>
+          <declname>swerveHomesPath</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new File System Homing Storage object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>swerveHomesPath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>File path relative to home directory to save into and load from </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/homing/fs_homing.h" line="24" column="14" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/homing/fs_homing.cpp" bodystart="15" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classargos__lib_1_1_swerve_f_s_homing_storage_1a280967f3bb419d15e4d73661385d29e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool SwerveFSHomingStorage::Save</definition>
+        <argsstring>(const argos_lib::swerve::SwerveModulePositions &amp;homePosition) override</argsstring>
+        <name>Save</name>
+        <qualifiedname>argos_lib::SwerveFSHomingStorage::Save</qualifiedname>
+        <reimplements refid="classargos__lib_1_1_swerve_home_storage_interface_1abc7618d705ec5beb418e13240e9e0f16">Save</reimplements>
+        <param>
+          <type>const <ref refid="structargos__lib_1_1swerve_1_1_swerve_module_positions" kindref="compound">argos_lib::swerve::SwerveModulePositions</ref> &amp;</type>
+          <declname>homePosition</declname>
+        </param>
+        <briefdescription>
+<para>Save positions as new homes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>homePosition</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Positions that represent 0 degree module orientations </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if save successful, false otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/homing/fs_homing.h" line="31" column="10" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/homing/fs_homing.cpp" bodystart="17" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classargos__lib_1_1_swerve_f_s_homing_storage_1ac308a4502b5a52cd429280c079be828a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::optional&lt; <ref refid="structargos__lib_1_1swerve_1_1_swerve_module_positions" kindref="compound">argos_lib::swerve::SwerveModulePositions</ref> &gt;</type>
+        <definition>std::optional&lt; argos_lib::swerve::SwerveModulePositions &gt; SwerveFSHomingStorage::Load</definition>
+        <argsstring>() override</argsstring>
+        <name>Load</name>
+        <qualifiedname>argos_lib::SwerveFSHomingStorage::Load</qualifiedname>
+        <reimplements refid="classargos__lib_1_1_swerve_home_storage_interface_1a6c432e83d81c5f2952c87fe2150265d6">Load</reimplements>
+        <briefdescription>
+<para>Load absolute positions that represent 0 degree module orientations. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Saved module positions if they exist, otherwise std::nullopt to indicate failure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/homing/fs_homing.h" line="37" column="19" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/homing/fs_homing.cpp" bodystart="31" bodyend="47"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classargos__lib_1_1_swerve_f_s_homing_storage_1a997007de01cace1264c287b7c49871e4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>fs::path</type>
+        <definition>fs::path SwerveFSHomingStorage::GetFilePath</definition>
+        <argsstring>()</argsstring>
+        <name>GetFilePath</name>
+        <qualifiedname>argos_lib::SwerveFSHomingStorage::GetFilePath</qualifiedname>
+        <briefdescription>
+<para>Get the path of the file to load from and save to. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>fs::path Absolute path of persistent storage file </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/homing/fs_homing.h" line="45" column="14" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/homing/fs_homing.cpp" bodystart="49" bodyend="61"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>argos_lib::SwerveFSHomingStorage</label>
+        <link refid="classargos__lib_1_1_swerve_f_s_homing_storage"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>argos_lib::SwerveHomeStorageInterface</label>
+        <link refid="classargos__lib_1_1_swerve_home_storage_interface"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>argos_lib::SwerveFSHomingStorage</label>
+        <link refid="classargos__lib_1_1_swerve_f_s_homing_storage"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>argos_lib::SwerveHomeStorageInterface</label>
+        <link refid="classargos__lib_1_1_swerve_home_storage_interface"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/homing/fs_homing.h" line="17" column="3" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/homing/fs_homing.h" bodystart="17" bodyend="47"/>
+    <listofallmembers>
+      <member refid="classargos__lib_1_1_swerve_f_s_homing_storage_1a997007de01cace1264c287b7c49871e4" prot="private" virt="non-virtual"><scope>argos_lib::SwerveFSHomingStorage</scope><name>GetFilePath</name></member>
+      <member refid="classargos__lib_1_1_swerve_f_s_homing_storage_1ac308a4502b5a52cd429280c079be828a" prot="public" virt="virtual"><scope>argos_lib::SwerveFSHomingStorage</scope><name>Load</name></member>
+      <member refid="classargos__lib_1_1_swerve_f_s_homing_storage_1ab3ddb0976ea5e982989285db2e5ce01b" prot="private" virt="non-virtual"><scope>argos_lib::SwerveFSHomingStorage</scope><name>m_swerveHomesPath</name></member>
+      <member refid="classargos__lib_1_1_swerve_f_s_homing_storage_1a280967f3bb419d15e4d73661385d29e4" prot="public" virt="virtual"><scope>argos_lib::SwerveFSHomingStorage</scope><name>Save</name></member>
+      <member refid="classargos__lib_1_1_swerve_f_s_homing_storage_1a8b1f2db79a5beb4e9db8fa9d5b7c224a" prot="public" virt="non-virtual"><scope>argos_lib::SwerveFSHomingStorage</scope><name>SwerveFSHomingStorage</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

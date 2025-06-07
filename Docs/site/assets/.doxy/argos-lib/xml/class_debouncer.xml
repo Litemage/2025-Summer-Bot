@@ -1,0 +1,257 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="class_debouncer" kind="class" language="C++" prot="public">
+    <compoundname>Debouncer</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_debouncer_1a5f7b8f43d424e8ed08de487b863bfbbb" prot="private" static="no" mutable="no">
+        <type><ref refid="structargos__lib_1_1_debounce_settings" kindref="compound">argos_lib::DebounceSettings</ref></type>
+        <definition>argos_lib::DebounceSettings argos_lib::Debouncer::m_debounceSettings</definition>
+        <argsstring></argsstring>
+        <name>m_debounceSettings</name>
+        <qualifiedname>Debouncer::m_debounceSettings</qualifiedname>
+        <briefdescription>
+<para>Configuration for asymmetric debouncer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/debouncer.h" line="61" column="33" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/debouncer.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_debouncer_1a820db50f5ff5b1f3d4074d60501533ab" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool argos_lib::Debouncer::m_rawStatus</definition>
+        <argsstring></argsstring>
+        <name>m_rawStatus</name>
+        <qualifiedname>Debouncer::m_rawStatus</qualifiedname>
+        <briefdescription>
+<para>Last raw value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/debouncer.h" line="62" column="10" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/debouncer.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_debouncer_1aabb628a3f28ebafb23c7abd2fb23ea50" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool argos_lib::Debouncer::m_debouncedStatus</definition>
+        <argsstring></argsstring>
+        <name>m_debouncedStatus</name>
+        <qualifiedname>Debouncer::m_debouncedStatus</qualifiedname>
+        <briefdescription>
+<para>Current value after applying debounce. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/debouncer.h" line="63" column="10" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/debouncer.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_debouncer_1afa0df3dd72b5147b85801766fb9629c4" prot="private" static="no" mutable="no">
+        <type>std::chrono::time_point&lt; std::chrono::steady_clock &gt;</type>
+        <definition>std::chrono::time_point&lt;std::chrono::steady_clock&gt; argos_lib::Debouncer::m_debounceTransitionTime</definition>
+        <argsstring></argsstring>
+        <name>m_debounceTransitionTime</name>
+        <qualifiedname>Debouncer::m_debounceTransitionTime</qualifiedname>
+        <briefdescription>
+<para>Time when latest transition detected. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/debouncer.h" line="65" column="9" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/debouncer.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_debouncer_1ad4747e062c711e8024fe0b477da7c1c4" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Debouncer::Debouncer</definition>
+        <argsstring>(const argos_lib::DebounceSettings debounceSettings, bool initialValue=false)</argsstring>
+        <name>Debouncer</name>
+        <qualifiedname>Debouncer::Debouncer</qualifiedname>
+        <param>
+          <type>const <ref refid="structargos__lib_1_1_debounce_settings" kindref="compound">argos_lib::DebounceSettings</ref></type>
+          <declname>debounceSettings</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>initialValue</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Construct a new <ref refid="class_debouncer" kindref="compound">Debouncer</ref> object with asymmetric times. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>debounceSettings</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Configuration settings for activate and clear times </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>initialValue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Initializes debouncer to this value </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/debouncer.h" line="22" column="14" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/general/debouncer.cpp" bodystart="9" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_debouncer_1a58a7ddbe4d21d9bf71d3d0b4fabe58e4" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Debouncer::Debouncer</definition>
+        <argsstring>(const units::millisecond_t symmetricDebounceTime)</argsstring>
+        <name>Debouncer</name>
+        <qualifiedname>Debouncer::Debouncer</qualifiedname>
+        <param>
+          <type>const units::millisecond_t</type>
+          <declname>symmetricDebounceTime</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new <ref refid="class_debouncer" kindref="compound">Debouncer</ref> object with symmetric times. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>symmetricDebounceTime</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Symmetric activate and clear time </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/debouncer.h" line="29" column="14" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/general/debouncer.cpp" bodystart="15" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_debouncer_1ac13b9fc486c9c8ba4860bc45ff9b4d54" prot="public" static="no" nodiscard="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Debouncer::operator()</definition>
+        <argsstring>(bool newVal)</argsstring>
+        <name>operator()</name>
+        <qualifiedname>Debouncer::operator()</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>newVal</declname>
+        </param>
+        <briefdescription>
+<para>Update debouncer with new input and retrieve latest debounced status. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>newVal</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Latest raw value </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Value after applying debounce </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/debouncer.h" line="37" column="11" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/general/debouncer.cpp" bodystart="18" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="class_debouncer_1a3d40a803178483462133822784a90324" prot="public" static="no" nodiscard="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Debouncer::GetRawStatus</definition>
+        <argsstring>()</argsstring>
+        <name>GetRawStatus</name>
+        <qualifiedname>Debouncer::GetRawStatus</qualifiedname>
+        <briefdescription>
+<para>Retrieve latest raw status. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Latest value without applying debounce </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/debouncer.h" line="44" column="11" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/general/debouncer.cpp" bodystart="44" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="class_debouncer_1aa096d00d3a9255b8ecdf726a446a1f73" prot="public" static="no" nodiscard="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Debouncer::GetDebouncedStatus</definition>
+        <argsstring>()</argsstring>
+        <name>GetDebouncedStatus</name>
+        <qualifiedname>Debouncer::GetDebouncedStatus</qualifiedname>
+        <briefdescription>
+<para>Retrieve latest debounced status. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Value after applying debounce </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/debouncer.h" line="51" column="11" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/general/debouncer.cpp" bodystart="48" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="class_debouncer_1a622cc4901eb1594632065f3cc3ee69ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Debouncer::Reset</definition>
+        <argsstring>(bool newVal)</argsstring>
+        <name>Reset</name>
+        <qualifiedname>Debouncer::Reset</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>newVal</declname>
+        </param>
+        <briefdescription>
+<para>Resets debouncer to a known status like at construction. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>newVal</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value to set to </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/debouncer.h" line="58" column="10" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/cpp/general/debouncer.cpp" bodystart="52" bodyend="55"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="copyright"><para>Copyright (c) Argos FRC Team 1756. Open Source Software; you can modify and/or share it under the terms of the license file in the root directory of this project. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/debouncer.h" line="14" column="3" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/general/debouncer.h" bodystart="14" bodyend="66"/>
+    <listofallmembers>
+      <member refid="class_debouncer_1ad4747e062c711e8024fe0b477da7c1c4" prot="public" virt="non-virtual"><scope>Debouncer</scope><name>Debouncer</name></member>
+      <member refid="class_debouncer_1a58a7ddbe4d21d9bf71d3d0b4fabe58e4" prot="public" virt="non-virtual"><scope>Debouncer</scope><name>Debouncer</name></member>
+      <member refid="class_debouncer_1aa096d00d3a9255b8ecdf726a446a1f73" prot="public" virt="non-virtual"><scope>Debouncer</scope><name>GetDebouncedStatus</name></member>
+      <member refid="class_debouncer_1a3d40a803178483462133822784a90324" prot="public" virt="non-virtual"><scope>Debouncer</scope><name>GetRawStatus</name></member>
+      <member refid="class_debouncer_1aabb628a3f28ebafb23c7abd2fb23ea50" prot="private" virt="non-virtual"><scope>Debouncer</scope><name>m_debouncedStatus</name></member>
+      <member refid="class_debouncer_1a5f7b8f43d424e8ed08de487b863bfbbb" prot="private" virt="non-virtual"><scope>Debouncer</scope><name>m_debounceSettings</name></member>
+      <member refid="class_debouncer_1afa0df3dd72b5147b85801766fb9629c4" prot="private" virt="non-virtual"><scope>Debouncer</scope><name>m_debounceTransitionTime</name></member>
+      <member refid="class_debouncer_1a820db50f5ff5b1f3d4074d60501533ab" prot="private" virt="non-virtual"><scope>Debouncer</scope><name>m_rawStatus</name></member>
+      <member refid="class_debouncer_1ac13b9fc486c9c8ba4860bc45ff9b4d54" prot="public" virt="non-virtual"><scope>Debouncer</scope><name>operator()</name></member>
+      <member refid="class_debouncer_1a622cc4901eb1594632065f3cc3ee69ff" prot="public" virt="non-virtual"><scope>Debouncer</scope><name>Reset</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

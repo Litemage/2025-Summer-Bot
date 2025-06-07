@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="namespaceautos" kind="namespace" language="C++">
+    <compoundname>autos</compoundname>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="_autos_8h_1a033a72f8c66a8b7cd20ca6696d888c9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>frc2::CommandPtr</type>
+        <definition>frc2::CommandPtr autos::ExampleAuto</definition>
+        <argsstring>(ExampleSubsystem *subsystem)</argsstring>
+        <name>ExampleAuto</name>
+        <qualifiedname>autos::ExampleAuto</qualifiedname>
+        <param>
+          <type><ref refid="class_example_subsystem" kindref="compound">ExampleSubsystem</ref> *</type>
+          <declname>subsystem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Example static factory for an autonomous command. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/include/commands/Autos.h" line="15" column="18" bodyfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/cpp/commands/Autos.cpp" bodystart="11" bodyend="14" declfile="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/include/commands/Autos.h" declline="15" declcolumn="18"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/main/include/commands/Autos.h" line="11" column="1"/>
+  </compounddef>
+</doxygen>

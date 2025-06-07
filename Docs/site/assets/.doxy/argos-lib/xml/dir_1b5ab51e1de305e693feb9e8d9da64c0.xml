@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="dir_1b5ab51e1de305e693feb9e8d9da64c0" kind="dir">
+    <compoundname>C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller</compoundname>
+    <innerfile refid="trigger__composition_8h">trigger_composition.h</innerfile>
+    <innerfile refid="vibration_8h">vibration.h</innerfile>
+    <innerfile refid="xbox__controller_8h">xbox_controller.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/jsime/OneDrive/Documents/Git/2025-Summer-Bot/src/argos_lib/include/argos_lib/controller/"/>
+  </compounddef>
+</doxygen>
